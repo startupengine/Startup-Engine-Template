@@ -3,7 +3,7 @@
         text-decoration:none !important;
     }
     .card-text  {
-        color:#666;
+        color:#666 !important;
     }
     .card-title {
         color:#111 !important;
