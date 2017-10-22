@@ -4,7 +4,7 @@
     var input = url.searchParams.get("s");
     Vue.component('todo-item', {
         props: ['todo'],
-        template: '<div class="col-md-6" style="float:left;"><a class="card-link" v-bind:href="todo.slug"><div class="card"><div class="card-body"><h4 class="card-title">{{ todo.title }}</h4><p class="card-text">{{ todo.meta_description }}</p><a class="btn btn-info pull-right" style="margin-bottom:25px;">Read More</a></div></div></a></div>'
+        template: '<div class="col-sm-6"><a class="card-link" v-bind:href="todo.slug"><div class="card"><img class="card-img-top" v-bind:src="todo.image"><div class="card-body"><h4 class="card-title" align="center">{{ todo.title }}</h4><p class="card-text">{{ todo.meta_description }}</p></div><div class="card-footer" align="center">Read More</div></div></a></div>'
     });
     var app7 = new Vue({
         el: '#articles',
