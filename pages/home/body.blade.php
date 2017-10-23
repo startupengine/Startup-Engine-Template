@@ -54,6 +54,7 @@
                             <img src="https://psychoanalytics.s3-us-west-1.amazonaws.com/pages/home/G0EIaP737hR67N4VF3NhohL4s9T0hcink2pnTNFy.jpeg" alt="Voyager" class="img-raised rounded" style="max-width:100px;">
                             <img src="https://psychoanalytics.s3-us-west-1.amazonaws.com/pages/home/dxrzA49pJn6iCKpaJbSqVAZegxZwkJtrBmLlW1rX.jpeg" alt="Vue.js" class="img-raised rounded" style="max-width:100px;">
                             <img src="https://psychoanalytics.s3-us-west-1.amazonaws.com/pages/home/Hrpg3kFzCFfU1ETwUoGW41wiLciODTytLvTqCMRC.jpeg" alt="Bootstrap" class="img-raised rounded" style="max-width:100px;">
+                            <img src="https://psychoanalytics.s3-us-west-1.amazonaws.com/pages/home/hTyFYQ3oPQiTggIGhFgZJIz32lhrATUfqMG9gSzr.jpeg" alt="Now UI Kit" class="img-raised rounded" style="max-width:100px;">
                         </div>
                         <div class="col-lg-12">
                             <a href="https://github.com/luckyrabbitllc/startupengine" class="btn btn-secondary-outline" target="_blank">Get the code</a>
