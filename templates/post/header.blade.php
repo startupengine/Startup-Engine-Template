@@ -6,7 +6,7 @@
         </div>
         <div class="container">
             <div class="content-center">
-                <div id="articles" style="padding-top:100px;">
+                <div id="articles" style="padding-top:140px;">
                     <todo-item
                             v-for="item in items"
                             v-bind:todo="item"
