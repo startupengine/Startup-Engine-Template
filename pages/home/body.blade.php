@@ -57,7 +57,7 @@
                             <img src="https://psychoanalytics.s3-us-west-1.amazonaws.com/pages/home/hTyFYQ3oPQiTggIGhFgZJIz32lhrATUfqMG9gSzr.jpeg" alt="Now UI Kit" class="img-raised rounded" style="max-width:100px;">
                         </div>
                         <div class="col-lg-12">
-                            <a href="https://github.com/luckyrabbitllc/startupengine" class="btn btn-secondary-outline" target="_blank">Get the code</a>
+                            <a href="https://github.com/luckyrabbitllc/startupengine" class="btn btn-secondary-outline" target="_blank">Get the code &nbsp;<i class="now-ui-icons tech_laptop"></i></a>
                         </div>
 
                     </div>
