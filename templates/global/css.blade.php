@@ -33,6 +33,12 @@
         background: -webkit-linear-gradient(to top right, #ff5e62, #ff9966);
         background: linear-gradient(to top right, #ff5e62, #ff9966);
     }
+
+    .bg-gradient-purple {
+        background: #8b69ff;
+        background: -webkit-linear-gradient(to top right, #8b69ff, #57388c);
+        background: linear-gradient(to top right, #8b69ff, #57388c);
+    }
     .bg-gradient-blue .btn, .bg-gradient-blue .btn {
         color:#fff !important;
         border-color: #fff !important;
