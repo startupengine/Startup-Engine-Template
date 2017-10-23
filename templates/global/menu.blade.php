@@ -20,22 +20,21 @@
             </div>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">
-                        <p>Features</p>
+                    <a class="nav-link" href="/products">
+                        <p>Products</p>
                     </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/articles">
-                        <p>Articles</p>
+                </li> <li class="nav-item">
+                    <a class="nav-link" href="/services">
+                        <p>Services</p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/help">
-                        <p>Help & Documentation</p>
+                        <p>Articles</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-neutral" id="nav-cta" href="/get-started" style="color:#0f76ff;box-shadow: 0px 10px 30px rgba(0,0,0,0.1);" onclick="mixpanel.track('nav-cta');">
+                    <a class="nav-link btn btn-neutral" id="nav-cta" href="/getting-started" style="color:#0f76ff;box-shadow: 0px 10px 30px rgba(0,0,0,0.1);" onclick="mixpanel.track('nav-cta');">
                         <i class="now-ui-icons arrows-1_share-66"></i>
                         <p>Get Started</p>
                     </a>
