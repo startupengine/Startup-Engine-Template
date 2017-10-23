@@ -10,10 +10,9 @@
         },
         created: function () {
             var _this = this;
-            $.getJSON('/api/items?type=posts&category=tutorials', function (json) {
+            $.getJSON('/api/browse?type=posts&category=articles', function (json) {
                 _this.items = json;
             });
         }
-
     });
 </script>
