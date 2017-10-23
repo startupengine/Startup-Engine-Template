@@ -23,10 +23,6 @@
                     <a class="nav-link" href="/products">
                         <p>Products</p>
                     </a>
-                </li> <li class="nav-item">
-                    <a class="nav-link" href="/services">
-                        <p>Services</p>
-                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/help">
