@@ -8,7 +8,7 @@
     var slug = /[^/]*$/.exec(window.location)[0];
     Vue.component('todo-item', {
         props: ['todo'],
-        template: '<div style="margin-top:300px;"><h1>@{{ todo.title }}</h1><h4>@{{ todo.meta_description }}</h4></div>'
+        template: '<div style="margin-top:100px;padding-top:100px;"><h1>@{{ todo.title }}</h1><h4>@{{ todo.meta_description }}</h4></div>'
     });
     console.log(slug);
     var app7 = new Vue({
