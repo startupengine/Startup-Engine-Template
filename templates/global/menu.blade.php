@@ -26,7 +26,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/help">
-                        <p>Articles</p>
+                        <p>Help & Documentation</p>
                     </a>
                 </li>
                 <li class="nav-item">
