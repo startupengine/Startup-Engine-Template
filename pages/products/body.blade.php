@@ -11,13 +11,11 @@
                     </div>
                     <div class="col-lg-6" style="margin-bottom:25px;">
                         <img src="https://psychoanalytics.s3-us-west-1.amazonaws.com/pages/products/hiWJfnFEo9yafHYHJby55zXtnjbT2fsQ89Id6xE6.jpeg" alt="Startup Engine CMS" class="img-raised rounded">
-                        <h4 style="margin-top:0px;">Startup Engine CMS</h4>
                         <p>An open-source content management app designed for Startups.</p>
                         <a href="/cms" class="btn btn-simple btn-neutral btn-round">Learn More</a>
                     </div>
                     <div class="col-lg-6" style="margin-bottom:25px;">
                         <img src="https://psychoanalytics.s3-us-west-1.amazonaws.com/pages/products/ejinjFr2xPKaq27lB4QCRkDHdw45ayHjYLW4YMgM.jpeg" alt="PsychoAnalytics" class="img-raised rounded" >
-                        <h4 style="margin-top:0px;">PsychoAnalytics</h4>
                         <p>Psycho-analyze your customers, competitors, and content.</p>
                         <a href="https://www.psychoanalytics.io" class="btn btn-simple btn-neutral btn-round " target="_blank">Learn More</a>
                     </div>
