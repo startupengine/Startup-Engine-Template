@@ -71,8 +71,8 @@
                     <div class="col-md-12 col-lg-8">
                         <h2 class="title">Ready to get started?</h2>
                         <h5 class="description" style="color:#fff;font-weight:300;margin-bottom:35px;">Get up and running in 5 minutes or less.</h5>
-                        <a href="/get-started" class="btn bg-gradient-orange btn-lg" onclick="mixpanel.track('cta');"><i class="now-ui-icons arrows-1_share-66"></i> Get Started</a>
-                        <a href="/get-started" class="btn btn-neutral btn-lg" style="background:#fff;color:#222 !important;">View the Docs</a>
+                        <a href="/getting-started" class="btn bg-gradient-orange btn-lg" onclick="mixpanel.track('cta');"><i class="now-ui-icons arrows-1_share-66"></i> Get Started</a>
+                        <a href="/help" class="btn btn-neutral btn-lg" style="background:#fff;color:#222 !important;">View the Docs</a>
                     </div>
                 </div>
             </div>
