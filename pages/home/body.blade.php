@@ -10,7 +10,7 @@
                         <h2 class="title" style="width:100%;color:#fff;">Tools for the Modern Startup.</h2>
                     </div>
                     <div class="col-lg-6" style="margin-bottom:25px;">
-                        <img src="https://psychoanalytics.s3-us-west-1.amazonaws.com/pages/products/hiWJfnFEo9yafHYHJby55zXtnjbT2fsQ89Id6xE6.jpeg" alt="Startup Engine CMS" class="img-raised rounded">
+                        <img src="https://psychoanalytics.s3-us-west-1.amazonaws.com/pages/products/wDtDs4wlcXUsoRylE1PkinplrNO3PzRM0rWQj6tV.jpeg" alt="Startup Engine CMS" class="img-raised rounded">
                         <p>An open-source content management app designed for Startups.</p>
                         <a href="/cms" class="btn btn-simple btn-neutral btn-round">Learn More</a>
                     </div>
