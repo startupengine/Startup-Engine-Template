@@ -15,3 +15,6 @@
 <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
 <script src="/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.4"></script>
+<script src="https://unpkg.com/chart.js@2.5.0/dist/Chart.bundle.js"></script>
+<script src="https://unpkg.com/chartkick@2.2.3"></script>
+<script src="https://unpkg.com/vue-chartkick@0.2.0/dist/vue-chartkick.js"></script>
