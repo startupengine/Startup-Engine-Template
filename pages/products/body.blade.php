@@ -11,7 +11,7 @@
                         </div>
                         <div class="col-lg-6" style="margin-bottom:25px;">
                             <img src="https://psychoanalytics.s3-us-west-1.amazonaws.com/pages/products/wDtDs4wlcXUsoRylE1PkinplrNO3PzRM0rWQj6tV.jpeg" alt="Startup Engine CMS" class="img-raised rounded">
-                            <p>An open-source content marketing app for Startups.</p>
+                            <p>An open-source <strong>content marketing app</strong> for Startups.</p>
                             <a href="/cms" class="btn btn-simple btn-neutral btn-round">Learn More</a>
                         </div>
                         <div class="col-lg-6" style="margin-bottom:25px;">
