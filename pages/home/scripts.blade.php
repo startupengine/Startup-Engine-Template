@@ -15,7 +15,7 @@
         template:
         '<div class="row">'+
         '<div class="col-md-6">' +
-        '<h2 style="margin-bottom:5px;">@{{ page.json.feature1.headline }}</h2>' +
+        '<h2 >@{{ page.json.feature1.headline }}</h2>' +
         '<h5 class="description" style="text-align:left;color:#000;">@{{ page.json.feature1.message }}</h5>' +
         '</div>'+
         '<div class="col-md-6">'+
@@ -31,7 +31,7 @@
         '<img class=" rounded" :src="page.json.feature2.image" />'+
         '</div>'+
         '<div class="col-md-6">' +
-        '<h2 style="margin-bottom:5px;">@{{ page.json.feature2.headline }}</h2>' +
+        '<h2>@{{ page.json.feature2.headline }}</h2>' +
         '<h5 class="description" style="text-align:left;color:#000;">@{{ page.json.feature2.message }}</h5>' +
         '</div>'+
         '</div>'
@@ -41,7 +41,7 @@
         template:
         '<div class="row">'+
             '<div class="col-md-6">' +
-                '<h2 style="margin-bottom:5px;">@{{ page.json.feature3.headline }}</h2>' +
+                '<h2 >@{{ page.json.feature3.headline }}</h2>' +
                 '<h5 class="description" style="text-align:left;color:#000;">@{{ page.json.feature3.message }}</h5>' +
             '</div>'+
             '<div class="col-md-6">'+
