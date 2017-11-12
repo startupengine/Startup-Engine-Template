@@ -34,16 +34,22 @@
         background: linear-gradient(to top right, #ff5e62, #ff9966);
     }
 
+    .bg-gradient-multi {
+        background: #ff9966;
+        background: -webkit-linear-gradient(to top right, #ff5e62, #2dbeff);
+        background: linear-gradient(to top right, #ff5e62, #2dbeff);
+    }
+
     .bg-gradient-purple {
         background: #8b69ff;
-        background: -webkit-linear-gradient(to top right, #8b69ff, #57388c);
-        background: linear-gradient(to top right, #8b69ff, #57388c);
+        background: -webkit-linear-gradient(to top right, #ff35a4, #350090);
+        background: linear-gradient(to top right, #ff35a4, #350090);
     }
+
     .bg-gradient-blue .btn, .bg-gradient-blue .btn {
         color:#fff !important;
         border-color: #fff !important;
     }
-
 
     .navbar-transparent #nav-cta {
         background:#fff;
@@ -122,7 +128,6 @@
             text-align: center !important;
         }
         #nav-cta {
-            background:royalblue !important;
             color:#fff !important;
         }
     }
@@ -135,7 +140,6 @@
             color: #222 !important;
         }
         .navbar-transparent #nav-cta {
-            background:royalblue !important;
             color:#fff !important;
         }
         #navigation {
@@ -143,10 +147,19 @@
         }
     }
     #nav-cta {
-        background:royalblue;
+        background:#7777dd!important;
         color:#fff !important;
     }
     #articles-index .page-header:before {
         background: none !important;
     }
+    #particles-js{
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%; }
 </style>

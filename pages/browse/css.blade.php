@@ -12,8 +12,8 @@
         color:#2CA8FF !important;
     }
     .page-header-image {
-        background: #ff9966 !important;
-        background: -webkit-linear-gradient(to top right, #ff5e62, #ff9966) !important;
-        background: linear-gradient(to top right, #ff5e62, #ff9966) !important;
+        background: #8b69ff;
+        background: -webkit-linear-gradient(to top right, #ff35a4, #350090);
+        background: linear-gradient(to top right, #ff35a4, #350090);
     }
 </style>

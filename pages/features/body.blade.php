@@ -2,34 +2,21 @@
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper">
     <div class="main">
-        <div class="section particles-js bg-gradient-purple">
-            <div class="space-50"></div>
-            <div class="container text-center">
-                <div class="row justify-content-md-center" align="center">
-                    <heading
+        <div class="section bg-gradient-purple">
+            <div class="container text-center"  style="padding-top:30px;">
+                <div class="row justify-content-md-center" id="feature1">
+                    <feature1
                             v-for="item in items"
                             v-bind:page="item"
                             v-bind:key="item.id"
                             v-bind:href="item.slug">
-                    </heading>
+                    </feature1>
                 </div>
             </div>
         </div>
     </div>
-    <div class="section" id="more">
-        <div class="container text-center">
-            <div class="row justify-content-md-center" id="feature1">
-                <feature1
-                        v-for="item in items"
-                        v-bind:page="item"
-                        v-bind:key="item.id"
-                        v-bind:href="item.slug">
-                </feature1>
-            </div>
-        </div>
-    </div>
     <div class="section" id="more" style="background:#f5f5f5;">
-        <div class="container text-center">
+        <div class="container text-center" >
             <div class="row justify-content-md-center" id="feature2">
                 <feature2
                         v-for="item in items"

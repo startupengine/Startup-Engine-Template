@@ -2,7 +2,7 @@
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper">
     <div class="page-header page-header-small">
-        <div class="page-header-image bg-gradient-blue">
+        <div class="page-header-image bg-gradient-purple">
         </div>
         <div class="container">
             <div class="content-center">

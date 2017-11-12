@@ -20,4 +20,14 @@
         margin-right:15px;
         margin-bottom:30px;
     }
+    .section img {
+        max-height:250px;
+        max-width:250px;
+        margin:25px 0px;
+    }
+    #options a:hover {
+        opacity:1 !important;
+        background:#fff !important;
+        color:#6666dd !important;
+    }
 </style>
