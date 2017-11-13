@@ -16,7 +16,7 @@
             </div>
         </div>
     </div>
-    <div class="section" id="more" style="background: #fff;box-shadow: 0px 0px 90px rgba(0,0,0,0.15);z-index: 999;">
+    <div class="section" id="more">
         <div class="container text-center">
             <div class="row justify-content-md-center" id="feature1">
                 <feature1
@@ -28,7 +28,7 @@
             </div>
         </div>
     </div>
-    <div class="section" id="more" style="background:#f5f5f5;">
+    <div class="section" id="more" style="background: #f5f5f5;box-shadow: 0px 0px 90px rgba(0,0,0,0.15);z-index: 999;">
         <div class="container text-center">
             <div class="row justify-content-md-center" id="feature2">
                 <feature2
@@ -43,7 +43,7 @@
         </div>
     </div>
 
-    <div class="section" id="more">
+    <div class="section">
         <div class="container text-center">
             <div class="row justify-content-md-center" id="feature3">
                 <feature3
