@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg bg-white fixed-top navbar-transparent " color-on-scroll="100">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="/" rel="tooltip" title="PsychoAnalyze any website." data-placement="bottom">
+            <a class="navbar-brand" href="/" rel="tooltip" title="{{ setting('site.description') }}" data-placement="bottom">
                 <img src="{{ setting('site.logo') }}" alt="Logo Icon" style="max-width:40px;"> {{ setting('site.title') }}
             </a>
             <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
