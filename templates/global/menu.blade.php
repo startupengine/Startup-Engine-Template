@@ -42,7 +42,7 @@
                 </li>
                 <?php } else { ?>
                  <li class="nav-item">
-                    <a class="nav-link btn btn-secondary btn-simple" id="nav-cta" href="https://app.psychoanalytics.io" target="_blank" style="color:#fff !important;border:1px solid #7777dd !important;" onclick="mixpanel.track('nav-cta');">
+                    <a class="nav-link btn btn-secondary btn-simple" id="nav-cta" href="https://app.psychoanalytics.io" target="_blank" style="color:#fff !important;border:none !important;">
                         <i class="now-ui-icons arrows-1_share-66"></i>
                         <p>Get Started</p>
                     </a>
