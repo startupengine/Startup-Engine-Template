@@ -25,11 +25,6 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/features">
-                        <p>Features</p>
-                    </a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="/help">
                         <p>Help & Documentation</p>
                     </a>
