@@ -2,7 +2,7 @@
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper">
     <div class="main">
-        <div class="section particles-js bg-gradient-purple">
+        <div class="section particles-js bg-gradient-blue">
             <div class="space-50"></div>
             <div class="container text-center">
                 <div class="row justify-content-md-center" align="center">
