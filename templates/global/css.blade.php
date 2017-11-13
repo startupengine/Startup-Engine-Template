@@ -147,7 +147,7 @@
         }
     }
     #nav-cta {
-        background:#7777dd!important;
+        background:royalblue !important;
         color:#fff !important;
     }
     #articles-index .page-header:before {
