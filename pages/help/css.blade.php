@@ -1,7 +1,8 @@
 <style>
     .page-header-image{
-        background: #8b69ff;
-        background: -webkit-linear-gradient(to top right, #ff35a4, #350090);
-        background: linear-gradient(to top right, #ff35a4, #350090);
+        background: royalblue;
+        background: -webkit-linear-gradient(to right, royalblue, #00adff) !important;
+        background: linear-gradient(to right, royalblue, #00adff) !important;
+        color:#fff !important;
     }
 </style>
