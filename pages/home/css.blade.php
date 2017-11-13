@@ -21,7 +21,7 @@
         margin-bottom:30px;
     }
     .section img {
-        max-height:250px;
+        max-height:350px;
         margin:25px 0px;
     }
     #options a:hover {
