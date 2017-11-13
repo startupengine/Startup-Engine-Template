@@ -8,7 +8,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Frequently Asked Questions</h4>
-                                <p class="card-text">What does PsychoAnalytics do? How does it work? What does it cost?</p>
+                                <p class="card-text">What is {{ setting('site.title') }}? How does it work? What does it cost?</p>
                                 <a href="/browse?category=frequently-asked-questions" class="btn btn-simple pull-right" style="margin-bottom:25px;">View FAQs</a>
                             </div>
                         </div>
