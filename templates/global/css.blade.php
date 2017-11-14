@@ -24,14 +24,14 @@
     }
     .bg-gradient-blue {
         background: royalblue;
-        background: -webkit-linear-gradient(to right, royalblue, #00adff) !important;
-        background: linear-gradient(to right, royalblue, #00adff) !important;
+        background: -webkit-linear-gradient(45deg,#7D6AE7,#56A2D5) !important;
+        background: linear-gradient(45deg,#7D6AE7,#56A2D5) !important;
         color:#fff !important;
     }
     .bg-gradient-orange {
         background: #ff9966;
-        background: -webkit-linear-gradient(to top right, #ff5e62, #ff9966);
-        background: linear-gradient(to top right, #ff5e62, #ff9966);
+        background: -webkit-linear-gradient(45deg,#FD5A49,#FDDC98);
+        background: linear-gradient(45deg,#FD5A49,#FDDC98);
     }
 
     .bg-gradient-multi {
