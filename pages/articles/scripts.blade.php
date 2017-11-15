@@ -10,7 +10,7 @@
         },
         created: function () {
             var _this = this;
-            $.getJSON('/api/browse?type=posts&category=articles', function (json) {
+            $.getJSON('/api/browse?type=posts&category=articles&limit=21', function (json) {
                 _this.items = json;
             });
         }
