@@ -17,9 +17,10 @@
         '<div class="col-md-6">' +
         '<h2 >@{{ page.json.feature1.headline }}</h2>' +
         '<h5 class="description" style="text-align:left;color:#000;">@{{ page.json.feature1.message }}</h5>' +
+        '<div align="left" v-if="page.json.feature1.link !== null"><a class="btn btn-primary btn-simple" v-bind:href="page.json.feature1.link">@{{ page.json.feature1.button }}</a></div>' +
         '</div>'+
         '<div class="col-md-6">'+
-        '<img class=" rounded" :src="page.json.feature1.image" />'+
+        '<a href="#" v-bind:href="page.json.feature1.link"><img class=" rounded" :src="page.json.feature1.image" /></a>'+
         '</div>'+
         '</div>'
     });
@@ -33,6 +34,7 @@
         '<div class="col-md-6">' +
         '<h2>@{{ page.json.feature2.headline }}</h2>' +
         '<h5 class="description" style="text-align:left;color:#000;">@{{ page.json.feature2.message }}</h5>' +
+        '<div align="left" v-if="page.json.feature2.link !== null"><a class="btn btn-primary btn-simple" v-bind:href="page.json.feature2.link">@{{ page.json.feature2.button }}</a></div>' +
         '</div>'+
         '</div>'
     });
@@ -43,6 +45,7 @@
             '<div class="col-md-6">' +
                 '<h2 >@{{ page.json.feature3.headline }}</h2>' +
                 '<h5 class="description" style="text-align:left;color:#000;">@{{ page.json.feature3.message }}</h5>' +
+                '<div align="left" v-if="page.json.feature3.link !== null"><a class="btn btn-primary btn-simple" v-bind:href="page.json.feature3.link">@{{ page.json.feature3.button }}</a></div>' +
             '</div>'+
             '<div class="col-md-6">'+
                 '<img class=" rounded" :src="page.json.feature3.image" />'+
