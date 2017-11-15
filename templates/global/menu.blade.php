@@ -14,7 +14,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navigation">
             <div id="mobile-nav-brand" align="center" style="
     margin-top: 25px;
-"> <a class="navbar-brand" href="/">
+"> <a class="navbar-brand" href="/" style="margin:0px;text-align:center;">
                     <?php if(setting('site.logo') !== null) { ?><img src="{{ setting('site.logo') }}" alt="Logo Icon" style="max-width:40px;"> <?php } ?>{{ setting('site.title') }}</span>
                 </a>
             </div>
