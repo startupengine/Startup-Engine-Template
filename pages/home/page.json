@@ -39,6 +39,16 @@
           "type": "text",
           "description": "A relevant image.",
           "placeholder": "http://..."
+        },
+        "button": {
+          "type": "text",
+          "description": "A short call to action phrase.",
+          "placeholder": "Learn More"
+        },
+        "link": {
+          "type": "text",
+          "description": "A url to link to. (Optional)",
+          "placeholder": "http://www.example.com"
         }
       }
     },
@@ -60,6 +70,16 @@
           "type": "text",
           "description": "A relevant image.",
           "placeholder": "http://..."
+        },
+        "button": {
+          "type": "text",
+          "description": "A short call to action phrase.",
+          "placeholder": "Learn More"
+        },
+        "link": {
+          "type": "text",
+          "description": "A url to link to. (Optional)",
+          "placeholder": "http://www.example.com"
         }
       }
     },
@@ -81,6 +101,16 @@
           "type": "text",
           "description": "A relevant image.",
           "placeholder": "http://..."
+        },
+        "button": {
+          "type": "text",
+          "description": "A short call to action phrase.",
+          "placeholder": "Learn More"
+        },
+        "link": {
+          "type": "text",
+          "description": "A url to link to. (Optional)",
+          "placeholder": "http://www.example.com"
         }
       }
     },
