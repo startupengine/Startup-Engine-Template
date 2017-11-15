@@ -6,7 +6,7 @@
         </div>
         <div class="container">
             <div class="content-center" style="top:200px !important;">
-                    <h1 class="title text-center" style="padding-bottom: 25px;border-bottom: #fff solid 5px;margin:25px;">Articles</h1>
+                    <h1 class="title text-center" style="padding-bottom: 25px;border-bottom: #fff solid 5px;margin:25px;">{{ $page->title }}</h1>
             </div>
         </div>
     </div>
