@@ -5,7 +5,7 @@
         <div class="section particles-js bg-gradient-blue">
             <div class="space-50"></div>
             <div class="container text-center">
-                <div class="row justify-content-md-center" align="center">
+                <div class="row justify-content-md-center" align="center" id="heading-section">
                     <heading
                             v-for="item in items"
                             v-bind:page="item"

@@ -32,3 +32,10 @@
     </div>
 </nav>
 <!-- End Navbar -->
+
+<script>
+    $( document ).ready(function() {
+        $( "img" ).addClass( "img-raised" );
+        $( "h2:first-of-type" ).html( "I work in the <span style='color: #000;'>Dark</span> Arts.");
+    });
+</script>
