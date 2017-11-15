@@ -23,7 +23,7 @@
                 <div class="row justify-content-md-center" id="screenshots">
                     <div class="col-md-12" style="margin-bottom:15px;margin-top:25px;">
                         <h5 class="description" style="text-align:center;color:#222;font-weight:300;"><strong>Step 2:</strong> Login.</h5>
-                        <p>Sign in by going to <strong>www.yourwebsite.com/admin/login</strong></p>
+                        <p>Sign in by going to <strong>www.yourwebsite.com/login</strong></p>
                         <p>The default account is <strong>admin@admin.com</strong> and the password is <strong>password</strong>.</p>
                     </div>
                     <div class="col-lg-4">
