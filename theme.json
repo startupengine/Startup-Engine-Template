@@ -9,7 +9,7 @@
     "site.menu" : {
       "display_name" : "Site Menu",
       "key" : "site.menu",
-      "status": "private",
+      "status": "PRIVATE",
       "type": "text"
     }
   }
