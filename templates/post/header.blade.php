@@ -1,8 +1,8 @@
 <body class="index-page sidebar-collapse" id="articles-index">
 <div id="startup_engine_nav_container"></div>
-<div class="wrapper">
+<div class="wrapper" style="background:#000;">
     <div class="page-header page-header-small">
-        <div class="page-header-image" <?php if($post->image !== null) { echo "style=\"background-image:url('".$post->image."'); background-size:cover; \""; } ?>>
+        <div class="page-header-image" <?php if($post->image !== null) { echo "style=\"background-image:url('".$post->image."'); background-size:cover;z-index: 0;opacity: 0.3; \""; } ?>>
         </div>
         <div class="container">
             <div class="content-center">
