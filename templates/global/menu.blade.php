@@ -15,7 +15,7 @@
             <div id="mobile-nav-brand" align="center" style="
     margin-top: 25px;
 "> <a class="navbar-brand" href="/">
-                    <img src="{{ setting('site.logo') }}" alt="Logo Icon" style="max-width:40px;"> {{ setting('site.title') }}</span>
+                    <?php if(setting('site.logo') !== null) { ?><img src="{{ setting('site.logo') }}" alt="Logo Icon" style="max-width:40px;"> <?php } ?>{{ setting('site.title') }}</span>
                 </a>
             </div>
             <ul class="navbar-nav">
