@@ -18,6 +18,11 @@
           "type": "text",
           "description": "A short call to action phrase.",
           "placeholder": "Learn More"
+        },
+        "background_image": {
+          "type": "text",
+          "description": "A url for a background image (optional).",
+          "placeholder": "http://www.example.com"
         }
       }
     },
@@ -47,7 +52,7 @@
         },
         "link": {
           "type": "text",
-          "description": "A url to link to. (Optional)",
+          "description": "A url to link to. (optional)",
           "placeholder": "http://www.example.com"
         }
       }
