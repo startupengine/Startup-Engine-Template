@@ -2,7 +2,7 @@
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper">
     <div class="page-header page-header-small">
-        <div class="page-header-image bg-gradient-purple">
+        <div class="page-header-image" <?php if($post->image !== null) { echo "style=\"background-image:url('".$post->image."'); background-size:cover; \""; } ?>>
         </div>
         <div class="container">
             <div class="content-center">
