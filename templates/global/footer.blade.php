@@ -2,7 +2,7 @@
 @if(setting('theme.footer_html') !== null)
     <?php echo setting('theme.footer_html'); ?>
 @else
-<div class="section bg-gradient-orange" style="box-shadow:0px 0px 60px rgba(0,0,0,0.1);color:#fff;width:100%;">
+<div class="section bg-gradient-purple" style="box-shadow:0px 0px 60px rgba(0,0,0,0.1);color:#fff;width:100%;">
     <div class="container text-center">
         <div class="row justify-content-md-center">
             <div class="col-md-12 col-lg-8">
