@@ -162,4 +162,11 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%; }
+
+    .page-header h1, .main h1 {
+        font-weight:600 !important;
+    }
+    .page-header h2, .main h2, .page-header h3, .main h3, .page-header h4, .main h4, .page-header h5, .main h5{
+        font-weight:400 !important;
+    }
 </style>
