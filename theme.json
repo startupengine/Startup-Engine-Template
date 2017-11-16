@@ -15,31 +15,31 @@
     "theme.footer_headline" : {
       "display_name" : "Footer Headline",
       "key" : "theme.footer_headline",
-      "status": "PUBLIC",
+      "status": "PUBLISHED",
       "type": "text"
     },
     "theme.footer_body" : {
       "display_name" : "Footer Body",
       "key" : "theme.footer_body",
-      "status": "PUBLIC",
+      "status": "PUBLISHED",
       "type": "textarea"
     },
     "theme.footer_button" : {
       "display_name" : "Footer Button",
       "key" : "theme.footer_button",
-      "status": "PUBLIC",
+      "status": "PUBLISHED",
       "type": "text"
     },
     "theme.footer_link" : {
       "display_name" : "Footer Link",
       "key" : "theme.footer_link",
-      "status": "PUBLIC",
+      "status": "PUBLISHED",
       "type": "text"
     },
     "theme.footer_html" : {
       "display_name" : "Footer HTML",
       "key" : "theme.footer_html",
-      "status": "PUBLIC",
+      "status": "PUBLISHED",
       "type": "textarea"
     }
   }
