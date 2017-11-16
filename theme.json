@@ -10,13 +10,13 @@
       "display_name" : "Site Menu",
       "key" : "site.menu",
       "status": "PRIVATE",
-      "type": "text"
+      "type": "textarea"
     },
     "theme.footer_headline" : {
       "display_name" : "Footer Headline",
       "key" : "theme.footer_headline",
       "status": "PUBLISHED",
-      "type": "text"
+      "type": "textarea"
     },
     "theme.footer_body" : {
       "display_name" : "Footer Body",
