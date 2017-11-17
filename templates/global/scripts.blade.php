@@ -88,5 +88,5 @@
 </script>
 <!-- end Mixpanel -->
 <script src='https://app.psychoanalytics.io/js/v1?site-id=Mr276KRB8nYR'></script>
-
+<script>plyr.setup();</script>
 <?php if(setting('theme.global_scripts') !== null) { echo setting('theme.global_scripts'); } ?>
