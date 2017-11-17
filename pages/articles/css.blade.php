@@ -17,6 +17,7 @@
         background: linear-gradient(to top right, #ff35a4, #350090);
     }
     #articles {
+        margin-top:-50px;
         /*
         border-radius: 5px;
         background: #fff;
@@ -26,9 +27,11 @@
     }
     @media only screen and (max-width : 1024px) {
         #articles{
+            /*
             padding:0px !important;
             background:none !important;
             box-shadow:none !important;
+            */
         }
     }
 
