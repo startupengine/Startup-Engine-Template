@@ -26,7 +26,7 @@
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Account
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-menu dropdown-menu-right hiddenOnMobile">
                         <button class="dropdown-item" type="button" onclick="location.href='/app';"><i class="now-ui-icons arrows-1_share-66"></i>&nbsp; App</button>
                         <button class="dropdown-item" type="button" onclick="location.href='/app/profile';"><i class="now-ui-icons users_circle-08"></i>&nbsp; Profile</button>
                         <button class="dropdown-item" type="button" onclick="location.href='/logout';"><i class="now-ui-icons ui-1_lock-circle-open"></i>&nbsp; Sign Out</button>

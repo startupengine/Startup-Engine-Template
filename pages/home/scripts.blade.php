@@ -29,7 +29,7 @@
         template:
         '<div class="row">'+
         '<div class="col-md-6">'+
-        '<img class=" rounded" :src="page.json.feature2.image" />'+
+        '<a href="#" v-bind:href="page.json.feature2.link"><img class=" rounded" :src="page.json.feature2.image" /></a>'+
         '</div>'+
         '<div class="col-md-6">' +
         '<h2>@{{ page.json.feature2.headline }}</h2>' +
@@ -48,7 +48,7 @@
                 '<div align="left" v-if="page.json.feature3.link !== null"><a class="btn btn-primary btn-simple" v-bind:href="page.json.feature3.link">@{{ page.json.feature3.button }}</a></div>' +
             '</div>'+
             '<div class="col-md-6">'+
-                '<img class=" rounded" :src="page.json.feature3.image" />'+
+            '<a href="#" v-bind:href="page.json.feature3.link"><img class=" rounded" :src="page.json.feature3.image" /></a>'+
             '</div>'+
         '</div>'
     });

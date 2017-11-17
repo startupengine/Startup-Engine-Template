@@ -29,4 +29,16 @@
             box-shadow:none !important;
         }
     }
+
+    @media only screen and (max-width : 1024px) {
+        .hiddenOnMobile{
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width : 1024px) {
+        .hiddenOnMobile{
+            display: none;
+        }
+    }
 </style>
