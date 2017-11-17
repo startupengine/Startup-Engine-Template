@@ -19,7 +19,7 @@
     #articles {
         border-radius: 5px;
         background: #fff;
-        box-shadow: 0px -60px 60px rgba(0,0,0,0.25);
+        box-shadow: 0px -30px 60px rgba(0,0,0,0.2);
         padding-top:10px;
         padding-right: 50px;
     }
