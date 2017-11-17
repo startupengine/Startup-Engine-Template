@@ -16,7 +16,7 @@
         background: -webkit-linear-gradient(to top right, #ff35a4, #350090);
         background: linear-gradient(to top right, #ff35a4, #350090);
     }
-    .container {
+    #articles {
         border-radius: 5px;
         background: #fff;
         box-shadow: 0px -60px 60px rgba(0,0,0,0.25);
