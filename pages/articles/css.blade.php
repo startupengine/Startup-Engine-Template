@@ -20,7 +20,6 @@
         border-radius: 5px;
         background: #fff;
         box-shadow: 0px -30px 60px rgba(0,0,0,0.2);
-        padding-top:10px;
-        padding-right: 50px;
+        padding:0px 30px 30px 0px;
     }
 </style>
