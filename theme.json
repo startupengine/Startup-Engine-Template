@@ -41,6 +41,18 @@
       "key" : "theme.footer_html",
       "status": "PUBLISHED",
       "type": "textarea"
+    },
+    "theme.global_css" : {
+      "display_name" : "Global CSS",
+      "key" : "theme.global_css",
+      "status": "PUBLISHED",
+      "type": "textarea"
+    },
+    "theme.global_scripts" : {
+      "display_name" : "Global Scripts",
+      "key" : "theme.global_scripts",
+      "status": "PUBLISHED",
+      "type": "textarea"
     }
   }
 }
