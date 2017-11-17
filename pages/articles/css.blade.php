@@ -46,4 +46,9 @@
             display: none;
         }
     }
+    .image-container {
+        min-height:200px;
+        width:100%;
+        background-size:cover;
+    }
 </style>
