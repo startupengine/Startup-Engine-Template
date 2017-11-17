@@ -22,9 +22,11 @@
                <?php echo setting('site.menu'); ?>
                 <?php if(\Auth::user() !== null && \Auth::user()->role()->name == 'admin'){  ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="/app">
-                        <p>Admin</p>
-                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button" onclick="location.href='/';"><i class="now-ui-icons arrows-1_share-66"></i>&nbsp; App</button>
+                        <button class="dropdown-item" type="button" onclick="location.href='/app/profile';"><i class="now-ui-icons users_circle-08"></i>&nbsp; Profile</button>
+                        <button class="dropdown-item" type="button" onclick="location.href='/logout';"><i class="now-ui-icons ui-1_lock-circle-open"></i>&nbsp; Sign Out</button>
+                    </div>
                 </li>
                 <?php } ?>
             </ul>
