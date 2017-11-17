@@ -50,5 +50,6 @@
         min-height:200px;
         width:100%;
         background-size:cover;
+        background-position: center;
     }
 </style>
