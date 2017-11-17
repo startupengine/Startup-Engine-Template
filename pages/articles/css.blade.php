@@ -22,4 +22,11 @@
         box-shadow: 0px -30px 60px rgba(0,0,0,0.2);
         padding:0px 30px 30px 0px;
     }
+    @media only screen and (max-width : 1024px) {
+        #articles{
+            padding:0px !important;
+            background:none !important;
+            box-shadow:none !important;
+        }
+    }
 </style>
