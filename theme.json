@@ -5,6 +5,7 @@
   "description": "A basic Startup Engine theme for startups.",
   "image": "https://psychoanalytics.s3-us-west-1.amazonaws.com/pages/products/wDtDs4wlcXUsoRylE1PkinplrNO3PzRM0rWQj6tV.jpeg",
   "modules": [],
+  "schemas": ["page", "post"],
   "settings": {
     "site.menu" : {
       "display_name" : "Site Menu",

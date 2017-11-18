@@ -1,0 +1,77 @@
+{
+  "title": "Post",
+  "slug": "post",
+  "version": "0.1",
+  "description": "A basic article or blog post.",
+  "image": null,
+  "sections": {
+    "Heading": {
+      "title": "Heading",
+      "slug": "heading",
+      "fields": {
+        "headline": {
+          "type": "text",
+          "description": "A short summary of the page.",
+          "placeholder": "Write a headline."
+        },
+        "button": {
+          "type": "text",
+          "description": "A short call to action phrase.",
+          "placeholder": "Read More"
+        },
+        "background": {
+          "type": "text",
+          "description": "Url for a background image (optional).",
+          "placeholder": "http://www.example.com"
+        }
+      }
+    },
+    "Content": {
+      "title": "Body",
+      "slug": "body",
+      "fields": {
+        "image": {
+          "type": "text",
+          "description": "A URL to a featured image.",
+          "placeholder": "http://..."
+        },
+        "background": {
+          "type": "text",
+          "description": "A URL to a background image.",
+          "placeholder": "http://..."
+        },
+        "video": {
+          "type": "text",
+          "description": "A URL to a featured video.",
+          "placeholder": "http://..."
+        },
+        "body": {
+          "type": "textarea",
+          "description": "Write some content.",
+          "placeholder": "A long time ago, in a galaxy far far away..."
+        }
+      }
+    },
+    "Code": {
+      "title": "Code",
+      "slug": "code",
+      "fields": {
+        "css": {
+          "type": "text",
+          "description": "Stylesheets.",
+          "placeholder": "<style> /* CSS goes here. */ </style>."
+        },
+        "scripts": {
+          "type": "text",
+          "description": "Javascript.",
+          "placeholder": "<script> /* Javascript goes here. */ </script>."
+        },
+        "body": {
+          "type": "text",
+          "description": "Body HTML.",
+          "placeholder": "<body> </body>"
+        }
+      }
+    }
+  }
+}
