@@ -8,48 +8,56 @@
   "schemas": ["page", "post"],
   "settings": {
     "site.menu" : {
-      "display_name" : "Site Menu",
+      "display_name" : "Theme Menu",
+      "group": "Theme",
       "key" : "site.menu",
       "status": "PRIVATE",
       "type": "textarea"
     },
     "theme.footer_headline" : {
+      "group": "Theme",
       "display_name" : "Footer Headline",
       "key" : "theme.footer_headline",
       "status": "PUBLISHED",
       "type": "textarea"
     },
     "theme.footer_body" : {
+      "group": "Theme",
       "display_name" : "Footer Body",
       "key" : "theme.footer_body",
       "status": "PUBLISHED",
       "type": "textarea"
     },
     "theme.footer_button" : {
+      "group": "Theme",
       "display_name" : "Footer Button",
       "key" : "theme.footer_button",
       "status": "PUBLISHED",
       "type": "text"
     },
     "theme.footer_link" : {
+      "group": "Theme",
       "display_name" : "Footer Link",
       "key" : "theme.footer_link",
       "status": "PUBLISHED",
       "type": "text"
     },
     "theme.footer_html" : {
+      "group": "Theme",
       "display_name" : "Footer HTML",
       "key" : "theme.footer_html",
       "status": "PUBLISHED",
       "type": "textarea"
     },
     "theme.global_css" : {
+      "group": "Theme",
       "display_name" : "Global CSS",
       "key" : "theme.global_css",
       "status": "PUBLISHED",
       "type": "textarea"
     },
     "theme.global_scripts" : {
+      "group": "Theme",
       "display_name" : "Global Scripts",
       "key" : "theme.global_scripts",
       "status": "PUBLISHED",
