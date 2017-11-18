@@ -14,6 +14,30 @@
       "status": "PRIVATE",
       "type": "textarea"
     },
+    "site.settings_description" : {
+      "display_name" : "Description of this group of settings.",
+      "group": "Site",
+      "key" : "site.settings_description",
+      "status": "PRIVATE",
+      "type": "textarea",
+      "value": "Settings for the public-facing website."
+    },
+    "admin.settings_description" : {
+      "display_name" : "Description of this group of settings.",
+      "group": "Admin",
+      "key" : "admin.settings_description",
+      "status": "PRIVATE",
+      "type": "textarea",
+      "value": "Settings for the admin panel."
+    },
+    "theme.settings_description" : {
+      "display_name" : "Description of this group of settings.",
+      "group": "Theme",
+      "key" : "theme.settings_description",
+      "status": "PRIVATE",
+      "type": "textarea",
+      "value": "Settings for the currently installed theme."
+    },
     "theme.footer_headline" : {
       "group": "Theme",
       "display_name" : "Footer Headline",
