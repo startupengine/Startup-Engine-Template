@@ -1,8 +1,8 @@
 {
-  "title": "Page",
-  "slug": "page",
+  "title": "faq",
+  "slug": "faq",
   "version": "0.1",
-  "description": "Custom HTML pages.",
+  "description": "FAQ",
   "image": null,
   "sections": {
     "Heading": {
@@ -14,15 +14,26 @@
           "description": "A short summary of the page.",
           "placeholder": "Write a headline."
         },
-        "button": {
-          "type": "text",
-          "description": "A short call to action phrase.",
-          "placeholder": "Learn More"
-        },
         "background": {
           "type": "text",
           "description": "Url for a background image (optional).",
           "placeholder": "http://www.example.com"
+        }
+      }
+    },
+    "Content": {
+      "title": "content",
+      "slug": "content",
+      "fields": {
+        "question": {
+          "type": "textarea",
+          "description": "Write a question.",
+          "placeholder": "Question goes here."
+        },
+        "answer": {
+          "type": "textarea",
+          "description": "Write the answer.",
+          "placeholder": "Answer goes here."
         }
       }
     },
@@ -44,17 +55,6 @@
           "type": "text",
           "description": "Body HTML.",
           "placeholder": "<body> </body>"
-        }
-      }
-    },
-    "Meta": {
-      "title": "Meta",
-      "slug": "meta",
-      "fields": {
-        "slug": {
-          "type": "text",
-          "description": "A unique slug for tracking this variation.",
-          "placeholder": "Name it clearly."
         }
       }
     }
