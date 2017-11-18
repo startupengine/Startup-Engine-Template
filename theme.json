@@ -6,6 +6,7 @@
   "image": "https://psychoanalytics.s3-us-west-1.amazonaws.com/pages/products/wDtDs4wlcXUsoRylE1PkinplrNO3PzRM0rWQj6tV.jpeg",
   "modules": [],
   "schemas": ["post", "faq"],
+  "disable_schemas": [],
   "settings": {
     "site.menu" : {
       "display_name" : "Theme Menu",
