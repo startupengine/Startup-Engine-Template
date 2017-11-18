@@ -86,6 +86,20 @@
       "key" : "theme.global_scripts",
       "status": "PUBLISHED",
       "type": "textarea"
+    },
+    "posts.icon" : {
+      "group": "Post",
+      "display_name" : "Posts Icon Markup",
+      "key" : "post.icon",
+      "status": "PUBLISHED",
+      "type": "textarea"
+    },
+    "pages.icon" : {
+      "group": "Page",
+      "display_name" : "Page Icon Markup",
+      "key" : "page.icon",
+      "status": "PUBLISHED",
+      "type": "textarea"
     }
   }
 }
