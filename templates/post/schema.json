@@ -58,16 +58,19 @@
       "fields": {
         "css": {
           "type": "code",
+          "mode": "html",
           "description": "Stylesheets.",
           "placeholder": "<style> /* CSS goes here. */ </style>."
         },
         "scripts": {
           "type": "code",
+          "mode": "html",
           "description": "Javascript.",
           "placeholder": "<script> /* Javascript goes here. */ </script>."
         },
         "body": {
           "type": "code",
+          "mode": "html",
           "description": "Body HTML.",
           "placeholder": "<body> </body>"
         }
