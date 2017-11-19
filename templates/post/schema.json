@@ -46,7 +46,7 @@
           "placeholder": "http://..."
         },
         "body": {
-          "type": "textarea",
+          "type": "richtext",
           "description": "Write some content.",
           "placeholder": "A long time ago, in a galaxy far far away..."
         }
@@ -57,19 +57,35 @@
       "slug": "code",
       "fields": {
         "css": {
-          "type": "text",
+          "type": "code",
           "description": "Stylesheets.",
           "placeholder": "<style> /* CSS goes here. */ </style>."
         },
         "scripts": {
-          "type": "text",
+          "type": "code",
           "description": "Javascript.",
           "placeholder": "<script> /* Javascript goes here. */ </script>."
         },
         "body": {
-          "type": "text",
+          "type": "code",
           "description": "Body HTML.",
           "placeholder": "<body> </body>"
+        }
+      },
+      "Meta": {
+        "title": "Meta",
+        "slug": "meta",
+        "fields": {
+          "meta_description": {
+            "type": "textarea",
+            "description": "A description of this post.",
+            "placeholder": "Description goes here."
+          },
+          "excerpt": {
+            "type": "textarea",
+            "description": "A short sumamry of this post.",
+            "placeholder": "Excerpt goes here."
+          }
         }
       }
     }
