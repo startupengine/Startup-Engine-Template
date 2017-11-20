@@ -31,7 +31,7 @@
           "placeholder": "Question goes here."
         },
         "answer": {
-          "type": "textarea",
+          "type": "richtext",
           "description": "Write the answer.",
           "placeholder": "Answer goes here."
         }
@@ -42,17 +42,17 @@
       "slug": "code",
       "fields": {
         "css": {
-          "type": "text",
+          "type": "code",
           "description": "Stylesheets.",
           "placeholder": "<style> /* CSS goes here. */ </style>."
         },
         "scripts": {
-          "type": "text",
+          "type": "code",
           "description": "Javascript.",
           "placeholder": "<script> /* Javascript goes here. */ </script>."
         },
         "body": {
-          "type": "text",
+          "type": "code",
           "description": "Body HTML.",
           "placeholder": "<body> </body>"
         }
