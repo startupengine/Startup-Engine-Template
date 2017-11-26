@@ -1,5 +1,5 @@
 <style>
-    .section #articles p {
+    #articles.card-deck p {
         font-size:133%;
     }
 </style>
