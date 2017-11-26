@@ -2,7 +2,7 @@
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper" style="background:#000;">
     <div class="page-header page-header-small bg-gradient-purple">
-        <div class="page-header-image" <?php if($post->json()->image !== null) { echo "style=\"background-image:url('".$post->json()->image."'); background-size:cover;z-index: 0;opacity: 0.3; \""; } ?>>
+        <div class="page-header-image" <?php if($post->background() !== null) { echo "style=\"background-image:url('".$post->background()."'); background-size:cover;z-index: 0;opacity: 0.3; \""; } ?>>
         </div>
         <div class="container">
             <div class="content-center">
@@ -24,3 +24,18 @@
             <div class="col-lg-12 col-md-12">
                 <div id="articles" class="card-deck">
                     <div class="col-md-12" href="/content/post-with-video-2"><div class="card" style="box-shadow:0px -30px 60px rgba(0,0,0,0.2);"><div class="card-body">
+                                <?php if($post->content()!== null && $post->content()->body->video !== null){ ?>
+                                    <?php $video = $post->content()->body->video; ?>
+                                    <?php $videotype = $post->videoType($video); ?>
+                                    <?php
+                                        if($videotype == "youtube") {
+                                            $url = $video;
+                                            parse_str( parse_url( $url, PHP_URL_QUERY ), $array );
+                                            $video = $array['v'];
+                                        }
+                                        if($videotype == "vimeo") {
+                                            $video = (int) substr(parse_url($video, PHP_URL_PATH), 1);
+                                        }
+                                    ?>
+                                    <div data-type="{{ $videotype }}" data-video-id="{{ $video }}"></div>
+                                <?php } ?>

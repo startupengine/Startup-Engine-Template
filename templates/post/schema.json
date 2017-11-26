@@ -71,8 +71,8 @@
         "body": {
           "type": "code",
           "mode": "html",
-          "description": "Body HTML.",
-          "placeholder": "<body> </body>"
+          "description": "Custom HTML. If you write code here, it will be displayed instead of the default HTML layout.",
+          "placeholder": "This code appears inside the <body> tag."
         }
       },
       "Meta": {
