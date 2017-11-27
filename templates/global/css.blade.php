@@ -132,7 +132,21 @@
             color:#fff !important;
         }
     }
+    @media screen and (min-width:991px) {
+        .hiddenOnMobile {
+            display: none !important;
+        }
+        .hiddenOnDesktop {
+            display:block !important;
+        }
+    }
     @media screen and (max-width: 991px) {
+        .hiddenOnMobile {
+            display: block !important;
+        }
+        .hiddenOnDesktop {
+            display:none !important;
+        }
         #mobile-nav-brand {
             display:block;
         }
@@ -154,15 +168,6 @@
     #articles-index .page-header:before {
         background: none !important;
     }
-    #particles-js{
-        position:absolute;
-        width: 100%;
-        height: 100%;
-        background-color: #fff;
-        background-image: url("");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50% 50%; }
 
     .page-header h1, .main h1 {
         font-weight:600 !important;
