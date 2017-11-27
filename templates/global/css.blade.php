@@ -134,18 +134,18 @@
     }
     @media screen and (min-width:991px) {
         .hiddenOnMobile {
-            display: none !important;
-        }
-        .hiddenOnDesktop {
-            display:block !important;
-        }
-    }
-    @media screen and (max-width: 991px) {
-        .hiddenOnMobile {
             display: block !important;
         }
         .hiddenOnDesktop {
             display:none !important;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .hiddenOnMobile {
+            display: none !important;
+        }
+        .hiddenOnDesktop {
+            display:block !important;
         }
         #mobile-nav-brand {
             display:block;
