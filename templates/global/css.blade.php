@@ -134,7 +134,7 @@
     }
     @media screen and (min-width:991px) {
         .hiddenOnMobile {
-            display: block !important;
+            display: inherit !important;
         }
         .hiddenOnDesktop {
             display:none !important;
@@ -145,7 +145,7 @@
             display: none !important;
         }
         .hiddenOnDesktop {
-            display:block !important;
+            display:inherit !important;
         }
         #mobile-nav-brand {
             display:block;
