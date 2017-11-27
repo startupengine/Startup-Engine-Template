@@ -1,5 +1,5 @@
 <style>
-    #articles.card-deck p {
+    #articles.card-deck > container p {
         font-size:133%;
     }
 </style>
