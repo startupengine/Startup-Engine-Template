@@ -1,4 +1,9 @@
 <body class="index-page sidebar-collapse" id="articles-index">
+
+@if(View::exists('theme.templates.global.menu'))
+    @include('theme.templates.global.menu')
+@endif
+
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper" style="background:#000;">
     <div class="page-header page-header-small bg-gradient-purple">
