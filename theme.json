@@ -8,6 +8,14 @@
   "schemas": ["post", "faq"],
   "disable_schemas": [],
   "settings": {
+    "site.homepage" : {
+      "display_name" : "Homepage Slug",
+      "group": "Site",
+      "key" : "site.homepage",
+      "status": "PRIVATE",
+      "type": "text",
+      "value": "home"
+    },
     "site.menu" : {
       "display_name" : "Theme Menu",
       "group": "Theme",
