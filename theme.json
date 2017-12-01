@@ -2,7 +2,7 @@
   "name": "Default Theme",
   "slug": "default-theme",
   "version": "0.1",
-  "description": "A basic Startup Engine theme for startups.",
+  "description": "A basic Startup Engine theme with Post, FAQ, & Help content types.",
   "image": "https://psychoanalytics.s3-us-west-1.amazonaws.com/pages/products/wDtDs4wlcXUsoRylE1PkinplrNO3PzRM0rWQj6tV.jpeg",
   "modules": [],
   "schemas": ["post", "faq"],
