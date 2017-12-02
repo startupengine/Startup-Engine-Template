@@ -146,6 +146,12 @@
           "slug": "slug",
           "description": "A unique slug for tracking this variation.",
           "placeholder": "Name it clearly."
+        },
+        "variation_description": {
+          "type": "textarea",
+          "slug": "description",
+          "description": "A description of this variation.",
+          "placeholder": "Describe this variation clearly."
         }
       }
     }
