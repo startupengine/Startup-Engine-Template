@@ -143,6 +143,7 @@
       "fields": {
         "slug": {
           "type": "text",
+          "slug": "slug",
           "description": "A unique slug for tracking this variation.",
           "placeholder": "Name it clearly."
         }
