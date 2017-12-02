@@ -1,3 +1,4 @@
+<!-- UX -->
 <script type="text/javascript">
     function scrollToMore() {
         if ($('#more').length != 0) {
@@ -7,7 +8,8 @@
         }
     }
 </script>
-<!-- start Mixpanel -->
+
+<!-- Mixpanel -->
 <script type="text/javascript">
     (function (e, a) {
         if (!a.__SV) {
@@ -86,7 +88,9 @@
     });
 
 </script>
-<!-- end Mixpanel -->
-<script src='https://app.psychoanalytics.io/js/v1?site-id=Mr276KRB8nYR'></script>
+
+<!-- Plyr -->
 <script>plyr.setup();</script>
+
+<!-- Custom Scripts -->
 <?php if(setting('theme.global_scripts') !== null) { echo setting('theme.global_scripts'); } ?>
