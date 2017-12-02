@@ -26,6 +26,13 @@
           "slug": "background",
           "description": "Url for a background image (optional).",
           "placeholder": "http://www.example.com"
+        },
+        "html": {
+          "type": "code",
+          "mode": "html",
+          "slug": "html",
+          "description": "Custom HTML.",
+          "placeholder": "<div></div>"
         }
       }
     },
