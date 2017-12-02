@@ -27,6 +27,12 @@
           "description": "Url for a background image (optional).",
           "placeholder": "http://www.example.com"
         },
+        "intro": {
+          "type": "richtext",
+          "slug": "intro",
+          "description": "Write a bit of intro text (optional).",
+          "placeholder": "Something exciting goes here..."
+        },
         "html": {
           "type": "code",
           "mode": "html",
