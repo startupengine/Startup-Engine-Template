@@ -11,16 +11,19 @@
       "fields": {
         "headline": {
           "type": "text",
+          "slug": "headline",
           "description": "A short summary of the page.",
           "placeholder": "Write a headline."
         },
         "button": {
           "type": "text",
+          "slug": "button",
           "description": "A short call to action phrase.",
           "placeholder": "Learn More"
         },
         "background": {
           "type": "text",
+          "slug": "background",
           "description": "Url for a background image (optional).",
           "placeholder": "http://www.example.com"
         }
@@ -32,26 +35,31 @@
       "fields": {
         "headline": {
           "type": "text",
+          "slug": "headline",
           "description": "A short summary of the feature's benefit.",
           "placeholder": "Write a headline."
         },
         "message": {
           "type": "textarea",
+          "slug": "message",
           "description": "One or two lines about the benefit.",
           "placeholder": "Write a message."
         },
         "image": {
           "type": "text",
+          "slug": "image",
           "description": "A relevant image.",
           "placeholder": "http://..."
         },
         "button": {
           "type": "text",
+          "slug": "button",
           "description": "A short call to action phrase.",
           "placeholder": "Learn More"
         },
         "link": {
           "type": "text",
+          "slug": "link",
           "description": "A url to link to. (optional)",
           "placeholder": "http://www.example.com"
         }
@@ -63,27 +71,32 @@
       "fields": {
         "headline": {
           "type": "text",
+          "slug": "headline",
           "description": "A short summary of the feature's benefit.",
           "placeholder": "Write a headline."
         },
         "message": {
           "type": "textarea",
+          "slug": "message",
           "description": "One or two lines about the benefit.",
           "placeholder": "Write a message."
         },
         "image": {
           "type": "text",
+          "slug": "image",
           "description": "A relevant image.",
           "placeholder": "http://..."
         },
         "button": {
           "type": "text",
+          "slug": "button",
           "description": "A short call to action phrase.",
           "placeholder": "Learn More"
         },
         "link": {
           "type": "text",
-          "description": "A url to link to. (Optional)",
+          "slug": "link",
+          "description": "A url to link to. (optional)",
           "placeholder": "http://www.example.com"
         }
       }
@@ -94,27 +107,32 @@
       "fields": {
         "headline": {
           "type": "text",
+          "slug": "headline",
           "description": "A short summary of the feature's benefit.",
           "placeholder": "Write a headline."
         },
         "message": {
           "type": "textarea",
+          "slug": "message",
           "description": "One or two lines about the benefit.",
           "placeholder": "Write a message."
         },
         "image": {
           "type": "text",
+          "slug": "image",
           "description": "A relevant image.",
           "placeholder": "http://..."
         },
         "button": {
           "type": "text",
+          "slug": "button",
           "description": "A short call to action phrase.",
           "placeholder": "Learn More"
         },
         "link": {
           "type": "text",
-          "description": "A url to link to. (Optional)",
+          "slug": "link",
+          "description": "A url to link to. (optional)",
           "placeholder": "http://www.example.com"
         }
       }
