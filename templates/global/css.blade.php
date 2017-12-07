@@ -150,6 +150,12 @@
         #mobile-nav-brand {
             display:block;
         }
+        #navigation .nav-link {
+            background:#fff !important;
+            color: #222 !important;
+            border:1px solid royalblue !important;
+            border-radius:25px !important;
+        }
         #navigation .nav-link:not(.btn):hover {
             background:#fff !important;
             color: #222 !important;
