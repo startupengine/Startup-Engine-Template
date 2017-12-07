@@ -151,6 +151,8 @@
         }
         #mobile-nav-brand {
             display:block;
+        }
+        #mobile-nav-brand .nav-brand {
             color:#222 !important;
         }
         #navigation .nav-link, #navigation .btn {
