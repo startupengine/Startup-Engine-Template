@@ -4,7 +4,7 @@
     Vue.component('heading', {
         props: ['page'],
         template: '<div>' +
-        '<div class="section particles-js bg-gradient-blue"  v-bind:style="{ backgroundImage: "url(" + page.json.heading.background + ")", }">' +
+        '<div class="section particles-js bg-gradient-blue" v-bind:style="{ backgroundImage: `url("${page.json.heading.background}")` }" +
         '<div class="space-50"></div>' +
         '<div class="container text-center">' +
         '<div class="row justify-content-md-center" align="center" id="heading-section">' +
@@ -19,44 +19,41 @@
     });
     Vue.component('feature1', {
         props: ['page'],
-        template:
-        '<div class="row">'+
+        template: '<div class="row">' +
         '<div class="col-md-6">' +
         '<h2 >{{ page.json.feature1.headline }}</h2>' +
         '<h5 class="description" style="text-align:left;color:#000;">{{ page.json.feature1.message }}</h5>' +
         '<div align="left" v-if="page.json.feature1.link !== null"><a class="btn btn-primary btn-simple" v-bind:href="page.json.feature1.link">{{ page.json.feature1.button }}</a></div>' +
-        '</div>'+
-        '<div class="col-md-6">'+
-        '<a href="#" v-bind:href="page.json.feature1.link"><img class=" rounded" :src="page.json.feature1.image" /></a>'+
-        '</div>'+
+        '</div>' +
+        '<div class="col-md-6">' +
+        '<a href="#" v-bind:href="page.json.feature1.link"><img class=" rounded" :src="page.json.feature1.image" /></a>' +
+        '</div>' +
         '</div>'
     });
     Vue.component('feature2', {
         props: ['page'],
-        template:
-        '<div class="row">'+
-        '<div class="col-md-6">'+
-        '<a href="#" v-bind:href="page.json.feature2.link"><img class=" rounded" :src="page.json.feature2.image" /></a>'+
-        '</div>'+
+        template: '<div class="row">' +
+        '<div class="col-md-6">' +
+        '<a href="#" v-bind:href="page.json.feature2.link"><img class=" rounded" :src="page.json.feature2.image" /></a>' +
+        '</div>' +
         '<div class="col-md-6">' +
         '<h2>{{ page.json.feature2.headline }}</h2>' +
         '<h5 class="description" style="text-align:left;color:#000;">{{ page.json.feature2.message }}</h5>' +
         '<div align="left" v-if="page.json.feature2.link !== null"><a class="btn btn-primary btn-simple" v-bind:href="page.json.feature2.link">{{ page.json.feature2.button }}</a></div>' +
-        '</div>'+
+        '</div>' +
         '</div>'
     });
     Vue.component('feature3', {
         props: ['page'],
-        template:
-        '<div class="row">'+
-            '<div class="col-md-6">' +
-                '<h2 >{{ page.json.feature3.headline }}</h2>' +
-                '<h5 class="description" style="text-align:left;color:#000;">{{ page.json.feature3.message }}</h5>' +
-                '<div align="left" v-if="page.json.feature3.link !== null"><a class="btn btn-primary btn-simple" v-bind:href="page.json.feature3.link">{{ page.json.feature3.button }}</a></div>' +
-            '</div>'+
-            '<div class="col-md-6">'+
-            '<a href="#" v-bind:href="page.json.feature3.link"><img class=" rounded" :src="page.json.feature3.image" /></a>'+
-            '</div>'+
+        template: '<div class="row">' +
+        '<div class="col-md-6">' +
+        '<h2 >{{ page.json.feature3.headline }}</h2>' +
+        '<h5 class="description" style="text-align:left;color:#000;">{{ page.json.feature3.message }}</h5>' +
+        '<div align="left" v-if="page.json.feature3.link !== null"><a class="btn btn-primary btn-simple" v-bind:href="page.json.feature3.link">{{ page.json.feature3.button }}</a></div>' +
+        '</div>' +
+        '<div class="col-md-6">' +
+        '<a href="#" v-bind:href="page.json.feature3.link"><img class=" rounded" :src="page.json.feature3.image" /></a>' +
+        '</div>' +
         '</div>'
     });
     var page = new Vue({
