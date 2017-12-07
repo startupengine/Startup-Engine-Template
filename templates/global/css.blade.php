@@ -73,6 +73,10 @@
         .sidebar-collapse .navbar .navbar-nav {
             margin-top: 15px !important;
         }
+
+        .sidebar-collapse  .navbar-brand {
+            color:#222 !important;
+        }
     }
     h1.title {
         font-weight:400 !important;
@@ -170,9 +174,6 @@
         }
         #navigation {
             background: #fff !important;box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 120px !important;
-        }
-        .navbar-brand {
-            color:#222 !important;
         }
     }
     #nav-cta {
