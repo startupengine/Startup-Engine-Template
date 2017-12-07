@@ -188,7 +188,7 @@
     }
 
     .navbar-brand {
-        color:#222;
+        color:#222 !important;
     }
 
     #engage:hover {
