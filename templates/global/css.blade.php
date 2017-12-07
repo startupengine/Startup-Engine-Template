@@ -74,9 +74,7 @@
             margin-top: 15px !important;
         }
 
-        .sidebar-collapse  .navbar-brand {
-            color:#222 !important;
-        }
+
     }
     h1.title {
         font-weight:400 !important;
@@ -153,6 +151,7 @@
         }
         #mobile-nav-brand {
             display:block;
+            color:#222 !important;
         }
         #navigation .nav-link, #navigation .btn {
             background:#fff !important;
