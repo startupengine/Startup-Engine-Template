@@ -153,7 +153,7 @@
         #navigation .nav-link, #navigation .btn {
             background:#fff !important;
             color: #222 !important;
-            border:1px solid royalblue;
+            border:1px solid royalblue !important;
             border-radius:25px !important;
         }
 
@@ -164,8 +164,6 @@
         #navigation .nav-link:not(.btn):hover {
             background:#fff !important;
             color: #222 !important;
-            border:1px solid royalblue !important;
-            border-radius:25px !important;
         }
         .navbar-transparent #nav-cta {
             color:#fff !important;
