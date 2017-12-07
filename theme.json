@@ -23,6 +23,13 @@
       "status": "PRIVATE",
       "type": "textarea"
     },
+    "site.name" : {
+      "display_name" : "Site Name",
+      "group": "Site",
+      "key" : "site.name",
+      "status": "PRIVATE",
+      "type": "text"
+    },
     "site.settings_description" : {
       "display_name" : "Description of this group of settings.",
       "group": "Site",
