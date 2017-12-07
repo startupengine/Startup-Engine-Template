@@ -158,7 +158,7 @@
             color:#fff !important;
         }
         #navigation {
-            background: #0e142b !important;box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 120px !important;
+            background: #222 !important;box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 120px !important;
         }
     }
     #nav-cta {
