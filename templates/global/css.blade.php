@@ -175,4 +175,9 @@
     .page-header h2, .main h2, .page-header h3, .main h3, .page-header h4, .main h4, .page-header h5, .main h5{
         font-weight:400 !important;
     }
+
+    #engage:hover {
+        color:#222 !important;
+        background:#fff !important;
+    }
 </style>
