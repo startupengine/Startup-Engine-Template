@@ -3,7 +3,7 @@
     <div class="container">
         <div class="navbar-translate">
             <a class="navbar-brand" href="/" rel="tooltip" title="{{ setting('site.description') }}" data-placement="bottom">
-                <?php if(setting('site.logo') !== null) { ?><img src="{{ setting('site.logo') }}" alt="Logo Icon" style="max-width:40px;"> <?php } ?>{{ setting('site.title') }}
+                <?php if(setting('site.logo') !== null) { ?><img src="{{ setting('site.logo') }}" alt="Logo Icon" style="max-width:40px;"> <?php } ?>{{ setting('site.name') }}
             </a>
             <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-bar bar1"></span>
@@ -15,7 +15,7 @@
             <div id="mobile-nav-brand" align="center" style="
     margin-top: 25px;
 "> <a class="navbar-brand" href="/" style="margin:0px;text-align:center;">
-                    <?php if(setting('site.logo') !== null) { ?><img src="{{ setting('site.logo') }}" alt="Logo Icon" style="max-width:40px;"> <?php } ?>{{ setting('site.title') }}</span>
+                    <?php if(setting('site.logo') !== null) { ?><img src="{{ setting('site.logo') }}" alt="Logo Icon" style="max-width:40px;"> <?php } ?>{{ setting('site.name') }}</span>
                 </a>
             </div>
             <ul class="navbar-nav">
