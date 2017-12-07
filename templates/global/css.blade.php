@@ -187,6 +187,10 @@
         font-weight:400 !important;
     }
 
+    .navbar-brand {
+        color:#222;
+    }
+
     #engage:hover {
         color:#222 !important;
         background:#fff !important;
