@@ -153,7 +153,7 @@
         #navigation .nav-link, #navigation .btn {
             background:#fff !important;
             color: #222 !important;
-            border:1px solid royalblue !important;
+            border:1px solid royalblue;
             border-radius:25px !important;
         }
 
