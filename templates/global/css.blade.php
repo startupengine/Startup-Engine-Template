@@ -158,7 +158,7 @@
         }
 
         #navigation .nav-link:hover, #navigation .btn:hover {
-            border-color:#222 !important;
+            border:1px solid #222 !important;
         }
 
         #navigation .nav-link:not(.btn):hover {
