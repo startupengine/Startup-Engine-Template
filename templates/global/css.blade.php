@@ -153,12 +153,14 @@
         #navigation .nav-link:not(.btn):hover {
             background:#fff !important;
             color: #222 !important;
+            border:1px solid royalblue !important;
+            border-radius:25px !important;
         }
         .navbar-transparent #nav-cta {
             color:#fff !important;
         }
         #navigation {
-            background: #222 !important;box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 120px !important;
+            background: #fff !important;box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 120px !important;
         }
     }
     #nav-cta {
