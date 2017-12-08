@@ -188,7 +188,7 @@
     },
     "call-to-action": {
       "title": "Call To Action",
-      "slug": "call-toa-ction",
+      "slug": "call-to-action",
       "fields": {
         "headline": {
           "type": "text",
