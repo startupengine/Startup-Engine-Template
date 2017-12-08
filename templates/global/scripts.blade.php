@@ -3,7 +3,7 @@
     function scrollToMore() {
         if ($('#more').length != 0) {
             $("html, body").animate({
-                scrollTop: $('#more').offset().top - 100
+                scrollTop: $('#more').offset().top - 50
             }, 300);
         }
     }
