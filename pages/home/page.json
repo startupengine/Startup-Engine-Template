@@ -186,9 +186,9 @@
         }
       }
     },
-    "call-to-action": {
+    "calltoaction": {
       "title": "Call To Action",
-      "slug": "call-to-action",
+      "slug": "calltoaction",
       "fields": {
         "headline": {
           "type": "text",
