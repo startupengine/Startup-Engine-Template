@@ -187,10 +187,10 @@
 
     .page-header h1, .main h1 {
         font-weight:600 !important;
-        text-shadow: 0px 0px 10px #000 !important;
+        text-shadow: 0px 0px 15px #000 !important;
     }
     .page-header p, .main p {
-        text-shadow: 0px 0px 10px #000 !important;
+        text-shadow: 0px 0px 15px #000 !important;
     }
     .page-header h2, .main h2, .page-header h3, .main h3, .page-header h4, .main h4, .page-header h5, .main h5{
         font-weight:400 !important;
