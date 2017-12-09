@@ -261,14 +261,14 @@
         "feature3": {
           "headline": "Sell Your Product",
           "message": "With integrations for Stripe, Shopify, and ServiceBot, you can easily sell content, physical products, or software via one-time purchases or subscriptions.",
-          "image": "https:\/\/images.unsplash.com\/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=2066&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+          "image": "https:\/\/images.unsplash.com\/photo-1421757381940-5d269570b21c?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
           "button": "E-Commerce Features",
           "link": "\/ecommerce"
         },
         "feature4": {
           "headline": "Add Your Own Features",
           "message": "StartupEngine is completely open-source and extensible. Customize it by adding packages built by the community, or make your own.",
-          "image": "https:\/\/images.unsplash.com\/photo-1421757381940-5d269570b21c?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+          "image": "https:\/\/images.unsplash.com\/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
           "button": "Explore Packages",
           "link": "\/packages"
         },
