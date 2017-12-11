@@ -11,7 +11,7 @@
         '<div class="col-md-12" style="margin-bottom:0px;margin-top:25px;">' +
         '<h2 class="title" style="width:100%;color:#fff;">{{ page.json.heading.headline }}</h2>' +
         '<p style="margin-left:25px;margin-right:25px;" v-if="page.json.heading.intro !== null">{{ page.json.heading.intro }}</p>' +
-        '<a href="javascript:void(0)" onclick="scrollToMore()" class="btn btn-lg btn-round btn-neutral btn-lg btn-simple" id="engage"> {{ page.json.heading.button }}</a>' +
+        '<a v-if="page.json.heading.button !== null" href="javascript:void(0)" onclick="scrollToMore()" class="btn btn-lg btn-round btn-neutral btn-lg btn-simple" id="engage"> {{ page.json.heading.button }}</a>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -20,7 +20,7 @@
     });
     Vue.component('feature1', {
         props: ['page'],
-        template: '<div class="row">' +
+        template: '<div class="row" v-if="page.json.feature1.headline !== null">' +
         '<div class="col-md-6">' +
         '<h2 >{{ page.json.feature1.headline }}</h2>' +
         '<h5 class="description" style="text-align:left;color:#000;">{{ page.json.feature1.message }}</h5>' +
@@ -33,7 +33,7 @@
     });
     Vue.component('feature2', {
         props: ['page'],
-        template: '<div class="row">' +
+        template: '<div class="row" v-if="page.json.feature2.headline !== null">' +
         '<div class="col-md-6">' +
         '<a href="#" v-bind:href="page.json.feature2.link"><img class=" rounded" :src="page.json.feature2.image" /></a>' +
         '</div>' +
@@ -46,7 +46,7 @@
     });
     Vue.component('feature3', {
         props: ['page'],
-        template: '<div class="row">' +
+        template: '<div class="row" v-if="page.json.feature3.headline !== null">' +
         '<div class="col-md-6">' +
         '<h2 >{{ page.json.feature3.headline }}</h2>' +
         '<h5 class="description" style="text-align:left;color:#000;">{{ page.json.feature3.message }}</h5>' +
@@ -59,7 +59,7 @@
     });
     Vue.component('feature4', {
         props: ['page'],
-        template: '<div class="row">' +
+        template: '<div class="row" v-if="page.json.feature4.headline !== null">' +
         '<div class="col-md-6">' +
         '<a href="#" v-bind:href="page.json.feature4.link"><img class=" rounded" :src="page.json.feature4.image" /></a>' +
         '</div>' +
@@ -72,7 +72,7 @@
     });
     Vue.component('calltoaction', {
         props: ['page'],
-        template: '<div class="row">' +
+        template: '<div class="row" v-if="page.json.calltoaction.headline !== null">' +
         '<div class="col-md-12">' +
         '<h2>{{ page.json.calltoaction.headline }}</h2>' +
         '<h5 class="description" style="text-align:left;color:#000;">{{ page.json.calltoaction.message }}</h5>' +
