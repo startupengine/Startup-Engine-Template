@@ -9,18 +9,12 @@
                 v-bind:href="item.slug">
         </heading>
     </div>
-    <div class="section" id="more">
-        <div class="container text-center">
-            <div class="row justify-content-md-center" id="feature1">
-                <feature1
-                        v-for="item in items"
-                        v-bind:page="item"
-                        v-bind:key="item.id"
-                        v-bind:href="item.slug">
-                </feature1>
-            </div>
-        </div>
-    </div>
+    <feature1
+            v-for="item in items"
+            v-bind:page="item"
+            v-bind:key="item.id"
+            v-bind:href="item.slug">
+    </feature1>
     <div class="section" id="more" style="background: #fff;">
         <div class="container text-center">
             <div class="row justify-content-md-center" id="feature2">
