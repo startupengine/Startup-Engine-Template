@@ -24,9 +24,9 @@
         background:transparent !important;
     }
     .bg-gradient-blue {
-        background: royalblue;
-        background: -webkit-linear-gradient(to right, royalblue, #00adff);
-        background: linear-gradient(to right, royalblue, #00adff);
+        background: royalblue !important;
+        background: -webkit-linear-gradient(to right, royalblue, #00adff) !important;
+        background: linear-gradient(to right, royalblue, #00adff) !important;
         color:#fff !important;
     }
     .bg-gradient-orange {
