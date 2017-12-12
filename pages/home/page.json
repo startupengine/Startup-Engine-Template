@@ -46,7 +46,7 @@
           "slug": "headersize",
           "description": "How big should the page header be?",
           "placeholder": "Select a size"
-        }
+        },
         "footer": {
           "type": "code",
           "mode": "html",
