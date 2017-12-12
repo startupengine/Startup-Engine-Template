@@ -40,6 +40,13 @@
           "description": "A url to link to. (optional)",
           "placeholder": "http://www.example.com"
         },
+        "headersize": {
+          "type": "select",
+          "options": ["large", "small"],
+          "slug": "headersize",
+          "description": "How big should the page header be?",
+          "placeholder": "Select a size"
+        }
         "footer": {
           "type": "code",
           "mode": "html",
