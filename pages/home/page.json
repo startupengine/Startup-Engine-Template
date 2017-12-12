@@ -45,7 +45,7 @@
           "slug": "footer",
           "description": "Custom HTML after this section (optional)",
           "placeholder": "<section> This is example content. </section>"
-        },
+        }
       }
     },
     "feature1": {
