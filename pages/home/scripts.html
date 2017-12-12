@@ -78,25 +78,6 @@
         '</div>' +
         '</div>'
     });
-    Vue.component('feature4', {
-        props: ['page'],
-        template: '<div class="section" v-if="page.json.feature4.headline !== null">' +
-        '<div class="container text-center">' +
-        '<div class="row justify-content-md-center" id="feature4" >' +
-        '<div class="row">' +
-        '<div class="col-md-6">' +
-        '<a href="#" v-bind:href="page.json.feature4.link"><img class=" rounded" :src="page.json.feature4.image" /></a>' +
-        '</div>' +
-        '<div class="col-md-6">' +
-        '<h2>{{ page.json.feature4.headline }}</h2>' +
-        '<h5 class="description" style="text-align:left;color:#000;">{{ page.json.feature4.message }}</h5>' +
-        '<div align="center" v-if="page.json.feature4.link !== null"><a class="btn btn-lg btn-round btn-primary btn-simple" v-bind:href="page.json.feature4.link">{{ page.json.feature4.button }}</a></div>' +
-        '</div>' +
-        '</div>' +
-        '</div>' +
-        '</div>' +
-        '</div>'
-    });
     Vue.component('calltoaction', {
         props: ['page'],
         template:
