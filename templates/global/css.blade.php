@@ -99,7 +99,7 @@
         background: linear-gradient(0deg, rgba(44, 44, 44, 0), rgba(224, 23, 3, 0.6));
     }
     .page-header.page-header-small {
-        max-height:auto !important;
+        max-height:none !important;
     }
     #disqus_thread {
         padding:15px;
