@@ -16,7 +16,8 @@
           "placeholder": "Write a headline."
         },
         "button": {
-          "type": "richtext",
+          "type": "code",
+          "mode": "html",
           "slug": "button",
           "description": "A short call to action phrase.",
           "placeholder": "Learn More"
@@ -40,7 +41,8 @@
           "placeholder": "http://www.example.com"
         },
         "footer": {
-          "type": "richtext",
+          "type": "code",
+          "mode": "html",
           "slug": "footer",
           "description": "Custom HTML after this section (optional)",
           "placeholder": "<section> This is example content. </section>"
