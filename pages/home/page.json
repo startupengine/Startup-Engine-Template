@@ -16,7 +16,7 @@
           "placeholder": "Write a headline."
         },
         "button": {
-          "type": "text",
+          "type": "richtext",
           "slug": "button",
           "description": "A short call to action phrase.",
           "placeholder": "Learn More"
