@@ -33,13 +33,19 @@
           "description": "Write a bit of intro text (optional).",
           "placeholder": "Something exciting goes here..."
         },
-        "html": {
+        "link": {
+          "type": "text",
+          "slug": "link",
+          "description": "A url to link to. (optional)",
+          "placeholder": "http://www.example.com"
+        },
+        "footer": {
           "type": "code",
           "mode": "html",
-          "slug": "html",
-          "description": "Custom HTML.",
-          "placeholder": "<div></div>"
-        }
+          "slug": "footer",
+          "description": "Custom HTML after this section (optional)",
+          "placeholder": "<section> This is example content. </section>"
+        },
       }
     },
     "feature1": {
@@ -241,6 +247,7 @@
         "heading": {
           "headline": "The Launch-Your-Own-Startup App",
           "button": "Learn More",
+          "link": "\/analytics",
           "background": "https:\/\/images.unsplash.com\/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
           "intro": "Automatically market, validate, sell, and grow your business."
         },
