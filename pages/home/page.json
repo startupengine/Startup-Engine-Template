@@ -40,8 +40,7 @@
           "placeholder": "http://www.example.com"
         },
         "footer": {
-          "type": "code",
-          "mode": "html",
+          "type": "richtext",
           "slug": "footer",
           "description": "Custom HTML after this section (optional)",
           "placeholder": "<section> This is example content. </section>"
