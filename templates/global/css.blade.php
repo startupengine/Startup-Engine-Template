@@ -73,7 +73,9 @@
         .sidebar-collapse .navbar .navbar-nav {
             margin-top: 15px !important;
         }
-
+        .page-header {
+            min-height: 100vh !important;
+        }
 
     }
     h1.title {
