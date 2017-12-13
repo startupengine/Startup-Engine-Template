@@ -22,6 +22,7 @@
                         '<h1 class="title text-center">{{ page.json.heading.headline }}</h1>' +
                         '<h3 class="description text-center" v-if="page.json.heading.intro !== null">{{ page.json.heading.intro }}</h3>' +
                         '<a v-if="page.json.heading.button !== null" v-html="page.json.heading.button" href="javascript:void(0)" onclick="scrollToMore()" class="btn btn-lg btn-round btn-neutral btn-lg btn-simple" id="engage"> {{ page.json.heading.button }}</a>' +
+                    '</div>' +
                 '</div>' +
             '</div>' +
             '<div id="headingFooter" v-if="page.json.heading.footer !== null" v-html="page.json.heading.footer" class="section bg-gradient-blue" style="text-align: center;padding: 15px;">{{ page.json.heading.footer }}</div>' +
@@ -30,7 +31,8 @@
 
     Vue.component('feature1', {
         props: ['page'],
-        template: '<div class="section" id="more" v-if="page.json.feature1.headline !== null">' +
+        template: '<div>' +
+        '<div class="section" id="more" v-if="page.json.feature1.headline !== null">' +
         '<div class="container text-center">' +
         '<div class="row justify-content-md-center" id="feature1">' +
         '<div class="row">' +
@@ -45,11 +47,14 @@
         '</div>' +
         '</div>' +
         '</div>' +
+        '<div id="feature1Footer" v-if="page.json.feature1.footer !== null" v-html="page.json.feature1.footer" class="section bg-gradient-blue" style="text-align: center;padding: 15px;">{{ page.json.feature1.footer }}</div>' +
         '</div>'
     });
     Vue.component('feature2', {
         props: ['page'],
-        template: '<div class="section" id="more" style="background: #fff;"  v-if="page.json.feature2.headline !== null">' +
+        template:
+        '<div>' +
+        '<div class="section" id="more" style="background: #fff;"  v-if="page.json.feature2.headline !== null">' +
         '<div class="container text-center">' +
         '<div class="row justify-content-md-center" id="feature2">' +
         '<div class="row">' +
@@ -64,11 +69,13 @@
         '</div>' +
         '</div>' +
         '</div>' +
+        '<div id="feature2Footer" v-if="page.json.feature2.footer !== null" v-html="page.json.feature2.footer" class="section bg-gradient-blue" style="text-align: center;padding: 15px;">{{ page.json.feature2.footer }}</div>' +
         '</div>'
     });
     Vue.component('feature3', {
         props: ['page'],
-        template: '<div class="section" v-if="page.json.feature3.headline !== null">' +
+        template: '<div>' +
+        '<div class="section" v-if="page.json.feature3.headline !== null">' +
         '<div class="container text-center">' +
         '<div class="row justify-content-md-center" id="feature3">' +
         '<div class="row">' +
@@ -83,6 +90,7 @@
         '</div>' +
         '</div>' +
         '</div>' +
+        '<div id="headingFooter" v-if="page.json.heading.footer !== null" v-html="page.json.heading.footer" class="section bg-gradient-blue" style="text-align: center;padding: 15px;">{{ page.json.heading.footer }}</div>' +
         '</div>'
     });
     Vue.component('calltoaction', {

@@ -89,6 +89,13 @@
           "slug": "link",
           "description": "A url to link to. (optional)",
           "placeholder": "http://www.example.com"
+        },
+        "footer": {
+          "type": "code",
+          "mode": "html",
+          "slug": "footer",
+          "description": "Custom HTML after this section (optional)",
+          "placeholder": "<section> This is example content. </section>"
         }
       }
     },
@@ -125,6 +132,13 @@
           "slug": "link",
           "description": "A url to link to. (optional)",
           "placeholder": "http://www.example.com"
+        },
+        "footer": {
+          "type": "code",
+          "mode": "html",
+          "slug": "footer",
+          "description": "Custom HTML after this section (optional)",
+          "placeholder": "<section> This is example content. </section>"
         }
       }
     },
@@ -161,6 +175,13 @@
           "slug": "link",
           "description": "A url to link to. (optional)",
           "placeholder": "http://www.example.com"
+        },
+        "footer": {
+          "type": "code",
+          "mode": "html",
+          "slug": "footer",
+          "description": "Custom HTML after this section (optional)",
+          "placeholder": "<section> This is example content. </section>"
         }
       }
     },
