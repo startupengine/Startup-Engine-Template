@@ -2,8 +2,8 @@
     Vue.component('todo-item', {
         props: ['todo'],
         template: '<div class="col-sm-4" style="margin-top:25px;"><a class="card-link" v-bind:href="todo.slug"><div class="card" style="height:100%;">' +
-        '<div v-if="todo.json.heading.background !== null" :style=\'{ backgroundImage: `url(${todo.json.heading.background})` }\' class="image-container"></div>' +
-        '<div class="card-body"><h4 class="card-title" align="center">{{ todo.title }}</h4><p class="card-text">{{ todo.json.heading.headline }}</p></div><div class="card-footer" align="center">Read More</div></div></a></div>'
+        '<div v-if="todo.json.versions.1heading.background !== null" :style=\'{ backgroundImage: `url(${todo.json.versions.1.heading.background})` }\' class="image-container"></div>' +
+        '<div class="card-body"><h4 class="card-title" align="center">{{ todo.title }}</h4><p class="card-text">{{ todo.json.versions.1.heading.headline }}</p></div><div class="card-footer" align="center">Read More</div></div></a></div>'
     });
     var app7 = new Vue({
         el: '#articles',
