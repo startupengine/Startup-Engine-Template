@@ -39,7 +39,7 @@
         '<div class="col-md-6">' +
         '<h2 >{{ page.json.feature1.headline }}</h2>' +
         '<h5 class="description" style="text-align:left;color:#000;">{{ page.json.feature1.message }}</h5>' +
-        '<div align="center" v-if="page.json.feature1.link !== null"><a class="btn btn-lg btn-round btn-primary btn-simple" v-bind:href="page.json.feature1.link">{{ page.json.feature1.button }}</a></div>' +
+        '<div align="center" v-if="page.json.feature1.link !== null"><a class="btn btn-lg btn-round btn-primary btn-simple" v-html="page.json.feature1.button" v-bind:href="page.json.feature1.link">{{ page.json.feature1.button }}</a></div>' +
         '</div>' +
         '<div class="col-md-6">' +
         '<a href="#" v-bind:href="page.json.feature1.link"><img class=" rounded" :src="page.json.feature1.image" /></a>' +
@@ -64,7 +64,7 @@
         '<div class="col-md-6">' +
         '<h2>{{ page.json.feature2.headline }}</h2>' +
         '<h5 class="description" style="text-align:left;color:#000;">{{ page.json.feature2.message }}</h5>' +
-        '<div align="center" v-if="page.json.feature2.link !== null"><a class="btn btn-lg btn-round btn-primary btn-simple" v-bind:href="page.json.feature2.link">{{ page.json.feature2.button }}</a></div>' +
+        '<div align="center" v-if="page.json.feature2.link !== null"><a class="btn btn-lg btn-round btn-primary btn-simple" v-html="page.json.feature2.button" v-bind:href="page.json.feature2.link">{{ page.json.feature2.button }}</a></div>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -82,7 +82,7 @@
         '<div class="col-md-6">' +
         '<h2 >{{ page.json.feature3.headline }}</h2>' +
         '<h5 class="description" style="text-align:left;color:#000;">{{ page.json.feature3.message }}</h5>' +
-        '<div align="center" v-if="page.json.feature3.link !== null"><a class="btn btn-lg btn-round btn-primary btn-simple" v-bind:href="page.json.feature3.link">{{ page.json.feature3.button }}</a></div>' +
+        '<div align="center" v-if="page.json.feature3.link !== null"><a class="btn btn-lg btn-round btn-primary btn-simple" v-html="page.json.feature3.button" v-bind:href="page.json.feature3.link">{{ page.json.feature3.button }}</a></div>' +
         '</div>' +
         '<div class="col-md-6">' +
         '<a href="#" v-bind:href="page.json.feature3.link"><img class=" rounded" :src="page.json.feature3.image" /></a>' +
@@ -103,7 +103,7 @@
         '<div class="col-md-12">' +
         '<h2>{{ page.json.calltoaction.headline }}</h2>' +
         '<h5 class="description" style="text-align:left;color:#000;text-align:center;">{{ page.json.calltoaction.message }}</h5>' +
-        '<div align="center" v-if="page.json.calltoaction.link !== null"><a class="btn btn-lg btn-round btn-primary btn-simple btn-lg" id="cta-button" style="box-shadow:0px 5px 15px rgba(0,0,0,0.2);" v-bind:href="page.json.calltoaction.link">{{ page.json.calltoaction.button }}</a></div>' +
+        '<div align="center" v-if="page.json.calltoaction.link !== null"><a class="btn btn-lg btn-round btn-primary btn-simple btn-lg" v-html="page.json.calltoaction.button" id="cta-button" style="box-shadow:0px 5px 15px rgba(0,0,0,0.2);" v-bind:href="page.json.calltoaction.link">{{ page.json.calltoaction.button }}</a></div>' +
         '</div>' +
         '</div>' +
         '</div>' +

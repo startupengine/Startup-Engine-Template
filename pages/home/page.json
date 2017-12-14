@@ -79,7 +79,8 @@
           "placeholder": "http://..."
         },
         "button": {
-          "type": "text",
+          "type": "code",
+          "mode": "html",
           "slug": "button",
           "description": "A short call to action phrase.",
           "placeholder": "Learn More"
@@ -122,7 +123,8 @@
           "placeholder": "http://..."
         },
         "button": {
-          "type": "text",
+          "type": "code",
+          "mode": "html",
           "slug": "button",
           "description": "A short call to action phrase.",
           "placeholder": "Learn More"
@@ -165,7 +167,8 @@
           "placeholder": "http://..."
         },
         "button": {
-          "type": "text",
+          "type": "code",
+          "mode": "html",
           "slug": "button",
           "description": "A short call to action phrase.",
           "placeholder": "Learn More"
@@ -202,7 +205,8 @@
           "placeholder": "Write a message."
         },
         "button": {
-          "type": "text",
+          "type": "code",
+          "mode": "html",
           "slug": "button",
           "description": "A short call to action phrase.",
           "placeholder": "Learn More"
