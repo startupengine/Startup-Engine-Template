@@ -213,4 +213,10 @@
         color:#222 !important;
         background:#fff !important;
     }
+
+    .card .h4 {
+        font-weight:600 !important;
+        text-shadow:none !important;
+        text-align:left !important;
+    }
 </style>
