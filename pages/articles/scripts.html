@@ -1,11 +1,11 @@
 <script>
-    Vue.component('articles', {
+    Vue.component('todo-item', {
         props: ['article'],
         template: '<div class="col-sm-4" style="margin-top:25px;"><a class="card-link" v-bind:href="todo.slug"><div class="card" style="height:100%;">' +
         '<div v-if="article.content.heading.background !== null" :style=\'{ backgroundImage: `url(${article.content.heading.background})` }\' class="image-container"></div>' +
         '<div class="card-body"><h4 class="card-title" align="center">{{ article.title }}</h4><p>{{article.content.heading.headline}}</p></div><div class="card-footer" align="center">Read More</div></div></a></div>'
     });
-    var app = new Vue({
+    var app7 = new Vue({
         el: '#articles',
         data: {
             items: null
