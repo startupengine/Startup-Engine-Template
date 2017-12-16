@@ -219,5 +219,6 @@
         text-shadow:none !important;
         text-align:left !important;
         font-size:225% !important;
+        color:#555 !important;
     }
 </style>
