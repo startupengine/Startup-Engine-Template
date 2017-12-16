@@ -1,7 +1,7 @@
 <body class="index-page sidebar-collapse">
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper">
-    <div class="page-header page-header-small clear-filter" filter-color="black" id="heading">
+    <div class="page-header page-header-small clear-filter" filter-color="black" id="heading" style="background-image:linear-gradient(rgba(0, 20, 119, 0.7), rgb(0, 0, 0)), url('{{$page->content()->heading->background}}');">
         <div class="page-header-image" data-parallax="true">
         </div>
         <div class="container">
