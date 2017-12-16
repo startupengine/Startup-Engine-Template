@@ -18,12 +18,12 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12">
                     <div id="articles" class="card-deck">
-                        <todo-item
+                        <article-list
                                 v-for="item in items"
                                 v-bind:todo="item"
                                 v-bind:key="item.id"
                                 v-bind:href="item.slug">
-                        </todo-item>
+                        </article-list>
                     </div>
                 </div>
             </div>
