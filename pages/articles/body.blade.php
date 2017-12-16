@@ -20,7 +20,7 @@
                     <div id="articles" class="card-deck">
                         <todo-item
                                 v-for="item in items"
-                                v-bind:article="item"
+                                v-bind:todo="item"
                                 v-bind:key="item.id"
                                 v-bind:href="item.slug">
                         </todo-item>
