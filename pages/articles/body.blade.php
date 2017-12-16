@@ -7,7 +7,7 @@
         <div class="container">
             <div class="content-center" style="top:200px !important;">
                 <h1 class="title text-center" style="padding-bottom: 25px;margin:25px;">{{ $page->title }}</h1>
-                @if($page->excerpt !== null)<h5>{{ $page->excerpt }}</h5>@endif
+                @if($page->content()->heading->intro !== null)<h5>{{ $page->content()->heading->intro }}</h5>@endif
             </div>
         </div>
     </div>
