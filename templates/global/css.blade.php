@@ -218,5 +218,6 @@
         font-weight:600 !important;
         text-shadow:none !important;
         text-align:left !important;
+        font-size:225% !important;
     }
 </style>
