@@ -1,5 +1,5 @@
 <script>
-    Vue.component('article', {
+    Vue.component('articles', {
         props: ['article'],
         template: '<div class="col-sm-4" style="margin-top:25px;"><a class="card-link" v-bind:href="article.slug"><div class="card" style="height:100%;">' +
         '<div v-if="article.content.heading.background !== null" :style=\'{ backgroundImage: `url(${article.content.heading.background})` }\' class="image-container"></div>' +
