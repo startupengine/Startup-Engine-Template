@@ -206,6 +206,9 @@
         color:#222;
     }
 
+    .nav-link {
+        font-weight:600 !important;
+    }
     #engage:hover {
         color:#222 !important;
         background:#fff !important;
