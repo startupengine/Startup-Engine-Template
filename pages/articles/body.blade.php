@@ -6,8 +6,8 @@
         </div>
         <div class="container">
             <div class="content-center" style="top:200px !important;">
-                    <h1 class="title text-center" style="padding-bottom: 25px;margin:25px;">{{ $page->title }}</h1>
-                    @if($page->excerpt !== null)<h5>{{ $page->excerpt }}</h5>@endif
+                <h1 class="title text-center" style="padding-bottom: 25px;margin:25px;">{{ $page->title }}</h1>
+                @if($page->excerpt !== null)<h5>{{ $page->excerpt }}</h5>@endif
             </div>
         </div>
     </div>
@@ -18,12 +18,12 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12">
                     <div id="articles" class="card-deck">
-                        <article-list
+                        <articles
                                 v-for="item in items"
-                                v-bind:todo="item"
+                                v-bind:article="item"
                                 v-bind:key="item.id"
                                 v-bind:href="item.slug">
-                        </article-list>
+                        </articles>
                     </div>
                 </div>
             </div>
