@@ -1,7 +1,7 @@
 <body class="index-page sidebar-collapse">
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper">
-    <div class="page-header page-header-small clear-filter" filter-color="black" style="min-height:440px;">
+    <div class="page-header page-header-small clear-filter" filter-color="black" id="heading">
         <div class="page-header-image" data-parallax="true">
         </div>
         <div class="container">
