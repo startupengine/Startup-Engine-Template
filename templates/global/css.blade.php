@@ -214,7 +214,7 @@
         background:#fff !important;
     }
 
-    .card .h4 {
+    .card h4 {
         font-weight:600 !important;
         text-shadow:none !important;
         text-align:left !important;
