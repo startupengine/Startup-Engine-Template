@@ -221,4 +221,9 @@
         font-size:225% !important;
         color:#555 !important;
     }
+    .card p {
+        font-size: 125% !important;
+        color: #444 !important;
+        line-height: 200% !important;
+    }
 </style>
