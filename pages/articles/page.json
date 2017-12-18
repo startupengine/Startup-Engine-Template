@@ -29,6 +29,24 @@
         }
       }
     },
+    "about": {
+      "title": "About",
+      "slug": "about",
+      "fields": {
+        "headline": {
+          "type": "text",
+          "slug": "headline",
+          "description": "A short summary of the page.",
+          "placeholder": "Write a headline."
+        },
+        "description": {
+          "type": "textarea",
+          "slug": "description",
+          "description": "Write a bit of intro text (optional).",
+          "placeholder": "Something exciting goes here..."
+        }
+      }
+    },
     "calltoaction": {
       "title": "Call To Action",
       "slug": "calltoaction",
@@ -86,6 +104,10 @@
           "headline": "The Launchpad",
           "background": "https:\/\/images.unsplash.com\/photo-1491484815100-6f2890d04007?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
           "intro": "A blog about starting up and taking off."
+        },
+        "about": {
+          "headline": "The Launchpad",
+          "description": "We believe that the world becomes a better place when new ideas take root. This blog is about helping you find your truth and build a business around it."
         },
         "calltoaction": {
           "headline": "Ready to launch your business?",
