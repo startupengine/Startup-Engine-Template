@@ -16,7 +16,7 @@
                 <div style="padding-top:140px;">
                     <div align="center">
                         <h1>@{{ todo.title }}</h1>
-                        @if($post->content()->heading->intro !== null)<h4>{{ $post->content()->heading->intro }}</h4>@endif
+                        @if($post->content()->heading->excerpt !== null)<h4>{{ $post->content()->heading->excerpt }}</h4>@endif
                         <a id="engage" href="javascript:void(0)" onclick="scrollToMore()" >@if($post->content()->heading->button !== null){{ $post->content()->heading->button }}@else Read More @endif</a>
                     </div>
                 </div>
