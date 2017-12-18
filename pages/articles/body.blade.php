@@ -6,9 +6,13 @@
              @if($page->content()->heading->background !== null) style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0;opacity: 0.3;" @endif></div>
         <div class="container">
             <div class="content-center">
-                <h1 class="title text-center">{{ $page->content()->heading->headline }}</h1>
-                @if($page->content()->heading->intro !== null)<h3 class="description text-center"
-                                                                  v-if="page.json.heading.intro !== null">{{ $page->content()->heading->intro }}</h3>@endif
+                @if($page->content()->heading->headline !== null)
+                    <h1 class="title text-center">{{ $page->content()->heading->headline }}</h1>
+                @endif
+                @if($page->content()->heading->intro !== null)
+                    <h3 class="description text-center"
+                        v-if="page.json.heading.intro !== null">{{ $page->content()->heading->intro }}</h3>
+                @endif
             </div>
         </div>
     </div>
