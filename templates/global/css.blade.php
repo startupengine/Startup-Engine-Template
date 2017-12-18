@@ -187,7 +187,7 @@
         }
 
         #navigation .nav-link, #navigation .btn {
-            background: #222 !important;
+            background: rgba(0,0,0,0.85) !important;
             color: #fff !important;
             border: 1px solid transparent !important;
             border-radius: 25px !important;
