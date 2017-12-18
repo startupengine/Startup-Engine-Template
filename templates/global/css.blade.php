@@ -203,7 +203,7 @@
     }
 
     .navbar-brand {
-        color:#222;
+        color:#333 !important;
         font-weight:600 !important;
     }
 
