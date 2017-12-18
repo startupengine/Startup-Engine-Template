@@ -51,6 +51,7 @@
                                             <p>{{ $page->content()->about->description }}</p>
                                         @endif
                                     </div>
+                                @endif
                             </div>
                             @if($page->content()->sidebar->html!== null)
                                 @if($page->content()->sidebar->html !== null)
