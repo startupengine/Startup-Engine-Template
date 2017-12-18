@@ -5,7 +5,7 @@
         props: ['page'],
         template:
         '<div>' +
-            '<div v-if="page.json.heading.headersize == \'large\'" class="page-header clear-filter" filter-color="black" :style="{ backgroundImage: `linear-gradient(rgba(0, 20, 119, 0.7), rgba(0, 0, 0, 1)), url(${page.json.heading.background})`, backgroundSize: `cover`, backgroundPosition: `center` }" >' +
+            '<div v-if="page.json.heading.headersize == \'large\'" class="page-header clear-filter" filter-color="black" :style="{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(${page.json.heading.background})`, backgroundSize: `cover`, backgroundPosition: `center` }" >' +
                 '<div class="page-header-image" data-parallax="true" style="background-image: url(\'../assets/img/header.jpg\');"></div>' +
                 '<div class="container">' +
                     '<div class="content-center">' +
@@ -15,7 +15,7 @@
                     '</div>' +
                 '</div>' +
             '</div>' +
-            '<div v-else class="page-header page-header-small clear-filter" filter-color="black" :style="{ backgroundImage: `linear-gradient(rgba(0, 20, 119, 0.7), rgba(0, 0, 0, 1)), url(${page.json.heading.background})`, backgroundSize: `cover`, backgroundPosition: `center` }" style="padding-top:75px;">' +
+            '<div v-else class="page-header page-header-small clear-filter" filter-color="black" :style="{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(${page.json.heading.background})`, backgroundSize: `cover`, backgroundPosition: `center` }" style="padding-top:75px;">' +
                 '<div class="page-header-image" data-parallax="true" style="background-image: url(\'../assets/img/header.jpg\');"></div>' +
                 '<div class="container">' +
                     '<div class="content-center">' +

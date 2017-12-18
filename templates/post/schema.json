@@ -15,7 +15,7 @@
           "placeholder": "Write a headline."
         },
         "excerpt": {
-          "type": "text",
+          "type": "textarea",
           "description": "A short summary of the contents.",
           "placeholder": "Write a headline."
         },
