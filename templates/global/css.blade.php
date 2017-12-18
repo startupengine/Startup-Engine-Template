@@ -226,4 +226,8 @@
         color: #444 !important;
         line-height: 200% !important;
     }
+
+    .navbar.bg-white:not(.navbar-transparent) a:not(.dropdown-item) {
+        color: #333 !important;
+    }
 </style>
