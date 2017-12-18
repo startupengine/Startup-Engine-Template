@@ -194,12 +194,12 @@
         }
 
         #navigation .nav-link:hover, #navigation .btn:hover {
-            border: 1px solid #222 !important;
+            border: 1px solid transparent !important;
         }
 
         #navigation .nav-link:not(.btn):hover {
-            background: #fff !important;
-            color: #222 !important;
+            background: #222  !important;
+            color: #fff !important;
         }
 
         .navbar-transparent #nav-cta {
