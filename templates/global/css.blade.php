@@ -183,7 +183,7 @@
         }
 
         #mobile-nav-brand .navbar-brand {
-            color: #222 !important;
+            color: #fff !important;
         }
 
         #navigation .nav-link, #navigation .btn {
