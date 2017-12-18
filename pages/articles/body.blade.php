@@ -1,19 +1,20 @@
 <body class="index-page sidebar-collapse">
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper">
-
-
-    <div class="page-header page-header-small">
-        <div class="page-header-image" <?php if($page->content()->heading->background !== null) { echo "style=\"background-image:url('".$page->content()->heading->background."'); background-size:cover;z-index: 0;opacity: 0.3; \""; } ?>>
-        </div>
+    <div class="page-header page-header-small clear-filter" filter-color="black"
+         :style="{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(${page.json.heading.background})`, backgroundSize: `cover`, backgroundPosition: `center` }"
+         style="padding-top:75px;">
+        <div class="page-header-image" data-parallax="true" <?php if ($page->content()->heading->background !== null) {
+            echo "style=\"background-image:url('" . $page->content()->heading->background . "'); background-size:cover;z-index: 0;opacity: 0.3; \"";
+        } ?> ></div>
         <div class="container">
             <div class="content-center">
-                <h1 class="title text-center" style="padding-bottom:0px;">{{ $page->content()->heading->headline }}</h1>
-                @if($page->content()->heading->intro !== null)<h5>{{ $page->content()->heading->intro }}</h5>@endif
+                <h1 class="title text-center">{{ $page->content()->heading->headline }}</h1>
+                @if($page->content()->heading->intro !== null)<h3 class="description text-center"
+                                                                  v-if="page.json.heading.intro !== null">{{ $page->content()->heading->intro }}</h3>@endif
             </div>
         </div>
     </div>
-
 </div>
 <div class="wrapper">
     <div class="section" style="padding-top:50px;margin-top:-100px !important;background:none;">
