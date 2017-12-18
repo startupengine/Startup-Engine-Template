@@ -39,18 +39,15 @@
                                         @endif
                                     </div>
                                 </div>
-                            </div>
-                        @endif
-
-                        @if($page->content()->sidebar->html!== null)
-                            <div class="col-md-4">
-                                <div class="card" style="margin-top:25px;">
-                                    <div class="card-body">
-                                        @if($page->content()->sidebar->html !== null)
-                                            {{ $page->content()->sidebar->html }}
-                                        @endif
+                                @if($page->content()->sidebar->html!== null)
+                                    <div class="card" style="margin-top:25px;">
+                                        <div class="card-body">
+                                            @if($page->content()->sidebar->html !== null)
+                                                {{ $page->content()->sidebar->html }}
+                                            @endif
+                                        </div>
                                     </div>
-                                </div>
+                                @endif
                             </div>
                         @endif
 
