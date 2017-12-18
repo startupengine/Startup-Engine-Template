@@ -204,6 +204,7 @@
 
     .navbar-brand {
         color:#222;
+        font-weight:600 !important;
     }
 
     .nav-link {
