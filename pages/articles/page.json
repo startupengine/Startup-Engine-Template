@@ -47,6 +47,19 @@
         }
       }
     },
+    "sidebar": {
+      "title": "Sidebar",
+      "slug": "sidebar",
+      "fields": {
+        "html": {
+          "type": "code",
+          "mode": "html",
+          "slug": "html",
+          "description": "Custom HTML in the sidebar.",
+          "placeholder": "<div class=\"card\"></div>"
+        }
+      }
+    },
     "calltoaction": {
       "title": "Call To Action",
       "slug": "calltoaction",
@@ -108,6 +121,9 @@
         "about": {
           "headline": "The Launchpad",
           "description": "We believe that the world becomes a better place when new ideas take root. This blog is about helping you find your truth and build a business around it."
+        },
+        "sidebar": {
+          "html": null
         },
         "calltoaction": {
           "headline": "Ready to launch your business?",
