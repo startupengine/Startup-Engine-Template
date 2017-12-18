@@ -58,7 +58,19 @@
           "description": "Custom HTML in the sidebar.",
           "placeholder": "<div class=\"card\"></div>"
         }
-      }
+      },
+      "settings": {
+        "title": "Settings",
+        "slug": "settings",
+        "fields": {
+          "search": {
+            "type": "select",
+            "options": ["On", "Off"],
+            "slug": "search",
+            "description": "Display search box in the sidebar?",
+            "placeholder": null
+          }
+        }
     },
     "calltoaction": {
       "title": "Call To Action",
@@ -124,6 +136,9 @@
         },
         "sidebar": {
           "html": null
+        },
+        "settings": {
+          "search": "off"
         },
         "calltoaction": {
           "headline": "Ready to launch your business?",
