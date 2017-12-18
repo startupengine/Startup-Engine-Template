@@ -33,7 +33,7 @@
                     @if($page->content()->about->headline !== null)
                         <div class="col-md-4">
                             <div class="card" style="margin-top:25px;">
-                                @if($page->content()->settings !== null && $page->content->settings->search == "on")
+                                @if($page->content()->settings !== null && $page->content->settings->search !== null && $page->content->settings->search == "On")
                                     <div class="card" style="margin-top: 25px;background: #fff;">
                                         <div class="card-body" style="padding: 25px;min-height: 10px !important;">
                                             <input class="form-control" type="text" placeholder="Search..." style="
@@ -42,7 +42,8 @@
                                                 background: #fff;">
                                         </div>
                                     </div>
-                                @else
+                                @endif
+                                @if($page->content()->about->headline !==null OR $page->content()->about->description !== null)
                                     <div class="card-body">
                                         @if($page->content()->about->headline !== null)
                                             <p><strong>{{ $page->content()->about->headline }}</strong></p>
