@@ -187,8 +187,8 @@
         }
 
         #navigation .nav-link, #navigation .btn {
-            background: #fff !important;
-            color: #222 !important;
+            background: #222 !important;
+            color: #fff !important;
             border: 1px solid #ccc !important;
             border-radius: 25px !important;
         }
@@ -198,8 +198,8 @@
         }
 
         #navigation .nav-link:not(.btn):hover {
-            background: #222  !important;
-            color: #fff !important;
+            background: #fff  !important;
+            color: #222 !important;
         }
 
         .navbar-transparent #nav-cta {
