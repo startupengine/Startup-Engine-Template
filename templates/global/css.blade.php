@@ -187,8 +187,8 @@
         }
 
         #navigation .nav-link, #navigation .btn {
-            background: rgba(0,0,0,0.85) !important;
-            color: #fff !important;
+            background: #fff  !important;
+            color: #222 !important;
             border: 1px solid transparent !important;
             border-radius: 25px !important;
         }
@@ -198,8 +198,8 @@
         }
 
         #navigation .nav-link:not(.btn):hover {
-            background: #fff  !important;
-            color: #222 !important;
+            background: rgba(0,0,0,0.85)  !important;
+            color: #fff !important;
         }
 
         .navbar-transparent #nav-cta {
