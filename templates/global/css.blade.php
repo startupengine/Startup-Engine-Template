@@ -187,8 +187,8 @@
         }
 
         #navigation .nav-link, #navigation .btn {
-            background: #fff  !important;
-            color: #222 !important;
+            background: rgba(0,0,0,0.85) !important;
+            color: #fff !important;
             border: 1px solid transparent !important;
             border-radius: 25px !important;
         }
@@ -198,8 +198,8 @@
         }
 
         #navigation .nav-link:not(.btn):hover {
-            background: rgba(0,0,0,0.85)  !important;
-            color: #fff !important;
+            background: #fff  !important;
+            color: #222 !important;
         }
 
         .navbar-transparent #nav-cta {
@@ -207,7 +207,9 @@
         }
 
         #navigation {
-            background:linear-gradient(to bottom, #30bad0 0%, #430086 100%) !important
+            background-image: linear-gradient(to bottom, #00000057 0%, #8c46f3e6 100%), url(https://images.unsplash.com/photo-1504966981333-1ac8809be1ca?auto=format&fit=crop&w=1500&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) !important;
+            background-size: cover;
+            background-position: top !important;
         }
     }
 
