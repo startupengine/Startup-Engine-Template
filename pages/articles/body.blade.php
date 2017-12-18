@@ -3,7 +3,7 @@
 <div class="wrapper">
     <div class="page-header page-header-small clear-filter" filter-color="black"
          style="padding-top:75px;">
-        <div class="page-header-image" data-parallax="true" @if($page->content()->heading->background !== null) style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0;opacity: 0.3;" @endif></div>
+        <div class="page-header-image" @if($page->content()->heading->background !== null) style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0;opacity: 0.3;" @endif></div>
         <div class="container">
             <div class="content-center">
                 <h1 class="title text-center">{{ $page->content()->heading->headline }}</h1>
