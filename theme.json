@@ -12,7 +12,7 @@
       "display_name" : "Homepage Slug",
       "group": "Site",
       "key" : "site.homepage",
-      "status": "PRIVATE",
+      "status": "PUBLISHED",
       "type": "text",
       "value": "home"
     },
@@ -20,14 +20,14 @@
       "display_name" : "Theme Menu",
       "group": "Theme",
       "key" : "site.menu",
-      "status": "PRIVATE",
+      "status": "PUBLISHED",
       "type": "textarea"
     },
     "site.name" : {
       "display_name" : "Site Name",
       "group": "Site",
       "key" : "site.name",
-      "status": "PRIVATE",
+      "status": "PUBLISHED",
       "type": "text"
     },
     "site.settings_description" : {
