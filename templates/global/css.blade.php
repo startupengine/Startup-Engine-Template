@@ -207,8 +207,7 @@
         }
 
         #navigation {
-            background: url(https://images.unsplash.com/photo-1489549132488-d00b7eee80f1?auto=format&fit=crop&w=934&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
-            background-size: cover;
+            background:linear-gradient(to bottom, #30bad0 0%, #430086 100%) !important
         }
     }
 
