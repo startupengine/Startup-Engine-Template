@@ -33,14 +33,24 @@
                     @if($page->content()->about->headline !== null)
                         <div class="col-md-4">
                             <div class="card" style="margin-top:25px;">
-                                <div class="card-body">
-                                    @if($page->content()->about->headline !== null)
-                                        <p><strong>{{ $page->content()->about->headline }}</strong></p>
-                                    @endif
-                                    @if($page->content()->about->description !== null)
-                                        <p>{{ $page->content()->about->description }}</p>
-                                    @endif
-                                </div>
+                                @if($page->content()->settings->search == "on")
+                                    <div class="card" style="margin-top: 25px;background: #fff;">
+                                        <div class="card-body" style="padding: 25px;min-height: 10px !important;">
+                                            <input class="form-control" type="text" placeholder="Search..." style="
+                                                border-color: #555;
+                                                color: #111 !important;
+                                                background: #fff;">
+                                        </div>
+                                    </div>
+                                @else
+                                    <div class="card-body">
+                                        @if($page->content()->about->headline !== null)
+                                            <p><strong>{{ $page->content()->about->headline }}</strong></p>
+                                        @endif
+                                        @if($page->content()->about->description !== null)
+                                            <p>{{ $page->content()->about->description }}</p>
+                                        @endif
+                                    </div>
                             </div>
                             @if($page->content()->sidebar->html!== null)
                                 @if($page->content()->sidebar->html !== null)
