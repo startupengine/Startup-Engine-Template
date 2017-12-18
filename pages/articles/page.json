@@ -65,14 +65,10 @@
       "slug": "settings",
       "fields": {
         "search": {
-          "type": "select",
-          "options": [
-            "On",
-            "Off"
-          ],
+          "type": "text",
           "slug": "search",
           "description": "Display search box in the sidebar?",
-          "placeholder": null
+          "placeholder": "Type \"On\" to enable"
         }
       }
     },
@@ -142,7 +138,7 @@
           "html": null
         },
         "settings": {
-          "search": "off"
+          "search": "Off"
         },
         "calltoaction": {
           "headline": "Ready to launch your business?",
