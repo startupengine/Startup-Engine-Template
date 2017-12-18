@@ -13,13 +13,12 @@
         </div>
         <div class="container">
             <div class="content-center">
-                <div id="articles" style="padding-top:140px;">
-                    <todo-item
-                            v-for="item in items"
-                            v-bind:todo="item"
-                            v-bind:key="item.id"
-                            v-bind:href="item.slug">
-                    </todo-item>
+                <div style="padding-top:140px;">
+                    <div align="center">
+                        <h1>@{{ todo.title }}</h1>
+                        @if($post->content()->heading->intro !== null)<h4>{{ $post->content()->heading->intro }}</h4>@endif
+                        <a id="engage" href="javascript:void(0)" onclick="scrollToMore()" >@if($post->content()->heading->button !== null){{ $post->content()->heading->button }}@else Read More @endif</a>
+                    </div>
                 </div>
             </div>
         </div>
