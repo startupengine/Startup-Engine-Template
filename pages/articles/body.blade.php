@@ -44,13 +44,9 @@
                                     </div>
                                 </div>
                                 @if($page->content()->sidebar->html!== null)
-                                    <div class="card" style="margin-top:25px;">
-                                        <div class="card-body">
-                                            @if($page->content()->sidebar->html !== null)
-                                                <?php echo $page->markdown($page->content()->sidebar->html); ?>
-                                            @endif
-                                        </div>
-                                    </div>
+                                    @if($page->content()->sidebar->html !== null)
+                                        <?php echo $page->markdown($page->content()->sidebar->html); ?>
+                                    @endif
                                 @endif
                             </div>
                         @endif
