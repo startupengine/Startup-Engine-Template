@@ -203,7 +203,7 @@
     }
 
     .navbar-brand {
-        color:#333 !important;
+        color:#333;
         font-weight:600 !important;
     }
 
@@ -230,5 +230,8 @@
 
     .navbar.bg-white:not(.navbar-transparent) a.nav-link {
         color: #333 !important;
+    }
+    .navbar.bg-white:not(.navbar-transparent) .navbar-brand {
+        color:#333 !important;
     }
 </style>
