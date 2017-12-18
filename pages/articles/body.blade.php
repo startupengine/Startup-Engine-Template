@@ -43,7 +43,7 @@
                                     <div class="card" style="margin-top:25px;">
                                         <div class="card-body">
                                             @if($page->content()->sidebar->html !== null)
-                                                <?php echo $page->markdown($this->content()->sidebar->html); ?>
+                                                <?php echo $page->markdown($page->content()->sidebar->html); ?>
                                             @endif
                                         </div>
                                     </div>
