@@ -65,90 +65,94 @@
         "fields": {
           "search": {
             "type": "select",
-            "options": ["On", "Off"],
+            "options": [
+              "On",
+              "Off"
+            ],
             "slug": "search",
             "description": "Display search box in the sidebar?",
             "placeholder": null
           }
         }
-    },
-    "calltoaction": {
-      "title": "Call To Action",
-      "slug": "calltoaction",
-      "fields": {
-        "headline": {
-          "type": "text",
-          "slug": "headline",
-          "description": "A short call to action message.",
-          "placeholder": "Write a headline."
-        },
-        "message": {
-          "type": "textarea",
-          "slug": "message",
-          "description": "One or two lines about the benefit.",
-          "placeholder": "Write a message."
-        },
-        "button": {
-          "type": "code",
-          "mode": "html",
-          "slug": "button",
-          "description": "A short call to action phrase.",
-          "placeholder": "Learn More"
-        },
-        "link": {
-          "type": "text",
-          "slug": "link",
-          "description": "A url to link to. (optional)",
-          "placeholder": "http://www.example.com"
+      },
+      "calltoaction": {
+        "title": "Call To Action",
+        "slug": "calltoaction",
+        "fields": {
+          "headline": {
+            "type": "text",
+            "slug": "headline",
+            "description": "A short call to action message.",
+            "placeholder": "Write a headline."
+          },
+          "message": {
+            "type": "textarea",
+            "slug": "message",
+            "description": "One or two lines about the benefit.",
+            "placeholder": "Write a message."
+          },
+          "button": {
+            "type": "code",
+            "mode": "html",
+            "slug": "button",
+            "description": "A short call to action phrase.",
+            "placeholder": "Learn More"
+          },
+          "link": {
+            "type": "text",
+            "slug": "link",
+            "description": "A url to link to. (optional)",
+            "placeholder": "http://www.example.com"
+          }
+        }
+      },
+      "meta": {
+        "title": "Meta",
+        "slug": "meta",
+        "fields": {
+          "slug": {
+            "type": "text",
+            "slug": "slug",
+            "description": "A unique slug for tracking this variation.",
+            "placeholder": "Name it clearly."
+          },
+          "Variation description": {
+            "type": "textarea",
+            "slug": "description",
+            "description": "A description of this variation.",
+            "placeholder": "Describe this variation clearly."
+          }
         }
       }
     },
-    "meta": {
-      "title": "Meta",
-      "slug": "meta",
-      "fields": {
-        "slug": {
-          "type": "text",
-          "slug": "slug",
-          "description": "A unique slug for tracking this variation.",
-          "placeholder": "Name it clearly."
-        },
-        "Variation description": {
-          "type": "textarea",
-          "slug": "description",
-          "description": "A description of this variation.",
-          "placeholder": "Describe this variation clearly."
-        }
-      }
-    }
-  },
-  "default": {
-    "versions": {
-      "1": {
-        "heading": {
-          "headline": "The Launchpad",
-          "background": "https:\/\/images.unsplash.com\/photo-1491484815100-6f2890d04007?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-          "intro": "A blog about starting up and taking off."
-        },
-        "about": {
-          "headline": "About this blog",
-          "description": "We believe that the whole world benefits when new ideas take root and flourish. This blog is about helping you find your truth and build a business around it."
-        },
-        "sidebar": {
-          "html": null
-        },
-        "settings": {
-          "search": "off"
-        },
-        "calltoaction": {
-          "headline": "Ready to launch your business?",
-          "message": "Start running an automated startup in under 5 minutes.",
-          "button": "Start Now",
-          "link": "\/signup"
-        },
-        "meta": {
-          "slug": "default",
-          "description": "Default layout"
+    "default": {
+      "versions": {
+        "1": {
+          "heading": {
+            "headline": "The Launchpad",
+            "background": "https:\/\/images.unsplash.com\/photo-1491484815100-6f2890d04007?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+            "intro": "A blog about starting up and taking off."
+          },
+          "about": {
+            "headline": "About this blog",
+            "description": "We believe that the whole world benefits when new ideas take root and flourish. This blog is about helping you find your truth and build a business around it."
+          },
+          "sidebar": {
+            "html": null
+          },
+          "settings": {
+            "search": "off"
+          },
+          "calltoaction": {
+            "headline": "Ready to launch your business?",
+            "message": "Start running an automated startup in under 5 minutes.",
+            "button": "Start Now",
+            "link": "\/signup"
+          },
+          "meta": {
+            "slug": "default",
+            "description": "Default layout"
+          }
         }
       }
     }
