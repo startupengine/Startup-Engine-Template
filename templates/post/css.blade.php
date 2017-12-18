@@ -6,7 +6,7 @@
     #content > div:first-of-type {
         margin-top:0px !important;
     }
-    #content > div:first-of-type > h1 {
+    #content > h1 {
         text-align:center;
     }
 </style>
