@@ -2,11 +2,8 @@
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper">
     <div class="page-header page-header-small clear-filter" filter-color="black"
-         :style="{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(${page.json.heading.background})`, backgroundSize: `cover`, backgroundPosition: `center` }"
          style="padding-top:75px;">
-        <div class="page-header-image" data-parallax="true" <?php if ($page->content()->heading->background !== null) {
-            echo "style=\"background-image:url('" . $page->content()->heading->background . "'); background-size:cover;z-index: 0;opacity: 0.3; \"";
-        } ?> ></div>
+        <div class="page-header-image" data-parallax="true" @if($page->content()->heading->background !== null) style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0;opacity: 0.3;" @endif></div>
         <div class="container">
             <div class="content-center">
                 <h1 class="title text-center">{{ $page->content()->heading->headline }}</h1>
