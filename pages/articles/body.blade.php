@@ -8,7 +8,7 @@
         </div>
         <div class="container">
             <div class="content-center">
-                <h1 class="title text-center" style="padding-bottom:0px;margin:25px; margin-bottom:0px;">{{ $page->content()->heading->headline }}</h1>
+                <h1 class="title text-center" style="padding-bottom:0px;">{{ $page->content()->heading->headline }}</h1>
                 @if($page->content()->heading->intro !== null)<h5>{{ $page->content()->heading->intro }}</h5>@endif
             </div>
         </div>
