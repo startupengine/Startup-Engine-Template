@@ -189,7 +189,7 @@
         #navigation .nav-link, #navigation .btn {
             background: #222 !important;
             color: #fff !important;
-            border: 1px solid #ccc !important;
+            border: 1px solid transparent !important;
             border-radius: 25px !important;
         }
 
