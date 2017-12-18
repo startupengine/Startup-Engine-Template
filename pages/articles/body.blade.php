@@ -33,8 +33,8 @@
                                 @if($page->content()->about->headline !== null)
                                     <p><strong>{{ $page->content()->about->headline }}</strong></p>
                                 @endif
-                                @if($page->content()->about->headline !== null)
-                                    <p><strong>{{ $page->content()->about->headline }}</strong></p>
+                                @if($page->content()->about->description !== null)
+                                    <p>{{ $page->content()->about->description }}</p>
                                 @endif
                             </div>
                         </div>
