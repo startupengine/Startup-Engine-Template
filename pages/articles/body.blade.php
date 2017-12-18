@@ -20,24 +20,26 @@
                 <div class="col-lg-12 col-md-12">
                     <div id="articles" class="card-deck">
                         <div class="@if($page->content()->about->headline !== null) col-md-8 @else col-md-12 @endif">
-                        <todo-item
-                                v-for="item in items"
-                                v-bind:article="item"
-                                v-bind:key="item.id"
-                                v-bind:href="item.slug">
-                        </todo-item>
+                            <todo-item
+                                    v-for="item in items"
+                                    v-bind:article="item"
+                                    v-bind:key="item.id"
+                                    v-bind:href="item.slug">
+                            </todo-item>
                         </div>
                         @if($page->content()->about->headline !== null)
-                        <div class="col-md-4">
-                            <div class="card" style="margin-top:25px;">
-                                @if($page->content()->about->headline !== null)
-                                    <p><strong>{{ $page->content()->about->headline }}</strong></p>
-                                @endif
-                                @if($page->content()->about->description !== null)
-                                    <p>{{ $page->content()->about->description }}</p>
-                                @endif
+                            <div class="col-md-4">
+                                <div class="card" style="margin-top:25px;">
+                                    <div class="card-body">
+                                        @if($page->content()->about->headline !== null)
+                                            <p><strong>{{ $page->content()->about->headline }}</strong></p>
+                                        @endif
+                                        @if($page->content()->about->description !== null)
+                                            <p>{{ $page->content()->about->description }}</p>
+                                        @endif
+                                    </div>
+                                </div>
                             </div>
-                        </div>
                         @endif
                     </div>
                 </div>
