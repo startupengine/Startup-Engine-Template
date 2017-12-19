@@ -198,7 +198,7 @@
         }
 
         #navigation .nav-link:not(.btn):hover {
-            background: rgba(0,0,0,0.85)  !important;
+            background: rgba(0, 0, 0, 0.85) !important;
             color: #fff !important;
         }
 
@@ -272,13 +272,14 @@
         color: #333 !important;
     }
 
-    .nav-link.nav-link-outline {
-        border: royalblue 1px solid;
+    navbar.navbar-expand-lg .nav-link.nav-link-outline {
+        box-shadow: 0px 0px 0px 1px royalblue inset;
         border-radius: 5px;
         color: royalblue !important;
     }
-    .nav-link.nav-link-outline:hover {
-        background:royalblue !important;
-        color:#fff !important;
+
+    navbar.navbar-expand-lg .nav-link.nav-link-outline:hover {
+        background: royalblue !important;
+        color: #fff !important;
     }
 </style>
