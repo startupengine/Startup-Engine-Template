@@ -5,7 +5,7 @@
         '<div class="col-md-6" style="margin-top:25px;">' +
             '<a class="card-link" v-bind:href="article.slug">' +
                 '<div class="card" style="height:100%;">' +
-                    '<div v-if="article.content.meta && article.content.meta.featured == true" class="card-header" ><i class="fas fa-star" ></i> &nbsp;Featured</div>' +
+                    '<div v-if="article.content.meta && article.content.meta.featured == \'on\'" class="card-header featured" ><i class="fas fa-star" ></i> &nbsp;Featured</div>' +
                     '<div v-if="article.content.heading.background !== null" :style=\'{ backgroundImage: `url(${article.content.heading.background})` }\' class="image-container"></div>' +
                     '<div class="card-body">' +
                         '<h4 class="card-title" align="center">{{ article.content.heading.headline }}</h4>' +
