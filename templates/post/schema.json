@@ -40,11 +40,6 @@
           "description": "A URL to a featured image.",
           "placeholder": "http://..."
         },
-        "background": {
-          "type": "text",
-          "description": "A URL to a background image.",
-          "placeholder": "http://..."
-        },
         "video": {
           "type": "text",
           "description": "A URL to a featured video.",
