@@ -271,4 +271,15 @@
     .navbar.bg-white:not(.navbar-transparent) .navbar-brand {
         color: #333 !important;
     }
+
+    .nav-link-outline {
+        border: royalblue 1px solid;
+        margin-top: -1px;
+        border-radius: 5px;
+        color: royalblue !important;
+    }
+    .nav-link-outline:hover {
+        background:royalblue !important;
+        color:#fff !important;
+    }
 </style>
