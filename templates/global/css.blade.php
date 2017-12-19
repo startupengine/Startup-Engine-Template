@@ -274,7 +274,6 @@
 
     .nav-link-outline {
         border: royalblue 1px solid;
-        margin-top: -1px;
         border-radius: 5px;
         color: royalblue !important;
     }
