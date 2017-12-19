@@ -89,6 +89,11 @@
           "type": "textarea",
           "description": "A short sumamry of this post.",
           "placeholder": "Excerpt goes here."
+        },
+        "featured": {
+          "type": "checkbox",
+          "description": "Is this a featured post?",
+          "placeholder": null
         }
       }
     }
