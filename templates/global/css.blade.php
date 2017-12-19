@@ -272,12 +272,12 @@
         color: #333 !important;
     }
 
-    .nav-link-outline {
+    .nav-link.nav-link-outline {
         border: royalblue 1px solid;
         border-radius: 5px;
         color: royalblue !important;
     }
-    .nav-link-outline:hover {
+    .nav-link.nav-link-outline:hover {
         background:royalblue !important;
         color:#fff !important;
     }
