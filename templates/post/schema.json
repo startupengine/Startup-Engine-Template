@@ -54,10 +54,6 @@
           "type": "richtext",
           "description": "Write some content.",
           "placeholder": "A long time ago, in a galaxy far far away..."
-        },
-        "featured": {
-          "type": "checkbox",
-          "description": "Is this a featured post?"
         }
       }
     },
@@ -83,21 +79,21 @@
           "description": "Custom HTML. If you write code here, it will be displayed instead of the default HTML layout.",
           "placeholder": "This code appears inside the <body> tag."
         }
-      },
-      "Meta": {
-        "title": "Meta",
-        "slug": "meta",
-        "fields": {
-          "meta_description": {
-            "type": "textarea",
-            "description": "A description of this post.",
-            "placeholder": "Description goes here."
-          },
-          "excerpt": {
-            "type": "textarea",
-            "description": "A short sumamry of this post.",
-            "placeholder": "Excerpt goes here."
-          }
+      }
+    },
+    "Meta": {
+      "title": "Meta",
+      "slug": "meta",
+      "fields": {
+        "meta_description": {
+          "type": "textarea",
+          "description": "A description of this post.",
+          "placeholder": "Description goes here."
+        },
+        "excerpt": {
+          "type": "textarea",
+          "description": "A short sumamry of this post.",
+          "placeholder": "Excerpt goes here."
         }
       }
     }
