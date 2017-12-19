@@ -54,6 +54,10 @@
           "type": "richtext",
           "description": "Write some content.",
           "placeholder": "A long time ago, in a galaxy far far away..."
+        },
+        "featured": {
+          "type": "checkbox",
+          "description": "Is this a featured post?"
         }
       }
     },
@@ -93,10 +97,6 @@
             "type": "textarea",
             "description": "A short sumamry of this post.",
             "placeholder": "Excerpt goes here."
-          },
-          "featured": {
-            "type": "checkbox",
-            "description": "Is this a featured post?"
           }
         }
       }
