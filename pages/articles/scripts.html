@@ -3,17 +3,21 @@
         props: ['article'],
         template:
         '<div class="col-md-6" style="margin-top:25px;">' +
-            '<a class="card-link" v-bind:href="article.slug"><div class="card" style="height:100%;">' +
-                '<div v-if="article.content.heading.background !== null" :style=\'{ backgroundImage: `url(${article.content.heading.background})` }\' class="image-container"></div>' +
-                '<div class="card-body">' +
-                    '<h4 class="card-title" align="center">{{ article.content.heading.headline }}</h4>' +
-                    '<p v-if="article.content.heading.excerpt !== null">{{article.content.heading.excerpt}}</p>' +
-                    '<div class="btn btn-link btn-lg btn-block"><span style="border-radius:25px;border:1px solid #eee; padding:5px 20px;">Continue Reading &nbsp;<i class="fas fa-arrow-right fa-xs"></i></span></div>' +
+            '<a class="card-link" v-bind:href="article.slug">' +
+                '<div class="card" style="height:100%;">' +
+                    '<div v-if="article.content.meta && article.content.meta.featured == true" class="card-header" ><i class="fas fa-star" ></i> &nbsp;Featured</div>' +
+                    '<div v-if="article.content.heading.background !== null" :style=\'{ backgroundImage: `url(${article.content.heading.background})` }\' class="image-container"></div>' +
+                    '<div class="card-body">' +
+                        '<h4 class="card-title" align="center">{{ article.content.heading.headline }}</h4>' +
+                        '<p v-if="article.content.heading.excerpt !== null">{{article.content.heading.excerpt}}</p>' +
+                        '<p></p>'+
+                        '<div class="btn btn-link btn-lg btn-block"><span style="border-radius:25px;border:1px solid #eee; padding:5px 20px;">Continue Reading &nbsp;<i class="fas fa-arrow-right fa-xs"></i></span></div>' +
+                    '</div>' +
                 '</div>' +
             '</a>' +
         '</div>'
     });
-    var app7 = new Vue({
+    var app = new Vue({
         el: '#articles',
         data: {
             items: null
