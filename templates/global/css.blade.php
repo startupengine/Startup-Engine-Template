@@ -241,7 +241,7 @@
         font-weight: 600 !important;
     }
 
-    .nav-link {
+    .nav-link, .nav-link p {
         font-weight: 600 !important;
     }
 
