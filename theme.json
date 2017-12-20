@@ -36,7 +36,7 @@
     "site.logo": {
       "display_name": "Site Logo",
       "group": "Site",
-      "key": "site.name",
+      "key": "site.logo",
       "status": "PUBLISHED",
       "type": "text",
       "value": "https: \/\/s3-us-west-1.amazonaws.com\/psychoanalytics\/logos\/8e1DDbpUN962wxvOaZGDMch3VsIPEQ1B09dsBeAK.png"
