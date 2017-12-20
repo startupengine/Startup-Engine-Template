@@ -285,4 +285,8 @@
         background-image: linear-gradient(to right, #ff316a 0%, #fe9840 100%) !important;
         font-weight: 600 !important;
     }
+
+    .nav-link {
+        border-radius: 0.1875rem !important;
+    }
 </style>
