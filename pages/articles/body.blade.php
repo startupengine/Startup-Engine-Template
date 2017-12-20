@@ -22,13 +22,15 @@
         <div class="container">
             <div class="row">
                 <div id="articles" class="card-deck">
-                    <div class="@if($page->content()->about->headline !== null) col-md-8 @else col-md-12 @endif">
-                        <todo-item
-                                v-for="item in items"
-                                v-bind:article="item"
-                                v-bind:key="item.id"
-                                v-bind:href="item.slug">
-                        </todo-item>
+                    <div class="row">
+                        <div class="@if($page->content()->about->headline !== null) col-md-8 @else col-md-12 @endif">
+                            <todo-item
+                                    v-for="item in items"
+                                    v-bind:article="item"
+                                    v-bind:key="item.id"
+                                    v-bind:href="item.slug">
+                            </todo-item>
+                        </div>
                     </div>
                     @if($page->content()->about->headline !== null)
                         <div class="col-md-4">

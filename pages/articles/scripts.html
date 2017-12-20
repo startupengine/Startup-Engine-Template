@@ -2,8 +2,8 @@
     Vue.component('todo-item', {
         props: ['article'],
         template:
-        '<div class="col-md-6" style="margin-top:25px;">' +
-            '<a class="card-link" v-bind:href="article.slug">' +
+        '<a class="card-link" v-bind:href="article.slug" onclick="window.location.href = $(this).attr(\'href\');">' +
+            '<div class="col-md-6" style="margin-top:25px;">' +
                 '<div class="card" style="height:100%;">' +
                     '<div v-if="article.content.meta && article.content.meta.featured == \'on\' && article.content.meta.message == null" class="card-header featured" ><i class="fas fa-star" ></i> &nbsp;Featured</div>' +
                     '<div v-if="article.content.meta && article.content.meta.featured == \'on\' && article.content.meta.message !== null" class="card-header featured" >{{article.content.meta.message}}</div>' +
@@ -17,8 +17,8 @@
                         '<div class="btn btn-link btn-lg btn-block"><span style="border-radius:25px;border:1px solid #eee; padding:5px 20px;">Continue Reading &nbsp;<i class="fas fa-arrow-right fa-xs"></i></span></div>' +
                     '</div>' +
                 '</div>' +
-            '</a>' +
-        '</div>'
+            '</div>' +
+        '</a>'
     });
     var app = new Vue({
         el: '#articles',
