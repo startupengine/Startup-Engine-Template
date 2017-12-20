@@ -277,8 +277,8 @@
         "calltoaction": {
           "headline": "Ready to launch your business?",
           "message": "Start running an automated startup in under 5 minutes.",
-          "button": "Start Now",
-          "link": "\/signup"
+          "button": "Get The Source Code <i class=\"fas fa-download\"><\/i>",
+          "link": "https:\/\/github.com\/luckyrabbitllc\/startupengine"
         },
         "meta": {
           "slug": "default",
