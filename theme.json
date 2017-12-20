@@ -5,115 +5,126 @@
   "description": "A basic Startup Engine theme with Post, FAQ, & Help content types.",
   "image": "https://psychoanalytics.s3-us-west-1.amazonaws.com/pages/products/wDtDs4wlcXUsoRylE1PkinplrNO3PzRM0rWQj6tV.jpeg",
   "modules": [],
-  "schemas": ["post", "faq"],
+  "schemas": [
+    "post",
+    "faq"
+  ],
   "disable_schemas": [],
   "settings": {
-    "site.homepage" : {
-      "display_name" : "Homepage Slug",
+    "site.homepage": {
+      "display_name": "Homepage Slug",
       "group": "Site",
-      "key" : "site.homepage",
+      "key": "site.homepage",
       "status": "PUBLISHED",
       "type": "text",
       "value": "home"
     },
-    "site.menu" : {
-      "display_name" : "Theme Menu",
+    "site.menu": {
+      "display_name": "Theme Menu",
       "group": "Theme",
-      "key" : "site.menu",
+      "key": "site.menu",
       "status": "PUBLISHED",
       "type": "textarea"
     },
-    "site.name" : {
-      "display_name" : "Site Name",
+    "site.name": {
+      "display_name": "Site Name",
       "group": "Site",
-      "key" : "site.name",
+      "key": "site.name",
       "status": "PUBLISHED",
       "type": "text"
     },
-    "site.settings_description" : {
-      "display_name" : "Description of this group of settings.",
+    "site.logo": {
+      "display_name": "Site Logo",
       "group": "Site",
-      "key" : "site.settings_description",
+      "key": "site.name",
+      "status": "PUBLISHED",
+      "type": "text",
+      "value": "https: \/\/s3-us-west-1.amazonaws.com\/psychoanalytics\/logos\/8e1DDbpUN962wxvOaZGDMch3VsIPEQ1B09dsBeAK.png"
+    },
+    "site.settings_description": {
+      "display_name": "Description of this group of settings.",
+      "group": "Site",
+      "key": "site.settings_description",
       "status": "PRIVATE",
       "type": "textarea",
       "value": "Settings for the public-facing website."
     },
-    "admin.settings_description" : {
-      "display_name" : "Description of this group of settings.",
+    "admin.settings_description": {
+      "display_name": "Description of this group of settings.",
       "group": "Admin",
-      "key" : "admin.settings_description",
+      "key": "admin.settings_description",
       "status": "PRIVATE",
       "type": "textarea",
       "value": "Settings for the admin panel."
     },
-    "theme.settings_description" : {
-      "display_name" : "Description of this group of settings.",
+    "theme.settings_description": {
+      "display_name": "Description of this group of settings.",
       "group": "Theme",
-      "key" : "theme.settings_description",
+      "key": "theme.settings_description",
       "status": "PRIVATE",
       "type": "textarea",
       "value": "Settings for the currently installed theme."
     },
-    "theme.footer_headline" : {
+    "theme.footer_headline": {
       "group": "Theme",
-      "display_name" : "Footer Headline",
-      "key" : "theme.footer_headline",
+      "display_name": "Footer Headline",
+      "key": "theme.footer_headline",
       "status": "PUBLISHED",
       "type": "textarea"
     },
-    "theme.footer_body" : {
+    "theme.footer_body": {
       "group": "Theme",
-      "display_name" : "Footer Body",
-      "key" : "theme.footer_body",
+      "display_name": "Footer Body",
+      "key": "theme.footer_body",
       "status": "PUBLISHED",
       "type": "textarea"
     },
-    "theme.footer_button" : {
+    "theme.footer_button": {
       "group": "Theme",
-      "display_name" : "Footer Button",
-      "key" : "theme.footer_button",
+      "display_name": "Footer Button",
+      "key": "theme.footer_button",
       "status": "PUBLISHED",
       "type": "text"
     },
-    "theme.footer_link" : {
+    "theme.footer_link": {
       "group": "Theme",
-      "display_name" : "Footer Link",
-      "key" : "theme.footer_link",
+      "display_name": "Footer Link",
+      "key": "theme.footer_link",
       "status": "PUBLISHED",
       "type": "text"
     },
-    "theme.footer_html" : {
+    "theme.footer_html": {
       "group": "Theme",
-      "display_name" : "Footer HTML",
-      "key" : "theme.footer_html",
+      "display_name": "Footer HTML",
+      "key": "theme.footer_html",
       "status": "PUBLISHED",
       "type": "textarea"
     },
-    "theme.global_css" : {
+    "theme.global_css": {
       "group": "Theme",
-      "display_name" : "Global CSS",
-      "key" : "theme.global_css",
+      "display_name": "Global CSS",
+      "key": "theme.global_css",
       "status": "PUBLISHED",
       "type": "textarea"
     },
-    "theme.global_scripts" : {
+    "theme.global_scripts": {
       "group": "Theme",
-      "display_name" : "Global Scripts",
-      "key" : "theme.global_scripts",
+      "display_name": "Global Scripts",
+      "key": "theme.global_scripts",
       "status": "PUBLISHED",
       "type": "textarea"
     },
-    "posts.icon" : {
+    "posts.icon": {
       "group": "Post",
-      "display_name" : "Posts Icon Markup",
-      "key" : "post.icon",
+      "display_name": "Posts Icon Markup",
+      "key": "post.icon",
       "status": "PUBLISHED",
       "type": "textarea"
     },
-    "pages.icon" : {
+    "pages.icon": {
       "group": "Page",
-      "display_name" : "Page Icon Markup",
-      "key" : "page.icon",
+      "display_name": "Page Icon Markup",
+      "key": "page.icon",
       "status": "PUBLISHED",
       "type": "textarea"
     }
