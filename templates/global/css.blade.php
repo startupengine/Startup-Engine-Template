@@ -149,7 +149,6 @@
             background: #fff;
             margin-bottom: 5px;
             border: none;
-            border-radius: 5px !important;
             box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.1);
             text-align: center !important;
         }
