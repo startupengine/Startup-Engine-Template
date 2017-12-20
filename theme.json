@@ -31,7 +31,8 @@
       "group": "Site",
       "key": "site.name",
       "status": "PUBLISHED",
-      "type": "text"
+      "type": "text",
+      "value": "Startup Engine"
     },
     "site.logo": {
       "display_name": "Site Logo",
