@@ -39,7 +39,7 @@
       "key": "site.logo",
       "status": "PUBLISHED",
       "type": "text",
-      "value": "https: \/\/s3-us-west-1.amazonaws.com\/psychoanalytics\/logos\/8e1DDbpUN962wxvOaZGDMch3VsIPEQ1B09dsBeAK.png"
+      "value": "https:\/\/s3-us-west-1.amazonaws.com\/psychoanalytics\/logos\/8e1DDbpUN962wxvOaZGDMch3VsIPEQ1B09dsBeAK.png"
     },
     "site.settings_description": {
       "display_name": "Description of this group of settings.",
