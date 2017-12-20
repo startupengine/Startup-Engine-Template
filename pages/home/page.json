@@ -247,30 +247,31 @@
           "link": "\/analytics",
           "background": "https:\/\/images.unsplash.com\/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
           "intro": "Automatically validate, market, and sell your product.",
+          "headersize": "large",
           "footer": null
         },
         "feature1": {
           "headline": "Automate Your Marketing",
           "message": "At the core of StartupEngine is a CMS designed specifically for content marketing. Blog posts, help articles, FAQ's, and custom post types are all included.",
           "image": "https:\/\/images.unsplash.com\/photo-1463171379579-3fdfb86d6285?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-          "button": "Marketing Features",
-          "link": "\/cms",
+          "button": null,
+          "link": null,
           "footer": null
         },
         "feature2": {
           "headline": "Validate Your Strategy",
           "message": "Every page view, click, and interaction is recorded. This makes it easy to see what's working and what's not, so you can adjust your strategy on the fly.",
           "image": "https:\/\/images.unsplash.com\/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1602&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-          "button": "Explore A\/B Testing",
-          "link": "\/analytics",
+          "button": null,
+          "link": null,
           "footer": null
         },
         "feature3": {
           "headline": "Sell Your Product",
           "message": "Easily sell content, physical products, or software via one-time purchases or subscriptions.",
           "image": "https:\/\/images.unsplash.com\/photo-1421757381940-5d269570b21c?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-          "button": "E-Commerce Features",
-          "link": "\/ecommerce",
+          "button": null,
+          "link": null,
           "footer": null
         },
         "calltoaction": {
@@ -281,7 +282,8 @@
         },
         "meta": {
           "slug": "default",
-          "description": "Functionality overview"
+          "description": "Functionality overview",
+          "featured": "on"
         }
       }
     }
