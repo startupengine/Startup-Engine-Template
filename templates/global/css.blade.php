@@ -206,7 +206,7 @@
         }
 
         #navigation {
-            background-image: linear-gradient(45deg, #00adff 0%, #1f3ccae6 100%) !important;
+            background-image: linear-gradient(180deg, #1e0fa0 0%, #007bff 100%) !important;
             background-size: cover;
             background-position: top !important;
         }
