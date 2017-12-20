@@ -274,7 +274,6 @@
 
     .navbar.navbar-expand-lg .nav-link.nav-link-outline {
         box-shadow: 0px 0px 0px 1px royalblue inset;
-        border-radius: 5px;
     }
 
     .navbar.navbar-expand-lg .nav-link.nav-link-outline:hover {
