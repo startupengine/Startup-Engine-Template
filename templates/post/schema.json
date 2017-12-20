@@ -94,6 +94,12 @@
           "type": "checkbox",
           "description": "Is this a featured post?",
           "placeholder": null
+        },
+        "message": {
+          "type": "code",
+          "mode": "html",
+          "description": "Attach a special message to the top of this post?",
+          "placeholder": "<i class=\"fas fa-star\"></i> Featured"
         }
       }
     }
