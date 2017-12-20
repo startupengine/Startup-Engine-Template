@@ -206,7 +206,7 @@
         }
 
         #navigation {
-            background-image: linear-gradient(to bottom, #00000057 0%, #8c46f3e6 100%), url(https://images.unsplash.com/uploads/14116941824817ba1f28e/78c8dff1?auto=format&fit=crop&w=933&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) !important;
+            background-image: linear-gradient(45deg, #00adff 0%, #1f3ccae6 100%) !important;
             background-size: cover;
             background-position: top !important;
         }
