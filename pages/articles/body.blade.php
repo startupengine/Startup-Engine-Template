@@ -33,23 +33,25 @@
                         </div>
                         @if($page->content()->about->headline !== null)
                             <div class="col-md-4">
-                                <div class="card" style="margin-top:25px;">
-                                    @if($page->content()->about->headline !==null OR $page->content()->about->description !== null)
-                                        <div class="card-body">
-                                            @if($page->content()->about->headline !== null)
-                                                <p><strong>{{ $page->content()->about->headline }}</strong></p>
-                                            @endif
-                                            @if($page->content()->about->description !== null)
-                                                <p>{{ $page->content()->about->description }}</p>
-                                            @endif
-                                        </div>
+                                <div class="col-md-12">
+                                    <div class="card" style="margin-top:25px;">
+                                        @if($page->content()->about->headline !==null OR $page->content()->about->description !== null)
+                                            <div class="card-body">
+                                                @if($page->content()->about->headline !== null)
+                                                    <p><strong>{{ $page->content()->about->headline }}</strong></p>
+                                                @endif
+                                                @if($page->content()->about->description !== null)
+                                                    <p>{{ $page->content()->about->description }}</p>
+                                                @endif
+                                            </div>
+                                        @endif
+                                    </div>
+                                    @if($page->content()->sidebar->html!== null)
+                                        @if($page->content()->sidebar->html !== null)
+                                            <?php echo $page->markdown($page->content()->sidebar->html); ?>
+                                        @endif
                                     @endif
                                 </div>
-                                @if($page->content()->sidebar->html!== null)
-                                    @if($page->content()->sidebar->html !== null)
-                                        <?php echo $page->markdown($page->content()->sidebar->html); ?>
-                                    @endif
-                                @endif
                             </div>
                         @endif
                     </div>
