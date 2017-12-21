@@ -22,7 +22,7 @@
         <div class="container">
             <div id="articles">
                 <div class="row">
-                    <div class="@if($page->content()->about->headline !== null) col-md-8 @else col-md-12 @endif row row-eq-height">
+                    <div class="@if($page->content()->about->headline !== null) col-md-8 @else col-md-12 @endif row row-eq-height" style="margin:0px;">
                         <todo-item
                                 v-for="item in items"
                                 v-bind:article="item"
