@@ -28,7 +28,7 @@
         <div class="row">
             <div class="col-lg-12 col-md-12">
                 <div id="articles" class="card-deck">
-                    <div class="col-md-12" href="/content/post-with-video-2">
+                    <div class="col-md-12 row row-eq-height">
                         <div class="card" style="box-shadow:0px -30px 60px rgba(0,0,0,0.2);">
                             <div class="card-body" id="content">
                                 <?php if($post->content() !== null && $post->content()->body->video !== null){ ?>
@@ -45,4 +45,7 @@
                                     }
                                     ?>
                                     <div data-type="{{ $videotype }}" data-video-id="{{ $video }}"></div>
+                                <?php } ?>
+                                <?php if($post->content()->heading->excerpt !== null) { ?>
+                                    <h5 class="description">{{ $post->content()->heading->excerpt}}</h5>
                                 <?php } ?>
