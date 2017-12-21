@@ -47,5 +47,5 @@
                                     <div data-type="{{ $videotype }}" data-video-id="{{ $video }}"></div>
                                 <?php } ?>
                                 <?php if($post->content()->heading->excerpt !== null) { ?>
-                                    <h5 class="description">{{ $post->content()->heading->excerpt}}</h5>
+                                    <h5 class="description excerpt">{{ $post->content()->heading->excerpt}}</h5>
                                 <?php } ?>

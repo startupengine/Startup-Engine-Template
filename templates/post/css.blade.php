@@ -13,4 +13,9 @@
         color:#fff !important;
         border-color:#fff !important;
     }
+
+    h5.excerpt {
+        font-weight: 400 !important;
+        margin-top:25px;
+    }
 </style>
