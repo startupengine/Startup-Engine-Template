@@ -20,7 +20,7 @@
 <div class="wrapper">
     <div class="section" style="padding-top:50px;margin-top:-100px !important;background:none;">
         <div class="container">
-            <div id="articles" class="card-deck">
+            <div id="articles">
                 <div class="row">
                     <div class="@if($page->content()->about->headline !== null) col-md-8 @else col-md-12 @endif">
                         <todo-item
