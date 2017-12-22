@@ -14,7 +14,7 @@
         border-color:#fff !important;
     }
 
-    h5.excerpt {
+    #content .excerpt {
         font-weight: 400 !important;
         margin-top:25px;
         text-align: left !important;
