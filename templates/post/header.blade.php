@@ -37,7 +37,7 @@
                                 <div style="width:100%; min-height:600px; background:url('{{ $post->content()->body->image }}'); background-size:cover; border-radius:4px;background-position:center center;"></div>
                             <?php } ?>
 
-                            @if($post->content() !== null && ($post->content()->body->image !== null OR $post->content()->body->video !== null OR $post->content()->heading->excerpt !== null))
+                            @if($post->content() !== null && ($post->content()->body->image !== null OR $post->content()->body->video !== null OR $post->content()->heading->excerpt !== null OR $post->content()->body->body !== null))
                                 <div class="card-body" id="content">
                                     <?php if($post->content() !== null && $post->content()->body->video !== null){ ?>
                                         <?php $video = $post->content()->body->video; ?>
