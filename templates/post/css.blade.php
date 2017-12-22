@@ -20,6 +20,19 @@
         text-align: left !important;
         color: #000;
         font-weight: 400;
+        padding:25px;
+    }
+
+    #content {
+        padding:0px !important;
+    }
+
+    #content p {
+        padding:25px;
+    }
+
+    #content > .section {
+        margin-bottom:25px;
     }
 
     .card-body img {
