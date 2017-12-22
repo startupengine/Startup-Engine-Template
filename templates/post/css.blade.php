@@ -16,7 +16,7 @@
 
     #content .excerpt {
         font-weight: 400 !important;
-        margin-top:25px;
+        margin-top:0px;
         text-align: left !important;
         color: #000;
         font-weight: 400;
