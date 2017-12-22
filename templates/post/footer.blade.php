@@ -6,7 +6,7 @@
         </div>
     </div>
 
-    <?php if($post->content() !== null && $post->content()->body->fullwidth !== null){ ?>
+    <?php if($post->content() !== null && isset($post->content()->body->fullwidth)) { ?>
         {!!  $post->markdown($post->content()->body->fullwidth) !!}
     <?php } ?>
 
