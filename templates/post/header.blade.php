@@ -30,7 +30,7 @@
         <div class="row">
             <div class="col-lg-12 col-md-12">
                 <div id="articles" >
-                    <div class="row row-eq-height" id="content-row">
+                    <div id="content-row">
 
                         <div class="card" style="box-shadow:0px -30px 60px rgba(0,0,0,0.2);">
                             <?php if($post->content() !== null && $post->content()->body->image !== null){ ?>
