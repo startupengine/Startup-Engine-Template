@@ -17,5 +17,8 @@
     h5.excerpt {
         font-weight: 400 !important;
         margin-top:25px;
+        text-align: left !important;
+        color: #000;
+        font-weight: 400;
     }
 </style>
