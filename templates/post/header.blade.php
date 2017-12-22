@@ -30,6 +30,10 @@
                 <div id="articles" class="card-deck">
                     <div class="col-md-12 row row-eq-height">
                         <div class="card" style="box-shadow:0px -30px 60px rgba(0,0,0,0.2);">
+                            <?php if($post->content() !== null && $post->content()->body->image !== null){ ?>
+                            <div style="width:100%; min-height:600px; background:url('{{ $post->content()->body->image !== null }}); background-size:cover; border-radius:4px;background-position:center center;"></div>
+                            <?php }
+
                             <div class="card-body" id="content">
                                 <?php if($post->content() !== null && $post->content()->body->video !== null){ ?>
                                     <?php $video = $post->content()->body->video; ?>
