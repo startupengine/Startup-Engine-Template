@@ -33,7 +33,6 @@
                             <?php if($post->content() !== null && $post->content()->body->image !== null){ ?>
                             <div style="width:100%; min-height:600px; background:url('{{ $post->content()->body->image }}'); background-size:cover; border-radius:4px;background-position:center center;"></div>
                             <?php } ?>
-
                             <div class="card-body" id="content">
                                 <?php if($post->content() !== null && $post->content()->body->video !== null){ ?>
                                     <?php $video = $post->content()->body->video; ?>
@@ -53,3 +52,4 @@
                                 <?php if($post->content()->heading->excerpt !== null) { ?>
                                     <h5 class="description excerpt">{{ $post->content()->heading->excerpt}}</h5>
                                 <?php } ?>
+                            </div>
