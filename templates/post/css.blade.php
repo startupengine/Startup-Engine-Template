@@ -27,4 +27,12 @@
         margin:0px;
         border-radius:2px;
     }
+
+    #content-row {
+        width:100%;
+    }
+
+    .plyr {
+        margin-bottom:25px;
+    }
 </style>
