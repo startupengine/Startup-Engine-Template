@@ -20,7 +20,7 @@
         text-align: left !important;
         color: #000;
         font-weight: 400;
-        padding:25px;
+        padding:25px 25px 0px 25px;
     }
 
     #content {
