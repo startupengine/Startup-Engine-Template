@@ -16,7 +16,9 @@
                 <div style="padding-top:140px;">
                     <div align="center">
                         <h1>{{ $post->content()->heading->headline }}</h1>
-                        <a class="btn btn-lg btn-round btn-simple" id="engage" href="javascript:void(0)" onclick="scrollToMore()" >@if($post->content()->heading->button !== null){{ $post->content()->heading->button }}@else Read More @endif</a>
+                        <a class="btn btn-lg btn-round btn-simple" id="engage" href="javascript:void(0)"
+                           onclick="scrollToMore()">@if($post->content()->heading->button !== null){{ $post->content()->heading->button }}@else
+                                Read More @endif</a>
                     </div>
                 </div>
             </div>
