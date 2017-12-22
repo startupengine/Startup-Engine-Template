@@ -24,7 +24,7 @@
 
     .card-body img {
         min-width:100%;
-        margin:15px;
+        margin:0px;
         border-radius:2px;
     }
 </style>
