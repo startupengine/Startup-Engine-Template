@@ -52,4 +52,3 @@
                                 <?php if($post->content()->heading->excerpt !== null) { ?>
                                     <h5 class="description excerpt">{{ $post->content()->heading->excerpt}}</h5>
                                 <?php } ?>
-                            </div>
