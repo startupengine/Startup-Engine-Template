@@ -21,4 +21,10 @@
         color: #000;
         font-weight: 400;
     }
+
+    .card-body img {
+        float:left;
+        margin:15px;
+        border-radius:2px;
+    }
 </style>
