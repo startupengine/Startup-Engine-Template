@@ -34,7 +34,7 @@
 
                         <div class="card" style="box-shadow:0px -30px 60px rgba(0,0,0,0.2);">
                             <?php if($post->content() !== null && $post->content()->body->image !== null){ ?>
-                            <div style="width:100%; min-height:600px; background:url('{{ $post->content()->body->image }}'); background-size:cover; border-radius:4px;background-position:center center;"></div>
+                                <div style="width:100%; min-height:600px; background:url('{{ $post->content()->body->image }}'); background-size:cover; border-radius:4px;background-position:center center;"></div>
                             <?php } ?>
 
                             @if($post->content() !== null && ($post->content()->body->image !== null OR $post->content()->body->video !== null OR $post->content()->heading->excerpt !== null))
@@ -55,7 +55,10 @@
                                         <div data-type="{{ $videotype }}" data-video-id="{{ $video }}"></div>
                                     <?php } ?>
                                     <?php if($post->content()->heading->excerpt !== null) { ?>
-                                        <h5 class="description excerpt">{{ $post->content()->heading->excerpt}}</h5>
+                                        <h5 class="description excerpt">{{ $post->content()->heading->excerpt }}</h5>
+                                    <?php } ?>
+                                    <?php if($post->content() !== null && isset($post->content()->body->body)) { ?>
+                                        {!!  $post->markdown($post->content()->body->body) !!}
                                     <?php } ?>
                                 </div>
                             @endif
