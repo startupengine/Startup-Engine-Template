@@ -23,7 +23,7 @@
     }
 
     .card-body img {
-        float:left;
+        min-width:100%;
         margin:15px;
         border-radius:2px;
     }
