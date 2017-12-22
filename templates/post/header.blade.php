@@ -29,26 +29,31 @@
             <div class="col-lg-12 col-md-12">
                 <div id="articles" class="card-deck">
                     <div class="col-md-12 row row-eq-height">
+
                         <div class="card" style="box-shadow:0px -30px 60px rgba(0,0,0,0.2);">
                             <?php if($post->content() !== null && $post->content()->body->image !== null){ ?>
                             <div style="width:100%; min-height:600px; background:url('{{ $post->content()->body->image }}'); background-size:cover; border-radius:4px;background-position:center center;"></div>
                             <?php } ?>
-                            <div class="card-body" id="content">
-                                <?php if($post->content() !== null && $post->content()->body->video !== null){ ?>
-                                    <?php $video = $post->content()->body->video; ?>
-                                    <?php $videotype = $post->videoType($video); ?>
-                                    <?php
-                                    if ($videotype == "youtube") {
-                                        $url = $video;
-                                        parse_str(parse_url($url, PHP_URL_QUERY), $array);
-                                        $video = $array['v'];
-                                    }
-                                    if ($videotype == "vimeo") {
-                                        $video = (int)substr(parse_url($video, PHP_URL_PATH), 1);
-                                    }
-                                    ?>
-                                    <div data-type="{{ $videotype }}" data-video-id="{{ $video }}"></div>
-                                <?php } ?>
-                                <?php if($post->content()->heading->excerpt !== null) { ?>
-                                    <h5 class="description excerpt">{{ $post->content()->heading->excerpt}}</h5>
-                                <?php } ?>
+
+                            @if($post->content() !== null && ($post->content()->body->image !== null OR $post->content()->body->video !== null OR $post->content()->heading->excerpt !== null))
+                                <div class="card-body" id="content">
+                                    <?php if($post->content() !== null && $post->content()->body->video !== null){ ?>
+                                        <?php $video = $post->content()->body->video; ?>
+                                        <?php $videotype = $post->videoType($video); ?>
+                                        <?php
+                                        if ($videotype == "youtube") {
+                                            $url = $video;
+                                            parse_str(parse_url($url, PHP_URL_QUERY), $array);
+                                            $video = $array['v'];
+                                        }
+                                        if ($videotype == "vimeo") {
+                                            $video = (int)substr(parse_url($video, PHP_URL_PATH), 1);
+                                        }
+                                        ?>
+                                        <div data-type="{{ $videotype }}" data-video-id="{{ $video }}"></div>
+                                    <?php } ?>
+                                    <?php if($post->content()->heading->excerpt !== null) { ?>
+                                        <h5 class="description excerpt">{{ $post->content()->heading->excerpt}}</h5>
+                                    <?php } ?>
+                                </div>
+                            @endif
