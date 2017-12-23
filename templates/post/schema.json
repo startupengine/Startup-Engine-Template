@@ -52,8 +52,34 @@
         },
         "fullwidth": {
           "type": "richtext",
-          "description": "Full-width HTML content.",
+          "description": "Full-width HTML content displayed after the main content.",
           "placeholder": "<div class=\"section\"><h5>There is no spoon.</h5></div>"
+        }
+      }
+    },
+    "Author": {
+      "title": "Author",
+      "slug": "author",
+      "fields": {
+        "name": {
+          "type": "text",
+          "description": "The author's name.",
+          "placeholder": "Name goes here."
+        },
+        "bio": {
+          "type": "textarea",
+          "description": "A breif bio of the author.",
+          "placeholder": "Text goes here."
+        },
+        "image": {
+          "type": "text",
+          "description": "A link to a photo of the author.",
+          "placeholder": "http://..."
+        },
+        "link": {
+          "type": "text",
+          "description": "A link to the author's blog, website, social profile, etc.",
+          "placeholder": "http://..."
         }
       }
     },
