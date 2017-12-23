@@ -88,7 +88,8 @@
         });
 
         // Open all external links in a new tab/window
-        $("#content a[href^='http://']").attr("target","_blank");
+        $("a[href^='http://']").attr("target","_blank");
+        $("a[href^='https://']").attr("target","_blank");
     });
 
 </script>
