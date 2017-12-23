@@ -52,7 +52,7 @@
                                             $video = (int)substr(parse_url($video, PHP_URL_PATH), 1);
                                         }
                                         ?>
-                                        <div data-type="{{ $videotype }}" data-video-id="{{ $video }}"></div>
+                                        <video class="afterglow" id="featuredvideo" width="100%" height="540" data-{{ $videotype }}-id="{{ $video }}" @if($post->content()->heading->image !== null) poster="{{ $post->content()->heading->image }}" @endif ></video>
                                     <?php } ?>
                                     <?php if($post->content()->heading->excerpt !== null) { ?>
                                         <h5 class="description excerpt">{{ $post->content()->heading->excerpt }}</h5>

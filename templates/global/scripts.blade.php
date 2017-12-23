@@ -94,9 +94,6 @@
 
 </script>
 
-<!-- Plyr -->
-<script>plyr.setup();</script>
-
 <!-- Font Awesome -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
 
