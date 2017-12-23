@@ -19,4 +19,5 @@
 <script src="https://unpkg.com/chartkick@2.2.3"></script>
 <script src="https://unpkg.com/vue-chartkick@0.2.0/dist/vue-chartkick.js"></script>
 <script src="https://cdn.plyr.io/2.0.18/plyr.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/afterglowplayer@1.x"></script>
 <?php if(setting('theme.global_css') !== null) { echo setting('theme.global_css'); } ?>
