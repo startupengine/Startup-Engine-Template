@@ -6,7 +6,7 @@
 
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper" style="background:#000;">
-    <div class="page-header page-header-small">
+    <div class="page-header @if($page->content()->heading->headersize == 'small') page-header-small @endif">
         <div class="page-header-image" <?php if ($post->content()->heading->background !== null) {
             echo "style=\"background-image:url('" . $post->content()->heading->background . "'); background-size:cover;z-index: 0;opacity: 0.3; \"";
         } ?>>
