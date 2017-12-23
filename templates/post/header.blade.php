@@ -33,27 +33,29 @@
                     <div id="content-row">
 
                         <div class="card" style="box-shadow:0px -30px 60px rgba(0,0,0,0.2);">
-                            <?php if($post->content() !== null && $post->content()->body->image !== null){ ?>
+                            <?php if($post->content() !== null && $post->content()->body->image !== null && $post->content()->body->video !== null){ ?>
                                 <div style="width:100%; min-height:600px; background:url('{{ $post->content()->body->image }}'); background-size:cover; border-radius:4px;background-position:center center;"></div>
                             <?php } ?>
 
+                            <?php if($post->content() !== null && $post->content()->body->video !== null){ ?>
+                                <?php $video = $post->content()->body->video; ?>
+                                <?php $videotype = $post->videoType($video); ?>
+                                <?php
+                                if ($videotype == "youtube") {
+                                    $url = $video;
+                                    parse_str(parse_url($url, PHP_URL_QUERY), $array);
+                                    $video = $array['v'];
+                                }
+                                if ($videotype == "vimeo") {
+                                    $video = (int)substr(parse_url($video, PHP_URL_PATH), 1);
+                                }
+                            ?>
+                            <video class="afterglow" id="featuredvideo" width="960" height="450" data-{{ $videotype }}-id="{{ $video }}" @if($post->content()->body->image !== null) poster="{{ $post->content()->body->image }}" @endif ></video>
+                            <?php } ?>
+
+
                             @if($post->content() !== null && ($post->content()->body->image !== null OR $post->content()->body->video !== null OR $post->content()->heading->excerpt !== null OR $post->content()->body->body !== null))
                                 <div class="card-body" id="content">
-                                    <?php if($post->content() !== null && $post->content()->body->video !== null){ ?>
-                                        <?php $video = $post->content()->body->video; ?>
-                                        <?php $videotype = $post->videoType($video); ?>
-                                        <?php
-                                        if ($videotype == "youtube") {
-                                            $url = $video;
-                                            parse_str(parse_url($url, PHP_URL_QUERY), $array);
-                                            $video = $array['v'];
-                                        }
-                                        if ($videotype == "vimeo") {
-                                            $video = (int)substr(parse_url($video, PHP_URL_PATH), 1);
-                                        }
-                                        ?>
-                                        <video class="afterglow" id="featuredvideo" width="100%" height="540" data-{{ $videotype }}-id="{{ $video }}" @if($post->content()->body->image !== null) poster="{{ $post->content()->body->image }}" @endif ></video>
-                                    <?php } ?>
                                     <?php if($post->content()->heading->excerpt !== null) { ?>
                                         <h5 class="description excerpt">{{ $post->content()->heading->excerpt }}</h5>
                                     <?php } ?>
