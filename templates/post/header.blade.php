@@ -48,11 +48,9 @@
                                 }
                                 if ($videotype == "vimeo") {
                                     $video = (int)substr(parse_url($video, PHP_URL_PATH), 1);
-                                }
-                            ?>
-                            <video class="afterglow" id="featuredvideo" width="960" height="450" data-{{ $videotype }}-id="{{ $video }}" @if($post->content()->body->image !== null) poster="{{ $post->content()->body->image }}" @endif ></video>
+                                } ?>
+                                <video class="afterglow" id="featuredvideo" width="960" height="450"  @if($video == null) src="{{ $post->content()->body->video }}" @endif  @if($video !== null) data-{{ $videotype }}-id="{{ $video }}" @endif   @if($post->content()->body->image !== null) poster="{{ $post->content()->body->image }}" @endif ></video>
                             <?php } ?>
-
 
                             @if($post->content() !== null && ($post->content()->body->image !== null OR $post->content()->body->video !== null OR $post->content()->heading->excerpt !== null OR $post->content()->body->body !== null))
                                 <div class="card-body" id="content">
