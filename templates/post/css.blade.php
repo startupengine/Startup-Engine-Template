@@ -20,7 +20,7 @@
         text-align: left !important;
         color: #000;
         font-weight: 400;
-        padding:25px 25px 0px 25px !important;
+        padding:10px 25px 25px 25px !important;
     }
 
     #content {
@@ -28,7 +28,7 @@
     }
 
     #content p, #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
-        padding: 25px 25px 0px 25px !important;
+        padding: 10px 25px 15px 25px !important;
         margin: 0px !important;
         min-width: 100%;
         align-items: center;
