@@ -75,6 +75,7 @@
     }
 
     $( document ).ready(function() {
+        // Track all clicks
         $( "a, button, .btn, input, img" ).click(function() {
             var id = $(this).attr('id');
             var name = $(this).attr('name');
@@ -85,6 +86,9 @@
             var text = $(this).html();
             clickEvent(id, name, title, url, type, src, text);
         });
+
+        // Open all external links in a new tab/window
+        $("#content a[href^='http://']").attr("target","_blank");
     });
 
 </script>
