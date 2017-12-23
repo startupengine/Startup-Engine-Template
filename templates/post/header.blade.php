@@ -33,7 +33,7 @@
                     <div id="content-row">
 
                         <div class="card" style="box-shadow:0px -30px 60px rgba(0,0,0,0.2);">
-                            <?php if($post->content() !== null && $post->content()->body->image !== null && $post->content()->body->video !== null){ ?>
+                            <?php if($post->content() !== null && $post->content()->body->image !== null && $post->content()->body->video == null){ ?>
                                 <div style="width:100%; min-height:600px; background:url('{{ $post->content()->body->image }}'); background-size:cover; border-radius:4px;background-position:center center;"></div>
                             <?php } ?>
 
