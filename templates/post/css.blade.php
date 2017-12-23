@@ -46,9 +46,13 @@
 
     .card-body img {
         min-width:100%;
+        max-width:500px !important;
         margin:0px;
         border-radius:2px;
     }
+
+    p < img { text-align: center !important; }
+
 
     #content-row {
         width:100%;
