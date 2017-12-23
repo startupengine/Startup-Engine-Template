@@ -66,4 +66,8 @@
     .plyr {
         margin-bottom:25px;
     }
+
+    .centered {
+        text-align:center !important;
+    }
 </style>

@@ -10,4 +10,10 @@
         {!!  $post->markdown($post->content()->body->fullwidth) !!}
     <?php } ?>
 
+    <script>
+        $( document ).ready(function() {
+            $( "p:has(img)" ).addClass('centered');
+        });
+    </script>
+
 </body>
