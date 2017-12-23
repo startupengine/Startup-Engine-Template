@@ -36,23 +36,21 @@
         display: inline-block;
     }
 
-    #content p:has('> img') {
-        text-align:center !important;
-    }
-
     #content > .section {
         margin-bottom:25px;
     }
 
     .card-body img {
         min-width:100%;
-        max-width:500px !important;
+        width:100%;
+        max-width:700px !important;
         margin:0px;
         border-radius:2px;
     }
 
-    p < img { text-align: center !important; }
-
+    .card-body p < img {
+        text-align: center !important;
+    }
 
     #content-row {
         width:100%;
