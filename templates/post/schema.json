@@ -28,6 +28,13 @@
           "type": "text",
           "description": "Url for a background image (optional).",
           "placeholder": "http://www.example.com"
+        },
+        "headersize": {
+          "type": "select",
+          "options": ["large", "small"],
+          "slug": "headersize",
+          "description": "How big should the page header be?",
+          "placeholder": "Select a size"
         }
       }
     },
