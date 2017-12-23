@@ -28,7 +28,7 @@
 <div class="section" style="padding-top:25px;margin-top:-75px !important;background:none;">
     <div class="container" id="more">
         <div class="row">
-            <div>
+            <div style="width:100%;">
                 <div id="articles" >
                     <div id="content-row">
 
