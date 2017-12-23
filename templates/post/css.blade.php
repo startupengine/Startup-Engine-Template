@@ -36,16 +36,23 @@
         display: inline-block;
     }
 
+    #content p {
+        display:inline-block;
+        width:100%;
+    }
+
     #content > .section {
         margin-bottom:25px;
     }
 
     .card-body img {
-        min-width:100%;
-        width:100%;
-        max-width:700px !important;
         margin:0px;
         border-radius:2px;
+        max-width: 700px !important;
+        border-radius: 2px;
+        display: inline-block;
+        min-width: unset;
+        width: 100%;
     }
 
     .card-body p < img {
