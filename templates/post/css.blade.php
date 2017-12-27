@@ -91,4 +91,13 @@
         margin:0px;
         padding:0px;
     }
+
+    @media screen and (max-width: 991px) {
+        .page-header h1 {
+            font-size:35px !important;
+        }
+        .page-header #engage {
+            padding:10px 20px !important;
+        }
+    }
 </style>
