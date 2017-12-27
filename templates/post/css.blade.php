@@ -84,6 +84,7 @@
     #engage:hover {
         background:#222 !important;
         color:#fff !important;
+        border-color:#222 !important;
     }
 
     #engage p{
