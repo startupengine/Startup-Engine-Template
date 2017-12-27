@@ -99,6 +99,7 @@
     #engage p{
         margin:0px;
         padding:0px;
+        text-shadow:none !important;
     }
 
     @media screen and (max-width: 991px) {
