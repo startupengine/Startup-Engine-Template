@@ -16,7 +16,7 @@
                 <div style="padding-top:140px;">
                     <div align="center">
                         <h1>{{ $post->content()->heading->headline }}</h1>
-                        <h6 id="date">{{ $post->content()->published_at->diffForHumans() }}</h6>
+                        <h6 id="date">{{ $post->published_at->diffForHumans() }}</h6>
                         <a class="btn btn-lg btn-round btn-simple" id="engage" href="javascript:void(0)"
                            onclick="scrollToMore()">@if($post->content()->heading->button !== null){!! $post->markdown($post->content()->heading->button) !!}@else
                                 Read Article @endif</a>
