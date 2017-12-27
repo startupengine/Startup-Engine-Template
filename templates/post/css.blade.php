@@ -104,7 +104,7 @@
     #featuredImage{
         min-height:600px;
         width:100%;
-        background-size:cover;
+        background-size:cover !important;
         border-radius:4px;
         background-position:center center !important;
     }
