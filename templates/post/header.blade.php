@@ -25,7 +25,7 @@
         </div>
     </div>
 </div>
-<div class="section" style="padding-top:25px;margin-top:-75px !important;background:none;">
+<div class="section" style="padding-top:25px;margin-top:-75px !important;background:none;z-index:5 !important;">
     <div class="container" id="more">
         <div class="row">
             <div style="width:100%;">
