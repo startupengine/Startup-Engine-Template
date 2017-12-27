@@ -97,8 +97,5 @@
 <!-- Font Awesome -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
 
-<!-- Animate On Scroll -->
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-
 <!-- Custom Scripts -->
 <?php if(setting('theme.global_scripts') !== null) { echo setting('theme.global_scripts'); } ?>
