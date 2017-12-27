@@ -70,4 +70,8 @@
     .centered {
         text-align:center !important;
     }
+
+    .section:nth-of-type(2) {
+        z-index:5 !important;
+    }
 </style>
