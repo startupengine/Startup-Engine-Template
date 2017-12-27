@@ -20,7 +20,7 @@
           "placeholder": "Write a headline."
         },
         "button": {
-          "type": "text",
+          "type": "richtext",
           "description": "A short call to action phrase.",
           "placeholder": "Read More"
         },
@@ -74,7 +74,7 @@
           "placeholder": "Name goes here."
         },
         "bio": {
-          "type": "textarea",
+          "type": "richtext",
           "description": "A breif bio of the author.",
           "placeholder": "Text goes here."
         },
