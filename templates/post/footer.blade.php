@@ -13,7 +13,7 @@
     <script>
         $( document ).ready(function() {
             $( "p:has(img)" ).addClass('centered');
-            $( "#content img" ).attr('data-aos', 'zoom-out');
+            //$( "#content img" ).attr('data-aos', 'zoom-out');
         });
     </script>
 
