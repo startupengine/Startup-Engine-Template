@@ -13,7 +13,7 @@
         </div>
         <div class="container">
             <div class="content-center">
-                <div style="padding-top:140px;">
+                <div style="padding-top:75px;">
                     <div align="center">
                         <h1 id="title">{{ $post->content()->heading->headline }}</h1>
                         <h6 id="date">Published {{ $post->published_at->diffForHumans() }}</h6>
