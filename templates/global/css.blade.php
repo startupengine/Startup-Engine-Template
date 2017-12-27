@@ -218,7 +218,7 @@
     }
 
     #articles-index .page-header:before {
-        background: none !important;
+        background: none;
     }
 
     .page-header h1, .main h1 {
