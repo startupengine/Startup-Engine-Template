@@ -4,7 +4,7 @@
 <!-- CSS Files -->
 <link href="/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="/css/now-ui-kit.css?v=1.1.0" rel="stylesheet"/>
-<link rel="stylesheet" href="https://cdn.plyr.io/2.0.18/plyr.css">
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 <style>
 
     .btn-outline {
