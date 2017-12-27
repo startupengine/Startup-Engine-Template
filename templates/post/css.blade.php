@@ -75,4 +75,9 @@
     .section:nth-of-type(2) {
         z-index:5 !important;
     }
+
+    #engage {
+        background:#fff !important;
+        color:#222 !important;
+    }
 </style>
