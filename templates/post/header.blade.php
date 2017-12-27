@@ -32,7 +32,7 @@
                 <div id="articles" >
                     <div id="content-row">
 
-                        <div class="card" style="box-shadow:0px -30px 60px rgba(0,0,0,0.2);">
+                        <div class="card" style="box-shadow:0px -30px 60px rgba(0,0,0,0.2);" id="contentBody">
                             <?php if($post->content() !== null && $post->content()->body->image !== null && $post->content()->body->video == null){ ?>
                                 <div id="featuredImage" style="background:url('{{ $post->content()->body->image }}');"></div>
                             <?php } ?>

@@ -110,9 +110,13 @@
     }
 
     @media screen and (max-width: 991px) {
+        #contentBody {
+            border-radius:0px !important;
+        }
         #featuredImage{
             min-height:350px;
             border-radius:4px 4px 0px 0px !important;
+            background-position: center center;
         }
     }
 </style>
