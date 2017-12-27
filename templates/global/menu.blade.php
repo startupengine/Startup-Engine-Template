@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <a href="/app" class="nav-link hiddenOnDesktop"><i class="fas fa-sign-in-alt"></i>&nbsp; App</a>
-                    <a href="/app" class="nav-link hiddenOnDesktop"><i class="fas fa-sign-out-alt"></i>&nbsp; Sign Out</a>
+                    <a href="/logout" class="nav-link hiddenOnDesktop"><i class="fas fa-sign-out-alt"></i>&nbsp; Sign Out</a>
                 </li>
                 <?php } ?>
             </ul>
