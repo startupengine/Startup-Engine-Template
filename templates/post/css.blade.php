@@ -114,7 +114,7 @@
             border-radius:0px !important;
         }
         #featuredImage{
-            min-height:350px;
+            min-height:250px;
             border-radius:0px !important;
             background-position: center center;
         }
