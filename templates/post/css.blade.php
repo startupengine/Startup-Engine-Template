@@ -106,7 +106,7 @@
         width:100%;
         background-size:cover;
         border-radius:4px;
-        background-position:center center;
+        background-position:center center !important;
     }
 
     @media screen and (max-width: 991px) {
