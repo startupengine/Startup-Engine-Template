@@ -100,4 +100,19 @@
             padding:10px 20px !important;
         }
     }
+
+    #featuredImage{
+        min-height:600px;
+        width:100%;
+        background-size:cover;
+        border-radius:4px;
+        background-position:center center;
+    }
+
+    @media screen and (max-width: 991px) {
+        #featuredImage{
+            min-height:350px;
+            border-radius:4px 4px 0px 0px !important;
+        }
+    }
 </style>
