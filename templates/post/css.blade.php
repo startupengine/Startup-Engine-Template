@@ -115,7 +115,7 @@
         }
         #featuredImage{
             min-height:350px;
-            border-radius:4px 4px 0px 0px !important;
+            border-radius:0px !important;
             background-position: center center;
         }
     }
