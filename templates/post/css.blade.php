@@ -7,7 +7,7 @@
         margin-top:0px !important;
     }
 
-    #content h1, #date {
+    #title, #date {
         margin:15px !important;
     }
 
