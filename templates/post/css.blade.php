@@ -131,7 +131,7 @@
     }
 
     #content ul {
-        padding: 15px 15%;
+        padding: 10px 10%;
     }
 
     #content a{
@@ -144,7 +144,7 @@
     }
 
     #content li p {
-        padding:5px !important;
+        padding:25px !important;
     }
 
     #content ul {
