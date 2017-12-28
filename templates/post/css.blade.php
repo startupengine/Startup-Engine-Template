@@ -150,7 +150,7 @@
     }
 
     #content li p {
-        padding:25px !important;
+        padding:25px 25px 0px 25px !important;
         border-left: #eee 5px solid;
     }
 
