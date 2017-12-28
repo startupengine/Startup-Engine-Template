@@ -145,6 +145,7 @@
 
     #content li p {
         padding:25px !important;
+        border-left: #ccc 5px solid;
     }
 
     #content ul {
