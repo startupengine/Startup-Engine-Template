@@ -19,6 +19,11 @@
           "description": "A short summary of the contents.",
           "placeholder": "Write a headline."
         },
+        "showdate": {
+          "type": "checkbox",
+          "description": "Show the publication date?",
+          "placeholder": null
+        },
         "button": {
           "type": "richtext",
           "description": "A short call to action phrase.",
