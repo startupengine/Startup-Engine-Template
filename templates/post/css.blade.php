@@ -142,4 +142,12 @@
     #content a:hover {
         border-bottom: #ff0000 solid 1px !important;
     }
+
+    #content li p {
+        padding:0px !important;
+    }
+
+    #content ul {
+        list-style:none !important;
+    }
 </style>
