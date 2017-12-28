@@ -32,8 +32,8 @@
                             <button class="dropdown-item" type="button" onclick="location.href='/logout';"><i class="now-ui-icons ui-1_lock-circle-open"></i>&nbsp; Sign Out</button>
                         </div>
                     </div>
-                    <a href="/app" class="nav-link hiddenOnDesktop"><i class="fas fa-sign-in-alt"></i>&nbsp; App</a>
-                    <a href="/logout" class="nav-link hiddenOnDesktop"><i class="fas fa-sign-out-alt"></i>&nbsp; Sign Out</a>
+                    <a href="/app" class="nav-link hiddenOnDesktop">App &nbsp;<i class="fas fa-sign-in-alt"></i></a>
+                    <a href="/logout" class="nav-link hiddenOnDesktop">Sign Out &nbsp;<i class="fas fa-sign-out-alt"></i></a>
                 </li>
                 <?php } ?>
             </ul>
