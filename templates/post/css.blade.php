@@ -129,4 +129,13 @@
             background-position: center center;
         }
     }
+
+    #content a{
+        color:#ff0000 !important;
+        text-decoration:none !important;
+        border-bottom: #eee solid 1px !important;
+    }
+    #content a:hover {
+        border-bottom: #ff0000 solid 1px !important;
+    }
 </style>
