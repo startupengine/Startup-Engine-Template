@@ -112,7 +112,7 @@
     }
 
     #featuredImage{
-        min-height:600px;
+        min-height:500px;
         width:100%;
         background-size:cover !important;
         border-radius:4px;
