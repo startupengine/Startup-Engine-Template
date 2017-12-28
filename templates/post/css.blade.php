@@ -144,7 +144,7 @@
     }
 
     #content li p {
-        padding:0px !important;
+        padding:5px !important;
     }
 
     #content ul {
