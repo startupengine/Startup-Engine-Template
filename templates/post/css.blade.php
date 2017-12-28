@@ -131,7 +131,7 @@
     }
 
     #content ul {
-        padding: 10px 10%;
+        padding: 25px;
     }
 
     #content a{
