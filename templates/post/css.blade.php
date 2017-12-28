@@ -141,10 +141,11 @@
     #content a{
         color:#ff0000 !important;
         text-decoration:none !important;
-        border-bottom: #eee solid 1px !important;
+        border-bottom: #eee solid 4px !important;
+        padding-bottom:5px;
     }
     #content a:hover {
-        border-bottom: #ff0000 solid 1px !important;
+        border-bottom: #ff0000 solid 4px !important;
     }
 
     #content li p {
