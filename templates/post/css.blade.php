@@ -156,6 +156,7 @@
 
     #content ul {
         list-style:none !important;
+        margin-bottom:0px !important;
     }
 
     #content ul li {
