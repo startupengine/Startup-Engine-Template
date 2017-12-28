@@ -35,7 +35,7 @@
     }
 
     #content {
-        padding:0px !important;
+        padding:0px 0px 25px 0px !important;
     }
 
     #content p, #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
