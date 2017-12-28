@@ -130,6 +130,10 @@
         }
     }
 
+    #content ul {
+        padding: 15px 15%;
+    }
+
     #content a{
         color:#ff0000 !important;
         text-decoration:none !important;
