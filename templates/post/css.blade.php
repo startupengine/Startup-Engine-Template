@@ -58,7 +58,7 @@
     .card-body img {
         margin:0px;
         border-radius:2px;
-        max-width: 700px !important;
+        max-width: 50% !important;
         border-radius: 2px;
         display: inline-block;
         min-width: unset;
@@ -127,6 +127,9 @@
             min-height:250px;
             border-radius:0px !important;
             background-position: center center;
+        }
+        .card-body img {
+            max-width: 100% !important;
         }
     }
 
