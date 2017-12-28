@@ -134,10 +134,6 @@
         }
     }
 
-    #content ul {
-        padding: 25px;
-    }
-
     #content a{
         color:#ff0000 !important;
         text-decoration:none !important;
@@ -157,6 +153,7 @@
     #content ul {
         list-style:none !important;
         margin-bottom:0px !important;
+        padding:25px 25px 0px 25px !important;
     }
 
     #content ul li {
