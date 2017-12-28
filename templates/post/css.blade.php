@@ -157,4 +157,8 @@
     #content ul {
         list-style:none !important;
     }
+
+    #content ul li {
+        margin:15px;
+    }
 </style>
