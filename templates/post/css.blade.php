@@ -143,6 +143,7 @@
         text-decoration:none !important;
         border-bottom: #eee solid 4px !important;
         padding-bottom:5px;
+        transition: border-bottom 0.3s;
     }
     #content a:hover {
         border-bottom: #ff0000 solid 4px !important;
