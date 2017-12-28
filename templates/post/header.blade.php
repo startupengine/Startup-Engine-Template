@@ -6,7 +6,7 @@
 
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper" style="background:#000;">
-    <div class="page-header @if(isset($post->content()->heading->headersize) && $post->content()->heading->headersize == 'small') page-header-small @endif">
+    <div class="page-header @if(isset($post->content()->heading->header_size) && $post->content()->heading->header_size == 'small') page-header-small @endif">
         <div class="page-header-image" <?php if ($post->content()->heading->background !== null) {
             echo "style=\"background-image:url('" . $post->content()->heading->background . "'); background-size:cover;z-index: 0;opacity: 0.3; \"";
         } ?>>
@@ -16,12 +16,12 @@
                 <div style="padding-top:75px;">
                     <div align="center">
                         <h1 id="title">{{ $post->content()->heading->headline }}</h1>
-                        @if(isset($post->content()->heading->showdate) && $post->content()->heading->showdate == "on")
+                        @if(isset($post->content()->heading->show_date) && $post->content()->heading->show_date == "on")
                             <h6 id="date">
                                 @if(isset($post->content()->meta->featured) && $post->content()->meta->featured == "on")
                                     <span style="opacity:0.5; margin-right:10px;">FEATURED</span>
                                 @endif
-                                @if($post->content()->heading->showdate !== "off")
+                                @if($post->content()->heading->show_date !== "off")
                                     Published {{ $post->published_at->diffForHumans() }}
                                 @endif
                             </h6>

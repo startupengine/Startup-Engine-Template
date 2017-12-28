@@ -19,7 +19,7 @@
           "description": "A short summary of the contents.",
           "placeholder": "Write a headline."
         },
-        "showdate": {
+        "show_date": {
           "type": "checkbox",
           "description": "Show the publication date?",
           "placeholder": null
@@ -34,7 +34,7 @@
           "description": "Url for a background image (optional).",
           "placeholder": "http://www.example.com"
         },
-        "headersize": {
+        "header_size": {
           "type": "select",
           "options": ["large", "small"],
           "slug": "headersize",
