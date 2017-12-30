@@ -61,8 +61,14 @@
           "type": "richtext",
           "description": "Write some content.",
           "placeholder": "A long time ago, in a galaxy far far away..."
-        },
-        "fullwidth": {
+        }
+      }
+    },
+    "Footer": {
+      "title": "Footer",
+      "slug": "footer",
+      "fields":{
+        "content": {
           "type": "richtext",
           "description": "Full-width HTML content displayed after the main content.",
           "placeholder": "<div class=\"section\"><h5>There is no spoon.</h5></div>"
