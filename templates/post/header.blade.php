@@ -27,7 +27,7 @@
                             </h6>
                         @endif
                         <a class="btn btn-lg btn-round btn-simple" id="engage" href="javascript:void(0)"
-                           onclick="scrollToMore()">@if($post->content()->heading->button !== null){!! $post->content()->heading->button !!}@else
+                           onclick="scrollToMore()">@if($post->content()->heading->button !== null) {{ $post->content()->heading->button }} @else
                                 Read Article @endif</a>
                     </div>
                 </div>
