@@ -25,7 +25,7 @@
           "placeholder": null
         },
         "button": {
-          "type": "richtext",
+          "type": "text",
           "description": "A short call to action phrase.",
           "placeholder": "Read More"
         },
