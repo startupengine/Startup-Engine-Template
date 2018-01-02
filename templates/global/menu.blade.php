@@ -26,6 +26,11 @@
                 <?php echo setting('site.menu'); ?>
                 <?php if(\Auth::user() !== null) {  ?>
                 <li class="nav-item">
+                    <a href="/app/profile" class="nav-link hiddenOnDesktop">
+                        <i class="now-ui-icons users_circle-08"></i> &nbsp;Profile
+                    </a>
+                </li>
+                <li class="nav-item">
                     <div class="btn-group hiddenOnMobile">
                         <a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" aria-haspopup="true"
                            aria-expanded="false">
@@ -40,11 +45,6 @@
                             </button>
                         </div>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a href="/app/profile" class="nav-link hiddenOnDesktop">
-                        <i class="now-ui-icons users_circle-08"></i> &nbsp;Profile
-                    </a>
                 </li>
                 <li class="nav-item">
                     <a href="/logout" class="nav-link hiddenOnDesktop">
