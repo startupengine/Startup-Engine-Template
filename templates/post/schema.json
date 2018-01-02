@@ -43,7 +43,7 @@
         }
       }
     },
-    "Content": {
+    "Body": {
       "title": "Body",
       "slug": "body",
       "fields": {
