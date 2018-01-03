@@ -23,13 +23,13 @@
                 </a>
             </div>
             <ul class="navbar-nav">
-                <?php if(\Auth::user() !== null) {  ?>
+                <?php /* if(\Auth::user() !== null) {  ?>
                 <li class="nav-item">
                     <a href="/app/profile" class="nav-link hiddenOnDesktop">
                         <i class="now-ui-icons users_circle-08"></i> &nbsp;Profile
                     </a>
                 </li>
-                <?php } ?>
+                <?php } */ ?>
                 <?php echo setting('site.menu'); ?>
                 <?php if(\Auth::user() !== null) {  ?>
                 <li class="nav-item">
@@ -39,9 +39,11 @@
                             Account
                         </a>
                         <div class="dropdown-menu dropdown-menu-right ">
+                            <?php /*
                             <button class="dropdown-item" type="button" onclick="location.href='/app/profile';"><i
                                         class="now-ui-icons users_circle-08"></i>&nbsp; Profile
                             </button>
+                            */?>
                             <button class="dropdown-item" type="button" onclick="location.href='/logout';"><i
                                         class="now-ui-icons ui-1_lock-circle-open"></i>&nbsp; Sign Out
                             </button>
