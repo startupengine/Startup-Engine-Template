@@ -46,9 +46,9 @@
                             Account
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <?php if(\Auth::user() !== null && \Auth::user()->hasPermissionTo('view own profile')) {  ?>
+                            <?php if(\Auth::user() !== null && \Auth::user()->hasPermissionTo('view backend')) {  ?>
                             <button class="dropdown-item" type="button" onclick="location.href='/app/profile';"><i
-                                        class="now-ui-icons arrows-1_share-66"></i>&nbsp; Profile
+                                        class="now-ui-icons arrows-1_share-66"></i>&nbsp; App
                             </button>
                             <?php }  ?>
                             <?php if(\Auth::user() !== null && \Auth::user()->hasPermissionTo('view own profile')) {  ?>
