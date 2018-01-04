@@ -41,16 +41,21 @@
                 <?php if(\Auth::user() !== null) {  ?>
                 <li class="nav-item">
                     <div class="btn-group hiddenOnMobile">
-                        <a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" aria-haspopup="true"
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                            aria-expanded="false">
                             Account
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right ">
-                            <?php /*
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <?php if(\Auth::user() !== null && \Auth::user()->hasPermissionTo('view own profile')) {  ?>
+                            <button class="dropdown-item" type="button" onclick="location.href='/app/profile';"><i
+                                        class="now-ui-icons arrows-1_share-66"></i>&nbsp; Profile
+                            </button>
+                            <?php }  ?>
+                            <?php if(\Auth::user() !== null && \Auth::user()->hasPermissionTo('view own profile')) {  ?>
                             <button class="dropdown-item" type="button" onclick="location.href='/app/profile';"><i
                                         class="now-ui-icons users_circle-08"></i>&nbsp; Profile
                             </button>
-                            */?>
+                            <?php }  ?>
                             <button class="dropdown-item" type="button" onclick="location.href='/logout';"><i
                                         class="now-ui-icons ui-1_lock-circle-open"></i>&nbsp; Sign Out
                             </button>
