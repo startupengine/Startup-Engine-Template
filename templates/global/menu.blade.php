@@ -23,13 +23,20 @@
                 </a>
             </div>
             <ul class="navbar-nav">
-                <?php /* if(\Auth::user() !== null) {  ?>
+                <?php if(\Auth::user() !== null && \Auth::user()->hasPermissionTo('view own profile')) {  ?>
+                <li class="nav-item">
+                    <a href="/app" class="nav-link hiddenOnDesktop">
+                        <i class="now-ui-icons arrows-1_share-66"></i> &nbsp;App
+                    </a>
+                </li>
+                <?php }  ?>
+                <?php if(\Auth::user() !== null && \Auth::user()->hasPermissionTo('view own profile')) {  ?>
                 <li class="nav-item">
                     <a href="/app/profile" class="nav-link hiddenOnDesktop">
                         <i class="now-ui-icons users_circle-08"></i> &nbsp;Profile
                     </a>
                 </li>
-                <?php } */ ?>
+                <?php }  ?>
                 <?php echo setting('site.menu'); ?>
                 <?php if(\Auth::user() !== null) {  ?>
                 <li class="nav-item">
