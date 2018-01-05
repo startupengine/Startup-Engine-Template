@@ -8,9 +8,23 @@
   "version": "0.1",
   "description": "A basic Startup Engine package with standard content types, roles, & permissions.",
   "image": "https://psychoanalytics.s3-us-west-1.amazonaws.com/pages/products/wDtDs4wlcXUsoRylE1PkinplrNO3PzRM0rWQj6tV.jpeg",
-  "dependencies": {},
-  "modules": {},
-  "packages": {},
+  "dependencies": {
+    "modules": {},
+    "packages": {},
+  },
+  "config": {
+    "roles": {
+      "locked" : [
+        "admin"
+      ]
+    },
+    "permissions": {
+      "locked": [
+        "view backend",
+        "edit roles"
+      ]
+    }
+  },
   "tables": {
     "posts": {
       "id": {
@@ -59,11 +73,18 @@
       }
     }
   },
-  "content_schema_path": "templates/*/schema.json",
+  "content_schema_paths": ["templates/*"],
+  "content_schema_filenames": ["schema.json"],
   "content_types": {
     "active": {
-      "post": {},
-      "faq": {}
+      "post": {
+        "slug": "post",
+        "enabled": true
+      },
+      "faq": {
+        "slug": "faq",
+        "enabled": true
+      }
     },
     "deprecated": {},
     "inactive": {}
