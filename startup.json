@@ -378,14 +378,40 @@
       "display_name": "Posts Icon Markup",
       "key": "post.icon",
       "status": "PUBLISHED",
-      "type": "textarea"
+      "type": "textarea",
+      "value": "<i class=\"now-ui-icons files_single-copy-04\"></i>"
     },
     "pages.icon": {
       "group": "Page",
       "display_name": "Page Icon Markup",
       "key": "page.icon",
       "status": "PUBLISHED",
-      "type": "textarea"
+      "type": "textarea",
+      "value": "<i class=\"now-ui-icons files_paper\"></i>"
+    },
+    "admin.icon": {
+      "group": "Admin",
+      "display_name": "Admin Icon Markup",
+      "key": "admin.icon",
+      "status": "PUBLISHED",
+      "type": "textarea",
+      "value": "<i class=\"now-ui-icons ui-2_settings-90\"></i>"
+    },
+    "site.icon": {
+      "group": "Site",
+      "display_name": "Site Icon Markup",
+      "key": "site.icon",
+      "status": "PUBLISHED",
+      "type": "textarea",
+      "value": "<i class=\"now-ui-icons tech_laptop\"></i>"
+    },
+    "theme.icon": {
+      "group": "Theme",
+      "display_name": "Theme Icon Markup",
+      "key": "theme.icon",
+      "status": "PUBLISHED",
+      "type": "textarea",
+      "value": "<i class=\"now-ui-icons objects_diamond\"></i>"
     }
   },
   "scripts": {
