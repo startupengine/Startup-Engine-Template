@@ -94,6 +94,7 @@
 
         $( ".scroll-to" ).click(function() {
             var id = $(this).attr('data-scroll-target');
+            $(this).attr("href", null);
             scrollTo($id);
         });
 
