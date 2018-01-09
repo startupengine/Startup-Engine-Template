@@ -7,6 +7,11 @@
             }, 300);
         }
     }
+    function scrollTo(id) {
+        $("html, body").animate({
+            scrollTop: $(id).offset().top - 50
+        }, 300);
+    }
 </script>
 
 <!-- Mixpanel -->
@@ -85,6 +90,11 @@
             var src = $(this).attr('src');
             var text = $(this).html();
             clickEvent(id, name, title, url, type, src, text);
+        });
+
+        $( ".scroll-to" ).click(function() {
+            var id = $(this).attr('href');
+            scrollTo($id);
         });
 
         // Open all external links in a new tab/window
