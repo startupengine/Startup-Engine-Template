@@ -9,7 +9,7 @@
     }
     function scrollTo(id) {
         $("html, body").animate({
-            scrollTop: $('#' + id).offset().top - 75
+            scrollTop: $(id).offset().top - 75
         }, 300);
     }
 </script>
