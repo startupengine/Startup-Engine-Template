@@ -9,7 +9,7 @@
     }
     function scrollTo(id) {
         $("html, body").animate({
-            scrollTop: $(id).offset().top - 50
+            scrollTop: $('#' + id).offset().top - 75
         }, 300);
     }
 </script>
@@ -93,8 +93,7 @@
         });
 
         $( ".scroll-to" ).click(function() {
-            var id = $(this).attr('href');
-            $(this).attr('href', null);
+            var id = $(this).attr('data-scroll-target');
             scrollTo($id);
         });
 
