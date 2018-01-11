@@ -289,6 +289,11 @@
     .nav-link {
         border-radius: 0.1875rem !important;
     }
+
+    .vjs-poster {
+        background-size: cover !important;
+        opacity: 1;
+    }
 </style>
 
 <!-- jQuery ScrollTo -->
