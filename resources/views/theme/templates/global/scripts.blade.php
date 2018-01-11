@@ -1,19 +1,3 @@
-<!-- UX -->
-<script type="text/javascript">
-    function scrollToMore() {
-        if ($('#more').length != 0) {
-            $("html, body").animate({
-                scrollTop: $('#more').offset().top - 50
-            }, 300);
-        }
-    }
-    function scrollTo(id) {
-        $("html, body").animate({
-            scrollTop: $(id).offset().top - 50
-        }, 300);
-    }
-</script>
-
 <!-- Mixpanel -->
 <script type="text/javascript">
     (function (e, a) {
@@ -107,6 +91,9 @@
 
 <!-- Font Awesome -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+
+<!-- jQuery ScrollTo -->
+<script defer src="//rawgit.com/balupton/jquery-scrollto/gh-pages/lib/jquery-scrollto.js"></script>
 
 <!-- Custom Scripts -->
 <?php if(setting('theme.global_scripts') !== null) { echo setting('theme.global_scripts'); } ?>
