@@ -292,7 +292,7 @@
 
     .vjs-poster {
         background-size: cover !important;
-        opacity: 1;
+        opacity: 1 !important;
     }
 </style>
 
