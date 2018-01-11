@@ -77,9 +77,8 @@
         });
 
         $( ".scroll-to" ).click(function() {
-            var id = $(this).data('scroll-target');
-            $(this).attr("href", null);
-            scrollTo($id);
+            var element = $(this).data('scroll-target');
+            $(element).scrollTo();
         });
 
         // Open all external links in a new tab/window
