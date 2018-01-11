@@ -290,3 +290,6 @@
         border-radius: 0.1875rem !important;
     }
 </style>
+
+<!-- jQuery ScrollTo -->
+<script defer src="//rawgit.com/balupton/jquery-scrollto/gh-pages/lib/jquery-scrollto.js"></script>

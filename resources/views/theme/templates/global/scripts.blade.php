@@ -92,8 +92,5 @@
 <!-- Font Awesome -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
 
-<!-- jQuery ScrollTo -->
-<script defer src="//rawgit.com/balupton/jquery-scrollto/gh-pages/lib/jquery-scrollto.js"></script>
-
 <!-- Custom Scripts -->
 <?php if(setting('theme.global_scripts') !== null) { echo setting('theme.global_scripts'); } ?>
