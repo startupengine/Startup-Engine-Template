@@ -89,13 +89,17 @@
         .input-group-addon {
             border-radius:4px 0px 0px 4px;
         }
+
+        .bg-gradient {
+            background:linear-gradient(-45deg, #f1f8ff 0%, #95a7ff30 100%) !important;
+        }
     </style>
 
 @endsection
 
 
 @section('content')
-    <body class="index-page sidebar-collapse" style="height:100vh;">
+    <body class="index-page sidebar-collapse bg-gradient" style="height:100vh;">
     <div class="container">
         <div class="row" style="margin-top:5%;">
             <div class="card card-signup bg-gradient-light">
