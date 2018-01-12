@@ -26,7 +26,7 @@
           "slug": "background",
           "description": "URL to a background image (optional).",
           "placeholder": "https://..."
-        },
+        }
       }
     },
     "calltoaction": {
