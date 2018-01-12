@@ -1,0 +1,108 @@
+{
+  "title": "Help",
+  "slug": "help",
+  "version": "0.1",
+  "description": "Basic help desk for startups.",
+  "image": null,
+  "sections": {
+    "heading": {
+      "title": "Heading",
+      "slug": "heading",
+      "fields": {
+        "headline": {
+          "type": "text",
+          "slug": "headline",
+          "description": "A short summary of the page.",
+          "placeholder": "Write a headline."
+        },
+        "intro": {
+          "type": "textarea",
+          "slug": "intro",
+          "description": "Write a bit of intro text (optional).",
+          "placeholder": "Something exciting goes here..."
+        },
+        "background": {
+          "type": "text",
+          "slug": "background",
+          "description": "URL to a background image (optional).",
+          "placeholder": "https://..."
+        },
+      }
+    },
+    "calltoaction": {
+      "title": "Call To Action",
+      "slug": "calltoaction",
+      "fields": {
+        "headline": {
+          "type": "text",
+          "slug": "headline",
+          "description": "A short call to action message.",
+          "placeholder": "Write a headline."
+        },
+        "message": {
+          "type": "textarea",
+          "slug": "message",
+          "description": "One or two lines about the benefit.",
+          "placeholder": "Write a message."
+        },
+        "button": {
+          "type": "code",
+          "mode": "html",
+          "slug": "button",
+          "description": "A short call to action phrase.",
+          "placeholder": "Learn More"
+        },
+        "link": {
+          "type": "text",
+          "slug": "link",
+          "description": "A url to link to. (optional)",
+          "placeholder": "http://www.example.com"
+        }
+      }
+    },
+    "meta": {
+      "title": "Meta",
+      "slug": "meta",
+      "fields": {
+        "slug": {
+          "type": "text",
+          "slug": "slug",
+          "description": "A unique slug for tracking this variation.",
+          "placeholder": "Name it clearly."
+        },
+        "Variation description": {
+          "type": "textarea",
+          "slug": "description",
+          "description": "A description of this variation.",
+          "placeholder": "Describe this variation clearly."
+        }
+      }
+    }
+  },
+  "default": {
+    "versions": {
+      "1": {
+        "heading": {
+          "headline": "Help Desk",
+          "button": "Learn More",
+          "link": "\/analytics",
+          "background": "https:\/\/images.unsplash.com\/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+          "intro": "Automatically validate, market, and sell your product.",
+          "headersize": "large",
+          "footer": null
+        },
+        "calltoaction": {
+          "headline": "Ready to launch your business?",
+          "message": "Start running an automated startup in under 5 minutes.",
+          "button": "Get The Source Code <i class=\"fas fa-download\"><\/i>",
+          "link": "https:\/\/github.com\/luckyrabbitllc\/startupengine"
+        },
+        "meta": {
+          "slug": "default",
+          "description": "Default values.",
+          "featured": "on"
+        }
+      }
+    }
+  }
+}

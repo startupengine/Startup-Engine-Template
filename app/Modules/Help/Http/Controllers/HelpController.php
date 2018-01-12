@@ -1,28 +1,24 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Modules\Help\Http\Controllers;
 use \App\Page;
 
-class HelpController extends Controller
+class HelpController
 {
     public function index() {
         $page =  Page::where('slug', '=', 'help')->first();
         if ($page == null) {
             abort(404);
         }
-        return view('pages.view')->with('page', $page);
+        return view('blog::index')->with('page', $page);
     }
 
     public function getPage($slug) {
-        $page =  Page::where('post_type', '=', 'help')->andWhere('slug', '=', $slug)->first();
-        if ($page == null) {
+        $item =  Post::where('slug', '=', 'help')->andWhere('slug', '=', $slug)->first();
+        if ($item == null) {
             abort(404);
         }
-        return view('help.view')->with('page', $page);
-    }
-
-    public function test() {
-        return 'Help';
+        return view('help.view')->with('item', $item);
     }
 
 }
