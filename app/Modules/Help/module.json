@@ -1,0 +1,8 @@
+{
+  "name": "Help",
+  "slug": "help",
+  "version": "1.0",
+  "license": "MIT",
+  "description": "A basic help desk for startups.",
+  "order": 100
+}
