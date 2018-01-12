@@ -95,10 +95,10 @@
 
 
 @section('content')
-    <body class="index-page sidebar-collapse bg-gradient-light" style="height:100vh;">
+    <body class="index-page sidebar-collapse" style="height:100vh;">
     <div class="container">
         <div class="row" style="margin-top:5%;">
-            <div class="card card-signup bg-gradient">
+            <div class="card card-signup bg-gradient-light">
                 <form class="form-horizontal " method="POST" action="{{ route('login') }}">
                     {{ csrf_field() }}
                     <div class="header text-center">
