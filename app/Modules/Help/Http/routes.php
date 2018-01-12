@@ -14,5 +14,5 @@
 Route::group(['middleware' => ['web']], function () {
     Route::get('/help', 'HelpController@index');
     Route::get('/help/{slug}', 'HelpController@getPage');
-    Route::get('/help/test', 'HelpController@getPage');
+    Route::get('/help/test', 'HelpController@test');
 });
