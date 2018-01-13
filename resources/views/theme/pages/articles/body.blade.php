@@ -35,7 +35,7 @@
                             <div class="col-md-12">
                                 <div class="card" style="margin-top:25px;">
                                     @if($page->content()->about->headline !==null OR $page->content()->about->description !== null)
-                                        <div class="card-body">
+                                        <div class="card-body" style="min-height:50px;">
                                             @if($page->content()->about->headline !== null)
                                                 <p><strong>{{ $page->content()->about->headline }}</strong></p>
                                             @endif
