@@ -67,7 +67,7 @@
                             <?php } ?>
 
                             @if($post->content() !== null && ($post->content()->body->image !== null OR $post->content()->body->video !== null OR $post->content()->heading->excerpt !== null OR $post->content()->body->body !== null))
-                                <div class="card-body" id="content" style="min-width:50px;">
+                                <div class="card-body" id="content" style="min-height:50px;">
                                     <?php if($post->content()->heading->excerpt !== null) { ?>
                                     <h5 class="description excerpt">{{ $post->content()->heading->excerpt }}</h5>
                                     <?php } ?>
