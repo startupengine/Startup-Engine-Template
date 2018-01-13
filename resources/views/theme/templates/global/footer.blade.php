@@ -2,7 +2,7 @@
 @if(setting('theme.footer_html') !== null)
     <?php echo setting('theme.footer_html'); ?>
 @elseif(setting('theme.footer_headline') !== null)
-<div class="section bg-gradient-light" style="background:#fff;color:#222;width:100%;margin-top:50px;">
+<div class="section bg-gradient-light" id="global-footer" style="background:#fff;color:#222;width:100%;margin-top:50px;">
     <div class="container text-center">
         <div class="row justify-content-md-center">
             <div class="col-md-12 col-lg-8">
