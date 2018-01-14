@@ -40,7 +40,7 @@
         </div>
     </div>
 </div>
-<div class="section" style="padding-top:25px;@if($post->content()->body->body == null && $post->content()->body->video !== null) margin-top:-175px !important; @else margin-top:-75px !important; @endif background:none;z-index:5 !important;">
+<div class="section" style="padding-top:25px;@if($post->content()->body->body == null && $post->content()->body->video !== null) margin-top:-155px !important; @else margin-top:-75px !important; @endif background:none;z-index:5 !important;">
     <div class="container" id="more">
         <div class="row">
             <div style="width:100%;">
