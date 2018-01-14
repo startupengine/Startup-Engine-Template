@@ -7,8 +7,8 @@
                     '<div class="card" style="height:100%;">' +
                         '<div v-if="article.content.meta && article.content.meta.featured == \'on\' && article.content.meta.message == null" class="card-header featured" ><i class="fas fa-star" ></i> &nbsp;Featured</div>' +
                         '<div v-if="article.content.meta && article.content.meta.featured == \'on\' && article.content.meta.message !== null" class="card-header featured" >{{article.content.meta.message}}</div>' +
-                        '<div v-if="article.content.heading.background !== null && article.content.meta.featured == \'on\'" :style=\'{ backgroundImage: `url(${article.content.heading.background})` }\' class="image-container featured"></div>' +
-                        '<div v-else-if="article.content.heading.background !== null && article.content.meta.message !== null" :style=\'{ backgroundImage: `url(${article.content.heading.background})` }\' class="image-container featured"></div>' +
+                        '<div v-if="article.content.heading.background !== null && article.content.meta.featured == \'on\'" :style=\'{ backgroundImage: `url(${article.content.heading.background})` }\' class="image-container"></div>' +
+                        '<div v-else-if="article.content.heading.background !== null && article.content.meta.message !== null" :style=\'{ backgroundImage: `url(${article.content.heading.background})` }\' class="image-container"></div>' +
                         '<div v-else :style=\'{ backgroundImage: `url(${article.content.heading.background})` }\' class="image-container"></div>' +
                         '<div class="card-body">' +
                             '<h4 class="card-title" align="center">{{ article.content.heading.headline }}</h4>' +

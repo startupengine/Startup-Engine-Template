@@ -66,9 +66,14 @@
                                 $video = (int)substr(parse_url($video, PHP_URL_PATH), 1);
                             } ?>
                             <video class="afterglow" id="featuredvideo" width="960" height="450"
-                                   @if($video == null) src="{{ $post->content()->body->video }}"
-                                   @endif  @if($video !== null) data-{{ $videotype }}-id="{{ $video }}"
-                                   @endif   @if($post->content()->body->image !== null) poster="{{ $post->content()->body->image }}" @endif ></video>
+                                   @if($video == null) src="{{ $post->content()->body->video }}" @endif
+                                   @if($video !== null) data-{{ $videotype }}-id="{{ $video }}" @endif
+                                   @if($post->content()->body->image !== null) poster="{{ $post->content()->body->image }}" @endif >
+
+                                    @if($videotype !== "youtube" && $videotype !== "vimeo")
+                                    <source type="video/mp4" src="{{ $post->content()->body->video }}" />
+
+                            </video>
                             <?php } ?>
 
                             @if($post->content() !== null && ($post->content()->body->image !== null OR $post->content()->body->video !== null OR $post->content()->heading->excerpt !== null OR $post->content()->body->body !== null))
