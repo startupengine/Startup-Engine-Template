@@ -26,16 +26,18 @@
                                 @endif
                             </h6>
                         @endif
+                        @if($post->content()->body->video == null OR $post->content()->heading->button !== null)
                         <a class="btn btn-lg btn-round btn-simple" id="engage" href="javascript:void(0)"
                            onclick="$('#more').ScrollTo();">@if($post->content()->heading->button !== null) {{ $post->content()->heading->button }} @else
                                 Read Article @endif</a>
+                        @endif
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="section" style="padding-top:25px;margin-top:-75px !important;background:none;z-index:5 !important;">
+<div class="section" style="padding-top:25px;@if($post->content()->body->body == null && $post->content()->body->video !== null) margin-top:-175px !important; @else margin-top:-75px !important; @endif background:none;z-index:5 !important;">
     <div class="container" id="more">
         <div class="row">
             <div style="width:100%;">
