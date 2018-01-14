@@ -71,7 +71,8 @@
                                    @if($post->content()->body->image !== null) poster="{{ $post->content()->body->image }}" @endif >
 
                                     @if($videotype !== "youtube" && $videotype !== "vimeo")
-                                    <source type="video/mp4" src="{{ $post->content()->body->video }}" />
+                                        <source type="video/mp4" src="{{ $post->content()->body->video }}" />
+                                    @endif
 
                             </video>
                             <?php } ?>
