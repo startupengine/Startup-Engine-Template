@@ -1,4 +1,4 @@
-<body class="index-page sidebar-collapse">
+<body class="index-page sidebar-collapse" style="background:linear-gradient(180deg,#f6f9ff,#fff);">
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper">
     <div class="page-header page-header-small clear-filter" filter-color="black">
@@ -18,7 +18,7 @@
     </div>
 </div>
 <div class="wrapper">
-    <div class="section" style="padding-bottom:0px;padding-top:50px;margin-top:-100px !important;background:linear-gradient(180deg,#f6f9ff,#fff);">
+    <div class="section" style="padding-bottom:0px;padding-top:50px;margin-top:-100px !important;background:none;">
         <div class="container">
             <div id="articles">
                 <div class="row">
