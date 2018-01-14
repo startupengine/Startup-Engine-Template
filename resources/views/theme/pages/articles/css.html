@@ -20,6 +20,13 @@
 
     }
 
+    .page-header-image {
+        background-size: 700px !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+        background-color: #000 !important;
+    }
+
     .page-header .description {
         opacity: 1 !important;
         color: #fff !important;
@@ -108,10 +115,23 @@
         color: #ffc107 !important;
     }
 
-    .col-md-6:nth-of-type(3n) {
-        min-width: 100% !important;
+    .col-md-6:nth-of-type(3), .col-md-6:nth-of-type(4), .col-md-6:nth-of-type(5), .col-md-6:nth-of-type(9), .col-md-6:nth-of-type(10), .col-md-6:nth-of-type(11), .col-md-6:nth-of-type(15), .col-md-6:nth-of-type(16), .col-md-6:nth-of-type(17),.col-md-6:nth-of-type(20),.col-md-6:nth-of-type(21),.col-md-6:nth-of-type(22) {
+        min-width: 33% !important;
+        width: 33% !important;
+        flex: 0 0 33% !important;
     }
 
+    .col-md-6:nth-of-type(6),    .col-md-6:nth-of-type(12),    .col-md-6:nth-of-type(18),    .col-md-6:nth-of-type(24),    .col-md-6:nth-of-type(30) {
+        min-width: 100% !important;
+        width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+
+    .col-md-6,     .col-md-6:nth-of-type(7),   .col-md-6:nth-of-type(8) ,  .col-md-6:nth-of-type(19) ,  .col-md-6:nth-of-type(20) {
+        min-width: 50% !important;
+        width: 50% !important;
+        flex: 0 0 50%;
+    }
     .card:hover h4 {
         color: #000 !important;
     }
@@ -153,7 +173,8 @@
     }
 
     .card-header.featured {
-        background-image: linear-gradient(to right, #ffa331 0%, #ffd400 100%) !important;
+        background: #fefefe !important;
+        color:#fb5858 !important;
     }
 
 </style>
