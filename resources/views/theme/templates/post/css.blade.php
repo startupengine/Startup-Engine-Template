@@ -79,11 +79,12 @@
         }
         #content-row > .card {
             padding:15px !important;
+            border-radius:4px !important;
         }
     }
 
-    .plyr {
-        margin-bottom:25px;
+    .vjs-afterglow-skin.vjs-responsive {
+        border-radius:4px !important;
     }
 
     .centered {
