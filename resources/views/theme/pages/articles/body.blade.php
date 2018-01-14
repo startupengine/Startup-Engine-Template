@@ -18,7 +18,7 @@
     </div>
 </div>
 <div class="wrapper">
-    <div class="section" style="padding-bottom:0px;padding-top:50px;margin-top:-100px !important;background:none;">
+    <div class="section" style="padding-bottom:0px;padding-top:50px;margin-top:-100px !important;background:linear-gradient(180deg,#f6f9ff,#fff);">
         <div class="container">
             <div id="articles">
                 <div class="row">
