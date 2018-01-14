@@ -68,6 +68,7 @@
 
     .card {
         border-radius: 5px !important;
+        box-shadow:0px 5px 12px 0px rgba(0, 0, 75, 0.15);
     }
 
     .card h4 {
