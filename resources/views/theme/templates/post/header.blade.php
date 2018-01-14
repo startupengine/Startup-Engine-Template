@@ -27,7 +27,7 @@
                             </h6>
                         @endif
                         @if($post->tagNames() > 0)
-                            <div><div class="btn btn-simple btn-round">{{ $post->tagNames()[0] }}</div></div>
+                            <div style="margin-bottom: 20px;"><div class="btn btn-simple btn-round">{{ $post->tagNames()[0] }}</div></div>
                         @endif
                         @if($post->content()->body->video == null OR $post->content()->heading->button !== null)
                         <a class="btn btn-lg btn-round btn-simple" id="engage" href="javascript:void(0)"
