@@ -73,6 +73,14 @@
     #content-row {
         width:100%;
     }
+    @media(max-width:991px) {
+        #content-row {
+            padding:15px;
+        }
+        #content-row > .card {
+            margin:15px !important;
+        }
+    }
 
     .plyr {
         margin-bottom:25px;
@@ -109,6 +117,9 @@
         }
         .page-header #engage {
             padding:10px 20px !important;
+        }
+        .page-header-small{
+            min-height:66vh !important;
         }
     }
 
