@@ -27,7 +27,7 @@
         },
         created: function () {
             var _this = this;
-            $.getJSON('/api/items?type=posts&limit=21', function (json) {
+            $.getJSON('/api/items?type=posts&limit=30', function (json) {
                 _this.items = json;
             });
         }
