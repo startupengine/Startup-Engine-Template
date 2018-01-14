@@ -78,7 +78,7 @@
             padding:15px;
         }
         #content-row > .card {
-            margin:15px !important;
+            padding:15px !important;
         }
     }
 
