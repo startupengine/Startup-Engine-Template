@@ -11,7 +11,7 @@
 |
 */
 
-Route::group(['prefix' => 'help'], function () {
-    Route::get('/{slug}', 'HelpController@index');
-    Route::get('/{slug}', 'HelpController@getPage');
+Route::group(['prefix' => 'content'], function () {
+    Route::get('/{slug}', 'ContentController@getContentBySlug');
+    Route::get('/tag/{tag}', 'ContentController@getContentByTag');
 });

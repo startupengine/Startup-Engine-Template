@@ -4,6 +4,19 @@
   "version": "0.1",
   "description": "An overview of the latest blog posts.",
   "image": null,
+  "policy": {
+    "uneditable": [
+      "css",
+      "html",
+      "scripts"
+    ],
+    "public": [
+      "json",
+      "css",
+      "html",
+      "scripts"
+    ]
+  },
   "sections": {
     "heading": {
       "title": "Heading",

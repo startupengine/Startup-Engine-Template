@@ -12,7 +12,3 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
-Route::get('/help', function (Request $request) {
-    // return $request->help();
-})->middleware('auth:api');
