@@ -77,13 +77,12 @@
 
     var pageNumber = getUrlParameter('page[number]');
     var pageSize = getUrlParameter('page[size]');
-    if(pageSize == null){
+    if (typeof pageNumber != 'undefined') {
+        pageNumber = 1;
+    }
+    if (typeof pageSize != 'undefined') {
         pageSize = 30;
     }
-    if(pageNumber == null){
-        pageSize = 1;
-    }
-    console.log('pageSize = ' + pageSize);
 
     Vue.component('todo-item', {
         props: ['article'],
