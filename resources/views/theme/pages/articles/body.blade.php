@@ -77,10 +77,10 @@
 
     var pageNumber = getUrlParameter('page[number]');
     var pageSize = getUrlParameter('page[size]');
-    if (typeof pageNumber != 'undefined') {
+    if(typeof(pageNumber) == 'undefined') {
         pageNumber = 1;
     }
-    if (typeof pageSize != 'undefined') {
+    if(typeof(pageSize) == 'undefined') {
         pageSize = 30;
     }
 
