@@ -116,6 +116,26 @@
         }
       }
     },
+    "code": {
+      "title": "Code",
+      "slug": "code",
+      "fields": {
+        "css": {
+          "type": "code",
+          "mode": "html",
+          "slug": "css",
+          "description": "Additional CSS (optional)",
+          "placeholder": "<style></style>"
+        },
+        "scripts": {
+          "type": "code",
+          "mode": "html",
+          "slug": "scripts",
+          "description": "Additional CSS (optional)",
+          "placeholder": "<script></script>"
+        }
+      }
+    },
     "meta": {
       "title": "Meta",
       "slug": "meta",
