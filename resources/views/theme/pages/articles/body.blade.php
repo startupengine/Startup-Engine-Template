@@ -20,7 +20,7 @@
                     <h1 class="title text-center">{{ $page->content()->heading->headline }}</h1>
                 @endif
                 @if(isset($tag))
-                    @if(isset($tag) && isset($tagContent->content()->info->description))
+                    @if(isset($tag) && $tagContent !== null && $tagContent->content()->info->description !== null)
                         <h3 class="description text-center" >{{$tagContent->content()->info->description}}</h3>
                     @else
                         <h3 class="description text-center" >A collection of @{{ items.length }} posts.</h3>
