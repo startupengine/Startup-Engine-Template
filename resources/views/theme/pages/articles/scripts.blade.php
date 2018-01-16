@@ -54,7 +54,7 @@
     });
 
     var app = new Vue({
-        el: '#articles',
+        el: '#articles-page',
         data: {
             items: null,
             resource_url: queryPath

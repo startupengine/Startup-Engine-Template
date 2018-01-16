@@ -5,12 +5,15 @@
              @if($page->content()->heading->background !== null) style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0;opacity: 0.3;" @endif></div>
         <div class="container">
             <div class="content-center">
-                @if($page->content()->heading->headline !== null)
+                @if(isset($tag))
+                    <h1 class="title text-center">{{ ucwords($tag) }}</h1>
+                @elseif($page->content()->heading->headline !== null && isset($tag) !== true)
                     <h1 class="title text-center">{{ $page->content()->heading->headline }}</h1>
                 @endif
-                @if($page->content()->heading->intro !== null)
-                    <h3 class="description text-center"
-                        v-if="page.json.heading.intro !== null">{{ $page->content()->heading->intro }}</h3>
+                @if(isset($tag))
+                    <h3 class="description text-center" >A collection of @{{ items.length }} posts.</h3>
+                @elseif($page->content()->heading->intro !== null)
+                    <h3 class="description text-center" >{{ $page->content()->heading->intro }}</h3>
                 @endif
             </div>
         </div>
