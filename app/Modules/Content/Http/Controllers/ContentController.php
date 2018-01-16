@@ -17,7 +17,7 @@ class ContentController
         return view('content::view')->with('item', $item);
     }
 
-    public function getTag($postType = null, $slug) {
+    public function getContentByTag($postType = null, $slug) {
         if($postType == null) {
             $postType = 'post';
         }

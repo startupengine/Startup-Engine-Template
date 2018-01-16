@@ -12,3 +12,8 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
+Route::group(['prefix' => 'api'], function () {
+    Route::get('content/item/', 'ContentAPIController@getItem');
+    Route::get('content/items/', 'ContentAPIController@getItems');
+});
