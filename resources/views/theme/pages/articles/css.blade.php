@@ -202,3 +202,4 @@
         padding-right: 5px !important;
     }
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vuejs-paginator/2.0.0/vuejs-paginator.js"></script>

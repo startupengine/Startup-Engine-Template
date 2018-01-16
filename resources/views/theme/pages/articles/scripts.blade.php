@@ -32,13 +32,13 @@
         '<a class="card-link" v-bind:href="article.slug" onclick="window.location.href = $(this).attr(\'href\');">' +
         '<div class="card" style="height:100%;">' +
         '<div v-if="article.content.meta && article.content.meta.featured == \'on\' && article.content.meta.message == null" class="card-header featured" ><i class="fas fa-star" ></i>  Featured</div>' +
-        '<div v-if="article.content.meta && article.content.meta.featured == \'on\' && article.content.meta.message !== null" class="card-header featured" >{{article.content.meta.message}}</div>' +
+        '<div v-if="article.content.meta && article.content.meta.featured == \'on\' && article.content.meta.message !== null" class="card-header featured" >@{{article.content.meta.message}}</div>' +
         '<div v-if="article.content.heading.background !== null && article.content.meta.featured == \'on\'" :style=\'{ backgroundImage: `url(${article.content.heading.background})` }\' class="image-container"></div>' +
         '<div v-else-if="article.content.heading.background !== null && article.content.meta.message !== null" :style=\'{ backgroundImage: `url(${article.content.heading.background})` }\' class="image-container"></div>' +
         '<div v-else :style=\'{ backgroundImage: `url(${article.content.heading.background})` }\' class="image-container"></div>' +
         '<div class="card-body">' +
-        '<h4 class="card-title" align="center">{{ article.content.heading.headline }}</h4>' +
-        '<p v-if="article.content.heading.excerpt !== null">{{article.content.heading.excerpt}}</p>' +
+        '<h4 class="card-title" align="center">@{{ article.content.heading.headline }}</h4>' +
+        '<p v-if="article.content.heading.excerpt !== null">@{{article.content.heading.excerpt}}</p>' +
         '<p></p>'+
         '<div class="btn btn-link btn-lg btn-block"><span style="border-radius:25px;border:1px solid #eee; padding:5px 20px;">Continue Reading  <i class="fas fa-arrow-right fa-xs"></i></span></div>' +
         '</div>' +
@@ -47,16 +47,31 @@
         '</div>'
     });
 
+    Vue.component('nav-links', {
+        props: ['link'],
+        template:
+        '<a class="btn btn-simple btn-round btn-sm" style="margin:5px;" v-bind:href="link.slug" onclick="window.location.href = $(this).attr(\'href\');">@{{ link.text }}</a>'
+    });
+
     var app = new Vue({
         el: '#articles',
         data: {
-            items: null
+            items: null,
+            resource_url: queryPath
         },
-        created: function () {
+        components: {
+            VPaginator: VuePaginator
+        },
+        methods: {
+            updateResource(data){
+                this.items = data
+            }
+        },
+        created: function getContent() {
             var _this = this;
             $.getJSON(queryPath, function (json) {
                 _this.items = json.data;
-                console.log(json.data);
+                _this.links = {"First" : {"text":"First Page","url":json.first_page_url},  "Previous" :  {"text":"Previous Page","url":json.prev_page_url}, "Next" :  {"text":"Next Page","url":json.next_page_url}, "Last" :  {"text":"Last Page","url":json.last_page_url} }
             });
         }
     });
