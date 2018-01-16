@@ -135,6 +135,10 @@
             width: calc(33% + 5px) !important;
             height: 100% !important;
         }
+
+        .col-md-6:nth-of-type(6) .card, .col-md-6:nth-of-type(12) .card, .col-md-6:nth-of-type(18) .card, .col-md-6:nth-of-type(24) .card, .col-md-6:nth-of-type(30) .card {
+            min-height:350px !important;
+        }
     }
     .col-md-6:nth-of-type(6),    .col-md-6:nth-of-type(12),    .col-md-6:nth-of-type(18),    .col-md-6:nth-of-type(24),    .col-md-6:nth-of-type(30) {
         min-width: 100% !important;
