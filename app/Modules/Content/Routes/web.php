@@ -12,6 +12,6 @@
 */
 
 Route::group(['prefix' => 'content'], function () {
-    Route::get('/{slug}', 'ContentController@getItem');
-    Route::get('/tag/{tag}', 'ContentController@getItemsByTag');
+    Route::get('/{slug}', 'App\Modules\Content\Http\Controllers\ContentController@getItem');
+    Route::get('/tag/{tag}', 'App\Modules\Content\Http\Controllers\ContentController@getItemsByTag');
 });
