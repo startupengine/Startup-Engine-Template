@@ -47,12 +47,6 @@
         '</div>'
     });
 
-    Vue.component('nav-links', {
-        props: ['link'],
-        template:
-        '<a class="btn btn-simple btn-round btn-sm" style="margin:5px;" v-bind:href="link.slug" onclick="window.location.href = $(this).attr(\'href\');">@{{ link.text }}</a>'
-    });
-
     var app = new Vue({
         el: '#articles',
         data: {
@@ -71,7 +65,6 @@
             var _this = this;
             $.getJSON(queryPath, function (json) {
                 _this.items = json.data;
-                _this.links = {"First" : {"text":"First Page","url":json.first_page_url},  "Previous" :  {"text":"Previous Page","url":json.prev_page_url}, "Next" :  {"text":"Next Page","url":json.next_page_url}, "Last" :  {"text":"Last Page","url":json.last_page_url} }
             });
         }
     });
