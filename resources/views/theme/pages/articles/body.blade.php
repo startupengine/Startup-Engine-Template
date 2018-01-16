@@ -6,7 +6,7 @@
              if(isset($tag)) {
                  $tagContent = \App\Tag::where('slug', '=', $tag)->first();
              } ?>
-             @if(isset($tag) && $tagContent->content() !== null && $tagContent->content()->info->image !== null)
+             @if(isset($tag) && $tagContent !== nill && $tagContent->content() !== null && $tagContent->content()->info->image !== null)
              style="background-image:url('{{$tagContent->content()->info->image}}'); background-size:cover ;z-index: 0;opacity: 0.3;"
              @elseif(isset($page->content()->heading->background))
              style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0;opacity: 0.3;"
