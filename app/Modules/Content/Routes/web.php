@@ -12,5 +12,3 @@
 */
 
 
-Route::get('/content/{slug}', 'App\Modules\Content\Http\Controllers\ContentController@getItem');
-Route::get('/content/tag/{tag}', 'App\Modules\Content\Http\Controllers\ContentController@getItemsByTag');

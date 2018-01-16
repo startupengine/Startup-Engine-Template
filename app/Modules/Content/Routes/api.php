@@ -13,5 +13,3 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('content/item', '\App\Modules\Content\Http\Controllers\ContentAPIController@getItem');
-Route::get('content/items', '\App\Modules\Content\Http\Controllers\ContentAPIController@getItems');
