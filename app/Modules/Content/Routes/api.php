@@ -13,7 +13,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::group(['prefix' => 'api'], function () {
-    Route::get('content/item/', 'ContentAPIController@getItem');
-    Route::get('content/items/', 'ContentAPIController@getItems');
-});
+
+Route::get('content/item/', 'ContentAPIController@getItem');
+Route::get('content/items/', 'ContentAPIController@getItems');
