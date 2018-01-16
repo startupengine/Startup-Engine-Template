@@ -41,8 +41,8 @@
           "mode": "html",
           "description": "Javascript.",
           "placeholder": "<script> /* Javascript goes here. */ </script>."
-        },
-      },
-    },
+        }
+      }
+    }
   }
 }
