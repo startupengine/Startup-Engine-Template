@@ -201,5 +201,11 @@
     .col-md-6:nth-of-type(5),.col-md-6:nth-of-type(11),.col-md-6:nth-of-type(17),.col-md-6:nth-of-type(23),.col-md-6:nth-of-type(29) {
         padding-right: 5px !important;
     }
+
+    .v-paginator .btn {
+        border-radius:25px;
+        margin-right:5px;
+        margin-left:5px;
+    }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vuejs-paginator/2.0.0/vuejs-paginator.js"></script>
