@@ -2,5 +2,5 @@
     "name": "Content",
     "slug": "content",
     "version": "0.1",
-    "description": "Basic blog with index, post, and tag views."
+    "description": "A blog with index, post, and tag views."
 }

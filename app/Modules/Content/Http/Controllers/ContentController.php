@@ -6,7 +6,7 @@ use \App\Page;
 class ContentController
 {
 
-    public function getContent($postType = null, $slug) {
+    public function getItem($postType = null, $slug) {
         if($postType == null) {
             $postType = 'post';
         }
@@ -17,7 +17,7 @@ class ContentController
         return view('content::view')->with('item', $item);
     }
 
-    public function getContentByTag($postType = null, $slug) {
+    public function getItemsByTag($postType = null, $slug) {
         if($postType == null) {
             $postType = 'post';
         }
