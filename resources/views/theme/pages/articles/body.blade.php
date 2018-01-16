@@ -2,7 +2,14 @@
 <div class="wrapper">
     <div class="page-header page-header-small clear-filter" filter-color="black">
         <div class="page-header-image"
-             @if($page->content()->heading->background !== null) style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0;opacity: 0.3;" @endif></div>
+             <?php
+             $tagContent = \App\Tag::where('slug', '=', $tag)->first(); ?>
+             @if(isset($tag) && isset($tagContent->content()->info->image))
+             style="background-image:url('{{$tagContent->content()->info->image}}'); background-size:cover ;z-index: 0;opacity: 0.3;"
+             @elseif(isset($page->content()->heading->background))
+                style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0;opacity: 0.3;"
+             @endif
+        ></div>
         <div class="container">
             <div class="content-center">
                 @if(isset($tag))
@@ -11,7 +18,11 @@
                     <h1 class="title text-center">{{ $page->content()->heading->headline }}</h1>
                 @endif
                 @if(isset($tag))
-                    <h3 class="description text-center" >A collection of @{{ items.length }} posts.</h3>
+                    @if(isset($tag) && isset($tagContent->content()->info->description))
+                        <h3 class="description text-center" >{{$tagContent->content()->info->description}}</h3>
+                    @else
+                        <h3 class="description text-center" >A collection of @{{ items.length }} posts.</h3>
+                    @endif
                 @elseif($page->content()->heading->intro !== null)
                     <h3 class="description text-center" >{{ $page->content()->heading->intro }}</h3>
                 @endif
