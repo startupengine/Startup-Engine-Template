@@ -1,0 +1,48 @@
+{
+  "title": "Tag",
+  "slug": "tag",
+  "version": "0.1",
+  "description": "Metadata for content tags.",
+  "image": null,
+  "sections": {
+    "Info": {
+      "title": "Info",
+      "slug": "info",
+      "fields": {
+        "full_name": {
+          "type": "text",
+          "description": "Full name.",
+          "placeholder": "I.E. Blog Posts, or Frequently Asked Questions"
+        },
+        "description": {
+          "type": "textarea",
+          "description": "A short summary of the tagged content.",
+          "placeholder": "Write one or two lines here.."
+        },
+        "image": {
+          "type": "text",
+          "description": "Url for an image (optional).",
+          "placeholder": "http://www.example.com"
+        }
+      }
+    },
+    "Code": {
+      "title": "Code",
+      "slug": "code",
+      "fields": {
+        "css": {
+          "type": "code",
+          "mode": "html",
+          "description": "Stylesheets.",
+          "placeholder": "<style> /* CSS goes here. */ </style>."
+        },
+        "scripts": {
+          "type": "code",
+          "mode": "html",
+          "description": "Javascript.",
+          "placeholder": "<script> /* Javascript goes here. */ </script>."
+        },
+      },
+    },
+  }
+}
