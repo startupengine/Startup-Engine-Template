@@ -23,7 +23,7 @@
         pageSize = 30;
     }
 
-    var queryPath = '/api/items?type=posts&page[number]='+ pageNumber +'&page[size]='+ pageSize;
+    var queryPath = '/api/content/items?type=posts&page[number]='+ pageNumber +'&page[size]='+ pageSize;
 
     Vue.component('todo-item', {
         props: ['article'],
