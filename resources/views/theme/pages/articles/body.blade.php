@@ -3,12 +3,14 @@
     <div class="page-header page-header-small clear-filter" filter-color="black">
         <div class="page-header-image"
              <?php
+             if(isset($tag)) {
              $tagContent = \App\Tag::where('slug', '=', $tag)->first(); ?>
+             }
              @if(isset($tag) && isset($tagContent->content()->info->image))
              style="background-image:url('{{$tagContent->content()->info->image}}'); background-size:cover ;z-index: 0;opacity: 0.3;"
              @elseif(isset($page->content()->heading->background))
-                style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0;opacity: 0.3;"
-             @endif
+             style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0;opacity: 0.3;"
+                @endif
         ></div>
         <div class="container">
             <div class="content-center">
