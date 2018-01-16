@@ -1,12 +1,12 @@
 {
-  "name": "Basic Startup Engine Theme",
-  "slug": "startup-engine-theme",
+  "name": "Holy - a Startup Engine Theme",
+  "slug": "holy",
   "namespace": "LuckyRabbit",
   "repo_url": "https://github.com/luckyrabbitllc/Startup-Engine-Template.git",
   "website": "https://github.com/luckyrabbitllc/Startup-Engine-Template",
   "documentation": "https://github.com/luckyrabbitllc/Startup-Engine-Template/readme.md",
   "version": "0.1",
-  "description": "A basic Startup Engine package with standard content types, roles, & permissions.",
+  "description": "A basic Startup Engine theme with a self-optimizing landing page, blog, and help desk. Named after the magical artifact from Final Fantasy.",
   "image": "https://psychoanalytics.s3-us-west-1.amazonaws.com/pages/products/wDtDs4wlcXUsoRylE1PkinplrNO3PzRM0rWQj6tV.jpeg",
   "dependencies": {
     "modules": {},
