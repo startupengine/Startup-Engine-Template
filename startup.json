@@ -84,7 +84,11 @@
       "faq": {
         "slug": "faq",
         "enabled": true
-      }
+      },
+      "tag": {
+        "slug": "tag",
+        "enabled": true
+      },
     },
     "deprecated": {},
     "inactive": {}
