@@ -10,10 +10,10 @@
              }
              ?>
              @if(isset($tagContent) && $tagContent->content() !== null)
-             style="background-image:url('{{$tagContent->content()->info->image}}'); background-size:cover ;z-index: 0;opacity: 0.3;"
+                style="background-image:url('{{$tagContent->content()->info->image}}'); background-size:cover ;z-index: 0;opacity: 0.3;"
              @elseif(isset($page->content()->heading->background))
-             style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0;opacity: 0.3;"
-                @endif
+                style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0;opacity: 0.3;"
+            @endif
         ></div>
         <div class="container">
             <div class="content-center">
@@ -23,7 +23,7 @@
                     <h1 class="title text-center">{{ $page->content()->heading->headline }}</h1>
                 @endif
                 @if(isset($tag))
-                    @if(isset($tag) && $tagContent !== null && $tagContent->content()->info->description !== null)
+                    @if(isset($tag) && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->info->description !== null)
                         <h3 class="description text-center" >{{$tagContent->content()->info->description}}</h3>
                     @else
                         <h3 class="description text-center" >A collection of @{{ items.length }} posts.</h3>
