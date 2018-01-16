@@ -24,7 +24,7 @@
     }
 
     <?php if(isset($tag)) { ?>
-        var tags = '&tag[]='.$tag;
+        var tags = '&tag[]=<?php echo $tag; ?>';
     <?php } else { ?>
         var tags = '';
     <?php } ?>

@@ -17,9 +17,4 @@ class ContentController
         return view('content::view')->with('item', $item);
     }
 
-    public function getItemsByTag($tag) {
-        $page = Page::where('slug', '=', 'articles')->where('status','=','PUBLISHED')->firstOrFail();
-        return view('pages.view')->with('page', $page)->with('tag', $tag);
-    }
-
 }
