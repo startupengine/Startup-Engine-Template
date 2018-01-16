@@ -9,7 +9,7 @@
                  $tagContent = null;
              }
              ?>
-             @if(isset($tagContent) && $tagContent->content() !== null)
+             @if(isset($tag) && isset($tagContent) && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info->image !== null)
                 style="background-image:url('{{$tagContent->content()->info->image}}'); background-size:cover ;z-index: 0;opacity: 0.3;"
              @elseif(isset($page->content()->heading->background))
                 style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0;opacity: 0.3;"
