@@ -1,9 +1,12 @@
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper">
     <div class="page-header page-header-small clear-filter" filter-color="black">
-         <?php if(isset($tag)) {
+        <?php
+        if(isset($tag)) {
              $tagContent = \App\Tag::where('slug', '=', $tag)->first();
-         } else { $tagContent = null; } ?>
+         } else {
+            $tagContent = null;
+        } ?>
          @if(isset($tag) && $tagContent !== null && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info->image !== null)
              <div class="page-header-image" style="background-image:url('{{$tagContent->content()->info->image}}'); background-size:cover ;z-index: 0;opacity: 0.3;"></div>
              <div class="container">

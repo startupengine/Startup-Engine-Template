@@ -26,10 +26,10 @@
     <?php if(isset($tag)) { ?>
         var tags = '&tag[]=<?php echo $tag; ?>';
     <?php } else { ?>
-        var tags = '';
+        var tags = '&';
     <?php } ?>
 
-    var queryPath = '/api/content/items?type=posts&page[number]='+ pageNumber +'&page[size]='+ pageSize + tags;
+    var queryPath = '/api/content/items?page[number]='+ pageNumber +'&page[size]='+ pageSize + tags;
 
     Vue.component('todo-item', {
         props: ['article'],
@@ -54,7 +54,7 @@
     });
 
     var app = new Vue({
-        el: '#articles-page',
+        el: '#articles',
         data: {
             items: null,
             resource_url: queryPath
@@ -71,6 +71,7 @@
             var _this = this;
             $.getJSON(queryPath, function (json) {
                 _this.items = json.data;
+                console.log(json);
             });
         }
     });
