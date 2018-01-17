@@ -1,4 +1,3 @@
-<div id="startup_engine_nav_container"></div>
 <div class="wrapper">
     <div class="page-header page-header-small clear-filter" filter-color="black">
         <?php

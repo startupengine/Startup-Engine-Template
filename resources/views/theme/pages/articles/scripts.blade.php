@@ -26,7 +26,7 @@
     <?php if(isset($tag)) { ?>
         var tags = '&tag[]=<?php echo $tag; ?>';
     <?php } else { ?>
-        var tags = '&';
+        var tags = '';
     <?php } ?>
 
     var queryPath = '/api/content/items?page[number]='+ pageNumber +'&page[size]='+ pageSize + tags;
@@ -53,8 +53,10 @@
         '</div>'
     });
 
+    <?php if(isset($tag)) { $element = "#page"; } else { $element = "#articles"; } ?>
+
     var app = new Vue({
-        el: '#articles',
+        el: '<?php echo $element; ?>',
         data: {
             items: null,
             resource_url: queryPath
