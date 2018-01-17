@@ -8,16 +8,16 @@
             $tagContent = null;
         } ?>
          @if(isset($tag))
-             <div class="page-header-image" style="background-image:url('@if(isset($tagContent) && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info->image !== null){{$tagContent->content()->info->image}}@endif'); background-size:cover ;z-index: 0;opacity: 0.3;"></div>
+             <div class="page-header-image" style="background-image:url('@if(isset($tagContent) && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info && $tagContent->content()->info->image !== null){{$tagContent->content()->info->image}}@endif'); background-size:cover ;z-index: 0;opacity: 0.3;"></div>
              <div class="container">
                  <div class="content-center">
-                     @if(isset($tagContent) && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info->full_name !== null)
+                     @if(isset($tagContent) && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info !== null && $tagContent->content()->info->full_name !== null)
                          <h1 class="title text-center">{{ $tagContent->content()->info->full_name }}</h1>
-                     @elseif(isset($tag) && ($tagContent == null OR $tagContent->content() !== null OR $tagContent->content()->info->full_name == null))
+                     @elseif(isset($tag) && ($tagContent == null OR $tagContent->content() == null OR $tagContent->content()->info->full_name == null))
                          <h1 class="title text-center">{{ ucwords($tag) }}</h1>
                      @endif
 
-                     @if(isset($tag) && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->info->description !== null)
+                     @if(isset($tag) && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->info !== null && $tagContent->content()->info->description !== null)
                          <h3 class="description text-center" >{{$tagContent->content()->info->description}}</h3>
                      @else
                          <h3 class="description text-center" >A collection of @{{ items.length }} posts.</h3>
