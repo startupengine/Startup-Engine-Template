@@ -125,9 +125,10 @@
         .col-md-6:nth-of-type(5),.col-md-6:nth-of-type(11),.col-md-6:nth-of-type(17),.col-md-6:nth-of-type(23),.col-md-6:nth-of-type(29) {
             padding-right: 5px !important;
         }
-        
+
         .col-md-6:nth-of-type(6) .image-container, .col-md-6:nth-of-type(12) .image-container, .col-md-6:nth-of-type(18) .image-container, .col-md-6:nth-of-type(24) .image-container, .col-md-6:nth-of-type(30) .image-container {
             height: 100% !important;
+            width:70% !important;
         }
 
         .col-md-6:nth-of-type(6) .card-body, .col-md-6:nth-of-type(12) .card-body, .col-md-6:nth-of-type(18) .card-body, .col-md-6:nth-of-type(24) .card-body, .col-md-6:nth-of-type(30) .card-body {
