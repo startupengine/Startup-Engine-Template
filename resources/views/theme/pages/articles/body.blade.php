@@ -1,38 +1,39 @@
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper">
     <div class="page-header page-header-small clear-filter" filter-color="black">
-        <div class="page-header-image"
-             <?php
-             if(isset($tag)) {
-                 $tagContent = \App\Tag::where('slug', '=', $tag)->first();
-             } else {
-                 $tagContent = null;
-             }
-             ?>
-             @if(isset($tag) && isset($tagContent) && $tagContent !== null && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info->image !== null)
-                style="background-image:url('{{$tagContent->content()->info->image}}'); background-size:cover ;z-index: 0;opacity: 0.3;"
-             @elseif(isset($page->content()->heading->background))
-                style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0;opacity: 0.3;"
-            @endif
-        ></div>
-        <div class="container">
-            <div class="content-center">
-                @if(isset($tag))
-                    <h1 class="title text-center">{{ ucwords($tag) }}</h1>
-                @elseif($page->content()->heading->headline !== null && isset($tag) !== true)
-                    <h1 class="title text-center">{{ $page->content()->heading->headline }}</h1>
-                @endif
-                @if(isset($tag))
-                    @if(isset($tag) && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->info->description !== null)
-                        <h3 class="description text-center" >{{$tagContent->content()->info->description}}</h3>
-                    @else
-                        <h3 class="description text-center" >A collection of @{{ items.length }} posts.</h3>
-                    @endif
-                @elseif($page->content()->heading->intro !== null)
-                    <h3 class="description text-center" >{{ $page->content()->heading->intro }}</h3>
-                @endif
+         <?php if(isset($tag)) {
+             $tagContent = \App\Tag::where('slug', '=', $tag)->first();
+         } else { $tagContent = null; } ?>
+         @if(isset($tag) && $tagContent !== null && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info->image !== null)
+             <div class="page-header-image" style="background-image:url('{{$tagContent->content()->info->image}}'); background-size:cover ;z-index: 0;opacity: 0.3;"></div>
+             <div class="container">
+                 <div class="content-center">
+                     @if(isset($tagContent) && $tagContent->content()->info->full_name !== null)
+                         <h1 class="title text-center">{{ $tagContent->content()->info->full_name }}</h1>
+                     @elseif(isset($tag) && $tagContent->content()->info->full_name == null)
+                         <h1 class="title text-center">{{ ucwords($tagContent->title) }}</h1>
+                     @elseif($page->content()->heading->headline !== null && isset($tag) !== true)
+                         <h1 class="title text-center">{{ $page->content()->heading->headline }}</h1>
+                     @endif
+
+                     @if(isset($tag) && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->info->description !== null)
+                         <h3 class="description text-center" >{{$tagContent->content()->info->description}}</h3>
+                     @else
+                         <h3 class="description text-center" >A collection of @{{ items.length }} posts.</h3>
+                     @endif
+                 </div>
+             </div>
+         @elseif(isset($page->content()->heading->background))
+             <div class="page-header-image" style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0;opacity: 0.3;"></div>
+                 <div class="container">
+                     <div class="content-center">
+                         @if($page->content()->heading->intro !== null)
+                             <h3 class="description text-center" >{{ $page->content()->heading->intro }}</h3>
+                         @endif
+                     </div>
+                 </div>
             </div>
-        </div>
+         @endif
     </div>
 </div>
 <div class="wrapper">
