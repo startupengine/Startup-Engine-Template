@@ -73,7 +73,6 @@
             var _this = this;
             $.getJSON(queryPath, function (json) {
                 _this.items = json.data;
-                console.log(json);
             });
         }
     });

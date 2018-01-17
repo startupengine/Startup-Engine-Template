@@ -1,3 +1,4 @@
+
 <div class="wrapper">
     <div class="page-header page-header-small clear-filter" filter-color="black">
         <?php
@@ -6,13 +7,13 @@
          } else {
             $tagContent = null;
         } ?>
-         @if(isset($tag) && $tagContent !== null && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info->image !== null)
-             <div class="page-header-image" style="background-image:url('{{$tagContent->content()->info->image}}'); background-size:cover ;z-index: 0;opacity: 0.3;"></div>
+         @if(isset($tag))
+             <div class="page-header-image" style="background-image:url('@if(isset($tagContent) && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info->image !== null){{$tagContent->content()->info->image}}@endif'); background-size:cover ;z-index: 0;opacity: 0.3;"></div>
              <div class="container">
                  <div class="content-center">
-                     @if(isset($tagContent) && $tagContent->content()->info->full_name !== null)
+                     @if(isset($tagContent) && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info->full_name !== null)
                          <h1 class="title text-center">{{ $tagContent->content()->info->full_name }}</h1>
-                     @elseif(isset($tag) && $tagContent->content()->info->full_name == null)
+                     @elseif(isset($tag) && ($tagContent == null OR $tagContent->content() !== null OR $tagContent->content()->info->full_name == null))
                          <h1 class="title text-center">{{ ucwords($tag) }}</h1>
                      @endif
 
