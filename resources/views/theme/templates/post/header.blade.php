@@ -29,7 +29,7 @@
                         @if(count($post->tagNames()) > 0)
                             <div style="margin-bottom: 20px;"><a href="/content/tag/{{ strtolower($post->tagNames()[0]) }}" class="btn btn-simple btn-round">{{ $post->tagNames()[0] }}</a></div>
                         @endif
-                        @if($post->content()->body->video == null OR $post->content()->heading->button !== null)
+                        @if($post->content()->heading->button !== null)
                         <a class="btn btn-lg btn-round btn-simple" id="engage" href="javascript:void(0)"
                            onclick="$('#more').ScrollTo();">@if($post->content()->heading->button !== null) {{ $post->content()->heading->button }} @else
                                 Read Article @endif</a>
