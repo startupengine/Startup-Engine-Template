@@ -11,7 +11,7 @@
                      @if(isset($tagContent) && $tagContent->content()->info->full_name !== null)
                          <h1 class="title text-center">{{ $tagContent->content()->info->full_name }}</h1>
                      @elseif(isset($tag) && $tagContent->content()->info->full_name == null)
-                         <h1 class="title text-center">{{ ucwords($tagContent->title) }}</h1>
+                         <h1 class="title text-center">{{ ucwords($tag) }}</h1>
                      @elseif($page->content()->heading->headline !== null && isset($tag) !== true)
                          <h1 class="title text-center">{{ $page->content()->heading->headline }}</h1>
                      @endif
