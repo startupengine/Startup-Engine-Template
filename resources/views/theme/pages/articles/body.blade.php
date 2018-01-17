@@ -12,8 +12,6 @@
                          <h1 class="title text-center">{{ $tagContent->content()->info->full_name }}</h1>
                      @elseif(isset($tag) && $tagContent->content()->info->full_name == null)
                          <h1 class="title text-center">{{ ucwords($tag) }}</h1>
-                     @elseif($page->content()->heading->headline !== null && isset($tag) !== true)
-                         <h1 class="title text-center">{{ $page->content()->heading->headline }}</h1>
                      @endif
 
                      @if(isset($tag) && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->info->description !== null)
@@ -23,10 +21,13 @@
                      @endif
                  </div>
              </div>
-         @elseif(isset($page->content()->heading->background))
+         @else
              <div class="page-header-image" style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0;opacity: 0.3;"></div>
                  <div class="container">
                      <div class="content-center">
+                         @if($page->content()->heading->headline)
+                            <h1 class="title text-center">{{ $page->content()->heading->headline }}</h1>
+                         @endif
                          @if($page->content()->heading->intro !== null)
                              <h3 class="description text-center" >{{ $page->content()->heading->intro }}</h3>
                          @endif
