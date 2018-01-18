@@ -53,8 +53,7 @@
                                 v-for="item in items"
                                 v-bind:article="item"
                                 v-bind:key="item.id"
-                                v-bind:href="item.slug"
-                                v-bind:class="{last : index === (items.length-1)}">
+                                v-bind:href="item.slug" >
                         </todo-item>
 
                         <div class="col-md-12" style="width:100%;padding:25px;" align="center">
