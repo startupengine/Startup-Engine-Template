@@ -45,7 +45,7 @@
         <div class="container">
             <div id="articles">
                 <div class="row">
-                    @if(isset($tag) == false && $page->content()->code->header !== null)
+                    @if(isset($tag) == false && $page->content() !== null && $page->content()->code !== null && $page->content()->code->header !== null)
                         {!! $page->markdown($page->content()->code->header) !!}
                     @endif
                     <div class="@if($page->content()->about->headline !== null) col-md-8 @else col-md-12 @endif row row-eq-height" style="margin:0px;">
