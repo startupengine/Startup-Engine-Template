@@ -36,6 +36,18 @@
           "description": "Stylesheets.",
           "placeholder": "<style> /* CSS goes here. */ </style>."
         },
+        "header": {
+          "type": "code",
+          "mode": "html",
+          "description": "Stylesheets.",
+          "placeholder": "<div></div>."
+        },
+        "footer": {
+          "type": "code",
+          "mode": "html",
+          "description": "Stylesheets.",
+          "placeholder": "<div></div>."
+        },
         "scripts": {
           "type": "code",
           "mode": "html",
