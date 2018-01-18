@@ -73,18 +73,6 @@
         }
       }
     },
-    "settings": {
-      "title": "Settings",
-      "slug": "settings",
-      "fields": {
-        "search": {
-          "type": "text",
-          "slug": "search",
-          "description": "Display search box in the sidebar?",
-          "placeholder": "Type \"On\" to enable"
-        }
-      }
-    },
     "calltoaction": {
       "title": "Call To Action",
       "slug": "calltoaction",
@@ -182,8 +170,9 @@
         "sidebar": {
           "html": null
         },
-        "settings": {
-          "search": "Off"
+        "code": {
+          "css": null,
+          "scripts": null
         },
         "calltoaction": {
           "headline": "Ready to launch your business?",
