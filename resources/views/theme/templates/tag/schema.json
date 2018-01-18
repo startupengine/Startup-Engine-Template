@@ -39,13 +39,13 @@
         "header": {
           "type": "code",
           "mode": "html",
-          "description": "Stylesheets.",
+          "description": "Header content area (optional)",
           "placeholder": "<div></div>."
         },
         "footer": {
           "type": "code",
           "mode": "html",
-          "description": "Stylesheets.",
+          "description": "Footer content area (optional)",
           "placeholder": "<div></div>."
         },
         "scripts": {
