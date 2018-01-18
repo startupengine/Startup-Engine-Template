@@ -29,7 +29,7 @@
                  <div class="container">
                      <div class="content-center">
                          @if($page->content()->heading->headline)
-                            <h1 class="title text-center">{{ $page->content()->heading->headline }}</h1>
+                            <h1 class="title text-center">{!! $page->markdown($page->content()->heading->headline) !!}</h1>
                          @endif
                          @if($page->content()->heading->intro !== null)
                              <h3 class="description text-center" >{{ $page->content()->heading->intro }}</h3>
@@ -45,6 +45,9 @@
         <div class="container">
             <div id="articles">
                 <div class="row">
+                    @if(isset($tag) == false && $page->content()->code->header !== null)
+                        {{ $page->markdown($page->content()->code->header) }}
+                    @endif
                     <div class="@if($page->content()->about->headline !== null) col-md-8 @else col-md-12 @endif row row-eq-height" style="margin:0px;">
                         <todo-item
                                 v-for="item in items"
@@ -79,6 +82,9 @@
                                 @endif
                             </div>
                         </div>
+                    @endif
+                    @if(isset($tag) == false && $page->content()->code->footer !== null)
+                        {{ $page->markdown($page->content()->code->footer) }}
                     @endif
                 </div>
             </div>
