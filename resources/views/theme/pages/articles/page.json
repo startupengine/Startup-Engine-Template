@@ -173,6 +173,7 @@
         "code": {
           "css": null,
           "header": null,
+          "footer": null,
           "scripts": null
         },
         "calltoaction": {
