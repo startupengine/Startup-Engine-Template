@@ -46,7 +46,7 @@
             <div id="articles">
                 <div class="row">
                     @if(isset($tag) == false && $page->content()->code->header !== null)
-                        {{ $page->markdown($page->content()->code->header) }}
+                        {!! $page->markdown($page->content()->code->header) !!}
                     @endif
                     <div class="@if($page->content()->about->headline !== null) col-md-8 @else col-md-12 @endif row row-eq-height" style="margin:0px;">
                         <todo-item
@@ -84,7 +84,7 @@
                         </div>
                     @endif
                     @if(isset($tag) == false && $page->content()->code->footer !== null)
-                        {{ $page->markdown($page->content()->code->footer) }}
+                        {!! $page->markdown($page->content()->code->footer) !!}
                     @endif
                 </div>
             </div>
