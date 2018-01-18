@@ -172,6 +172,7 @@
         },
         "code": {
           "css": null,
+          "header": null,
           "scripts": null
         },
         "calltoaction": {
