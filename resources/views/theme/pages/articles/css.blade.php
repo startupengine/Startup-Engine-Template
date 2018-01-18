@@ -148,6 +148,7 @@
         .col-md-6:nth-of-type(6) .card-header, .col-md-6:nth-of-type(12) .card-header, .col-md-6:nth-of-type(18) .card-header, .col-md-6:nth-of-type(24) .card-header, .col-md-6:nth-of-type(30) .card-header {
             top:0px !important;
         }
+
     }
     .col-md-6:nth-of-type(6),    .col-md-6:nth-of-type(12),    .col-md-6:nth-of-type(18),    .col-md-6:nth-of-type(24),    .col-md-6:nth-of-type(30) {
         min-width: 100% !important;
@@ -168,6 +169,19 @@
         .col-md-6:nth-of-type(16), .col-md-6:nth-of-type(17), .col-md-6:nth-of-type(18), .col-md-6:nth-of-type(19), .col-md-6:nth-of-type(20),
         .col-md-6:nth-of-type(21), .col-md-6:nth-of-type(22), .col-md-6:nth-of-type(23), .col-md-6:nth-of-type(24), .col-md-6:nth-of-type(25),
         .col-md-6:nth-of-type(26), .col-md-6:nth-of-type(27), .col-md-6:nth-of-type(28), .col-md-6:nth-of-type(29), .col-md-6:nth-of-type(30){
+            min-width: 100% !important;
+            width: 100% !important;
+            flex: 0 0 100% !important;
+        }
+    }
+
+    @media screen and (min-width:991px) {
+        .col-md-6:nth-of-type(4):last-of-type, .col-md-6:nth-of-type(10):last-of-type, .col-md-6:nth-of-type(16):last-of-type, .col-md-6:nth-of-type(22):last-of-type, .col-md-6:nth-of-type(28):last-of-type {
+            min-width: 66% !important;
+            width: 66% !important;
+            flex: 0 0 66% !important;
+        }
+        .col-md-6:nth-of-type(1):last-of-type, .col-md-6:nth-of-type(3):last-of-type, .col-md-6:nth-of-type(7):last-of-type, .col-md-6:nth-of-type(9):last-of-type, .col-md-6:nth-of-type(13):last-of-type, .col-md-6:nth-of-type(15):last-of-type, .col-md-6:nth-of-type(19):last-of-type, .col-md-6:nth-of-type(21):last-of-type, .col-md-6:nth-of-type(27):last-of-type {
             min-width: 100% !important;
             width: 100% !important;
             flex: 0 0 100% !important;
