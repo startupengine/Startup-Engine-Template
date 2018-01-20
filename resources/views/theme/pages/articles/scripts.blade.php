@@ -77,7 +77,12 @@
         }
     });
 </script>
-
+<?php
+if(isset($tag)) {
+    $tagContent = \App\Tag::where('slug', '=', $tag)->first();
+} else {
+    $tagContent = null;
+} ?>
 @if(isset($tag) && $tagContent !== null && $tagContent->content()->code !== null && $tagContent->content()->code->scripts !== null)
     {!! $tagContent->content()->code->scripts  !!}
 @endif

@@ -1,4 +1,9 @@
-
+<?php
+if(isset($tag)) {
+    $tagContent = \App\Tag::where('slug', '=', $tag)->first();
+} else {
+    $tagContent = null;
+} ?>
 <div class="wrapper">
     <div class="page-header page-header-small clear-filter" filter-color="black">
          @if(isset($tag))
