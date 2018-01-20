@@ -52,6 +52,7 @@
     mixpanel.init("c3af8ab4b008e22adf4772978aca66ec");
 
     function clickEvent(id, name, title, url, type, src, text){
+        <?php if(env('ENABLE_MIXPANEL') == true) { ?>
         mixpanel.track("click", {
             "id": id,
             "name": name,
@@ -61,6 +62,10 @@
             "src": src,
             "text": text
         });
+        <?php } ?>
+        $.get('/api/analytics/event', { event_type:'click', data: { id:id, name:name, title:title, url:url, type:type, src:src, text:text } }, function(data) {
+        });
+        return false; // prevent default
     }
 
     $( document ).ready(function() {
