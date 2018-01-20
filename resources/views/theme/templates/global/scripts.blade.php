@@ -76,7 +76,7 @@
         <?php if (isset($page)) { ?>
         id = <?php echo $page->id; ?>;
         slug = <?php echo $page->slug; ?>;
-        slug = <?php echo $page->title; ?>;
+        title = <?php echo $page->title; ?>;
         <?php } ?>
         $.get('/api/analytics/event', { event_type:'page view',  <?php if(\Auth::user()) { $user = \Auth::user(); echo "full_url:url, user_email:'$user->email', user_name:'$user->name',"; } ?> data: { url:url, slug:slug, title:title } }, function(data) {
         });
