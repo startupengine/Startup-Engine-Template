@@ -251,3 +251,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vuejs-paginator/2.0.0/vuejs-paginator.js"></script>
 
 @if(isset($page->content()->code->css)){!! $page->content()->code->css  !!} @endif
+
+<?php
+if(isset($tag)) {
+    $tagContent = \App\Tag::where('slug', '=', $tag)->first();
+} else {
+    $tagContent = null;
+} ?>
+
+@if(isset($tag) && $tagContent !== null && $tagContent->content()->code !== null && $tagContent->content()->code->css !== null)
+    {!! $tagContent->content()->code->css  !!}
+@endif

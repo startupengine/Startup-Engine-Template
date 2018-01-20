@@ -1,12 +1,6 @@
 
 <div class="wrapper">
     <div class="page-header page-header-small clear-filter" filter-color="black">
-        <?php
-        if(isset($tag)) {
-             $tagContent = \App\Tag::where('slug', '=', $tag)->first();
-         } else {
-            $tagContent = null;
-        } ?>
          @if(isset($tag))
              <div class="page-header-image" style="background-image:url('@if(isset($tagContent) && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info && $tagContent->content()->info->image !== null){{$tagContent->content()->info->image}}@endif'); background-size:cover ;z-index: 0;opacity: 0.3;"></div>
              <div class="container">
