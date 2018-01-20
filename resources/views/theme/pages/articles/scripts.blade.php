@@ -77,3 +77,7 @@
         }
     });
 </script>
+
+@if(isset($tag) && $tagContent !== null && $tagContent->content()->code !== null && $tagContent->content()->code->scripts !== null)
+    {!! $tagContent->content()->code->scripts  !!}
+@endif
