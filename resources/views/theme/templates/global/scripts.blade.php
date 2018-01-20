@@ -63,7 +63,7 @@
             "text": text
         });
         <?php } ?>
-        $.get('/api/analytics/event', { event_type:'click', data: { id:id, name:name, title:title, url:url, type:type, src:src, text:text } }, function(data) {
+        $.get('/api/analytics/event', { event_type:'click', data: { id:id, name:name, title:title, url:url, type:type, src:src, text:text } <?php if(\Auth::user()) { echo ", {user_id:$user->id}, {user_email:$user->email}, {user_name:$user->name}"; } ?> }, function(data) {
         });
         return false; // prevent default
     }
