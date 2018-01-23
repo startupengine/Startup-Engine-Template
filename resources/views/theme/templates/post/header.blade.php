@@ -17,7 +17,19 @@
                     <div align="center">
                         <h1 id="title">{{ $post->content()->heading->headline }}</h1>
                         @if($post->content()->heading->header_size == 'large')
-                            <h2 class="excerpt">{{ $post->content()->heading->excerpt }}</h2>
+                            <h2 class="excerpt" style="margin-bottom:25px;">{{ $post->content()->heading->excerpt }}</h2>
+                        @endif
+                        @if(count($post->tagNames()) > 0)
+                            <div style="margin-top:25px;margin-bottom: 25px;">
+                                <?php $tagCount = 1; ?>
+                                <div class="badge" style="border-color:rgba(255,255,255,0.33);">Tags</div>
+                                @foreach($post->tagNames() as $tagName)
+                                    @if($tagCount <= 3)
+                                        <a href="/content/tag/{{ strtolower($tagName) }}" class="badge">{{ $tagName }}</a>
+                                    @endif
+                                    <?php $tagCount = $tagCount + 1; ?>
+                                @endforeach
+                            </div>
                         @endif
                         @if(isset($post->content()->heading->show_date) && $post->content()->heading->show_date == "on")
                             <h6 id="date">
@@ -28,18 +40,6 @@
                                     Published {{ $post->published_at->diffForHumans() }}
                                 @endif
                             </h6>
-                        @endif
-                        @if(count($post->tagNames()) > 0)
-                            <div style="margin-bottom: 20px;">
-                                <?php $tagCount = 1; ?>
-                                <div class="badge" style="border-color:rgba(255,255,255,0.33);">Tags</div>
-                                @foreach($post->tagNames() as $tagName)
-                                    @if($tagCount <= 3)
-                                        <a href="/content/tag/{{ strtolower($tagName) }}" class="badge">{{ $tagName }}</a>
-                                    @endif
-                                    <?php $tagCount = $tagCount + 1; ?>
-                                @endforeach
-                            </div>
                         @endif
                         @if($post->content()->heading->button !== null)
                         <a class="btn btn-lg btn-round btn-simple" id="engage" href="javascript:void(0)"
