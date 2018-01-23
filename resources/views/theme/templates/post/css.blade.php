@@ -153,22 +153,23 @@
     }
 
     #content a{
-        padding: 0px 10px;
+        padding: 0px 5px;
         transition: background 0.25s, border 0.25s, box-shadow 0.25s, color 0.25s;
-        border-radius: 5px;
+        border-radius: 0px;
         margin:0px 5px !important;
         text-align: center;
         color: #333 !important;
-        border: 4px solid #6affa3 !important;
-        background:#fff !important;
-        text-decoration:none !important;
+        border-bottom: 5px solid #6affa3 !important;
+        background: #fff !important;
+        text-decoration: none !important;
         box-shadow: none;
-        display: inline-block;
+        display: inline !important;
+        border-top:5px solid transparent;
     }
     #content a:hover {
-        border: #6affa3 solid 4px !important;
         background: #6affa3 !important;
         text-decoration:none !important;
+        border-top:5px solid transparent;
     }
 
     div[role=tooltip] {
