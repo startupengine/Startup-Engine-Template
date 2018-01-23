@@ -30,7 +30,16 @@
                             </h6>
                         @endif
                         @if(count($post->tagNames()) > 0)
-                            <div style="margin-bottom: 20px;"><a href="/content/tag/{{ strtolower($post->tagNames()[0]) }}" class="btn btn-simple btn-round">{{ $post->tagNames()[0] }}</a></div>
+                            <div style="margin-bottom: 20px;">
+                                <?php $tagCount = 1; ?>
+                                <div class="badge" style="border-color:rgba(255,255,255,0.33);">Tags</div>
+                                @foreach($post->tagNames() as $tagName)
+                                    @if($tagCount <= 3)
+                                        <a href="/content/tag/{{ strtolower($tagName) }}" class="badge">{{ $tagName }}</a>
+                                    @endif
+                                    <?php $tagCount = $tagCount + 1; ?>
+                                @endforeach
+                            </div>
                         @endif
                         @if($post->content()->heading->button !== null)
                         <a class="btn btn-lg btn-round btn-simple" id="engage" href="javascript:void(0)"

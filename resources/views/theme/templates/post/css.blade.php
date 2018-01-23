@@ -1,6 +1,6 @@
 <style>
     #content p {
-        font-size:144% !important;
+        font-size:125% !important;
         line-height:166% !important;
     }
 
@@ -159,16 +159,15 @@
         margin:0px 5px !important;
         text-align: center;
         color: #333 !important;
-        border: 4px solid rgba(255, 235, 0, 0.7) !important;
+        border: 4px solid #6affa3 !important;
         background:#fff !important;
         text-decoration:none !important;
         box-shadow: none;
         display: inline-block;
     }
     #content a:hover {
-        border: #ffcf00 solid 4px !important;
-        background: #ffcf00 !important;
-        color:#fff !important;
+        border: #6affa3 solid 4px !important;
+        background: #6affa3 !important;
         text-decoration:none !important;
     }
 
@@ -190,5 +189,15 @@
 
     #content ul li {
         margin:15px;
+    }
+
+    a.badge {
+        border-color:#6affa3;
+    }
+
+    a.badge:hover {
+        text-decoration:none !important;
+        color: #6affa3;
+        border-color:#6affa3;
     }
 </style>
