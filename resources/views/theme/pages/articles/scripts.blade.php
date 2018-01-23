@@ -83,6 +83,7 @@ if(isset($tag)) {
 } else {
     $tagContent = null;
 } ?>
-@if(isset($tag) && $tagContent !== null && $tagContent->content()->code !== null && $tagContent->content()->code->scripts !== null)
+
+@if(isset($tag) && $tagContent !== null && $tagContent->content() !== null)
     {!! $tagContent->content()->code->scripts  !!}
 @endif
