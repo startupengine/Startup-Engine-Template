@@ -1,4 +1,4 @@
-<body class="index-page sidebar-collapse" id="articles-index">
+<body class="index-page sidebar-collapse" id="articles-index" style="background: linear-gradient(rgb(235, 242, 255), rgb(255, 255, 255));">
 
 @if(View::exists('theme.templates.global.menu'))
     @include('theme.templates.global.menu')
@@ -16,6 +16,9 @@
                 <div style="padding-top:75px;">
                     <div align="center">
                         <h1 id="title">{{ $post->content()->heading->headline }}</h1>
+                        @if($post->content()->heading->header_size == 'large')
+                            <h2 class="excerpt">{{ $post->content()->heading->excerpt }}</h2>
+                        @endif
                         @if(isset($post->content()->heading->show_date) && $post->content()->heading->show_date == "on")
                             <h6 id="date">
                                 @if(isset($post->content()->meta->featured) && $post->content()->meta->featured == "on")
@@ -40,14 +43,14 @@
         </div>
     </div>
 </div>
-<div class="section" style="padding-top:25px;@if($post->content()->body->body == null && $post->content()->body->video !== null) margin-top:-155px !important; @else margin-top:-75px !important; @endif background:none;z-index:5 !important;">
+<div class="section" style="padding-top:25px;@if($post->content()->heading->header_size == "small") margin-top:-75px !important; @else margin-top:-150px !important; @endif background:none;z-index:5 !important;">
     <div class="container" id="more">
         <div class="row">
             <div style="width:100%;">
                 <div id="articles">
                     <div id="content-row">
 
-                        <div class="card" style="box-shadow:0px -30px 60px rgba(0,0,0,0.2);" id="contentBody">
+                        <div class="card" style="box-shadow:0px -30px 30px rgba(0,0,100,0.1);" id="contentBody">
                             <?php if($post->content() !== null && $post->content()->body->image !== null && $post->content()->body->video == null){ ?>
                             <div id="featuredImage"
                                  style="background:url('{{ $post->content()->body->image }}');"></div>
@@ -79,7 +82,7 @@
 
                             @if($post->content() !== null && ($post->content()->body->image !== null OR $post->content()->body->video !== null OR $post->content()->heading->excerpt !== null OR $post->content()->body->body !== null))
                                 <div class="card-body" id="content" style="min-height:50px;">
-                                    <?php if($post->content()->heading->excerpt !== null) { ?>
+                                    <?php if($post->content()->heading->excerpt !== null && $post->content()->heading->header_size !== 'large') { ?>
                                     <h5 class="description excerpt">{{ $post->content()->heading->excerpt }}</h5>
                                     <?php } ?>
                                     <?php if($post->content() !== null && isset($post->content()->body->body)) { ?>

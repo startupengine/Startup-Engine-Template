@@ -1,6 +1,7 @@
 <style>
     #content p {
         font-size:133%;
+        line-height:200% !important;
     }
 
     #content > div:first-of-type {
@@ -112,6 +113,10 @@
         text-shadow:none !important;
     }
 
+    .page-header {
+        height:100vh !important;
+    }
+
     @media screen and (max-width: 991px) {
         .page-header h1 {
             font-size:35px !important;
@@ -119,11 +124,12 @@
         .page-header #engage {
             padding:10px 20px !important;
         }
-        .page-header-small{
-            min-height:66vh !important;
-        }
     }
 
+    .page-header-small{
+        min-height:66vh !important;
+        height:66vh !important;
+    }
     #featuredImage{
         min-height:500px;
         width:100%;
@@ -147,14 +153,27 @@
     }
 
     #content a{
-        color:#ff0000 !important;
+        padding: 5px 12px;
+        transition: background 0.25s, border 0.25s, box-shadow 0.25s, color 0.25s;
+        border-radius: 25px;
+        margin-left:5px;
+        margin-right:5px;
+        color: #333 !important;
+        border: 4px solid rgba(255, 235, 0, 0.71) !important;
+        background:#fff !important;
         text-decoration:none !important;
-        border-bottom: #eee solid 4px !important;
-        padding-bottom:5px;
-        transition: border-bottom 0.3s;
+        box-shadow: none;
     }
     #content a:hover {
-        border-bottom: #ff0000 solid 4px !important;
+        border: #ffcf00 solid 4px !important;
+        background: #ffcf00 !important;
+        color:#fff !important;
+        text-decoration:none !important;
+    }
+
+    div[role=tooltip] {
+        background:#fff !important;
+        opacity:1 !important;
     }
 
     #content li p {

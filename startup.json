@@ -418,6 +418,36 @@
       "value": "<i class=\"now-ui-icons objects_diamond\"></i>"
     }
   },
+  "analytics": {
+    "page views by day": {
+      "query": {
+        "select": {
+          "columns": ["created_at"],
+          "clause": "DB::raw('count(*) as total'"
+        },
+        "where": {
+          "property": "event_type",
+          "operand": "=",
+          "value": "page viewed"
+        },
+        "groupBy": {
+          "column": "created_at",
+          "order": "asc",
+          "function": "function($date) {return Carbon::parse($date->created_at)->format('d');});"
+        }
+      },
+      "data": {
+        "slug": {
+          "type": "string",
+          "value": "json.slug"
+        },
+        "date": {
+          "type": "date",
+          "value": "created_at"
+        }
+      }
+    }
+  },
   "scripts": {
     "dev": "npm run development",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
