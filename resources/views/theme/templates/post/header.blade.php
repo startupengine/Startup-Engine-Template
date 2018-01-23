@@ -59,7 +59,7 @@
                 <div id="articles">
                     <div id="content-row">
 
-                        <div class="card" style="box-shadow:0px -30px 30px rgba(0,0,100,0.1);" id="contentBody">
+                        <div class="card" style="text-align:center;box-shadow:0px -30px 30px rgba(0,0,100,0.1);" id="contentBody">
                             <?php if($post->content() !== null && $post->content()->body->image !== null && $post->content()->body->video == null){ ?>
                             <div id="featuredImage"
                                  style="background:url('{{ $post->content()->body->image }}');"></div>

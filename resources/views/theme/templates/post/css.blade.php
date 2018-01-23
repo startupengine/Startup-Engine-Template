@@ -62,6 +62,7 @@
         border-radius:2px;
         max-width: 50% !important;
         border-radius: 2px;
+        margin-top:25px;
         display: inline-block;
         min-width: unset;
         width: 100%;
@@ -153,23 +154,23 @@
     }
 
     #content a{
-        padding: 0px 5px;
+        padding: 0px;
         transition: background 0.25s, border 0.25s, box-shadow 0.25s, color 0.25s;
         border-radius: 0px;
-        margin:0px 5px !important;
+        margin:0px !important;
         text-align: center;
         color: #333 !important;
-        border-bottom: 5px solid #6affa3 !important;
-        background: #fff !important;
+        border-bottom: 4px solid #6affa3 !important;
+        background: transparent !important;
         text-decoration: none !important;
         box-shadow: none;
         display: inline !important;
-        border-top:5px solid transparent;
+        border-top:4px solid transparent;
     }
     #content a:hover {
         background: #6affa3 !important;
         text-decoration:none !important;
-        border-top:5px solid transparent;
+        border-top:4px solid transparent;
     }
 
     div[role=tooltip] {
@@ -201,5 +202,49 @@
         text-decoration:none !important;
         color: #6affa3;
         border-color:#6affa3;
+    }
+
+    #content-row .card-body img {
+        border-radius:4px;
+    }
+
+    .card-image {
+        width: 350px;
+        max-width: 90%;
+        margin: 25px 0px !important;
+        box-shadow: none;
+        border: 1px solid #dae9ff;
+    }
+
+    #content-row .card .card-image {
+        margin-top: 25px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .card-image .card-body {
+        min-height:350px;
+        background-size:cover;
+        background-position:center center;
+    }
+
+    .card-image .card-footer {
+        background: #dae9ff;
+        color: #444;
+        font-weight: 600;
+        border-top: 1px solid #c1daff;
+    }
+
+    .image-container {
+        min-height: 350px;
+        width: 100%;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+
+    blockquote {
+        margin: 25px 25px 0px 25px !important;
+        padding: 5px 5px 25px 5px !important;
+        border-radius: 5px;
+        background: #f1fff6;
     }
 </style>
