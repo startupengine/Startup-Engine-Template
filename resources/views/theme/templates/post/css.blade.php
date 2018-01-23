@@ -194,9 +194,10 @@
 
     a.badge {
         border-color:#6affa3;
+        color:#fff;
     }
 
-    a.badge:hover {
+    a.badge:hover,a.badge:focus,a.badge:active {
         text-decoration:none !important;
         color: #6affa3;
         border-color:#6affa3;
