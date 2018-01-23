@@ -1,7 +1,7 @@
 <style>
     #content p {
-        font-size:133%;
-        line-height:200% !important;
+        font-size:144% !important;
+        line-height:166% !important;
     }
 
     #content > div:first-of-type {
@@ -153,16 +153,17 @@
     }
 
     #content a{
-        padding: 5px 12px;
+        padding: 0px 10px;
         transition: background 0.25s, border 0.25s, box-shadow 0.25s, color 0.25s;
-        border-radius: 25px;
-        margin-left:5px;
-        margin-right:5px;
+        border-radius: 5px;
+        margin:0px 5px !important;
+        text-align: center;
         color: #333 !important;
-        border: 4px solid rgba(255, 235, 0, 0.71) !important;
+        border: 4px solid rgba(255, 235, 0, 0.7) !important;
         background:#fff !important;
         text-decoration:none !important;
         box-shadow: none;
+        display: inline-block;
     }
     #content a:hover {
         border: #ffcf00 solid 4px !important;
