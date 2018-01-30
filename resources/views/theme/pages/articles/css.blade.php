@@ -247,6 +247,11 @@
         margin-left:5px;
         min-width:100px;
     }
+
+    .page-header.no-image .title,
+    .page-header.no-image .description {
+        color:#222 !important;
+    }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vuejs-paginator/2.0.0/vuejs-paginator.js"></script>
 
