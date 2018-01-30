@@ -154,7 +154,7 @@
     }
 
     #content a{
-        padding: 0px;
+        padding: 0px 5px 0px 5px;
         transition: background 0.25s, border 0.25s, box-shadow 0.25s, color 0.25s;
         border-radius: 0px;
         margin:0px !important;
