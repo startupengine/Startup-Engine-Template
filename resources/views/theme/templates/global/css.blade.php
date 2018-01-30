@@ -233,7 +233,7 @@
 
     .page-header h2, .main h2, .page-header h3, .main h3, .page-header h4, .main h4, .page-header h5, .main h5 {
         font-weight: 400 !important;
-        text-shadow: 0px 0px 10px #000 !important;
+        text-shadow:0px 0px 5px rgba(0,0,0,0.4)!important
     }
 
     .navbar-brand {
