@@ -5,7 +5,7 @@ if(isset($tag)) {
     $tagContent = null;
 } ?>
 <div class="wrapper">
-    <div class="page-header page-header-small clear-filter @if($tagContent == null OR ($page->content()->heading->background == null && $tagContent->content()->heading->background == null)) no-image @endif" filter-color="black">
+    <div class="page-header page-header-small clear-filter @if($page->content()->heading->background == null && $tagContent->content()->heading->background == null) no-image @endif" filter-color="black">
          @if(isset($tag))
              <div class="page-header-image" style="background-image:url('@if(isset($tagContent) && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info && $tagContent->content()->info->image !== null){{$tagContent->content()->info->image}}@endif'); background-size:cover ;z-index: 0;opacity: 0.3;"></div>
              <div class="container">
