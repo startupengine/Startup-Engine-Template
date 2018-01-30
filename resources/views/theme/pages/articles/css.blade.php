@@ -248,9 +248,14 @@
         min-width:100px;
     }
 
+    .page-header.no-image {
+        background: rgba(0,0,0,0.25) !important;
+    }
+
     .page-header.no-image .title,
     .page-header.no-image .description {
         color:#222 !important;
+        text-shadow:none !important;
     }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vuejs-paginator/2.0.0/vuejs-paginator.js"></script>
