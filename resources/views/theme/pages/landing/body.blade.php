@@ -121,7 +121,7 @@
         </div>
     </div>
     @endif
-    @if(isset($page->content()->cta))
+    @if(isset($page->content()->call_to_action))
     <section class="section text-center" style="color:#555;">
         <div class="container">
             <div class="row align-items-center text-center">

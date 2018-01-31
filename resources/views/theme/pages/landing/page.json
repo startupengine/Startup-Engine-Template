@@ -179,9 +179,9 @@
         }
       }
     },
-    "calltoaction": {
+    "call_to_action": {
       "title": "Call To Action",
-      "slug": "calltoaction",
+      "slug": "call_to_action",
       "fields": {
         "headline": {
           "type": "text",
