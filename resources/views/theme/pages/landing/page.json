@@ -259,7 +259,7 @@
           "link": null,
           "footer": null
         },
-        "calltoaction": {
+        "call_to_action": {
           "headline": "Ready to launch your business?",
           "message": "Start running an automated startup in under 5 minutes.",
           "button": "Get The Source Code <i class=\"fas fa-download\"><\/i>",
