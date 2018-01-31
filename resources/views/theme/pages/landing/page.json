@@ -189,6 +189,12 @@
           "description": "A short call to action message.",
           "placeholder": "Write a headline."
         },
+        "message": {
+          "type": "richtext",
+          "slug": "message",
+          "description": "A short call to action message.",
+          "placeholder": "Write a headline."
+        },
         "button": {
           "type": "code",
           "mode": "html",
