@@ -1,0 +1,1 @@
+<body class="landing-page sidebar-collapse">

@@ -1,0 +1,276 @@
+{
+  "title": "Landing",
+  "slug": "landing",
+  "version": "0.1",
+  "description": "Description goes here.",
+  "image": "https://psychoanalytics.s3-us-west-1.amazonaws.com/pages/products/ejinjFr2xPKaq27lB4QCRkDHdw45ayHjYLW4YMgM.jpeg",
+  "sections": {
+    "heading": {
+      "title": "Heading",
+      "slug": "heading",
+      "fields": {
+        "headline": {
+          "type": "text",
+          "slug": "headline",
+          "description": "A short summary of the page.",
+          "placeholder": "Write a headline."
+        },
+        "intro": {
+          "type": "richtext",
+          "slug": "intro",
+          "description": "One or two lines summarizing this page.",
+          "placeholder": "Write a message."
+        },
+        "background": {
+          "type": "text",
+          "slug": "background",
+          "description": "Url for a background image (optional).",
+          "placeholder": "http://www.example.com"
+        }
+      }
+    },
+    "features": {
+      "title": "Features",
+      "slug": "features",
+      "fields": {
+        "image": {
+          "type": "text",
+          "slug": "image",
+          "description": "Url for a featured image (optional).",
+          "placeholder": "http://www.example.com"
+        },
+        "headline": {
+          "type": "text",
+          "slug": "headline",
+          "description": "A short summary of the feature's benefit.",
+          "placeholder": "Write a headline."
+        },
+        "feature_1_title": {
+          "type": "textarea",
+          "slug": "feature_1_title",
+          "description": "One or two lines about the benefit.",
+          "placeholder": "Write a message."
+        },
+        "feature_1_message": {
+          "type": "textarea",
+          "slug": "feature_1_message",
+          "description": "One or two lines about the benefit.",
+          "placeholder": "Write a message."
+        },
+        "feature_1_image": {
+          "type": "text",
+          "slug": "feature_1_image",
+          "description": "A relevant image.",
+          "placeholder": "http://..."
+        },
+        "feature_2_title": {
+          "type": "textarea",
+          "slug": "feature_2_title",
+          "description": "One or two lines about the benefit.",
+          "placeholder": "Write a message."
+        },
+        "feature_2_message": {
+          "type": "textarea",
+          "slug": "feature_2_message",
+          "description": "One or two lines about the benefit.",
+          "placeholder": "Write a message."
+        },
+        "feature_2_image": {
+          "type": "text",
+          "slug": "feature_2_image",
+          "description": "A relevant image.",
+          "placeholder": "http://..."
+        },
+        "feature_3_title": {
+          "type": "textarea",
+          "slug": "feature_3_title",
+          "description": "One or two lines about the benefit.",
+          "placeholder": "Write a message."
+        },
+        "feature_3_message": {
+          "type": "textarea",
+          "slug": "feature_3_message",
+          "description": "One or two lines about the benefit.",
+          "placeholder": "Write a message."
+        },
+        "feature_3_image": {
+          "type": "text",
+          "slug": "feature_3_image",
+          "description": "A relevant image.",
+          "placeholder": "http://..."
+        }
+      }
+    },
+    "callout": {
+      "title": "Callout",
+      "slug": "callout",
+      "fields": {
+        "text": {
+          "type": "richtext",
+          "slug": "text",
+          "description": "A short call to action message.",
+          "placeholder": "Write some text."
+        }
+      }
+    },
+    "pricing": {
+      "title": "Pricing",
+      "slug": "pricing",
+      "fields": {
+        "headline": {
+          "type": "text",
+          "slug": "headline",
+          "description": "A short summary of the feature's benefit.",
+          "placeholder": "Write a headline."
+        },
+        "option_1_title": {
+          "type": "richtext",
+          "slug": "option_1_title",
+          "description": "The name of this option.",
+          "placeholder": "Write a message."
+        },
+        "option_1_cost": {
+          "type": "text",
+          "slug": "option_1_cost",
+          "description": "Price per month.",
+          "placeholder": "10"
+        },
+        "option_1_description": {
+          "type": "richtext",
+          "slug": "option_1_description",
+          "description": "One or two lines about this option.",
+          "placeholder": "Write a message."
+        },
+        "option_2_title": {
+          "type": "richtext",
+          "slug": "option_2_title",
+          "description": "The name of this option.",
+          "placeholder": "Write a message."
+        },
+        "option_2_cost": {
+          "type": "text",
+          "slug": "option_2_cost",
+          "description": "Price per month.",
+          "placeholder": "100"
+        },
+        "option_2_description": {
+          "type": "richtext",
+          "slug": "option_2_description",
+          "description": "One or two lines about this option.",
+          "placeholder": "Write a message."
+        },
+        "option_3_title": {
+          "type": "richtext",
+          "slug": "option_3_title",
+          "description": "The name of this option.",
+          "placeholder": "Write a message."
+        },
+        "option_3_cost": {
+          "type": "text",
+          "slug": "option_3_cost",
+          "description": "Price per month.",
+          "placeholder": "1,000."
+        },
+        "option_3_description": {
+          "type": "richtext",
+          "slug": "option_3_description",
+          "description": "One or two lines about this option.",
+          "placeholder": "Write a message."
+        }
+      }
+    },
+    "calltoaction": {
+      "title": "Call To Action",
+      "slug": "calltoaction",
+      "fields": {
+        "headline": {
+          "type": "text",
+          "slug": "headline",
+          "description": "A short call to action message.",
+          "placeholder": "Write a headline."
+        },
+        "button": {
+          "type": "code",
+          "mode": "html",
+          "slug": "button",
+          "description": "A short call to action phrase.",
+          "placeholder": "Learn More"
+        },
+        "link": {
+          "type": "text",
+          "slug": "link",
+          "description": "A url to link to. (optional)",
+          "placeholder": "http://www.example.com"
+        }
+      }
+    },
+    "meta": {
+      "title": "Meta",
+      "slug": "meta",
+      "fields": {
+        "slug": {
+          "type": "text",
+          "slug": "slug",
+          "description": "A unique slug for tracking this variation.",
+          "placeholder": "Name it clearly."
+        },
+        "Variation description": {
+          "type": "textarea",
+          "slug": "description",
+          "description": "A description of this variation.",
+          "placeholder": "Describe this variation clearly."
+        }
+      }
+    }
+  },
+  "default": {
+    "versions": {
+      "1": {
+        "heading": {
+          "headline": "Read between the lines.",
+          "button": "Learn More",
+          "link": "\/analytics",
+          "background": "https:\/\/images.unsplash.com\/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+          "intro": "Automatically validate, market, and sell your product.",
+          "headersize": "large",
+          "footer": null
+        },
+        "feature1": {
+          "headline": "Automate Your Marketing",
+          "message": "At the core of StartupEngine is a CMS designed specifically for content marketing. Blog posts, help articles, FAQ's, and custom post types are all included.",
+          "image": "https:\/\/images.unsplash.com\/photo-1463171379579-3fdfb86d6285?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+          "button": null,
+          "link": null,
+          "footer": null
+        },
+        "feature2": {
+          "headline": "Validate Your Strategy",
+          "message": "Every page view, click, and interaction is recorded. This makes it easy to see what's working and what's not, so you can adjust your strategy on the fly.",
+          "image": "https:\/\/images.unsplash.com\/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1602&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+          "button": null,
+          "link": null,
+          "footer": null
+        },
+        "feature3": {
+          "headline": "Sell Your Product",
+          "message": "Easily sell content, physical products, or software via one-time purchases or subscriptions.",
+          "image": "https:\/\/images.unsplash.com\/photo-1421757381940-5d269570b21c?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+          "button": null,
+          "link": null,
+          "footer": null
+        },
+        "calltoaction": {
+          "headline": "Ready to launch your business?",
+          "message": "Start running an automated startup in under 5 minutes.",
+          "button": "Get The Source Code <i class=\"fas fa-download\"><\/i>",
+          "link": "https:\/\/github.com\/luckyrabbitllc\/startupengine"
+        },
+        "meta": {
+          "slug": "default",
+          "description": "Functionality overview",
+          "featured": "on"
+        }
+      }
+    }
+  }
+}
