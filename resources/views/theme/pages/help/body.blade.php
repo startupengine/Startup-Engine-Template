@@ -6,7 +6,7 @@
                 @if($page->content()->code->header !== null && $search == null)
                     {!! $page->content()->code->header  !!}
                 @endif
-                <div class="col-lg-12 col-md-12" id="articles">
+                <div class="col-lg-12 col-md-12 row row-eq-height" id="articles">
                     <help-item
                             v-for="item in items"
                             v-bind:article="item"
