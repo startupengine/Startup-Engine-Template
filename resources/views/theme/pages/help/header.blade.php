@@ -2,7 +2,7 @@
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper">
     <div class="page-header page-header-small clear-filter" filter-color="black">
-        <div class="page-header-image" data-parallax="true" style="@if($page->content()->heading->background == null)background-color:#3a92f1;@else background-image:{{ $page->content()->heading->background }}; @endif">
+        <div class="page-header-image" data-parallax="true" style="@if($page->content()->heading->background == null)background-color:#3a92f1;@else background-image:url({{ $page->content()->heading->background }}); @endif">
         </div>
         <div class="container">
             <div class="content-center" style="">
