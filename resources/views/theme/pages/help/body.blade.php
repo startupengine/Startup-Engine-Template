@@ -12,6 +12,9 @@
                             v-bind:key="item.id"
                             v-bind:href="item.slug" >
                     </help-item>
+                    <div class="col-md-12" style="width:100%;padding:25px;" align="center">
+                        <v-paginator :resource_url="resource_url" <?php echo '@update="updateResource"';?> ></v-paginator>
+                    </div>
                 </div>
                 <?php $search = (app('request')->input('s')); ?>
                 @if(isset($page->content()->content->html) && $search == null)
