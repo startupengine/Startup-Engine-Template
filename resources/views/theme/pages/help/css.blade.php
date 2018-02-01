@@ -67,6 +67,7 @@
 
     #articles {
         margin-top: -50px;
+        padding:15px;
     }
 
     @media only screen and (max-width: 1024px) {
