@@ -10,7 +10,8 @@
                             v-bind:href="item.slug" >
                     </help-item>
                 </div>
-                @if(isset($page->content()->content->html))
+                <?php $search = (app('request')->input('s')); ?>
+                @if(isset($page->content()->content->html) && $search == null)
                     <div class="col-lg-12 col-md-12">
                         {!! $page->content()->content->html !!}
                     </div>
