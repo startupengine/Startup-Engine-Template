@@ -24,6 +24,20 @@
         background: #fff !important;
         color:#777 !important;
     }
+
+    .image-container {
+        min-height: 200px;
+        width: 100%;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+
+    .image-container.featured {
+        min-height: 154px;
+        width: 100%;
+        background-size: cover !important;
+        background-position: center !important;
+    }
 </style>
 
 @if($page->content()->code->css !== null){!! $page->content()->code->css  !!} @endif
