@@ -90,6 +90,6 @@ if(isset($tag)) {
     $tagContent = null;
 } ?>
 
-@if(isset($tag) && $tagContent !== null && $tagContent->content() !== null)
+@if($page->content()->code->scripts !== null)
     {!! $tagContent->content()->code->scripts  !!}
 @endif

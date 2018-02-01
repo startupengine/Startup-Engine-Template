@@ -26,4 +26,7 @@
     }
 </style>
 
+@if($page->content()->code->css !== null){!! $page->content()->code->css  !!} @endif
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vuejs-paginator/2.0.0/vuejs-paginator.js"></script>
+

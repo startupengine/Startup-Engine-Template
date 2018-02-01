@@ -2,6 +2,9 @@
     <div class="section" style="padding-top:25px;margin-top:-100px;background:none;">
         <div class="container">
             <div class="row">
+                @if($page->content()->code->header !== null)
+                    {!! $tagContent->content()->code->header  !!}
+                @endif
                 <div class="col-lg-12 col-md-12" id="articles">
                     <help-item
                             v-for="item in items"
@@ -19,4 +22,7 @@
             </div>
         </div>
     </div>
+    @if($page->content()->code->footer !== null)
+        {!! $tagContent->content()->code->footer  !!}
+    @endif
 </div>
