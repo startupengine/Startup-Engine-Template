@@ -155,3 +155,5 @@
         color: #fff !important;
     }
 </style>
+
+@if($page->content()->code->css !== null){!! $page->content()->code->css  !!} @endif

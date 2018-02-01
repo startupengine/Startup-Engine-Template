@@ -179,6 +179,38 @@
         }
       }
     },
+    "code": {
+      "title": "Code",
+      "slug": "code",
+      "fields": {
+        "css": {
+          "type": "code",
+          "mode": "html",
+          "slug": "css",
+          "description": "Additional CSS (optional)",
+          "placeholder": "<style></style>"
+        },
+        "header": {
+          "type": "richtext",
+          "slug": "header",
+          "description": "Header content area (optional)",
+          "placeholder": "<div></div>"
+        },
+        "footer": {
+          "type": "richtext",
+          "slug": "footer",
+          "description": "Footer content area (optional)",
+          "placeholder": "<div></div>"
+        },
+        "scripts": {
+          "type": "code",
+          "mode": "html",
+          "slug": "scripts",
+          "description": "Additional CSS (optional)",
+          "placeholder": "<script></script>"
+        }
+      }
+    },
     "call_to_action": {
       "title": "Call To Action",
       "slug": "call_to_action",
