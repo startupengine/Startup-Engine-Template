@@ -1,5 +1,5 @@
 <div class="wrapper">
-    <div class="section" style="padding-top:25px;margin-top:-100px;background:none;">
+    <div class="section" style="padding-top:25px;margin-top:-125px;background:none;">
         <div class="container">
             <div class="row">
                 @if($page->content()->code->header !== null)
