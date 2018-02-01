@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 @if($page->content()->code->header !== null)
-                    {!! $tagContent->content()->code->header  !!}
+                    {!! $page->content()->code->header  !!}
                 @endif
                 <div class="col-lg-12 col-md-12" id="articles">
                     <help-item
