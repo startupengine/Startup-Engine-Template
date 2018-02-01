@@ -9,7 +9,8 @@
                 <h1 class="title text-center" style="margin-top:100px;">{!! $page->content()->heading->headline !!}</h1>
                 <div class="form-group" style="padding:15px;">
                     <form method="get" enctype="multipart/form-data" action="">
-                        <input type="text" id="s" name="s" class="form-control" placeholder="Search for answers." autocomplete="off" aria-label="Search for...">
+                        <?php $search = (app('request')->input('s')); ?>
+                        <input type="text" id="s" name="s" class="form-control" placeholder="Search for answers." @if($search !== null)value="{{ $search }}" autocomplete="off" aria-label="Search for...">
                     </form>
                 </div>
             </div>
