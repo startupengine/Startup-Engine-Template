@@ -8,10 +8,13 @@
         }
     }
 
-    input#s {
+    #s {
+        border-radius:30px 0px 0px 30px !important;
+    }
+
+    .input-group input, .input-group .input-group-addon {
         -webkit-border-radius: 7px;
         -moz-border-radius: 7px;
-        border-radius: 5px !important;
         padding:20px !important;
         background:rgba(0,0,0,0.25) !important;
         border:none !important;
@@ -20,7 +23,7 @@
         font-weight:400 !important;
     }
 
-    input#s:hover,input#s:focus {
+    .input-group:hover input,  .input-group:focus input, .input-group:hover .input-group-addon, .input-group:focus .input-group-addon{
         background: #fff !important;
         color:#777 !important;
     }

@@ -10,6 +10,16 @@
                 <div class="form-group" style="padding:15px;">
                     <form method="get" enctype="multipart/form-data" action="">
                         <?php $search = (app('request')->input('s')); ?>
+
+                            <div class="input-group">
+
+                                <input type="text" id="s" name="s" class="form-control" placeholder="Search for answers." value="analytics" autocomplete="off" aria-label="Search for...">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                            </div>
+
+
                         <input type="text" id="s" name="s" class="form-control" placeholder="Search for answers." @if($search !== null)value="{{ $search }}"@endif autocomplete="off" aria-label="Search for...">
                     </form>
                 </div>
