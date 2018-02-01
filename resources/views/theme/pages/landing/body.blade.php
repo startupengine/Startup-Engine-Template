@@ -128,7 +128,7 @@
                 <div class="col-lg-12 text-center">
                     @if(isset($page->content()->call_to_action->headline))<h2>{{ $page->content()->call_to_action->headline }}</h2>@endif
                     @if(isset($page->content()->call_to_action->message))<h5 class="description">{{ $page->content()->call_to_action->message }}</h5>@endif
-                    @if(isset($page->content()->call_to_action->button) && isset($page->content()->call_to_action->link))<a href="{{ $page->content()->call_to_action->link }}" class="btn btn-lg btn-primary btn-round bg-gradient-orange grow">{{ $page->content()->call_to_action->button }}@endif
+                    @if(isset($page->content()->call_to_action->button) && isset($page->content()->call_to_action->link))<a href="{!! $page->markdown($page->content()->call_to_action->link) !!}" class="btn btn-lg btn-primary btn-round bg-gradient-orange grow">{{ $page->content()->call_to_action->button }}@endif
                     </a>
                 </div>
             </div>
