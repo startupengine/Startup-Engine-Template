@@ -184,7 +184,7 @@
       "slug": "call_to_action",
       "fields": {
         "headline": {
-          "type": "text",
+          "type": "richtext",
           "slug": "headline",
           "description": "A short call to action message.",
           "placeholder": "Write a headline."
