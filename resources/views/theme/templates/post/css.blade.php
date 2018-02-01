@@ -160,8 +160,8 @@
         margin:0px !important;
         text-align: center;
         color: #333 !important;
-        border-bottom: 4px solid #6affa3 !important;
-        background: transparent !important;
+        border-bottom: 4px solid transparent !important;
+        background: #ffe6079c !important;
         text-decoration: none !important;
         box-shadow: none;
         display: inline !important;
