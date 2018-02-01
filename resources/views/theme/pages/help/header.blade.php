@@ -7,7 +7,7 @@
         </div>
         <div class="container">
             <div class="content-center" style="">
-                <h1 class="title text-center" style="margin-top:100px;">{!! $page->content()->heading->headline !!}</h1>
+                <h1 class="title text-center" style="margin-top:0px;">{!! $page->content()->heading->headline !!}</h1>
                 <div class="form-group" style="padding:15px;">
                     <form method="get" enctype="multipart/form-data" action="">
                         <?php $search = (app('request')->input('s')); ?>
