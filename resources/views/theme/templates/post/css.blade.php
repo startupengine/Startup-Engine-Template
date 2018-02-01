@@ -29,7 +29,7 @@
     #content .excerpt {
         font-weight: 400 !important;
         margin-top:0px;
-        text-align: left !important;
+        text-align: center !important;
         color: #000;
         font-weight: 400;
         padding:25px 25px 0px 25px !important;
