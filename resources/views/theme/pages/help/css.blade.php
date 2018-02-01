@@ -12,6 +12,10 @@
         border-radius:30px 0px 0px 30px !important;
     }
 
+    .input-group .input-group-addon {
+        border-radius: 0px 30px 30px 0px !important;
+    }
+
     .input-group input, .input-group .input-group-addon {
         -webkit-border-radius: 7px;
         -moz-border-radius: 7px;
