@@ -156,10 +156,10 @@
     }
 
     .v-paginator .btn {
-        border-radius:25px;
-        margin-right:5px;
-        margin-left:5px;
-        min-width:100px;
+        border-radius:25px !important;
+        margin-right:5px !important;
+        margin-left:5px !important;
+        min-width:100px !important;
     }
 </style>
 
