@@ -49,5 +49,9 @@
 
 @if($page->content()->code->css !== null){!! $page->content()->code->css  !!} @endif
 
+@if(isset($tag) && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->code !== null && $tagContent->content()->code->css !== null)
+    {!! $page->content()->code->css  !!}
+@endif
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vuejs-paginator/2.0.0/vuejs-paginator.js"></script>
 
