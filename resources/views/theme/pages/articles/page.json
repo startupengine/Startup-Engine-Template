@@ -114,9 +114,9 @@
           "description": "Display posts which have these tags (comma-separated)",
           "placeholder": "blog,tutorial,announcement"
         },
-        "blocked_tags": {
+        "excluded_tags": {
           "type": "text",
-          "slug": "blocked_tags",
+          "slug": "excluded_tags",
           "description": "Don't display posts with these tags (comma-separated)",
           "placeholder": "help,documentation,faq"
         }
