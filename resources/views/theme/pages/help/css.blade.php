@@ -38,7 +38,7 @@
         background-size: cover !important;
         background-position: center !important;
     }
-    
+
     .v-paginator .btn {
         border-radius:25px !important;
         margin-right:5px !important;

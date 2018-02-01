@@ -40,7 +40,7 @@
     Vue.component('help-item', {
         props: ['article'],
         template:
-        '<div class="col-md-6" style="margin-top:25px;">' +
+        '<div class="col-md-4" style="margin-top:25px;">' +
         '<a class="card-link" v-bind:href="article.slug" onclick="window.location.href = $(this).attr(\'href\');">' +
         '<div class="card" style="height:100%;">' +
         '<div v-if="article.content.meta && article.content.meta.featured == \'on\' && article.content.meta.message == null" class="card-header featured" ><i class="fas fa-star" ></i>  Featured</div>' +
