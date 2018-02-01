@@ -81,8 +81,7 @@
         },
         "meta": {
           "slug": "default",
-          "description": "Default values.",
-          "featured": "on"
+          "description": "Default"
         }
       }
     }
