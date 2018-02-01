@@ -32,7 +32,7 @@
     <?php if(isset($tag)) { ?>
         var tags = '&tag[]=<?php echo $tag; ?>';
     <?php } else { ?>
-        var tags = "&tag=help";
+        var tags = "&tag[]=help";
     <?php } ?>
 
     var queryPath = '/api/content/items?page[number]='+ pageNumber +'&page[size]='+ pageSize + tags + search;
