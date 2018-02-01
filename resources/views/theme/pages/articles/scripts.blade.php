@@ -23,9 +23,10 @@
         pageSize = 30;
     }
 
-    <?php if(isset($tag)) { ?>
+    <?php dd($page->content()->settings->requred_tags);  if(isset($tag)) { ?>
         var tags = '&tag[]=<?php echo $tag; ?>';
     <?php } elseif(isset($page->content()->settings->requred_tags)) {
+
         $required_tags = explode(",", $page->content()->settings->requred_tags);
         $tagString = '';
         foreach($required_tags as $required_tag) {
