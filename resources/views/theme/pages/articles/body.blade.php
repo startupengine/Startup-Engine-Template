@@ -62,7 +62,7 @@ if(isset($tag)) {
                                 v-bind:href="item.slug" >
                         </todo-item>
 
-                        <div class="col-md-12" style="width:100%;padding:25px;" align="center">
+                        <div class="col-md-12" style="width:100%;padding:25px 0px;" align="center">
                             <v-paginator :resource_url="resource_url" <?php echo '@update="updateResource"';?> ></v-paginator>
                         </div>
                     </div>
