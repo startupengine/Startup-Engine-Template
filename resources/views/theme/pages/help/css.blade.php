@@ -4,7 +4,7 @@
     }
     @media screen and (max-width: 991px) {
         .page-header {
-            min-height: 60vh !important;
+            min-height: 440px !important;
         }
     }
 
@@ -25,3 +25,5 @@
         color:#777 !important;
     }
 </style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vuejs-paginator/2.0.0/vuejs-paginator.js"></script>

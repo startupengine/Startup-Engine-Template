@@ -10,16 +10,17 @@
       "slug": "heading",
       "fields": {
         "headline": {
-          "type": "text",
+          "type": "code",
+          "mode": "html",
           "slug": "headline",
-          "description": "A short summary of the page.",
+          "description": "A short headline.",
           "placeholder": "Write a headline."
         },
         "intro": {
           "type": "textarea",
           "slug": "intro",
-          "description": "Write a bit of intro text (optional).",
-          "placeholder": "Something exciting goes here..."
+          "description": "Write a bit of intro text.",
+          "placeholder": "Something goes here..."
         },
         "background": {
           "type": "text",
@@ -73,7 +74,7 @@
           "headline": "Help Desk",
           "intro": null,
           "background": null,
-          "search_placeholder": "Search for help.",
+          "search_placeholder": "Search for help."
         },
         "content": {
           "html": null,
