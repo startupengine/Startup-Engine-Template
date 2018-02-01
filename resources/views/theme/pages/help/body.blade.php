@@ -23,6 +23,6 @@
         </div>
     </div>
     @if($page->content()->code->footer !== null)
-        {!! $tagContent->content()->code->footer  !!}
+        {!! $page->content()->code->footer  !!}
     @endif
 </div>

@@ -91,5 +91,5 @@ if(isset($tag)) {
 } ?>
 
 @if($page->content()->code->scripts !== null)
-    {!! $tagContent->content()->code->scripts  !!}
+    {!! $page->content()->code->scripts  !!}
 @endif
