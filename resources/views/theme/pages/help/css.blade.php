@@ -38,6 +38,13 @@
         background-size: cover !important;
         background-position: center !important;
     }
+    
+    .v-paginator .btn {
+        border-radius:25px !important;
+        margin-right:5px !important;
+        margin-left:5px !important;
+        min-width:100px !important;
+    }
 </style>
 
 @if($page->content()->code->css !== null){!! $page->content()->code->css  !!} @endif
