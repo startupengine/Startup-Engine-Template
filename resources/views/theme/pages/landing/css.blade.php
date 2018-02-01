@@ -154,6 +154,13 @@
         background: #fff !important;
         color: #fff !important;
     }
+
+    .v-paginator .btn {
+        border-radius:25px;
+        margin-right:5px;
+        margin-left:5px;
+        min-width:100px;
+    }
 </style>
 
 @if($page->content()->code->css !== null){!! $page->content()->code->css  !!} @endif
