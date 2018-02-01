@@ -25,7 +25,14 @@
 
     <?php if(isset($tag)) { ?>
         var tags = '&tag[]=<?php echo $tag; ?>';
-    <?php } else { ?>
+    <?php } elseif($page->content()->settings->requred_tags !== null) {
+        $required_tags = explode(",", $page->content()->settings->requred_tags);
+        $tagString = '';
+        foreach($required_tags as $required_tag) {
+            $tagString = $tagString."&tag[]=$required_tag";
+        }
+        echo "var tags = '$tagString';";
+    } else { ?>
         var tags = '';
     <?php } ?>
 

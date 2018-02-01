@@ -104,6 +104,24 @@
         }
       }
     },
+    "settings": {
+      "title": "Settings",
+      "slug": "settings",
+      "fields": {
+        "required_tags": {
+          "type": "text",
+          "slug": "required_tags",
+          "description": "Display posts which have these tags (comma-separated)",
+          "placeholder": "blog,tutorial,announcement"
+        },
+        "blocked_tags": {
+          "type": "text",
+          "slug": "blocked_tags",
+          "description": "Don't display posts with these tags (comma-separated)",
+          "placeholder": "help,documentation,faq"
+        }
+      }
+    },
     "code": {
       "title": "Code",
       "slug": "code",
