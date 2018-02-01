@@ -247,4 +247,8 @@
         border-radius: 5px;
         background: #f1fff6;
     }
+
+    .img-raised {
+        box-shadow:0px 5px 12px 0px rgba(0, 0, 75, 0.15);
+    }
 </style>
