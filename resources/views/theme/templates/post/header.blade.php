@@ -8,7 +8,7 @@
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper" style="background:#000;">
 
-    @if(count($post->tagNames()) > 0 )
+    @if(count($post->tagNames()) > 0  && isset($post->content()->heading->header_size) && $post->content()->heading->header_size !== "large")
     <div class="page-header  page-header-small " style="
     height: 200px !important;
     max-height: 200px !important;
@@ -48,7 +48,7 @@
                             <h2 class="excerpt"
                                 style="margin-bottom:25px;">{{ $post->content()->heading->excerpt }}</h2>
                         @endif
-                        @if(count($post->tagNames()) > 0)
+                        @if(count($post->tagNames()) > 0 && (!isset($post->content()->heading->header_size) OR $post->content()->heading->header_size == "large"))
                             <div style="margin-top:25px;margin-bottom: 25px;">
                                 <?php $tagCount = 1; ?>
                                 <div class="badge hiddenOnMobile" style="border-color:rgba(255,255,255,0.33);">Tags
