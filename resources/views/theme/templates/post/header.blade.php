@@ -22,7 +22,7 @@
                         @if(count($post->tagNames()) > 0)
                             <div style="margin-top:25px;margin-bottom: 25px;">
                                 <?php $tagCount = 1; ?>
-                                <div class="badge" style="border-color:rgba(255,255,255,0.33);">Tags</div>
+                                <div class="badge hiddenOnMobile" style="border-color:rgba(255,255,255,0.33);">Tags</div>
                                 @foreach($post->tagNames() as $tagName)
                                     @if($tagCount <= 3)
                                         <a href="/content/tag/{{ strtolower($tagName) }}" class="badge">{{ $tagName }}</a>

@@ -16,7 +16,7 @@
             //$( "#content img" ).attr('data-aos', 'zoom-out');
         });
     </script>
-                            
+
     <?php if(setting('theme.footer_html') !== null) { ?>
     {!!  setting('theme.footer_html') !!}
     <?php } ?>
