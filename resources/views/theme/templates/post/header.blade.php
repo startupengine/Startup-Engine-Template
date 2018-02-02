@@ -24,7 +24,7 @@
                                     @if($tagCount <= 1)
                                         <?php $firstTagName = $tagName; ?>
                                     @endif
-                                @endfor
+                                @endforeach
                             <span style="opacity:0.5;">Category - </span><a href="/content/tag/{{ strtolower($firstTagName) }}" style="color:#fff !important;text-decoration:none !important;">{{ ucwords($firstTagName) }}</a>
                         </h5>
                     </div>
