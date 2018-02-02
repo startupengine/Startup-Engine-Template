@@ -34,7 +34,7 @@
     </div>
     @endif
 
-    <div class="page-header @if(isset($post->content()->heading->header_size) && $post->content()->heading->header_size == 'small') page-header-small @endif">
+    <div class="page-header @if(isset($post->content()->heading->header_size) && $post->content()->heading->header_size == 'small') page-header-small @endif" style="z-index:1 !important;">
         <div class="page-header-image" <?php if ($post->content()->heading->background !== null) {
             echo "style=\"background-image:url('" . $post->content()->heading->background . "'); background-size:cover;z-index: 0;opacity: 0.3; \"";
         } ?>>
