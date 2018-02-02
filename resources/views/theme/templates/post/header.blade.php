@@ -13,7 +13,7 @@
     height: 200px !important;
     max-height: 200px !important;
     min-height: 200px !important;
-    border-bottom: 1px solid rgba(255,255,255,0.25);">
+    box-shadow: 0px 0px 120px rgba(255,255,255,0.5);">
         <div class="container">
             <div class="content-center">
                 <div style="padding-top:75px;">
