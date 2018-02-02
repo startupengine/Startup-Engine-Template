@@ -35,7 +35,7 @@
           "mode": "html",
           "description": "Content to display in the header of posts with this tag (optional)",
           "placeholder": "<div></div>."
-        },
+        }
       }
     },
     "Page": {
