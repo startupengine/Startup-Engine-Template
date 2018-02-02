@@ -121,7 +121,7 @@
         </div>
     </div>
     @endif
-    @if(isset($page->content()->call_to_action))
+    @if(isset($page->content()->call_to_action) && (isset($page->content()->call_to_action->headline) OR isset($page->content()->call_to_action->link) OR isset($page->content()->call_to_action->message)))
     <section class="section text-center" style="color:#555;">
         <div class="container">
             <div class="row align-items-center text-center">
