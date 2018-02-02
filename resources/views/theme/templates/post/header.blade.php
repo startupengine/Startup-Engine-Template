@@ -52,7 +52,7 @@
         </div>
     </div>
 </div>
-<div class="section" style="padding-top:25px;@if($post->content()->heading->header_size == "small") margin-top:-75px !important; @else margin-top:-150px !important; @endif background:none;z-index:5 !important;">
+<div class="section" style="padding-top:25px;@if($post->content()->heading->header_size == "small") margin-top:-75px !important; @else margin-top:-150px !important; @endif background:none;z-index:1 !important;">
     <div class="container" id="more">
         <div class="row">
             <div style="width:100%;">
