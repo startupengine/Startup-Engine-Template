@@ -40,7 +40,7 @@
                             <h2 class="excerpt"
                                 style="margin-bottom:25px;">{{ $post->content()->heading->excerpt }}</h2>
                         @endif
-                        @if(count($post->tagNames()) > 0 && (!isset($post->content()->heading->show_tags) && $post->content()->heading->show_tags == "on"))
+                        @if(count($post->tagNames()) > 0)
                             <div style="margin-top:25px;margin-bottom: 25px;">
                                 <?php $tagCount = 1; ?>
                                 <div class="badge hiddenOnMobile" style="border-color:rgba(255,255,255,0.33);">Tags

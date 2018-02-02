@@ -24,11 +24,6 @@
           "description": "Show the publication date?",
           "placeholder": null
         },
-        "show_tags": {
-          "type": "checkbox",
-          "description": "Show the first 3 tags?",
-          "placeholder": null
-        },
         "button": {
           "type": "text",
           "description": "A short call to action phrase.",
