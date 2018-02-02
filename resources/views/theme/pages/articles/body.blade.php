@@ -17,7 +17,7 @@ if(isset($tag)) {
                      @if(isset($tagContent) && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info !== null && $tagContent->content()->info->full_name !== null)
                          <h1 class="title text-center">{{ $tagContent->content()->info->full_name }}</h1>
                      @elseif(isset($tag) && ($tagContent == null OR $tagContent->content() == null OR $tagContent->content()->info->full_name == null))
-                         <h1 class="title text-center">{{ ucwords($tag) }}</h1>
+                         <h1 class="title text-center">{{ ucwords(str_replace("_"," ",$tag)) }}</h1>
                      @endif
 
                      @if(isset($tag) && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->info !== null && $tagContent->content()->info->description !== null)
