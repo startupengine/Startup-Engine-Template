@@ -7,8 +7,8 @@
 
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper" style="background:#000;">
-
-    @if(count($post->tagNames()) > 0  && isset($post->content()->heading->header_size) && $post->content()->heading->header_size !== "large")
+    <?php $tagSlug = $post->tagNames()[0]; if($tagSlug !== null) { $tag = \App\Post::where('post_type', '=', 'tag')->where('slug', '=', strtolower($tagSlug))->first(); } ?>
+    @if($tag !== null && isset($tag->content()->posts) && $tag->content()->posts->header !== null)
     <div class="page-header  page-header-small " style="
     height: 200px !important;
     max-height: 200px !important;
@@ -18,15 +18,7 @@
             <div class="content-center">
                 <div style="padding-top:75px;">
                     <div align="center">
-                        <h5 id="title">
-                            <?php $tagCount = 1; ?>
-                                @foreach($post->tagNames() as $tagName)
-                                    @if($tagCount <= 1)
-                                        <?php $firstTagName = $tagName; ?>
-                                    @endif
-                                @endforeach
-                            <span style="opacity:0.5;">Category - </span><a href="/content/tag/{{ strtolower($firstTagName) }}" style="color:#fff !important;text-decoration:none !important;">{{ ucwords($firstTagName) }}</a>
-                        </h5>
+                        {!! $tag->content()->posts->header !!}
                     </div>
                 </div>
             </div>
