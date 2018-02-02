@@ -59,7 +59,7 @@
     </div>
     @endif
     @if(isset($page->content()->pricing))
-    <div class="section text-center" id="pricing" style="padding:0px 25px 25px 25px !important;">
+    <div class="section text-center" id="pricing" style="padding:0px 25px 65px 25px !important;">
         <div class="container text-center">
             <div class="row justify-content-md-center" align="center">
                 <div class="col-md-12" style="margin-bottom:0px;margin-top:25px;">
