@@ -26,9 +26,21 @@
         }
       }
     },
-    "Code": {
-      "title": "Code",
-      "slug": "code",
+    "Posts": {
+      "title": "Post Settings",
+      "slug": "posts",
+      "fields": {
+        "header": {
+          "type": "code",
+          "mode": "html",
+          "description": "Content to display in the header of posts with this tag (optional)",
+          "placeholder": "<div></div>."
+        },
+      }
+    },
+    "Page": {
+      "title": "Page Settings",
+      "slug": "page",
       "fields": {
         "css": {
           "type": "code",

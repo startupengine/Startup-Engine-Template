@@ -51,8 +51,8 @@ if(isset($tag)) {
                     @if(isset($tag) == false && $page->content() !== null && $page->content()->code !== null && $page->content()->code->header !== null)
                         {!! $page->markdown($page->content()->code->header) !!}
                     @endif
-                    @if(isset($tag) == true && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->code !== null && $tagContent->content()->code->header !== null)
-                        {!! $page->markdown($tagContent->content()->code->header) !!}
+                    @if(isset($tag) == true && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->code !== null && $tagContent->content()->page->header !== null)
+                        {!! $page->markdown($tagContent->content()->page->header) !!}
                     @endif
                     <div class="@if($page->content()->about->headline !== null) col-md-8 @else col-md-12 @endif row row-eq-height" style="margin:0px;">
                         <todo-item
@@ -92,8 +92,8 @@ if(isset($tag)) {
                     @if(isset($tag) == false && $page->content()->code->footer !== null)
                         {!! $page->markdown($page->content()->code->footer) !!}
                     @endif
-                    @if(isset($tag) == true && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->code !== null && $tagContent->content()->code->footer !== null)
-                        {!! $page->markdown($tagContent->content()->code->footer) !!}
+                    @if(isset($tag) == true && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->code !== null && $tagContent->content()->page->footer !== null)
+                        {!! $page->markdown($tagContent->content()->page->footer) !!}
                     @endif
                 </div>
             </div>
