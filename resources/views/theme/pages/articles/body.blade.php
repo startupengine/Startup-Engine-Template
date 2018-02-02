@@ -1,6 +1,6 @@
 <?php
 if(isset($tag)) {
-    $tagContent = \App\Tag::where('slug', '=', $tag)->first();
+    $tagContent = \App\Post::where('post_type', '=', 'tag')->where('slug', '=', $tag)->first();
 } else {
     $tagContent = null;
 } ?>
@@ -51,7 +51,7 @@ if(isset($tag)) {
                     @if(isset($tag) == false && $page->content() !== null && $page->content()->code !== null && $page->content()->code->header !== null)
                         {!! $page->markdown($page->content()->code->header) !!}
                     @endif
-                    @if(isset($tag) == true && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->code !== null && $tagContent->content()->page->header !== null)
+                    @if(isset($tag) == true && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->page !== null && $tagContent->content()->page->header !== null)
                         {!! $page->markdown($tagContent->content()->page->header) !!}
                     @endif
                     <div class="@if($page->content()->about->headline !== null) col-md-8 @else col-md-12 @endif row row-eq-height" style="margin:0px;">
@@ -92,7 +92,7 @@ if(isset($tag)) {
                     @if(isset($tag) == false && $page->content()->code->footer !== null)
                         {!! $page->markdown($page->content()->code->footer) !!}
                     @endif
-                    @if(isset($tag) == true && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->code !== null && $tagContent->content()->page->footer !== null)
+                    @if(isset($tag) == true && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->page !== null && $tagContent->content()->page->footer !== null)
                         {!! $page->markdown($tagContent->content()->page->footer) !!}
                     @endif
                 </div>

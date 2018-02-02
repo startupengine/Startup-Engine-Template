@@ -264,5 +264,5 @@ if(isset($tag)) {
 } ?>
 
 @if(isset($tag) && $tagContent !== null && $tagContent->content() !== null)
-    {!! $tagContent->content()->code->css  !!}
+    {!! $tagContent->content()->page->css  !!}
 @endif

@@ -107,5 +107,5 @@ if(isset($tag)) {
 @endif
 
 @if(isset($tag) && $tagContent !== null && $tagContent->content() !== null)
-    {!! $tagContent->content()->code->scripts  !!}
+    {!! $tagContent->content()->page->scripts  !!}
 @endif
