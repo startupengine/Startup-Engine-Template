@@ -63,13 +63,13 @@
 </div>
 <div class="section"
      style="padding-top:25px;@if($post->content()->heading->header_size == "small") margin-top:-77px !important; @else margin-top:-152px !important; @endif background:none;z-index:9 !important;">
-    <div class="@if(isset($post->content()->body->width) && $post->content()->body->width == "full") container-fluid @else container @endif" id="more">
+    <div class="@if(isset($post->content()->body->width) && $post->content()->body->width == "full") container-fluid full-width @else container @endif" id="more">
         <div class="row">
             <div style="width:100%;">
                 <div id="articles">
                     <div id="content-row">
 
-                        <div class="card"
+                        <div class="card @if(isset($post->content()->body->width) && $post->content()->body->width == "full") full-width @endif"
                              style="text-align:center;box-shadow:0px -30px 30px rgba(0,0,100,0.1) !important;background:linear-gradient(180deg, #fff 90%, #fff0 100%) !important;"
                              id="contentBody">
                             <?php if($post->content() !== null && $post->content()->body->image !== null && $post->content()->body->video == null){ ?>

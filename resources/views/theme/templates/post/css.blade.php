@@ -251,4 +251,14 @@
     .img-raised {
         box-shadow:0px 5px 12px 0px rgba(0, 0, 75, 0.15);
     }
+
+    .card.full-width {
+        border-radius:0px !important;
+    }
+
+    .container-fluid.full-width {
+        padding-left:0px !important;
+        padding-right:0px !important;
+    }
+
 </style>
