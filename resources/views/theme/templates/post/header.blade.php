@@ -104,7 +104,7 @@
                                 @if(count($post->tagNames()) > 0)
                                     <div class="card-header" style="background:#fff;border-radius:0px;">
                                         <?php $tagCount = 1; ?>
-                                        <div class="badge" style="border-color:#000;color:#000;opacity:0.5;"><i class="fa fa-tags"></i>&nbsp; Tags
+                                        <div class="badge" style="background: #fff;border-color: #fff;color: #000;opacity: 0.7;"><i style="font-size:80%;" class="fa fa-tags"></i>&nbsp; Tags
                                         </div>
                                         @foreach($post->tagNames() as $tagName)
                                             @if($tagCount <= 3)
