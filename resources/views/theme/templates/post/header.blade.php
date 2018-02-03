@@ -53,9 +53,11 @@
                                 @endif
                             </h6>
                         @endif
-                        <a class="btn btn-lg btn-round btn-simple" id="engage" href="javascript:void(0)" onclick="$('#more').ScrollTo();">
-                            @if($post->content()->heading->button !== null) {{ $post->content()->heading->button }} @else Read Article @endif
-                        </a>
+                        @if($post->content()->heading->button !== null)
+                            <a class="btn btn-round btn-simple" id="engage" href="javascript:void(0)" onclick="$('#more').ScrollTo();">
+                                 {{ $post->content()->heading->button }}
+                            </a>
+                        @endif
                     </div>
                 </div>
             </div>
