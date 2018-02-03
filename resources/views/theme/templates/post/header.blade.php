@@ -55,11 +55,11 @@
                         @endif
                         @if($post->content()->heading->button !== null)
                             <a class="btn btn-lg btn-round btn-simple" id="engage" href="javascript:void(0)"
-                               onclick="$('#more').ScrollTo();">@if($post->content()->heading->button !== null) {{ $post->content()->heading->button }} @else
-                                    Read Article @endif</a>
+                               onclick="$('#more').ScrollTo();">
+                                {{ $post->content()->heading->button }}
+                            </a>
                         @else
-                            <a id="engage" href="javascript:void(0)"
-                               class="btn btn-neutral btn-icon btn-icon-mini btn-round btn-lg"
+                            <a class="btn btn-neutral btn-icon btn-icon-mini btn-round btn-lge" id="engage" href="javascript:void(0)"
                                onclick="$('#more').ScrollTo();">
                                 <i class="now-ui-icons arrows-1_minimal-down" style="color:#333 !important;"></i>
                             </a>
