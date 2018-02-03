@@ -194,14 +194,15 @@
     }
 
     a.badge {
-        border-color:#6affa3;
-        color:#fff;
+        border-color:#8651ff;
+        color:#8651ff;
     }
 
     a.badge:hover,a.badge:focus,a.badge:active {
         text-decoration:none !important;
-        color: #6affa3;
-        border-color:#6affa3;
+        color: #fff;
+        background:#8651ff;
+        border-color:#8651ff;
     }
 
     #content-row .card-body img {

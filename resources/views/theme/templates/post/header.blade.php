@@ -40,20 +40,6 @@
                             <h2 class="excerpt"
                                 style="margin-bottom:25px;">{{ $post->content()->heading->excerpt }}</h2>
                         @endif
-                        @if(count($post->tagNames()) > 0)
-                            <div style="margin-top:25px;margin-bottom: 25px;">
-                                <?php $tagCount = 1; ?>
-                                <div class="badge hiddenOnMobile" style="border-color:rgba(255,255,255,0.33);">Tags
-                                </div>
-                                @foreach($post->tagNames() as $tagName)
-                                    @if($tagCount <= 3)
-                                        <a href="/content/tag/{{ strtolower($tagName) }}"
-                                           class="badge">{{ $tagName }}</a>
-                                    @endif
-                                    <?php $tagCount = $tagCount + 1; ?>
-                                @endforeach
-                            </div>
-                        @endif
                         @if(isset($post->content()->heading->show_date) && $post->content()->heading->show_date == "on")
                             <h6 id="date">
                                 @if(isset($post->content()->meta->featured) && $post->content()->meta->featured == "on")
@@ -115,6 +101,20 @@
                             </video>
                             <?php } ?>
 
+                                @if(count($post->tagNames()) > 0)
+                                    <div class="card-header" style="background:#fff;border-radius:0px;">
+                                        <?php $tagCount = 1; ?>
+                                        <div class="badge hiddenOnMobile" style="border-color:rgba(255,255,255,0.33);">Tags
+                                        </div>
+                                        @foreach($post->tagNames() as $tagName)
+                                            @if($tagCount <= 3)
+                                                <a href="/content/tag/{{ strtolower($tagName) }}"
+                                                   class="badge"><span style="font-weight:600;color:#333;">#</span> {{ $tagName }}</a>
+                                            @endif
+                                            <?php $tagCount = $tagCount + 1; ?>
+                                        @endforeach
+                                    </div>
+                                @endif
                             @if($post->content() !== null && ($post->content()->body->image !== null OR $post->content()->body->video !== null OR $post->content()->heading->excerpt !== null OR $post->content()->body->body !== null))
                                 <div class="card-body" id="content" style="min-height:50px;">
                                     <?php if($post->content()->heading->excerpt !== null && $post->content()->heading->header_size !== 'large') { ?>
