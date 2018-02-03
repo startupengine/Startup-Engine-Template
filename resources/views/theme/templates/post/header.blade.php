@@ -116,7 +116,7 @@
                                     </div>
                                 @endif
                             @if($post->content() !== null && ($post->content()->body->image !== null OR $post->content()->body->video !== null OR $post->content()->heading->excerpt !== null OR $post->content()->body->body !== null))
-                                <div class="card-body @if(isset($post->content()->body->width) && $post->content()->body->width !== "full")container col-md-8 @endif" id="content" style="min-height:50px;">
+                                <div class="card-body @if(isset($post->content()->body->width) && $post->content()->body->width == "contained") container col-md-8 @endif" id="content" style="min-height:50px;">
                                     <?php if($post->content()->heading->excerpt !== null && $post->content()->heading->header_size !== 'large') { ?>
                                     <h5 class="description excerpt">{{ $post->content()->heading->excerpt }}</h5>
                                     <?php } ?>
