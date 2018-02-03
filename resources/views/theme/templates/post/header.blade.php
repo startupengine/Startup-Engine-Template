@@ -54,9 +54,7 @@
                             </h6>
                         @endif
                         @if($post->content()->heading->button !== null)
-                            <a class="btn btn-round btn-simple" id="engage" href="javascript:void(0)" onclick="$('#more').ScrollTo();">
-                                 {{ $post->content()->heading->button }}
-                            </a>
+                            <a class="btn btn-round btn-simple" id="engage" href="javascript:void(0)" onclick="$('#more').ScrollTo();">{{ $post->content()->heading->button }}</a>
                         @elseif($post->content()->heading->header_size == 'large')
                             <a class="btn btn-round btn-simple" id="engage" href="javascript:void(0)" onclick="$('#more').ScrollTo();" style="height: 50px !important;border-radius: 25px !important;padding:16px 20px 14px !important;"><i class="fa fa-chevron-down"></i></a>
                         @endif

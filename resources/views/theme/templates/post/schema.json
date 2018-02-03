@@ -82,32 +82,6 @@
         }
       }
     },
-    "Author": {
-      "title": "Author",
-      "slug": "author",
-      "fields": {
-        "name": {
-          "type": "text",
-          "description": "The author's name.",
-          "placeholder": "Name goes here."
-        },
-        "bio": {
-          "type": "richtext",
-          "description": "A breif bio of the author.",
-          "placeholder": "Text goes here."
-        },
-        "image": {
-          "type": "text",
-          "description": "A link to a photo of the author.",
-          "placeholder": "http://..."
-        },
-        "link": {
-          "type": "text",
-          "description": "A link to the author's blog, website, social profile, etc.",
-          "placeholder": "http://..."
-        }
-      }
-    },
     "Code": {
       "title": "Code",
       "slug": "code",
