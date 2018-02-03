@@ -68,7 +68,7 @@
 
 
 <div class="section"
-     style="padding-top:25px;@if($post->content()->heading->header_size == "small") margin-top:-77px !important; @else margin-top:-152px !important; @endif background:none;z-index:9 !important;">
+     style="padding-top:0px;margin-top:-25px; background:none;z-index:9 !important;">
     <div class="@if(isset($post->content()->body->width) && $post->content()->body->width == "full") container-fluid full-width @else container @endif" id="more">
         <div class="row">
             <div style="width:100%;">
