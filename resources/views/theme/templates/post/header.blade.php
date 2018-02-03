@@ -7,26 +7,29 @@
 
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper" style="background:#000;">
-    <?php $tagSlug = $post->tagNames()[0]; if($tagSlug !== null) { $tag = \App\Post::where('post_type', '=', 'tag')->where('slug', '=', strtolower($tagSlug))->first(); } ?>
+    <?php $tagSlug = $post->tagNames()[0]; if ($tagSlug !== null) {
+        $tag = \App\Post::where('post_type', '=', 'tag')->where('slug', '=', strtolower($tagSlug))->first();
+    } ?>
     @if($tag !== null && isset($tag->content()->posts) && $tag->content()->posts->header !== null)
-    <div class="page-header  page-header-small " style="
+        <div class="page-header  page-header-small " style="
     height: 200px !important;
     max-height: 200px !important;
     min-height: 200px !important;
     box-shadow: 0px 0px 120px rgba(255,255,255,0.5);">
-        <div class="container">
-            <div class="content-center">
-                <div style="padding-top:75px;">
-                    <div align="center">
-                        {!! $tag->content()->posts->header !!}
+            <div class="container">
+                <div class="content-center">
+                    <div style="padding-top:75px;">
+                        <div align="center">
+                            {!! $tag->content()->posts->header !!}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     @endif
 
-    <div class="page-header @if(isset($post->content()->heading->header_size) && $post->content()->heading->header_size == 'small') page-header-small @endif" style="z-index:1 !important;">
+    <div class="page-header @if(isset($post->content()->heading->header_size) && $post->content()->heading->header_size == 'small') page-header-small @endif"
+         style="z-index:1 !important;">
         <div class="page-header-image" <?php if ($post->content()->heading->background !== null) {
             echo "style=\"background-image:url('" . $post->content()->heading->background . "'); background-size:cover;z-index: 0;opacity: 0.3; \"";
         } ?>>
@@ -54,6 +57,12 @@
                             <a class="btn btn-lg btn-round btn-simple" id="engage" href="javascript:void(0)"
                                onclick="$('#more').ScrollTo();">@if($post->content()->heading->button !== null) {{ $post->content()->heading->button }} @else
                                     Read Article @endif</a>
+                        @else
+                            <a id="engage" href="javascript:void(0)"
+                               class="btn btn-neutral btn-icon btn-icon-mini btn-round btn-lg"
+                               onclick="$('#more').ScrollTo();">
+                                <i class="now-ui-icons arrows-1_minimal-down" style="color:#333 !important;"></i>
+                            </a>
                         @endif
                     </div>
                 </div>
@@ -69,7 +78,8 @@
 
 <div class="section"
      style="padding-top:0px;margin-top:-25px; background:none;z-index:9 !important;">
-    <div class="@if(isset($post->content()->body->width) && $post->content()->body->width == "full") container-fluid full-width @else container @endif" id="more">
+    <div class="@if(isset($post->content()->body->width) && $post->content()->body->width == "full") container-fluid full-width @else container @endif"
+         id="more">
         <div class="row">
             <div style="width:100%;">
                 <div id="articles">
@@ -107,22 +117,25 @@
                             </video>
                             <?php } ?>
 
-                                @if(count($post->tagNames()) > 0)
-                                    <div class="card-header" style="background:#fff;border-radius:0px;">
-                                        <?php $tagCount = 1; ?>
-                                        <div class="badge hiddenOnMobile" style="background: #fff;border-color: #fff;color: #000;opacity: 0.7;"><i style="font-size:80%;" class="fa fa-tags"></i>&nbsp; Tags
-                                        </div>
-                                        @foreach($post->tagNames() as $tagName)
-                                            @if($tagCount <= 3)
-                                                <a href="/content/tag/{{ strtolower($tagName) }}"
-                                                   class="badge"><span style="opacity:0.5;">#</span> {{ $tagName }}</a>
-                                            @endif
-                                            <?php $tagCount = $tagCount + 1; ?>
-                                        @endforeach
+                            @if(count($post->tagNames()) > 0)
+                                <div class="card-header" style="background:#fff;border-radius:0px;">
+                                    <?php $tagCount = 1; ?>
+                                    <div class="badge hiddenOnMobile"
+                                         style="background: #fff;border-color: #fff;color: #000;opacity: 0.7;"><i
+                                                style="font-size:80%;" class="fa fa-tags"></i>&nbsp; Tags
                                     </div>
-                                @endif
+                                    @foreach($post->tagNames() as $tagName)
+                                        @if($tagCount <= 3)
+                                            <a href="/content/tag/{{ strtolower($tagName) }}"
+                                               class="badge"><span style="opacity:0.5;">#</span> {{ $tagName }}</a>
+                                        @endif
+                                        <?php $tagCount = $tagCount + 1; ?>
+                                    @endforeach
+                                </div>
+                            @endif
                             @if($post->content() !== null && ($post->content()->body->image !== null OR $post->content()->body->video !== null OR $post->content()->heading->excerpt !== null OR $post->content()->body->body !== null))
-                                <div class="card-body @if(isset($post->content()->body->width) && $post->content()->body->width == "full") container col-md-8 @endif" id="content" style="min-height:50px;">
+                                <div class="card-body @if(isset($post->content()->body->width) && $post->content()->body->width == "full") container col-md-8 @endif"
+                                     id="content" style="min-height:50px;">
                                     <?php if($post->content()->heading->excerpt !== null && $post->content()->heading->header_size !== 'large') { ?>
                                     <h5 class="description excerpt">{{ $post->content()->heading->excerpt }}</h5>
                                     <?php } ?>
