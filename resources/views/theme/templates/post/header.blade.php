@@ -14,7 +14,7 @@
     max-height: 200px !important;
     min-height: 200px !important;
     box-shadow: 0px 0px 120px rgba(255,255,255,0.5);">
-        <div class="container">
+        <div class="container@if($post->content()->body->width == "full")-fluid@endif">
             <div class="content-center">
                 <div style="padding-top:75px;">
                     <div align="center">
@@ -69,7 +69,7 @@
                 <div id="articles">
                     <div id="content-row">
 
-                        <div class="card"
+                        <div class="card @if($post->content()->body->width !== "full")container col-md-8 @endif"
                              style="border-radius:0px !important;text-align:center;box-shadow:0px -30px 30px rgba(0,0,100,0.1) !important;background:linear-gradient(180deg, #fff 90%, #fff0 100%) !important;"
                              id="contentBody">
                             <?php if($post->content() !== null && $post->content()->body->image !== null && $post->content()->body->video == null){ ?>
@@ -104,7 +104,7 @@
                                 @if(count($post->tagNames()) > 0)
                                     <div class="card-header" style="background:#fff;border-radius:0px;">
                                         <?php $tagCount = 1; ?>
-                                        <div class="badge" style="background: #fff;border-color: #fff;color: #000;opacity: 0.7;"><i style="font-size:80%;" class="fa fa-tags"></i>&nbsp; Tags
+                                        <div class="badge hiddenOnMobile" style="background: #fff;border-color: #fff;color: #000;opacity: 0.7;"><i style="font-size:80%;" class="fa fa-tags"></i>&nbsp; Tags
                                         </div>
                                         @foreach($post->tagNames() as $tagName)
                                             @if($tagCount <= 3)

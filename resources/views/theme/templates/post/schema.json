@@ -61,6 +61,13 @@
           "type": "richtext",
           "description": "Write some content.",
           "placeholder": "A long time ago, in a galaxy far far away..."
+        },
+        "width": {
+          "type": "select",
+          "options": ["full", "contained"],
+          "slug": "width",
+          "description": "Full width or column",
+          "placeholder": null
         }
       }
     },
