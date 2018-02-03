@@ -69,7 +69,7 @@
                 <div id="articles">
                     <div id="content-row">
 
-                        <div class="card @if(isset($post->content()->body->width) && $post->content()->body->width !== "full")container col-md-8 @endif"
+                        <div class="card"
                              style="border-radius:0px !important;text-align:center;box-shadow:0px -30px 30px rgba(0,0,100,0.1) !important;background:linear-gradient(180deg, #fff 90%, #fff0 100%) !important;"
                              id="contentBody">
                             <?php if($post->content() !== null && $post->content()->body->image !== null && $post->content()->body->video == null){ ?>
@@ -116,7 +116,7 @@
                                     </div>
                                 @endif
                             @if($post->content() !== null && ($post->content()->body->image !== null OR $post->content()->body->video !== null OR $post->content()->heading->excerpt !== null OR $post->content()->body->body !== null))
-                                <div class="card-body" id="content" style="min-height:50px;">
+                                <div class="card-body @if(isset($post->content()->body->width) && $post->content()->body->width !== "full")container col-md-8 @endif" id="content" style="min-height:50px;">
                                     <?php if($post->content()->heading->excerpt !== null && $post->content()->heading->header_size !== 'large') { ?>
                                     <h5 class="description excerpt">{{ $post->content()->heading->excerpt }}</h5>
                                     <?php } ?>
