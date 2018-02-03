@@ -53,17 +53,9 @@
                                 @endif
                             </h6>
                         @endif
-                        @if($post->content()->heading->button !== null)
-                            <a class="btn btn-lg btn-round btn-simple" id="engage" href="javascript:void(0)"
-                               onclick="$('#more').ScrollTo();">
-                                {{ $post->content()->heading->button }}
-                            </a>
-                        @else
-                            <div class="btn btn-round btn-simple btn-icon-mini" id="engage"
-                               onclick="$('#more').ScrollTo();">
-                                <i class="now-ui-icons arrows-1_minimal-down" style="color:#333 !important;"></i>
-                            </div>
-                        @endif
+                        <a class="btn btn-lg btn-round btn-simple" id="engage" href="javascript:void(0)" onclick="$('#more').ScrollTo();">
+                            @if($post->content()->heading->button !== null) {{ $post->content()->heading->button }} @else <i class="now-ui-icons arrows-1_minimal-down" style="color:#333 !important;"></i> @endif
+                        </a>
                     </div>
                 </div>
             </div>
