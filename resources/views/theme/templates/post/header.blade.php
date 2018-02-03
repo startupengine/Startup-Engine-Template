@@ -14,7 +14,7 @@
     max-height: 200px !important;
     min-height: 200px !important;
     box-shadow: 0px 0px 120px rgba(255,255,255,0.5);">
-        <div class="container@if($post->content()->body->width == "full")-fluid@endif">
+        <div class="container@if(isset($post->content()->body->width) && $post->content()->body->width == "full")-fluid@endif">
             <div class="content-center">
                 <div style="padding-top:75px;">
                     <div align="center">
@@ -69,7 +69,7 @@
                 <div id="articles">
                     <div id="content-row">
 
-                        <div class="card @if($post->content()->body->width !== "full")container col-md-8 @endif"
+                        <div class="card @if(isset($post->content()->body->width) && $post->content()->body->width !== "full")container col-md-8 @endif"
                              style="border-radius:0px !important;text-align:center;box-shadow:0px -30px 30px rgba(0,0,100,0.1) !important;background:linear-gradient(180deg, #fff 90%, #fff0 100%) !important;"
                              id="contentBody">
                             <?php if($post->content() !== null && $post->content()->body->image !== null && $post->content()->body->video == null){ ?>
