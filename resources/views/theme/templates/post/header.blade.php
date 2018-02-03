@@ -58,7 +58,7 @@
                                  {{ $post->content()->heading->button }}
                             </a>
                         @else
-                            <a class="btn btn-round btn-simple" id="engage" href="javascript:void(0)" onclick="$('#more').ScrollTo();" style="height: 50px !important;border-radius: 25px !important;padding-top:16px 20px 14px;"><i class="fa fa-chevron-down"></i></a>
+                            <a class="btn btn-round btn-simple" id="engage" href="javascript:void(0)" onclick="$('#more').ScrollTo();" style="height: 50px !important;border-radius: 25px !important;padding:16px 20px 14px !important;"><i class="fa fa-chevron-down"></i></a>
                         @endif
                     </div>
                 </div>
