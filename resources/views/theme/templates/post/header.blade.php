@@ -14,7 +14,7 @@
     max-height: 200px !important;
     min-height: 200px !important;
     box-shadow: 0px 0px 120px rgba(255,255,255,0.5);">
-        <div class="container@if(isset($post->content()->body->width) && $post->content()->body->width == "full")-fluid@endif">
+        <div class="@if(isset($post->content()->body->width) && $post->content()->body->width == "full") container-fluid @else container @endif">
             <div class="content-center">
                 <div style="padding-top:75px;">
                     <div align="center">
