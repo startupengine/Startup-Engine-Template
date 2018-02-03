@@ -35,8 +35,8 @@
         } ?>>
         </div>
         <div class="container">
-            <div class="content-center">
-                <div style="padding-top:75px;">
+            <div class="content-center" style="top:50%;">
+                <div>
                     <div align="center">
                         <h1 id="title">{{ $post->content()->heading->headline }}</h1>
                         @if($post->content()->heading->header_size == 'large')
