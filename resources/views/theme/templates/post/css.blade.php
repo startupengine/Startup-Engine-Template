@@ -84,7 +84,7 @@
             border-radius:4px !important;
         }
 
-        .card.full-width {
+        #content-row > .card.full-width {
             border-radius:0px !important;
         }
     }
