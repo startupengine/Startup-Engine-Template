@@ -35,7 +35,7 @@
         } ?>>
         </div>
         <div class="container">
-            <div class="content-center" style="top:50%;">
+            <div class="content-center" style="top:calc(50% - 15px);">
                 <div>
                     <div align="center">
                         <h1 id="title">{{ $post->content()->heading->headline }}</h1>
