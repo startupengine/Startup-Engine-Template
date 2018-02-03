@@ -14,7 +14,7 @@
     max-height: 200px !important;
     min-height: 200px !important;
     box-shadow: 0px 0px 120px rgba(255,255,255,0.5);">
-        <div class="@if(isset($post->content()->body->width) && $post->content()->body->width == "full") container-fluid @else container @endif">
+        <div class="container">
             <div class="content-center">
                 <div style="padding-top:75px;">
                     <div align="center">
@@ -63,7 +63,7 @@
 </div>
 <div class="section"
      style="padding-top:25px;@if($post->content()->heading->header_size == "small") margin-top:-77px !important; @else margin-top:-152px !important; @endif background:none;z-index:9 !important;">
-    <div class="container" id="more">
+    <div class="@if(isset($post->content()->body->width) && $post->content()->body->width == "full") container-fluid @else container @endif" id="more">
         <div class="row">
             <div style="width:100%;">
                 <div id="articles">
