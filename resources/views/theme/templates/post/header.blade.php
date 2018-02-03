@@ -109,7 +109,7 @@
                                         @foreach($post->tagNames() as $tagName)
                                             @if($tagCount <= 3)
                                                 <a href="/content/tag/{{ strtolower($tagName) }}"
-                                                   class="badge"><span style="font-weight:600;color:#999;">#</span> {{ $tagName }}</a>
+                                                   class="badge"><span style="opacity:0.5;">#</span> {{ $tagName }}</a>
                                             @endif
                                             <?php $tagCount = $tagCount + 1; ?>
                                         @endforeach
