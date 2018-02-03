@@ -69,10 +69,9 @@
     {!! $tag->content()->posts->after_header !!}
 @endif
 
-
 <div class="section"
      style="padding-top:0px;margin-top:-25px; background:none;z-index:9 !important;">
-    <div class="@if(isset($post->content()->body->width) && $post->content()->body->width == "full") container-fluid full-width @else container @endif"
+    <div class="@if(isset($post->content()->body->width) && $post->content()->body->width == "full") container-fluid full-width @else container col-md-8 @endif"
          id="more">
         <div class="row">
             <div style="width:100%;">
