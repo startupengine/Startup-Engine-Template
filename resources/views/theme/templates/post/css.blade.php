@@ -83,6 +83,10 @@
             padding:15px !important;
             border-radius:4px !important;
         }
+
+        .card.full-width {
+            border-radius:0px !important;
+        }
     }
 
     .vjs-afterglow-skin.vjs-responsive {
