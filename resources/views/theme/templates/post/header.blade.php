@@ -70,7 +70,7 @@
                     <div id="content-row">
 
                         <div class="card"
-                             style="border-radius:0px !important;text-align:center;box-shadow:0px -30px 30px rgba(0,0,100,0.1);background:linear-gradient(180deg, #fff 90%, #fff0 100%) !important;"
+                             style="border-radius:0px !important;text-align:center;box-shadow:0px -30px 30px rgba(0,0,100,0.1) !important;background:linear-gradient(180deg, #fff 90%, #fff0 100%) !important;"
                              id="contentBody">
                             <?php if($post->content() !== null && $post->content()->body->image !== null && $post->content()->body->video == null){ ?>
                             <div id="featuredImage"
