@@ -54,7 +54,7 @@
                             </h6>
                         @endif
                         <a class="btn btn-lg btn-round btn-simple" id="engage" href="javascript:void(0)" onclick="$('#more').ScrollTo();">
-                            @if($post->content()->heading->button !== null) {{ $post->content()->heading->button }} @else <i class="now-ui-icons arrows-1_minimal-down" style="color:#333 !important;"></i> @endif
+                            @if($post->content()->heading->button !== null) {{ $post->content()->heading->button }} @else Read Article @endif
                         </a>
                     </div>
                 </div>
