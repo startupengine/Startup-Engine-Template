@@ -104,12 +104,12 @@
                                 @if(count($post->tagNames()) > 0)
                                     <div class="card-header" style="background:#fff;border-radius:0px;">
                                         <?php $tagCount = 1; ?>
-                                        <div class="badge hiddenOnMobile" style="border-color:rgba(255,255,255,0.33);">Tags
+                                        <div class="badge hiddenOnMobile" style="border-color:rgba(0,0,0,0.33);">Tags
                                         </div>
                                         @foreach($post->tagNames() as $tagName)
                                             @if($tagCount <= 3)
                                                 <a href="/content/tag/{{ strtolower($tagName) }}"
-                                                   class="badge"><span style="font-weight:600;color:#333;">#</span> {{ $tagName }}</a>
+                                                   class="badge"><span style="font-weight:600;color:#999;">#</span> {{ $tagName }}</a>
                                             @endif
                                             <?php $tagCount = $tagCount + 1; ?>
                                         @endforeach
