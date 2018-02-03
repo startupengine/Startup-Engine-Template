@@ -60,7 +60,7 @@
     .card-body img {
         margin:0px;
         border-radius:2px;
-        max-width: 50% !important;
+        @if(isset($post->content()->body->width) && $post->content()->body->width == "full") max-width: 100% !important; @else max-width: 50% !important; @endif
         border-radius: 2px;
         margin-top:25px;
         display: inline-block;
