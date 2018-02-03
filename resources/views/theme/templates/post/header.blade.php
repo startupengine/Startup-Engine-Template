@@ -59,7 +59,7 @@
                                 {{ $post->content()->heading->button }}
                             </a>
                         @else
-                            <a class="btn btn-lg btn-round btn-simple btn-neutral" id="engage" href="javascript:void(0)"
+                            <a class="btn btn-round btn-simple" id="engage" href="javascript:void(0)"
                                onclick="$('#more').ScrollTo();">
                                 <i class="now-ui-icons arrows-1_minimal-down" style="color:#333 !important;"></i>
                             </a>
