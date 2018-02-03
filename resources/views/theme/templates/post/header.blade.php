@@ -62,7 +62,7 @@
     </div>
 </div>
 <div class="section"
-     style="padding-top:25px;@if($post->content()->heading->header_size == "small") margin-top:-75px !important; @else margin-top:-150px !important; @endif background:none;z-index:1 !important;">
+     style="padding-top:25px;@if($post->content()->heading->header_size == "small") margin-top:-77px !important; @else margin-top:-152px !important; @endif background:none;z-index:1 !important;">
     <div class="container" id="more">
         <div class="row">
             <div style="width:100%;">
@@ -104,7 +104,7 @@
                                 @if(count($post->tagNames()) > 0)
                                     <div class="card-header" style="background:#fff;border-radius:0px;">
                                         <?php $tagCount = 1; ?>
-                                        <div class="badge" style="border-color:#999;color:#999;">Tags
+                                        <div class="badge" style="border-color:#000;color:#000;opacity:0.5;"><i class="fa fa-tags"></i>&nbsp; Tags
                                         </div>
                                         @foreach($post->tagNames() as $tagName)
                                             @if($tagCount <= 3)
