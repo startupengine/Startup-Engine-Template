@@ -35,6 +35,12 @@
           "mode": "html",
           "description": "Content to display in the header of posts with this tag (optional)",
           "placeholder": "<div></div>."
+        },
+        "after_header": {
+          "type": "code",
+          "mode": "html",
+          "description": "Content to display in the header of posts with this tag (optional)",
+          "placeholder": "<div></div>."
         }
       }
     },

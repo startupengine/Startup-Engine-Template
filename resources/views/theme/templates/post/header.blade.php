@@ -61,6 +61,12 @@
         </div>
     </div>
 </div>
+
+@if($tag !== null && isset($tag->content()->posts) && $tag->content()->posts->after_header !== null)
+    {!! $tag->content()->posts->after_header !!}
+@endif
+
+
 <div class="section"
      style="padding-top:25px;@if($post->content()->heading->header_size == "small") margin-top:-77px !important; @else margin-top:-152px !important; @endif background:none;z-index:9 !important;">
     <div class="@if(isset($post->content()->body->width) && $post->content()->body->width == "full") container-fluid full-width @else container @endif" id="more">
