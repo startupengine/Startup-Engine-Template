@@ -152,7 +152,7 @@
             max-width: 100% !important;
         }
         .card-header {
-            padding-top:10px !important;
+            padding-top:5px !important;
         }
     }
 
