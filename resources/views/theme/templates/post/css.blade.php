@@ -151,6 +151,9 @@
         .card-body img {
             max-width: 100% !important;
         }
+        .card-header {
+            padding:15px !important;
+        }
     }
 
     #content a{
