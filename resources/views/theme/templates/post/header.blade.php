@@ -111,7 +111,7 @@
                             <?php } ?>
 
                             @if(count($post->tagNames()) > 0)
-                                <div class="card-header" style="background:#fff;border-radius:0px;padding:1.25em !important;">
+                                <div class="card-header" style="background:#fff;border-radius:0px;padding:1.25em !important;border-bottom:2px solid rgb(235, 242, 255);">
                                     <?php $tagCount = 1; ?>
                                     <div class="badge hiddenOnMobile"
                                          style="background: #fff;border-color: #fff;color: #000;opacity: 0.7;"><i
