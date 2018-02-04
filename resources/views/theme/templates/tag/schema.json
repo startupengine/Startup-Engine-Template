@@ -30,6 +30,12 @@
       "title": "Post Settings",
       "slug": "posts",
       "fields": {
+        "format": {
+          "type": "select",
+          "options": ["contained", "full-width"],
+          "description": "How should these posts be formatted?",
+          "placeholder": ""
+        },
         "header": {
           "type": "code",
           "mode": "html",
@@ -54,6 +60,12 @@
       "title": "Page Settings",
       "slug": "page",
       "fields": {
+        "format": {
+          "type": "select",
+          "options": ["list", "cards"],
+          "description": "How should the index page be formatted?",
+          "placeholder": ""
+        },
         "css": {
           "type": "code",
           "mode": "html",
