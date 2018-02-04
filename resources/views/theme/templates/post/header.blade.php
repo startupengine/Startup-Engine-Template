@@ -140,7 +140,7 @@
                                 @if($post->primaryTag() !== null && $post->primaryTag()->content()->posts->show_author_info == "yes" && $post->user() !== null)
                                 <div class="card-footer row row-eq-height" style="background: none;border-bottom: none;border-radius:0px;border: none !important;" align="center">
                                     <div class="col-md-12">
-                                        <div class="<?php if(isset($post->content()->body->width) && $post->content()->body->width== 'full') { ?>col-md-8<?php } else { ?> col-md-12 <?php } ?>" style="background: none;padding: 25px;margin-top: 25px;border-radius: 4px;border-top:1px solid #eee;">
+                                        <div class="<?php if(isset($post->content()->body->width) && $post->content()->body->width== 'full') { ?>col-md-8<?php } else { ?> col-md-12 <?php } ?>" style="background: none;padding: 25px;margin-top: 25px;border-radius: 4px;border-top:2px solid rgb(235, 242, 255);">
                                             @if($post->user() !== null)
                                             <img src="{{ $post->user()->avatar }}" style="width:50px;height:50px;margin:10px;float: none;border-radius:25px;box-shadow:0px 0px 15px rgba(0,0,150,0.15);" />
                                             @endif
