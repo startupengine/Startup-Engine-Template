@@ -270,6 +270,13 @@
     }
 
     #author.filled {
-        background:rgb(235, 242, 255) !important;
+        /*background:rgb(235, 242, 255) !important;*/
+    }
+
+    #author .name {
+        background: rgba(66, 150, 255, 0.15);
+        border-radius: 25px;
+        padding: 5px 10px;
+
     }
 </style>
