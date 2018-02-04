@@ -140,7 +140,7 @@
                                 @if($post->user() !== null)
                                 <div class="card-footer row row-eq-height" style="background: none;border-bottom: none;border-radius:0px;border: none !important;" align="center">
                                     <div class="col-md-12">
-                                        <div class="col-md-12" style="background: none;padding: 25px;margin-top: 25px;border-radius: 4px;border-top: 1px solid #eee;">                                                                                                                                   <img src="https://blog.intercomassets.com/wp-content/uploads/2016/09/20011034/adam-96x96.jpg" style="width:50px;height:50px;margin:10px;float: none;border-radius:25px;box-shadow:0px 0px 15px rgba(0,0,150,0.15);">
+                                        <div class="col-md-12" style="background: none;padding: 25px;margin-top: 25px;border-radius: 4px;border-top: 1px solid #eee;">
                                             @if($post->user() !== null)
                                             <img src="{{ $post->user()->avatar }}" style="width:50px;height:50px;margin:10px;float: none;border-radius:25px;box-shadow:0px 0px 15px rgba(0,0,150,0.15);" />
                                             @endif
