@@ -267,6 +267,6 @@
 
 
     .author.filled {
-        background:rgb(235, 242, 255);
+        background:rgb(235, 242, 255) !important;
     }
 </style>
