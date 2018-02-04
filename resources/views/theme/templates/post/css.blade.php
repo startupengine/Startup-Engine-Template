@@ -265,11 +265,11 @@
         padding-right:0px !important;
     }
 
-    .author {
+    #author {
         background: none !important;
     }
 
-    .author.filled {
+    #author.filled {
         background:rgb(235, 242, 255) !important;
     }
 </style>
