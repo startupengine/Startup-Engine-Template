@@ -41,6 +41,12 @@
           "mode": "html",
           "description": "Content to display in the header of posts with this tag (optional)",
           "placeholder": "<div></div>."
+        },
+        "show_author_info": {
+          "type": "select",
+          "options": ["yes", "no"],
+          "description": "Display the author's info after the post?",
+          "placeholder": ""
         }
       }
     },
