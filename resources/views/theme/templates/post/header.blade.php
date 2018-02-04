@@ -144,7 +144,7 @@
                                             @if($post->user() !== null)
                                             <img src="{{ $post->user()->avatar }}" style="width:50px;height:50px;margin:10px;float: none;border-radius:25px;box-shadow:0px 0px 15px rgba(0,0,150,0.15);" />
                                             @endif
-                                            <h6>{{ $post->user()->name }}</h6>
+                                            <strong>{{ $post->user()->name }}</strong>
                                             <?php /*<h6 style="opacity: 0.5;">Editor In Chief</h6>*/ ?>
                                             <?php /*<a href="/author/***" class="btn btn-secondary btn-round">Read more from Aaron</div> */?>
                                         </div>
