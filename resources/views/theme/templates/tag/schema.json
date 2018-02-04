@@ -62,7 +62,7 @@
       "fields": {
         "format": {
           "type": "select",
-          "options": ["list", "cards"],
+          "options": ["list", "3 cards", "2 cards", "mixed"],
           "description": "How should the index page be formatted?",
           "placeholder": ""
         },
