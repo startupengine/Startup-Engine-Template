@@ -267,6 +267,7 @@
 
     #author {
         background: none !important;
+        border:2px solid rgb(235, 242, 255);
     }
 
     #author.filled {
