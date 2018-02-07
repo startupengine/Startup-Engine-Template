@@ -62,8 +62,14 @@
       "fields": {
         "format": {
           "type": "select",
-          "options": ["list", "3 cards", "2 cards", "mixed"],
+          "options": ["list", "3 columns", "2 columns", "1 column", "mixed"],
           "description": "How should the index page be formatted?",
+          "placeholder": ""
+        },
+        "image": {
+          "type": "select",
+          "options": ["background", "inline"],
+          "description": "How should the article's image be formatted?",
           "placeholder": ""
         },
         "css": {
