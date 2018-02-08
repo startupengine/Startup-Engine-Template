@@ -295,6 +295,16 @@
         background-size: cover !important;
         opacity: 1 !important;
     }
+
+    .navbar-brand{
+        left: calc(50% - 47px) !important;
+        top: -26px !important;
+        float: left !important;
+        position: absolute !important;
+        width: 95px !important;
+        display: block !important;
+        text-align: center !important;
+    }
 </style>
 
 <!-- jQuery ScrollTo -->
