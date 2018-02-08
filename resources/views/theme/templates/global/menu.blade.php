@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg bg-white fixed-top navbar-transparent " color-on-scroll="100">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="/" rel="tooltip" title="{{ setting('site.description') }}"
+            <a class="navbar-brand" @if(setting('site.logo_link') !== null) href="{{ setting('site.logo_link') }}" @else href="/" @endif rel="tooltip" title="{{ setting('site.description') }}"
                data-placement="bottom">
                 <?php if(setting('site.logo') !== null) { ?><img src="{{ setting('site.logo') }}" alt="Logo Icon"
                                                                  style="max-width:40px;"> <?php } ?>{{ setting('site.name') }}
