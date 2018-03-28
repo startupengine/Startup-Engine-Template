@@ -93,6 +93,12 @@
         border-radius:4px !important;
     }
 
+    .vjs-afterglow-skin.vjs-responsive, .vjs-afterglow-skin.vjs-responsive video {
+        width: 100%;
+        height: none;
+        max-height: 540px;
+    }
+
     .centered {
         text-align:center !important;
     }
