@@ -1,0 +1,1 @@
+<body class="landing-page sidebar-collapse" style="background:linear-gradient(180deg,#ebf2ff,#fff);">
