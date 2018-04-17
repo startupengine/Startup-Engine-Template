@@ -8,79 +8,47 @@
                 <div class="row justify-content-md-center"  align="center">
                     <div class="col-md-12" style="margin-bottom:0px;margin-top:25px;">
                         <h2 class="title" style="width:100%;color:#fff;">
-                            Pricing
+                            Subscribe
                         </h2>
                     </div>
                     <div class="col-md-12" align="center">
-                        <div class="card">
-                            <form action="/charge" method="post" id="payment-form">
-                                <div class="form-row">
-                                    <label for="card-element">
-                                        Credit or debit card
-                                    </label>
-                                    <div id="card-element">
-                                        <!-- A Stripe Element will be inserted here. -->
+                        <div class="card" style="font-weight:bold;color:#fff;background:rgba(0,0,0,0.8);align-content: center;width:340px;box-shadow:none;height:auto !important;">
+                            <div class="card-header" style="padding:none;background:url(https://images.unsplash.com/photo-1494366222322-387658a1a976?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=24100980ab1a60783e1c847b7965bd11&auto=format&fit=crop&w=1651&q=80) center;background-size:cover;height:150px;border:none;">
+                            </div>
+                            <div class="card-body">
+                                <form id="payment-form">
+
+                                    <div class="form-row">
+                                        <label for="plan">
+                                            Plan
+                                        </label>
+                                        <div id="select-plan" style="border:none;box-shadow:none;">
+                                            <input class="form-control input-lg disabled " style="border-radius:5px;background:#fff;min-width:300px;height:40px; font-size:15px;color:#32325d;font-weight:400;" disabled id="plan" value="Basic - $25/month" />
+                                        </div>
                                     </div>
 
-                                    <!-- Used to display Element errors. -->
-                                    <div id="card-errors" role="alert"></div>
-                                </div>
+                                    <div class="form-row">
+                                        <label for="card-element">
+                                            Credit or debit card
+                                        </label>
+                                        <div id="card-element" style="box-shadow:none;">
+                                            <!-- A Stripe Element will be inserted here. -->
+                                        </div>
+                                        <!-- Used to display Element errors. -->
+                                        <div id="card-errors" role="alert" style="height:40px;padding-top:15px;text-align:center;width:100%;"></div>
+                                    </div>
 
-                                <button>Submit Payment</button>
-                            </form>
+
+                                    <button class="btn btn-default btn-neutral" id="submit-button" style="color:#222 !important;margin-top:25px;">Submit Payment &nbsp<i class="fa fa-caret-right"></i></i></button>
+                                </form>
+                            </div>
                         </div>
-                       <div class="card-deck">
-                           <div class="card">
-                               <div class="card-header">
-                                   Free
-                               </div>
-
-                               <div class="card-body">
-                                   <h3 class="card-title" align="center">$0 <span style="font-size:50%;">/ month</span></h3>
-                                   <p class="card-text">1 User</p>
-                                   <p class="card-text">100 Items</p>
-                               </div>
-                               <div class="card-footer" align="center">
-                                   <a href="/" class="btn btn-round bg-gradient-orange">Start Free Trial</a>
-                               </div>
-                           </div>
-                           <div class="card">
-                               <div class="card-header">
-                                   Startup
-                               </div>
-
-                               <div class="card-body">
-                                   <h3 class="card-title" align="center">$99 <span style="font-size:50%;">/ month</span></h3>
-                                   <p class="card-text">1 User</p>
-                                   <p class="card-text">500 Items</p>
-                               </div>
-                               <div class="card-footer" align="center">
-                                   <a href="/" class="btn btn-round bg-gradient-orange">Start Free Trial</a>
-                               </div>
-                           </div>
-                           <div class="card">
-                               <div class="card-header">
-                                   Enterprise
-                               </div>
-
-                               <div class="card-body">
-                                   <h3 class="card-title" align="center">$999 <span style="font-size:50%;">/ month</span></h3>
-                                   <p class="card-text">1 User</p>
-                                   <p class="card-text">Unlimited Items</p>
-                               </div>
-                               <div class="card-footer" align="center">
-                                   <a href="/" class="btn btn-round bg-gradient-orange">Start Free Trial</a>
-                               </div>
-                           </div>
-                       </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<script src="https://js.stripe.com/v3/"></script>
 
 <script>
     // Create a Stripe client.
@@ -110,6 +78,45 @@
 
     // Create an instance of the card Element.
     var card = elements.create('card', {style: style});
+
+    card.addEventListener('change', function(event) {
+        var displayError = document.getElementById('card-errors');
+        if (event.error) {
+            displayError.textContent = event.error.message;
+        } else {
+            displayError.textContent = '';
+        }
+    });
+
+    // Create a token or display an error when the form is submitted.
+    var form = document.getElementById('payment-form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        stripe.createToken(card).then(function(result) {
+            if (result.error) {
+                // Inform the customer that there was an error.
+                var errorElement = document.getElementById('card-errors');
+                errorElement.textContent = result.error.message;
+            } else {
+                // Send the token to your server.
+                stripeTokenHandler(result.token);
+            }
+        });
+    });
+
+    function stripeTokenHandler(token) {
+        // Insert the token ID into the form so it gets submitted to the server
+        var form = document.getElementById('payment-form');
+        var hiddenInput = document.createElement('input');
+        hiddenInput.setAttribute('type', 'hidden');
+        hiddenInput.setAttribute('name', 'stripeToken');
+        hiddenInput.setAttribute('value', token.id);
+        form.appendChild(hiddenInput);
+
+        // Submit the form
+        form.submit();
+    }
 
     // Add an instance of the card Element into the `card-element` <div>.
     card.mount('#card-element');
