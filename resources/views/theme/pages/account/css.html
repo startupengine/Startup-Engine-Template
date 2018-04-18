@@ -65,4 +65,141 @@
     .StripeElement--webkit-autofill {
         background-color: #fefde5 !important;
     }
+
+    #account-menu {
+        color:#222;
+        text-align:left;
+    }
+
+    .list-group-item.active{
+        background: #e4eaff;
+        border-color: #e4eaff;
+        color:#333;
+    }
+    .list-group-item:hover{
+        background: #f4f3ff;
+    }
+    .list-group-item i {
+        padding-top:3px !important;
+        margin-right:12px;
+        float:left;
+    }
+    @media(max-width:768px) {
+        .card-deck{
+            margin-top:25px;
+        }
+    }
+
+    .card-deck {
+        background:rgba(0,0,0,0.25);
+        padding:16px !important;
+        border-radius:5px;
+        margin-bottom:25px;
+    }
+    .card-deck .card {
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+
+    .badge {
+        background:rgba(0,0,0,0.8);
+        padding-left:15px;
+        padding-right:15px;
+        border-color:transparent;
+        margin-right:5px;
+        margin-left:5px;
+    }
+
+    .card-deck .card label {
+        color:#222;
+    }
+
+    .StripeElement {
+        background-color: white;
+        height: 40px;
+        padding: 10px 12px;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        box-shadow: 0 1px 3px 0 #e6ebf1;
+        -webkit-transition: box-shadow 150ms ease;
+        transition: box-shadow 150ms ease;
+    }
+
+    .StripeElement--focus {
+        box-shadow: 0 1px 3px 0 #cfd7df;
+    }
+
+    .StripeElement--invalid {
+        border-color: #fa755a;
+    }
+
+    .StripeElement--webkit-autofill {
+        background-color: #fefde5 !important;
+    }
+    #card-element{
+        min-width:100%;
+    }
+
+    #payment-form {
+        min-width:100%;
+        text-align:center;
+        min-height:300px;
+    }
+
+    form label {
+        min-width: 100%;
+        text-align:center;
+    }
+
+    form .form-row {
+        margin-bottom:10px;
+    }
+
+    #card-element {
+        border:1px solid #ddd;
+    }
+
+    #card-element input {
+        font-size:15px;
+        color:#32325d;
+        font-weight:400;
+    }
+    @media(max-width:991px) {
+        #invoices {
+            width: 100% !important;
+        }
+    }
+    @media(min-width:991px){
+        #account-menu {
+            /*position: fixed !important;
+            width:240px;*/
+            z-index:12;
+            margin-top:25px;
+            margin-right:10px;
+        }
+        #invoices {
+            width:50% !important;
+        }
+    }
+
+    textarea {
+        border:1px solid #ddd !important;
+        border-radius:4px !important;
+    }
+
+    .invoice-item {
+        margin-bottom:10px;
+        width:100%;
+        text-align:left;
+    }
+
+    .invoice-cost {
+        font-weight:600;
+    }
+
 </style>
+<script src="https://js.stripe.com/v3/"></script>
+<!-- Add this after vue.js -->
+<script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vuejs-paginator/2.0.0/vuejs-paginator.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>

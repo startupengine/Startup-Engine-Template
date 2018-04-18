@@ -30,7 +30,7 @@
 <!-- Afterglow -->
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/afterglowplayer@1.x"></script>
 
-<!-- Animate On Scroll -->
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-
 <?php if(setting('theme.global_css') !== null) { echo setting('theme.global_css'); } ?>
+
+<!-- Vue Bootstrap -->
+<script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>

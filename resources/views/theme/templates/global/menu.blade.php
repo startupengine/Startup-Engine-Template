@@ -26,14 +26,15 @@
                 <?php if(\Auth::user() !== null && \Auth::user()->hasPermissionTo('view own profile')) {  ?>
                 <li class="nav-item">
                     <a href="/app" class="nav-link hiddenOnDesktop">
-                        <i class="now-ui-icons arrows-1_share-66"></i> &nbsp;App
+                        <i class="now-ui-icons arrows-1_share-66"></i> &nbsp;Admin
                     </a>
                 </li>
                 <?php }  ?>
-                <?php if(\Auth::user() !== null && \Auth::user()->hasPermissionTo('view own profile')) {  ?>
+
+                <?php if(\Auth::user() !== null) {  ?>
                 <li class="nav-item">
-                    <a href="/app/profile" class="nav-link hiddenOnDesktop">
-                        <i class="now-ui-icons users_circle-08"></i> &nbsp;Profile
+                    <a href="/account" class="nav-link hiddenOnDesktop">
+                        <i class="now-ui-icons users_circle-08"></i> &nbsp;Account
                     </a>
                 </li>
                 <?php }  ?>
@@ -43,17 +44,17 @@
                     <div class="btn-group hiddenOnMobile">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                            aria-expanded="false">
-                            Account
+                            {{ \Auth::user()->name }}
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
                             <?php if(\Auth::user() !== null && \Auth::user()->hasPermissionTo('view backend')) {  ?>
                             <button class="dropdown-item" type="button" onclick="location.href='/app';"><i
-                                        class="now-ui-icons arrows-1_share-66"></i>&nbsp; App
+                                        class="now-ui-icons arrows-1_share-66"></i>&nbsp; Admin
                             </button>
                             <?php }  ?>
-                            <?php if(\Auth::user() !== null && \Auth::user()->hasPermissionTo('view own profile')) {  ?>
-                            <button class="dropdown-item" type="button" onclick="location.href='/app/profile';"><i
-                                        class="now-ui-icons users_circle-08"></i>&nbsp; Profile
+                            <?php if(\Auth::user() !== null) {  ?>
+                            <button class="dropdown-item" type="button" onclick="location.href='/account';"><i
+                                        class="now-ui-icons users_circle-08"></i>&nbsp; Account
                             </button>
                             <?php }  ?>
                             <button class="dropdown-item" type="button" onclick="location.href='/logout';"><i

@@ -4,7 +4,8 @@
 <!-- CSS Files -->
 <link href="/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="/css/now-ui-kit.css?v=1.1.0" rel="stylesheet"/>
-<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
+
 <style>
 
     .btn-outline {
@@ -149,6 +150,10 @@
             border: none;
             box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.1);
             text-align: center !important;
+        }
+
+        #navigation .nav-link:not(.btn) i {
+            display:none;
         }
 
         #nav-cta {
