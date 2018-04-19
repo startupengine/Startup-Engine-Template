@@ -14,7 +14,7 @@
                     <div class="col-md-3" align="center">
                         <ul class="list-group" id="account-menu">
                             <a href="#profile-card" class="list-group-item  list-group-item-action"><i class="now-ui-icons users_circle-08"></i>&nbsp; Profile</a>
-                            <a href="#newsletter-card" class="list-group-item  list-group-item-action"><i class="now-ui-icons ui-1_email-85"></i>&nbsp; Newsletter</a>
+                            <a style="display:none;" href="#newsletter-card" class="list-group-item  list-group-item-action"><i class="now-ui-icons ui-1_email-85"></i>&nbsp; Newsletter</a>
                             <a href="#subscription-card" class="list-group-item  list-group-item-action"><i class="now-ui-icons shopping_box"></i>&nbsp; Subscription</a>
                             <a href="#payment-card" class="list-group-item  list-group-item-action"><i class="now-ui-icons shopping_credit-card"></i>&nbsp; Payment Method</a>
                         </ul>
@@ -34,7 +34,7 @@
                                 </div>
                             </div>
 
-                            <div class="card" style="min-width:calc(100% - 30px);" id="newsletter-card">
+                            <div class="card" style="min-width:calc(100% - 30px);display:none;" id="newsletter-card">
                                 <div class="card-header">
                                     Newsletter <span class="fa fa-cog pull-right" style="margin-top:2px;cursor: pointer;" id="newsletter-settings-icon"></span>
                                 </div>
@@ -50,37 +50,13 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <p class="card-text">{!! ucfirst(\Auth::user()->subscriptions[0]->name) !!}</p>
-                                    <h3 class="card-title" align="center"><span style="font-size:14px;">${{\Auth::user()->subscriptions[0]->price}} / month</span></h3>
-                                    <a href="/subscribe" class="btn btn-round btn-secondary">Switch Plans</a>
+                                    <p class="card-text"><?php  if(\Auth::user()->subscriptions()->get()->isEmpty()) { } else { echo ucfirst(\Auth::user()->subscriptions[0]->name); } ?> </p>
+                                    <h3 class="card-title" align="center"><?php  if(\Auth::user()->subscriptions()->get()->isEmpty()) { ?><span style="font-size:14px;">No Plan Selected</span> <?php } else { ?><span style="font-size:14px;">${{\Auth::user()->subscriptions[0]->price}} / month</span><?php } ?></h3>
+                                    <a href="/pricing" class="btn btn-round btn-secondary">Switch Plans</a>
 
                                 </div>
                             </div>
 
-                            <div class="card" style="min-width:calc(100% - 30px);display:none;">
-                                <div class="card-header">
-                                    Profile
-                                </div>
-
-                                <div class="card-body" style="min-height:50px;">
-                                    <form>
-                                        <div class="form-group">
-                                            <label for="exampleInputName">Name</label>
-                                            <input type="text" class="form-control" id="exampleInputName" placeholder="Name" value="{{ \Auth::user()->name }}">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Email address</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="{{ \Auth::user()->email }}">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Bio</label>
-                                            <textarea type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Write a few words about yourself."></textarea>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                    </form>
-                                </div>
-
-                            </div>
                             <div class="card" id="payment-card">
                                 <div class="card-header">
                                     Payment Method
@@ -138,7 +114,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 style="margin-top:0px;" class="modal-title" id="myModalLabel">Are you sure?</h4>
+                <h4 style="margin-top:0px;" class="modal-title" id="myModalLabel">Edit Profile</h4>
             </div>
             <div class="modal-body">
 
@@ -153,16 +129,11 @@
                             <label for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="{{ \Auth::user()->email }}">
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Bio</label>
-                            <textarea type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Write a few words about yourself."></textarea>
-                        </div>
-
                 </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Cancel</button>
-                <a href="#" class="btn btn-primary" id="syncButton">Update Profile</a>
+                <a href="#" class="btn btn-primary" id="syncButton">Save</a>
             </div>
         </div>
     </div>
