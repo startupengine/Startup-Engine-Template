@@ -21,7 +21,9 @@
                                             Plan
                                         </label>
                                         <div id="select-plan" style="border:none;box-shadow:none;">
-                                            <input class="form-control input-lg disabled " style="border-radius:5px;background:#fff;min-width:300px;height:40px; font-size:15px;color:#32325d;font-weight:400;" disabled id="plan" value="Basic - $25/month" />
+                                            <?php  $id = app('request')->input('id');?>
+                                            <?php $plan = \App\Plan::where('stripe_id', '=', $id)->first();  ?>
+                                            <input class="form-control input-lg disabled " style="border-radius:5px;background:#fff;min-width:300px;height:40px; font-size:15px;color:#32325d;font-weight:400;" disabled id="plan" value="{{ $plan->json()->nickname }} - ${{ $plan->json()->amount/100 }} per {{ $plan->json()->interval }}" />
                                         </div>
                                     </div>
 
@@ -37,7 +39,7 @@
                                     </div>
 
 
-                                    <button class="btn btn-default btn-secondary" id="submit-button" style="margin-top:25px;">Submit Payment &nbsp<i class="fa fa-caret-right"></i></i></button>
+                                    <button class="btn btn-default btn-secondary" id="submit-button" style="margin-top:25px;">Continue &nbsp<i class="fa fa-caret-right"></i></i></button>
                                 </form>
                             </div>
                         </div>
@@ -50,7 +52,7 @@
 
 <script>
     // Create a Stripe client.
-    var stripe = Stripe('pk_test_hY0k50cfK5VbN3JyF783523w');
+    var stripe = Stripe('{{ getStripeKeys()["key"] }}');
 
     // Create an instance of Elements.
     var elements = stripe.elements();
