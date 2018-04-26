@@ -51,7 +51,7 @@
 
                                 <div class="card-body">
                                     <p class="card-text"><?php  if(\Auth::user()->subscriptions()->get()->isEmpty()) { } else { echo ucfirst(\Auth::user()->subscriptions[0]->name); } ?> </p>
-                                    <h3 class="card-title" align="center"><?php  if(\Auth::user()->subscriptions()->get()->isEmpty()) { ?><span style="font-size:14px;">No Plan Selected</span> <?php } else { ?><span style="font-size:14px;">${{\Auth::user()->subscriptions[0]->price}} / month</span><?php } ?></h3>
+                                    <h3 class="card-title" align="center"><?php  if(\Auth::user()->subscriptions()->get()->isEmpty()) { ?><span style="font-size:14px;">No Plan Selected</span> <?php } else { ?><span style="font-size:14px;">${{\Auth::user()->subscriptions[0]->price/100}} / month</span><?php } ?></h3>
                                     <a href="/pricing" class="btn btn-round btn-secondary">Switch Plans</a>
 
                                 </div>
@@ -217,7 +217,7 @@
     Vue.component('todo-item', {
         props: ['article'],
         template:
-        '<div class="invoice-item"><span class="invoice-cost">$@{{ article.amount_paid }}</span> @{{ moment(article.date*1000).calendar() }}</div>'
+        '<div class="invoice-item"><span class="invoice-cost">$@{{ article.amount_paid/100 }}</span> @{{ moment(article.date*1000).calendar() }}</div>'
 
     });
 

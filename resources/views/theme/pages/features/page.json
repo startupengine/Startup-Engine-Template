@@ -1,0 +1,210 @@
+{
+  "title": "Features",
+  "slug": "features",
+  "version": "0.1",
+  "description": "An overview of the latest blog posts.",
+  "image": null,
+  "policy": {
+    "uneditable": [
+      "css",
+      "html",
+      "scripts"
+    ],
+    "public": [
+      "json",
+      "css",
+      "html",
+      "scripts"
+    ]
+  },
+  "sections": {
+    "heading": {
+      "title": "Heading",
+      "slug": "heading",
+      "fields": {
+        "headline": {
+          "type": "text",
+          "slug": "headline",
+          "description": "A short summary of the page.",
+          "placeholder": "Write a headline."
+        },
+        "background": {
+          "type": "text",
+          "slug": "background",
+          "description": "Url for a background image (optional).",
+          "placeholder": "http://www.example.com"
+        },
+        "intro": {
+          "type": "textarea",
+          "slug": "intro",
+          "description": "Write a bit of intro text (optional).",
+          "placeholder": "Something exciting goes here..."
+        }
+      }
+    },
+    "about": {
+      "title": "About",
+      "slug": "about",
+      "fields": {
+        "headline": {
+          "type": "text",
+          "slug": "headline",
+          "description": "A short summary of the page.",
+          "placeholder": "Write a headline."
+        },
+        "description": {
+          "type": "textarea",
+          "slug": "description",
+          "description": "Write a bit of intro text (optional).",
+          "placeholder": "Something exciting goes here..."
+        }
+      }
+    },
+    "sidebar": {
+      "title": "Sidebar",
+      "slug": "sidebar",
+      "fields": {
+        "html": {
+          "type": "code",
+          "mode": "html",
+          "slug": "html",
+          "description": "Custom HTML in the sidebar.",
+          "placeholder": "<div class=\"card\"></div>"
+        }
+      }
+    },
+    "calltoaction": {
+      "title": "Call To Action",
+      "slug": "calltoaction",
+      "fields": {
+        "headline": {
+          "type": "text",
+          "slug": "headline",
+          "description": "A short call to action message.",
+          "placeholder": "Write a headline."
+        },
+        "message": {
+          "type": "textarea",
+          "slug": "message",
+          "description": "One or two lines about the benefit.",
+          "placeholder": "Write a message."
+        },
+        "button": {
+          "type": "code",
+          "mode": "html",
+          "slug": "button",
+          "description": "A short call to action phrase.",
+          "placeholder": "Learn More"
+        },
+        "link": {
+          "type": "text",
+          "slug": "link",
+          "description": "A url to link to. (optional)",
+          "placeholder": "http://www.example.com"
+        }
+      }
+    },
+    "settings": {
+      "title": "Settings",
+      "slug": "settings",
+      "fields": {
+        "required_tags": {
+          "type": "text",
+          "slug": "required_tags",
+          "description": "Display posts which have these tags (comma-separated)",
+          "placeholder": "blog,tutorial,announcement"
+        },
+        "excluded_tags": {
+          "type": "text",
+          "slug": "excluded_tags",
+          "description": "Don't display posts with these tags (comma-separated)",
+          "placeholder": "help,documentation,faq"
+        }
+      }
+    },
+    "code": {
+      "title": "Code",
+      "slug": "code",
+      "fields": {
+        "css": {
+          "type": "code",
+          "mode": "html",
+          "slug": "css",
+          "description": "Additional CSS (optional)",
+          "placeholder": "<style></style>"
+        },
+        "header": {
+          "type": "richtext",
+          "slug": "header",
+          "description": "Header content area (optional)",
+          "placeholder": "<div></div>"
+        },
+        "footer": {
+          "type": "richtext",
+          "slug": "footer",
+          "description": "Footer content area (optional)",
+          "placeholder": "<div></div>"
+        },
+        "scripts": {
+          "type": "code",
+          "mode": "html",
+          "slug": "scripts",
+          "description": "Additional CSS (optional)",
+          "placeholder": "<script></script>"
+        }
+      }
+    },
+    "meta": {
+      "title": "Meta",
+      "slug": "meta",
+      "fields": {
+        "slug": {
+          "type": "text",
+          "slug": "slug",
+          "description": "A unique slug for tracking this variation.",
+          "placeholder": "Name it clearly."
+        },
+        "Variation description": {
+          "type": "textarea",
+          "slug": "description",
+          "description": "A description of this variation.",
+          "placeholder": "Describe this variation clearly."
+        }
+      }
+    }
+  },
+  "default": {
+    "versions": {
+      "1": {
+        "heading": {
+          "headline": "The Launchpad",
+          "background": "https:\/\/images.unsplash.com\/photo-1504966981333-1ac8809be1ca?auto=format&fit=crop&w=1950&q=80",
+          "intro": "A blog about starting up and taking off."
+        },
+        "about": {
+          "headline": "About this blog",
+          "description": "We believe that the whole world benefits when new ideas take root and flourish. This blog is about helping you find your truth and build a business around it."
+        },
+        "sidebar": {
+          "html": null
+        },
+        "code": {
+          "css": null,
+          "header": null,
+          "footer": null,
+          "scripts": null
+        },
+        "calltoaction": {
+          "headline": "Ready to launch your business?",
+          "message": "Start running an automated startup in under 5 minutes.",
+          "button": "Start Now",
+          "link": "\/signup"
+        },
+        "meta": {
+          "slug": "default",
+          "description": "Default layout"
+        }
+      }
+    }
+  }
+}

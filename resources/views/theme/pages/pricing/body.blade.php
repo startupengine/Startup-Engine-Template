@@ -40,7 +40,7 @@
                                        @if (\Auth::user()->subscribed($product->name))
                                            <a href="/subscribe" class="btn btn-round btn-default ">Subscribed</a>
                                        @else
-                                           <a href="/subscribe?id={{$plan->id}}"
+                                           <a href="/subscribe/{{$plan->id}}"
                                               class="btn btn-round bg-gradient-orange">Start Free Trial</a>
                                            @endif
                                            </a>

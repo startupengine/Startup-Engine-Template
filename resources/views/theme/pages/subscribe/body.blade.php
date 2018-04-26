@@ -12,18 +12,23 @@
                         </h2>
                     </div>
                     <div class="col-md-12" align="center">
+                        <?php  $id = app('request')->input('id');?>
+                        <?php $plan = \App\Plan::where('stripe_id', '=', $id)->first();  ?>
+                        <?php $product = \App\Product::where('stripe_id','=',$plan->json()->product)->first(); ?>
                         <div class="card" style="font-weight:bold;color:#333;background:#f6f7ff;align-content: center;width:340px;box-shadow:none;height:auto !important;">
+                            <div class="card-header bg-gradient-orange">
+                                {{ $product->name }}
+                            </div>
                             <div class="card-body">
-                                <form id="payment-form">
+                                <form action="/subscription/submit" id="payment-form">
 
                                     <div class="form-row">
                                         <label for="plan">
                                             Plan
                                         </label>
                                         <div id="select-plan" style="border:none;box-shadow:none;">
-                                            <?php  $id = app('request')->input('id');?>
-                                            <?php $plan = \App\Plan::where('stripe_id', '=', $id)->first();  ?>
-                                            <input class="form-control input-lg disabled " style="border-radius:5px;background:#fff;min-width:300px;height:40px; font-size:15px;color:#32325d;font-weight:400;" disabled id="plan" value="{{ $plan->json()->nickname }} - ${{ $plan->json()->amount/100 }} per {{ $plan->json()->interval }}" />
+
+                                            <p style="border-radius:5px;background:#fff;min-width:300px;border:1px solid #ddd; font-size:15px;color:#32325d;font-weight:400;"> {{ $plan->json()->nickname }} - ${{ $plan->json()->amount/100 }} per {{ $plan->json()->interval }}</p>
                                         </div>
                                     </div>
 
@@ -40,6 +45,8 @@
 
 
                                     <button class="btn btn-default btn-secondary" id="submit-button" style="margin-top:25px;">Continue &nbsp<i class="fa fa-caret-right"></i></i></button>
+                                    <input type="hidden" name="plan" value="{{$plan->stripe_id}}" />
+                                    <input type="hidden" name="user_id" value="{{\Auth::user()->id}}" />
                                 </form>
                             </div>
                         </div>

@@ -11,7 +11,7 @@
                 <div class="form-group" style="padding:15px;">
                     <form method="get" enctype="multipart/form-data" action="">
                         <?php $search = (app('request')->input('s')); ?>
-                        <div class="input-group">
+                        <div class="input-group"  style="background:rgba(255,255,255,0.3);border-radius:30px;">
                             <input type="text" id="s" name="s" class="form-control" placeholder="Search for answers."
                                    @if($search !== null)value="{{ $search }}" @endif autocomplete="off"
                                    aria-label="Search for...">

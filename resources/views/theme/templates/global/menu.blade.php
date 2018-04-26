@@ -38,7 +38,44 @@
                     </a>
                 </li>
                 <?php }  ?>
-                <?php echo setting('site.menu'); ?>
+                <?php if (setting('site.menu') !== null) { echo setting('site.menu');} else { ?>
+                    <?php $about = \App\Page::where('slug', '=', 'about')->where('status','=','ACTIVE')->first(); ?>
+                    @if($about !== null)
+                        <li class="nav-item">
+                            <a href="/help" class="nav-link">{{ $about->title }}</a>
+                        </li>
+                    @endif
+                    <?php $products = \App\Page::where('slug', '=', 'products')->where('status','=','ACTIVE')->first(); ?>
+                    @if($products !== null)
+                        <li class="nav-item">
+                            <a href="/products" class="nav-link">{{ $products->title }}</a>
+                        </li>
+                    @endif
+                    <?php $features = \App\Page::where('slug', '=', 'features')->where('status','=','ACTIVE')->first(); ?>
+                    @if($features !== null)
+                        <li class="nav-item">
+                            <a href="/features" class="nav-link">{{ $features->title }}</a>
+                        </li>
+                    @endif
+                    <?php $pricing = \App\Page::where('slug', '=', 'pricing')->where('status','=','ACTIVE')->first(); ?>
+                    @if($pricing !== null)
+                        <li class="nav-item">
+                            <a href="/pricing" class="nav-link">Pricing</a>
+                        </li>
+                    @endif
+                    <?php $articles = \App\Page::where('slug', '=', 'articles')->where('status','=','ACTIVE')->first(); ?>
+                    @if($articles !== null)
+                        <li class="nav-item">
+                            <a href="/articles" class="nav-link">{{ $articles->title }}</a>
+                        </li>
+                    @endif
+                    <?php $help = \App\Page::where('slug', '=', 'help')->where('status','=','ACTIVE')->first(); ?>
+                    @if($help !== null)
+                        <li class="nav-item">
+                            <a href="/help" class="nav-link">{{ $help->title }}</a>
+                        </li>
+                    @endif
+                <?php } ?>
                 <?php if(\Auth::user() !== null) {  ?>
                 <li class="nav-item">
                     <div class="btn-group hiddenOnMobile">
