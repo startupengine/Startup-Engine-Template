@@ -1,0 +1,137 @@
+{
+  "title": "Feature",
+  "slug": "feature",
+  "version": "0.1",
+  "description": "Articles / blog posts.",
+  "image": null,
+  "sections": {
+    "Heading": {
+      "title": "Heading",
+      "slug": "heading",
+      "fields": {
+        "headline": {
+          "type": "text",
+          "description": "Displayed at the top of the post.",
+          "placeholder": "Write a headline."
+        },
+        "excerpt": {
+          "type": "textarea",
+          "description": "A short summary of the contents.",
+          "placeholder": "Write a headline."
+        },
+        "show_date": {
+          "type": "checkbox",
+          "description": "Show the publication date?",
+          "placeholder": null
+        },
+        "button": {
+          "type": "text",
+          "description": "A short call to action phrase.",
+          "placeholder": "Read More"
+        },
+        "background": {
+          "type": "text",
+          "description": "Url for a background image (optional).",
+          "placeholder": "http://www.example.com"
+        },
+        "header_size": {
+          "type": "select",
+          "options": ["large", "small"],
+          "slug": "headersize",
+          "description": "How big should the page header be?",
+          "placeholder": "Select a size"
+        }
+      }
+    },
+    "Body": {
+      "title": "Body",
+      "slug": "body",
+      "fields": {
+        "image": {
+          "type": "text",
+          "description": "A URL to a featured image.",
+          "placeholder": "http://..."
+        },
+        "video": {
+          "type": "text",
+          "description": "A URL to a featured video.",
+          "placeholder": "http://..."
+        },
+        "body": {
+          "type": "richtext",
+          "description": "Write some content.",
+          "placeholder": "A long time ago, in a galaxy far far away..."
+        },
+        "width": {
+          "type": "select",
+          "options": ["full", "contained"],
+          "slug": "width",
+          "description": "Full width or column",
+          "placeholder": null
+        }
+      }
+    },
+    "Footer": {
+      "title": "Footer",
+      "slug": "footer",
+      "fields":{
+        "content": {
+          "type": "richtext",
+          "description": "Full-width HTML content displayed after the main content.",
+          "placeholder": "<div class=\"section\"><h5>There is no spoon.</h5></div>"
+        }
+      }
+    },
+    "Code": {
+      "title": "Code",
+      "slug": "code",
+      "fields": {
+        "css": {
+          "type": "code",
+          "mode": "html",
+          "description": "Stylesheets.",
+          "placeholder": "<style> /* CSS goes here. */ </style>."
+        },
+        "scripts": {
+          "type": "code",
+          "mode": "html",
+          "description": "Javascript.",
+          "placeholder": "<script> /* Javascript goes here. */ </script>."
+        },
+        "body": {
+          "type": "code",
+          "mode": "html",
+          "description": "Custom HTML. If you write code here, it will be displayed instead of the default HTML layout.",
+          "placeholder": "This code appears inside the <body> tag."
+        }
+      }
+    },
+    "Meta": {
+      "title": "Meta",
+      "slug": "meta",
+      "fields": {
+        "meta_description": {
+          "type": "textarea",
+          "description": "A description of this post.",
+          "placeholder": "Description goes here."
+        },
+        "excerpt": {
+          "type": "textarea",
+          "description": "A short sumamry of this post.",
+          "placeholder": "Excerpt goes here."
+        },
+        "featured": {
+          "type": "checkbox",
+          "description": "Is this a featured post?",
+          "placeholder": null
+        },
+        "message": {
+          "type": "code",
+          "mode": "html",
+          "description": "Attach a special message to the top of this post?",
+          "placeholder": "<i class=\"fas fa-star\"></i> Featured"
+        }
+      }
+    }
+  }
+}

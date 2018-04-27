@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <?php $search = (app('request')->input('s')); ?>
-                @if($page->content()->code->header !== null && $search == null)
+                @if(isset($page->content()->code->header) && $search == null)
                     {!! $page->content()->code->header  !!}
                 @endif
                 <div class="row row-eq-height" id="articles">
@@ -26,7 +26,4 @@
             </div>
         </div>
     </div>
-    @if($page->content()->code->footer !== null)
-        {!! $page->content()->code->footer  !!}
-    @endif
 </div>

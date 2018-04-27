@@ -89,7 +89,3 @@ if(isset($tag)) {
 } else {
     $tagContent = null;
 } ?>
-
-@if($page->content()->code->scripts !== null)
-    {!! $page->content()->code->scripts  !!}
-@endif
