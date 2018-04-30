@@ -36,7 +36,7 @@
         </div>
         <div style="border-top:1px solid rgba(0,0,0,0.1);margin:0px 50px 50px 50px;padding-top:50px;">
             <p>Pull up the numbers you need at a moment's notice.<br>Experiment immediately with A/B testing and
-                notifications.</p> <a href="#" class="btn btn-secondary-outline btn-simple btn-round">Explore All Features
+                notifications.</p> <a href="/features" class="btn btn-secondary-outline btn-simple btn-round">Explore All Features
             &nbsp;<i class="fa fa-caret-right"></i></a>
         </div>
     </div>
@@ -88,22 +88,17 @@
              style="width:35%;background:linear-gradient(180deg, rgba(0,100,200,0.05) 50%,#fff 100%);height:100%;float:left;display:flex !important;">
             <div style="padding:50px;width:100%;height:100%;" class="align-middle">
                 <div class="list-group" style="text-align:left;">
-                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                    <a href="/articles" class="list-group-item list-group-item-action flex-column align-items-start active">
                         <div class="d-flex w-100 justify-content-between">
                             <h6 class="mb-1"><i class="fa fa-newspaper"></i> &nbsp;Articles</h6>
                         </div>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <a href="/resources" class="list-group-item list-group-item-action flex-column align-items-start">
                         <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1"><i class="fa fa-calendar "></i> &nbsp;Events</h6>
+                            <h6 class="mb-1"><i class="fa fa-book "></i> &nbsp;Resources</h6>
                         </div>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1"><i class="fa fa-book "></i> &nbsp;Guides</h6>
-                        </div>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <a href="/articles" class="list-group-item list-group-item-action flex-column align-items-start">
                         <div class="d-flex w-100 justify-content-between">
                             <h6 class="mb-1"><i class="fa fa-bullhorn "></i> &nbsp;<span class="hiddenOnMobile">Announcements</span><span
                                     class="hiddenOnDesktop">News</span></h6>
@@ -114,60 +109,33 @@
         </div>
         <div id="content-container"
              style="z-index:999;padding:50px;width:65%;min-height:500px;height:100%;float:left;display:flex !important;background:none;">
-
+            <?php $articles = \App\Post::where('post_type','=','post')->where('status','=','PUBLISHED')->get(); ?>
 
             <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators" style="bottom:50px !important;">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <?php $count = 0 ; ?>
+                    @foreach($articles as $article)
+                    <li data-target="#carouselExampleIndicators" data-slide-to="{{ $count }}" @if($count = 0 )class="active" @endif></li>
+                    <?php $count = $count + 1 ; ?>
+                    @endforeach
                 </ol>
                 <div class="carousel-inner" style="box-shadow:none;">
-                    <div class="carousel-item active">
+                    <?php $articles = \App\Post::where('post_type','=','post')->where('status','=','PUBLISHED')->get(); ?>
+                    <?php $count = 0 ; ?>
+                    @foreach($articles as $article)
+                    <?php $count = $count + 1 ; ?>
+                    <div class="carousel-item @if($count == 1) active @endif">
                         <div class="card bg-dark text-white" style="background:#000;">
-                            <img class="card-img"
-                                 src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a00dd14dd25d32b799b8e6e0270fd535&auto=format&fit=crop&w=1652&q=80"
-                                 alt="Card image" style="opacity:0.3;max-height:500px;">
+                            <img src="{{ $article->content()->heading->background }}" class="card-img img-fluid" style="opacity:0.3;max-height:500px;width:100% !important;height:100% !important;"/>
                             <div class="card-img-overlay align-middle" style="padding:12% 10%;">
-                                <h5 class="card-title" style="color:#fff;">Exciting Article</h5>
-                                <p class="card-text" style="color:#fff !important;">This is a wider card with supporting
-                                    text below as a natural lead-in to additional content. This content is a little bit
-                                    longer.</p>
-                                <a href="#" class="btn btn-simple btn-neutral btn-round">Read More &nbsp;<i
+                                <h5 class="card-title" style="color:#fff;">{{ $article->content()->heading->headline }}</h5>
+                                <p class="card-text" style="color:#fff !important;">{{ $article->content()->heading->excerpt }}</p>
+                                <a href="/content/{{ $article->slug }}" class="btn btn-simple btn-neutral btn-round">Read More &nbsp;<i
                                         class="fa fa-caret-right"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="card bg-dark text-white" style="background:#000;">
-                            <img class="card-img"
-                                 src="https://images.unsplash.com/photo-1504113897779-231f76737a4e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f264bf40175453d2130f7d354122bfb6&auto=format&fit=crop&w=1650&q=80"
-                                 alt="Card image" style="opacity:0.3;max-height:500px;">
-                            <div class="card-img-overlay align-middle" style="padding:12% 10%;">
-                                <h5 class="card-title" style="color:#fff;">Exciting Article</h5>
-                                <p class="card-text" style="color:#fff !important;">This is a wider card with supporting
-                                    text below as a natural lead-in to additional content. This content is a little bit
-                                    longer.</p>
-                                <a href="#" class="btn btn-simple btn-neutral btn-round">Read More &nbsp;<i
-                                        class="fa fa-caret-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card bg-dark text-white" style="background:#000;">
-                            <img class="card-img"
-                                 src="https://images.unsplash.com/photo-1504113897779-231f76737a4e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f264bf40175453d2130f7d354122bfb6&auto=format&fit=crop&w=1650&q=80"
-                                 alt="Card image" style="opacity:0.3;max-height:500px;">
-                            <div class="card-img-overlay align-middle" style="padding:12% 10%;">
-                                <h5 class="card-title" style="color:#fff;">Exciting Article</h5>
-                                <p class="card-text" style="color:#fff !important;">This is a wider card with supporting
-                                    text below as a natural lead-in to additional content. This content is a little bit
-                                    longer.</p>
-                                <a href="#" class="btn btn-simple btn-neutral btn-round">Read More &nbsp;<i
-                                        class="fa fa-caret-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
 

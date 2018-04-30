@@ -6,7 +6,7 @@
             <div class="space-50"></div>
             <div class="container text-center">
                 <div class="row justify-content-md-center"  align="center">
-                    <div class="col-md-12" style="margin-bottom:0px;margin-top:25px;">
+                    <div class="col-md-12" style="margin-bottom:30px;margin-top:55px;">
                         <h2 class="title" style="width:100%;color:#fff;">
                             Pricing
                         </h2>

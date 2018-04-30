@@ -278,6 +278,29 @@
             right:0px;
             top:0px;
         }
+        .col-md-6:nth-child(even) .image-container {
+            float: right;
+            width: calc(50% + 15px);
+            height: 100%;
+            margin-left:30px !important;
+        }
+        .col-md-6:nth-child(even) .card-body{
+            float: left;
+            width: calc(50%);
+            position:absolute;
+            padding-right:50px !important;
+            padding-left:35px;
+            left:0px;
+            top:0px;
+        }
+        .col-md-6 .btn span {
+            background:#fff;
+            position: absolute !important;
+            bottom: -25px !important;
+            right:25px !important;
+            float:left;
+        }
+
     }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vuejs-paginator/2.0.0/vuejs-paginator.js"></script>

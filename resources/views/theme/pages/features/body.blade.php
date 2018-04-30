@@ -30,7 +30,7 @@ if(isset($tag)) {
                     @if(isset($tag) == true && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->code !== null && $tagContent->content()->code->header !== null)
                         {!! $page->markdown($tagContent->content()->code->header) !!}
                     @endif
-                    <div class="col-md-12 row row-eq-height" style="margin-top:-50px;">
+                    <div class="col-md-12 row row-eq-height" style="margin:-50px 0px 0px 0px;">
                         <todo-item
                                 v-for="item in items"
                                 v-bind:article="item"

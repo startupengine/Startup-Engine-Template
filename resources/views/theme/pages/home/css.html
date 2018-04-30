@@ -152,19 +152,11 @@
 
 
     #cta-button {
-        background: #fff !important;
-        border: 2px solid #5bda82 !important;
-        color: #545454 !important;
-        font-weight: 600 !important;
-        box-shadow: 0px 10px 30px rgba(0, 0, 150, 0.15) !important;
-    }
-
-
-
-    #cta-button:hover {
         background: #23cb6b !important;
         border-color: #23cb6b !important;
         color: #fff !important;
+        font-weight: 600 !important;
+        box-shadow: 0px 10px 30px rgba(0, 0, 150, 0.15) !important;
     }
 
     #engage:hover, #cta-button:hover {
@@ -256,6 +248,19 @@
         color:#fff !important;
     }
 
+    .carousel-item.active,
+    .carousel-item-next,
+    .carousel-item-prev,
+    .carousel-item .card{
+        display: block !important;
+        min-width:100% !important;
+    }
+
+    .carousel-item .card-img {
+        display:block !important;
+        min-height:500px !important;
+    }
+
     .carousel:hover .card-img{
         opacity:0.15 !important;
         -webkit-transition: opacity 0.5s;
@@ -263,7 +268,6 @@
         -ms-transition: opacity 0.5s;
         -o-transition: opacity 0.5s;
         transition: opacity 0.5s;
-
     }
 
     .carousel:hover .btn-simple:hover {

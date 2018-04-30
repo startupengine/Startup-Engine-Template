@@ -6,7 +6,7 @@ if(isset($tag)) {
 } ?>
 
 <div class="wrapper">
-    <div class="page-header page-header-small clear-filter @if($page->content()->heading->background == null && isset($tagContent) && $tagContent->content()->heading->background == null) no-image @endif" filter-color="black">
+    <div class="page-header page-header-small clear-filter @if($page->content()->heading->background == null) no-image @endif" filter-color="black">
         @if(isset($tag))
             @if(isset($tagContent) && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info && $tagContent->content()->info->image !== null)
                 <div id="header-image" class="page-header-image" style="background-image:url('{{$tagContent->content()->info->image}}'); background-size:cover ;z-index: 0;opacity: 0.3;"></div>

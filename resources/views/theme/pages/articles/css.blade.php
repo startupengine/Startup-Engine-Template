@@ -29,7 +29,7 @@
 
     .page-header .description {
         opacity: 1 !important;
-        color: #fff !important;
+        color: #fff;
     }
 
     .page-header-image {
@@ -249,8 +249,24 @@
     }
 
     .page-header.no-image {
-        background: #000 !important;
+        background: none !important;
     }
+
+
+
+    @if($page->content()->heading->background == null)
+    h2.title, h4.description {
+        color:#000 !important;
+    }
+
+    .page-header.no-image h2.title {
+        border-color:rgba(0,0,0,0.05) !important;
+    }
+
+    .navbar-transparent .nav-link,.navbar-transparent .navbar-brand {
+        color:#000 !important;
+    }
+    @endif
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vuejs-paginator/2.0.0/vuejs-paginator.js"></script>
 

@@ -1,0 +1,67 @@
+{
+  "title": "Quote",
+  "slug": "quote",
+  "version": "0.1",
+  "description": "Quotes",
+  "image": null,
+  "sections": {
+    "Body": {
+      "title": "Body",
+      "slug": "body",
+      "fields": {
+        "image": {
+          "type": "text",
+          "description": "A URL to a featured image.",
+          "placeholder": "http://..."
+        },
+        "headline": {
+          "type": "text",
+          "description": "Write a headline.",
+          "placeholder": "Testimonial..."
+        },
+        "body": {
+          "type": "richtext",
+          "description": "Write some content.",
+          "placeholder": "A long time ago, in a galaxy far far away..."
+        },
+        "button": {
+          "type": "richtext",
+          "description": "Write some content.",
+          "placeholder": "A long time ago, in a galaxy far far away..."
+        },
+        "link": {
+          "type": "text",
+          "description": "A url (optional)",
+          "placeholder": "https://..."
+        }
+      }
+    },
+    "Meta": {
+      "title": "Meta",
+      "slug": "meta",
+      "fields": {
+        "meta_description": {
+          "type": "textarea",
+          "description": "A description of this post.",
+          "placeholder": "Description goes here."
+        },
+        "excerpt": {
+          "type": "textarea",
+          "description": "A short sumamry of this post.",
+          "placeholder": "Excerpt goes here."
+        },
+        "featured": {
+          "type": "checkbox",
+          "description": "Is this a featured post?",
+          "placeholder": null
+        },
+        "message": {
+          "type": "code",
+          "mode": "html",
+          "description": "Attach a special message to the top of this post?",
+          "placeholder": "<i class=\"fas fa-star\"></i> Featured"
+        }
+      }
+    }
+  }
+}

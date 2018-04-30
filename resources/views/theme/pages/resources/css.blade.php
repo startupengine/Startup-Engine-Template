@@ -12,6 +12,10 @@
         border-radius:30px 0px 0px 30px !important;
     }
 
+    .input-group {
+        box-shadow:0px 5px 20px rgba(0,100,250,0.2);
+    }
+
     .input-group .input-group-addon {
         border-radius: 0px 30px 30px 0px !important;
     }
@@ -20,7 +24,7 @@
         -webkit-border-radius: 7px;
         -moz-border-radius: 7px;
         padding:20px !important;
-        background:rgba(0,0,0,0.25) !important;
+        background:rgba(0,0,0,0.725) !important;
         border:none !important;
         color:#fff !important;
         font-size:16px;
@@ -31,6 +35,7 @@
         background: #fff !important;
         color:#777 !important;
     }
+
 
     .card-link:hover {
         text-decoration: none !important;
@@ -184,6 +189,24 @@
     .page-header.no-image {
         background: #000 !important;
     }
+
+    @if($page->content()->heading->background == null)
+    h2.title, h4.description {
+        color:#000 !important;
+    }
+
+    .page-header-image, .wrapper{
+        background:none !important;
+    }
+
+    .page-header.no-image h2.title {
+        border-color:rgba(0,0,0,0.05) !important;
+    }
+
+    .navbar-transparent .nav-link,.navbar-transparent .navbar-brand {
+        color:#000 !important;
+    }
+    @endif
 </style>
 
 <?php /* @if($page->content()->code->css !== null){!! $page->content()->code->css  !!} @endif */ ?>

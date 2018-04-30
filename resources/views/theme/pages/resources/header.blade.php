@@ -1,4 +1,4 @@
-<body class="index-page sidebar-collapse">
+<body class="index-page sidebar-collapse" style="background:linear-gradient(180deg,#ebf2ff,#fff);" >
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper bg-gradient-blue">
     <div id="page-header" class="page-header page-header-small clear-filter" filter-color="black" style="background:none !important;">
