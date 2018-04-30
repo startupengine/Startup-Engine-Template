@@ -11,7 +11,7 @@ if(isset($tag)) {
             <div class="container">
                 <div class="content-center">
                     @if($page->content()->heading->headline)
-                        <h1 class="title text-center" style="color:rgba(0,0,0,1);">{!! $page->markdown($page->content()->heading->headline) !!}</h1>
+                        <h2 class="title text-center" style="color:rgba(0,0,0,1);">{!! $page->markdown($page->content()->heading->headline) !!}</h2>
                     @endif
                     @if($page->content()->heading->intro !== null)
                         <h3 class="description text-center" style="color:rgba(0,0,0,0.7) !important;">{{ $page->content()->heading->intro }}</h3>
