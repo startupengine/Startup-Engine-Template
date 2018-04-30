@@ -8,6 +8,10 @@
 
 <style>
 
+    .btn-default {
+        background:#333 !important;
+    }
+
     .btn-outline {
         border: 1px solid royalblue !important;
         background: #fff !important;
@@ -58,10 +62,6 @@
         border-color: #fff !important;
     }
 
-    .navbar-transparent #nav-cta {
-        background: #fff;
-        color: royalblue !important;
-    }
 
     .h1-seo {
         font-weight: 400 !important;
@@ -96,7 +96,7 @@
         font-weight: 400 !important;
     }
 
-    h2.title, h3, h4 {
+    h3, h4 {
         font-weight: 300 !important;
         color:#222;
     }
@@ -193,15 +193,17 @@
             color: #222 !important;
             border: 1px solid transparent !important;
             border-radius: 25px !important;
+            opacity:0.85;
         }
 
         #navigation .nav-link:hover, #navigation .btn:hover {
             border: 1px solid transparent !important;
+            opacity:1;
         }
 
         #navigation .nav-link:not(.btn):hover {
-            background: rgba(0, 0, 0, 0.85) !important;
             color: #fff !important;
+            opacity:1;
         }
 
         .navbar-transparent #nav-cta {
@@ -215,20 +217,21 @@
         }
     }
 
-    #nav-cta {
-        background: royalblue !important;
-        color: #fff !important;
+    #nav-admin-button{
+        background:#333;
+        color:#fff !important;
     }
 
     #articles-index .page-header:before {
         background: none;
     }
 
-    .page-header h1, .main h1 {
+    .page-header h1, .page-header h2, .main h1 {
         font-weight: 600 !important;
     }
 
-    .page-header h2, .main h2, .page-header h3, .main h3, .page-header h4, .main h4, .page-header h5, .main h5 {
+
+    .main h2, .page-header h3, .main h3, .page-header h4, .main h4, .page-header h5, .main h5 {
         font-weight: 400 !important;
     }
 
@@ -277,6 +280,11 @@
         color: #fff !important;
     }
 
+    .navbar {
+        padding-top: 0.125rem;
+        padding-bottom: 0.125rem;
+    }
+
     .card-header.featured {
         color: #fff !important;
         background-image: linear-gradient(to right, #ff316a 0%, #fe9840 100%) !important;
@@ -290,6 +298,35 @@
     .vjs-poster {
         background-size: cover !important;
         opacity: 1 !important;
+    }
+
+    .withNotification {
+        margin-top:67px;
+    }
+
+    @media(max-width:991px){
+        .withNotification {
+            margin-top:85px;
+        }
+    }
+
+
+
+
+    #nav-cta {
+        background: #00adff !important;
+        color: #fff !important;
+    }
+
+    .navbar-transparent #nav-cta {
+        background: #fff !important;
+        color: #00adff !important;
+    }
+
+
+    .navbar .navbar-nav .nav-link:not(.btn) {
+        padding: 0.15rem 1rem;
+        border-radius:4px !important;
     }
 </style>
 

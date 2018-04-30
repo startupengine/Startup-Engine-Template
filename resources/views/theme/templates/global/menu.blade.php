@@ -1,6 +1,17 @@
+<?php /*
+<div class="alert alert-info bg-gradient-blue" role="alert" style="opacity:1;background:royalblue;text-align:center;margin-bottom:0px;min-width:100%;position: fixed;top: 0px;left: 0px;z-index:999999999 !important;box-shadow:0px 0px 25px rgba(0,0,0,0.3);padding:23px;line-heigh:150%;">
+        You successfully read this important alert message.
+        &nbsp;<a href="#" class="btn btn-simple btn-sm" style="display:inline;margin:5px !important;">Learn More <i class="fa fa-caret-right"></i></a>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">
+				<i class="now-ui-icons ui-1_simple-remove" id="remove-notification-button"></i>
+			</span>
+        </button>
+</div>
+*/ ?>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-white fixed-top navbar-transparent " color-on-scroll="100">
-    <div class="container">
+ <nav class="navbar navbar-expand-lg bg-white fixed-top navbar-transparent" color-on-scroll="100" id="top-nav">
+     <div class="container">
         <div class="navbar-translate">
             <a class="navbar-brand" @if(setting('site.logo_link') !== null) href="{{ setting('site.logo_link') }}" @else href="/" @endif rel="tooltip" title="{{ setting('site.description') }}"
                data-placement="bottom">
@@ -42,7 +53,7 @@
                     <?php $about = \App\Page::where('slug', '=', 'about')->where('status','=','ACTIVE')->first(); ?>
                     @if($about !== null)
                         <li class="nav-item">
-                            <a href="/help" class="nav-link">{{ $about->title }}</a>
+                            <a href="/about" class="nav-link">{{ $about->title }}</a>
                         </li>
                     @endif
                     <?php $products = \App\Page::where('slug', '=', 'products')->where('status','=','ACTIVE')->first(); ?>
@@ -69,18 +80,26 @@
                             <a href="/articles" class="nav-link">{{ $articles->title }}</a>
                         </li>
                     @endif
-                    <?php $help = \App\Page::where('slug', '=', 'help')->where('status','=','ACTIVE')->first(); ?>
+                    <?php $help = \App\Page::where('slug', '=', 'resources')->where('status','=','ACTIVE')->first(); ?>
                     @if($help !== null)
                         <li class="nav-item">
-                            <a href="/help" class="nav-link">{{ $help->title }}</a>
+                            <a href="/resources" class="nav-link">{{ $help->title }}</a>
                         </li>
+                    @endif
+                    @if(\Auth::user() == false)
+                    <li class="nav-item">
+                        <a href="/login" class="nav-link" style="background:rgba(0,0,0,0.75);color:#fff !important;">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/signup" id="nav-cta" class="nav-link">Sign Up &nbsp;<i class="fa fa-caret-right"></i></a>
+                    </li>
                     @endif
                 <?php } ?>
                 <?php if(\Auth::user() !== null) {  ?>
                 <li class="nav-item">
                     <div class="btn-group hiddenOnMobile">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                           aria-expanded="false">
+                           aria-expanded="false" id="nav-admin-button">
                             {{ \Auth::user()->name }}
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -111,3 +130,4 @@
     </div>
 </nav>
 <!-- End Navbar -->
+

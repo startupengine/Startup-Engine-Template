@@ -16,7 +16,7 @@
     }
 
     .page-header {
-        background: #000 !important;
+        background: none !important;
 
     }
 
@@ -33,9 +33,7 @@
     }
 
     .page-header-image {
-        background: #8b69ff;
-        background: -webkit-linear-gradient(to top right, #ff35a4, #350090);
-        background: linear-gradient(to top right, #ff35a4, #350090);
+        background: none;
     }
 
     #articles {
@@ -250,6 +248,36 @@
 
     .page-header.no-image {
         background: #000 !important;
+    }
+
+    .navbar-transparent .nav-link {
+        color:#000 !important;
+    }
+
+    .navbar-transparent .navbar-brand {
+        color:#000 !important;
+    }
+
+    .col-md-6 {
+        min-width:100% !important;
+        min-height: 400px !important;
+    }
+
+    @media(min-width:991px) {
+        .col-md-6:nth-child(odd) .image-container {
+            float: left;
+            width: calc(50% + 15px);
+            height: 100%;
+            margin-right:30px !important;
+        }
+        .col-md-6:nth-child(odd) .card-body{
+            float: right;
+            width: calc(50%);
+            position:absolute;
+            padding-left:50px;
+            right:0px;
+            top:0px;
+        }
     }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vuejs-paginator/2.0.0/vuejs-paginator.js"></script>

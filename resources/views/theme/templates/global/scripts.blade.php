@@ -89,6 +89,10 @@
             $(element).scrollTo();
         });
 
+        $("#remove-notification-button").click(function() {
+            $("#top-nav").removeClass('withNotification');
+        });
+
         // Open all external links in a new tab/window
         $("a[href^='http://']").attr("target","_blank");
         $("a[href^='https://']").attr("target","_blank");

@@ -45,8 +45,10 @@
 
 
                                     <button class="btn btn-default btn-secondary" id="submit-button" style="margin-top:25px;">Continue &nbsp<i class="fa fa-caret-right"></i></i></button>
+                                    @if(\Auth::user())
                                     <input type="hidden" name="plan" value="{{$plan->stripe_id}}" />
                                     <input type="hidden" name="user_id" value="{{\Auth::user()->id}}" />
+                                    @endif
                                 </form>
                             </div>
                         </div>

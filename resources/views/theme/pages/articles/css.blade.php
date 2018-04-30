@@ -16,7 +16,7 @@
     }
 
     .page-header {
-        background: #000 !important;
+        background: linear-gradient(to right, royalblue, #00adff) !important;
 
     }
 

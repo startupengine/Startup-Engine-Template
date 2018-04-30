@@ -23,19 +23,31 @@
         pageSize = 30;
     }
 
-    <?php $search = (app('request')->input('s')); ?>
-    <?php if($search !== null) { ?>
-        var search = "&s=<?php echo $search; ?>";
-    <?php }  else { ?>
-        var search = "";
-    <?php } ?>
-    <?php if(isset($tag)) { ?>
-        var tags = '&tag[]=<?php echo $tag; ?>';
-    <?php } else { ?>
-        var tags = "&tag[]=help";
-    <?php } ?>
+        <?php if(isset($tag)) { ?>
+    var tags = '&tag[]=<?php echo $tag; ?>';
+        <?php } elseif(isset($page->content()->settings->required_tags)) {
+            $required_tags = explode(",", $page->content()->settings->required_tags);
+            $tagString = '';
+            foreach($required_tags as $required_tag) {
+                $tagString = $tagString."&tag[]=$required_tag";
+            }
+            echo "var tags = '$tagString';";
+        } else { ?>
+    var tags = '';
+        <?php } ?>
 
-    var queryPath = '/api/content/items?page[number]='+ pageNumber +'&page[size]='+ pageSize + tags + search;
+        <?php if (isset($page->content()->settings->excluded_tags)) {
+            $excluded_tags = explode(",", $page->content()->settings->excluded_tags);
+            $excludedTagsString = '';
+            foreach ($excluded_tags as $excluded_tag) {
+                $excludedTagsString = $excludedTagsString . "&excludeTag[]=$excluded_tag";
+            }
+            echo "var excludeTags = '$excludedTagsString';";
+        } else {
+            echo "var excludeTags = '';";
+        }?>
+
+    var queryPath = '/api/content/items?post_type=help&page[number]='+ pageNumber +'&page[size]='+ pageSize + tags + excludeTags;
 
     Vue.component('help-item', {
         props: ['article'],

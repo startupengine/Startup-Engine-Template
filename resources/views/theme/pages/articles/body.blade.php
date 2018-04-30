@@ -4,8 +4,9 @@ if(isset($tag)) {
 } else {
     $tagContent = null;
 } ?>
+
 <div class="wrapper">
-    <div class="page-header page-header-small clear-filter @if($page->content()->heading->background == null && $tagContent->content()->heading->background == null) no-image @endif" filter-color="black">
+    <div class="page-header page-header-small clear-filter @if($page->content()->heading->background == null && isset($tagContent) && $tagContent->content()->heading->background == null) no-image @endif" filter-color="black">
         @if(isset($tag))
             @if(isset($tagContent) && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info && $tagContent->content()->info->image !== null)
                 <div id="header-image" class="page-header-image" style="background-image:url('{{$tagContent->content()->info->image}}'); background-size:cover ;z-index: 0;opacity: 0.3;"></div>
@@ -15,27 +16,27 @@ if(isset($tag)) {
             <div class="container">
                 <div class="content-center">
                     @if(isset($tagContent) && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info !== null && $tagContent->content()->info->full_name !== null)
-                        <h1 class="title text-center">{{ $tagContent->content()->info->full_name }}</h1>
+                        <h2 style="    border-bottom: 2px solid rgba(255,255,255,0.25);color:#fff;" class="title text-center">{{ $tagContent->content()->info->full_name }}</h2>
                     @elseif(isset($tag) && ($tagContent == null OR $tagContent->content() == null OR $tagContent->content()->info->full_name == null))
-                        <h1 class="title text-center">{{ ucwords($tag) }}</h1>
+                        <h2 style="color:#fff;" class="title text-center">{{ ucwords($tag) }}</h2>
                     @endif
 
                     @if(isset($tag) && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->info !== null && $tagContent->content()->info->description !== null)
-                        <h3 class="description text-center" >{{$tagContent->content()->info->description}}</h3>
+                        <h4 class="description text-center" >{{$tagContent->content()->info->description}}</h4>
                     @else
-                        <h3 class="description text-center" >A collection of @{{ items.length }} posts.</h3>
+                        <h4 class="description text-center" >A collection of @{{ items.length }} posts.</h4>
                     @endif
                 </div>
             </div>
         @else
-            <div id="header-image" class="page-header-image" style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0;opacity: 0.3;"></div>
+            <div id="header-image" class="page-header-image" style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0; @if($page->content()->heading->background !== null) opacity: 0.3; @else 0; display:none; @endif"></div>
             <div class="container">
                 <div class="content-center">
                     @if($page->content()->heading->headline)
-                        <h1 class="title text-center">{!! $page->markdown($page->content()->heading->headline) !!}</h1>
+                        <h2 style="border-bottom: 2px solid rgba(255,255,255,0.25);color:#fff;" class="title text-center">{!! $page->markdown($page->content()->heading->headline) !!}</h2 >
                     @endif
                     @if($page->content()->heading->intro !== null)
-                        <h3 class="description text-center" >{{ $page->content()->heading->intro }}</h3>
+                        <h4 class="description text-center" >{{ $page->content()->heading->intro }}</h4>
                     @endif
                 </div>
             </div>

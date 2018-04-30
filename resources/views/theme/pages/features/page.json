@@ -177,13 +177,13 @@
     "versions": {
       "1": {
         "heading": {
-          "headline": "The Launchpad",
-          "background": "https:\/\/images.unsplash.com\/photo-1504966981333-1ac8809be1ca?auto=format&fit=crop&w=1950&q=80",
-          "intro": "A blog about starting up and taking off."
+          "headline": "Features",
+          "background": null,
+          "intro": null
         },
         "about": {
-          "headline": "About this blog",
-          "description": "We believe that the whole world benefits when new ideas take root and flourish. This blog is about helping you find your truth and build a business around it."
+          "headline": null,
+          "description": null,
         },
         "sidebar": {
           "html": null

@@ -1,8 +1,8 @@
 {
-  "title": "Help",
-  "slug": "help",
+  "title": "Resources",
+  "slug": "resources",
   "version": "0.1",
-  "description": "Basic help desk for startups.",
+  "description": "Basic knowledge base for startups.",
   "image": null,
   "sections": {
     "heading": {
