@@ -11,10 +11,7 @@ if(isset($tag)) {
             <div class="container">
                 <div class="content-center">
                     @if($page->content()->heading->headline)
-                        <h2 class="title text-center" style="color:rgba(0,0,0,1);">{!! $page->markdown($page->content()->heading->headline) !!}</h2>
-                    @endif
-                    @if($page->content()->heading->intro !== null)
-                        <h3 class="description text-center" style="color:rgba(0,0,0,0.7) !important;">{{ $page->content()->heading->intro }}</h3>
+                        <h2 class="title text-center" style="text-transform:uppercase !important;color:rgba(0,0,0,1);margin-top:-95px;">{!! $page->markdown($page->content()->heading->headline) !!}</h2>
                     @endif
                 </div>
             </div>
@@ -22,7 +19,7 @@ if(isset($tag)) {
 
 
         <div class="container">
-            <div id="articles">
+            <div id="articles" style="margin-top:-165px;">
                 <div class="row">
                     @if(isset($tag) == false && $page->content() !== null && $page->content()->code !== null && $page->content()->code->header !== null)
                         {!! $page->markdown($page->content()->code->header) !!}

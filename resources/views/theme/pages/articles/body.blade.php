@@ -5,7 +5,7 @@ if(isset($tag)) {
     $tagContent = null;
 } ?>
 
-<div class="wrapper">
+<div class="wrapper" >
     <div class="page-header page-header-small clear-filter @if($page->content()->heading->background == null) no-image @endif" filter-color="black">
         @if(isset($tag))
             @if(isset($tagContent) && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info && $tagContent->content()->info->image !== null)
@@ -14,7 +14,7 @@ if(isset($tag)) {
                 <div id="header-image" class="page-header-image" style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0;opacity: 0.3;"></div>
             @endif
             <div class="container">
-                <div class="content-center">
+                <div class="content-center"  style="margin-top:-20px;">
                     @if(isset($tagContent) && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info !== null && $tagContent->content()->info->full_name !== null)
                         <h2 style="    border-bottom: 2px solid rgba(255,255,255,0.25);color:#fff;" class="title text-center">{{ $tagContent->content()->info->full_name }}</h2>
                     @elseif(isset($tag) && ($tagContent == null OR $tagContent->content() == null OR $tagContent->content()->info->full_name == null))
@@ -31,7 +31,7 @@ if(isset($tag)) {
         @else
             <div id="header-image" class="page-header-image" style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0; @if($page->content()->heading->background !== null) opacity: 0.3; @else 0; display:none; @endif"></div>
             <div class="container">
-                <div class="content-center">
+                <div class="content-center" style="margin-top:-20px;">
                     @if($page->content()->heading->headline)
                         <h2 style="border-bottom: 2px solid rgba(255,255,255,0.25);color:#fff;" class="title text-center">{!! $page->markdown($page->content()->heading->headline) !!}</h2 >
                     @endif
@@ -45,9 +45,9 @@ if(isset($tag)) {
 </div>
 </div>
 <div class="wrapper">
-    <div class="section" style="padding-bottom:0px;padding-top:50px;margin-top:-100px !important;background:none;">
+    <div class="section" style="padding-bottom:0px;padding-top:50px;margin-top:-150px !important;background:none;min-height:100vh;">
         <div class="container">
-            <div id="articles">
+            <div id="articles" >
                 <div class="row">
                     @if(isset($tag) == false && $page->content() !== null && $page->content()->code !== null && $page->content()->code->header !== null)
                         {!! $page->markdown($page->content()->code->header) !!}

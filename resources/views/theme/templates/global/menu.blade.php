@@ -68,16 +68,16 @@
                             <a href="/features" class="nav-link">{{ $features->title }}</a>
                         </li>
                     @endif
-                    <?php $pricing = \App\Page::where('slug', '=', 'pricing')->where('status','=','ACTIVE')->first(); ?>
-                    @if($pricing !== null)
-                        <li class="nav-item">
-                            <a href="/pricing" class="nav-link">Pricing</a>
-                        </li>
-                    @endif
                     <?php $articles = \App\Page::where('slug', '=', 'articles')->where('status','=','ACTIVE')->first(); ?>
                     @if($articles !== null)
                         <li class="nav-item">
                             <a href="/articles" class="nav-link">{{ $articles->title }}</a>
+                        </li>
+                    @endif
+                    <?php $pricing = \App\Page::where('slug', '=', 'pricing')->where('status','=','ACTIVE')->first(); ?>
+                    @if($pricing !== null)
+                        <li class="nav-item">
+                            <a href="/pricing" class="nav-link">Pricing</a>
                         </li>
                     @endif
                     <?php $help = \App\Page::where('slug', '=', 'resources')->where('status','=','ACTIVE')->first(); ?>
@@ -91,7 +91,7 @@
                         <a href="/login" class="nav-link" style="background:rgba(0,0,0,0.75);color:#fff !important;">Log In</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/signup" id="nav-cta" class="nav-link">Sign Up &nbsp;<i class="fa fa-caret-right"></i></a>
+                        <a href="/signup" id="nav-cta" class="nav-link">Sign Up &nbsp;<i class="fa fa-caret-right" style=""></i></a>
                     </li>
                     @endif
                 <?php } ?>

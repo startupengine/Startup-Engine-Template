@@ -13,7 +13,7 @@
     }
 
     .input-group {
-        box-shadow:0px 5px 20px rgba(0,100,250,0.2);
+        box-shadow:0px 5px 25px rgba(0,100,250,0.2);
     }
 
     .input-group .input-group-addon {

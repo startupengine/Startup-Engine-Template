@@ -121,6 +121,15 @@
         padding: 15px;
     }
 
+    .nav-link i, .nav-link svg {
+        font-size:10px !important;
+        margin:0px 0px 0px 5px !important;
+        padding:0px !important;
+        width:10px !important;
+        height:10px !important;
+        display:inline-block !important;
+    }
+
     footer {
         position: absolute;
         bottom: 0px;

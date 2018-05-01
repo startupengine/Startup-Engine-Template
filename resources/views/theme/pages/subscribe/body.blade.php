@@ -1,13 +1,12 @@
 <body class="index-page sidebar-collapse">
-<div id="startup_engine_nav_container"></div>
-<div class="wrapper">
-    <div class="main" >
-        <div  class="section particles-js bg-gradient-blue" style="min-height:100vh;">
+<div class="wrapper" style="min-height:100vh;background-image:linear-gradient(180deg,#6087ff14,#fff) !important;background-size:cover;">
+    <div class="main"  style="background:none;">
+        <div  class="section" style="min-height:100vh;background:none !important;">
             <div class="space-50"></div>
             <div class="container text-center">
                 <div class="row justify-content-md-center"  align="center">
-                    <div class="col-md-12" style="margin-bottom:0px;margin-top:25px;">
-                        <h2 class="title" style="width:100%;color:#fff;">
+                    <div class="col-md-12" style="margin-bottom:30px;margin-top:55px;">
+                        <h2 class="title" style="width:100%;font-weight:600 !important;color:#000 !important;">
                             Subscribe
                         </h2>
                     </div>
@@ -15,7 +14,7 @@
                         <?php  $id = app('request')->input('id');?>
                         <?php $plan = \App\Plan::where('stripe_id', '=', $id)->first();  ?>
                         <?php $product = \App\Product::where('stripe_id','=',$plan->json()->product)->first(); ?>
-                        <div class="card" style="font-weight:bold;color:#333;background:#f6f7ff;align-content: center;width:340px;box-shadow:none;height:auto !important;">
+                        <div class="card" style="font-weight:bold;color:#333;background:#fff;align-content: center;width:340px;height:auto !important;">
                             <div class="card-header bg-gradient-orange">
                                 {{ $product->name }}
                             </div>

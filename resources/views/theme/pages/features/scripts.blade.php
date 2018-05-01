@@ -72,7 +72,7 @@ if(isset($tag)) {
         '<h4 class="card-title" align="center">@{{ article.content.heading.headline }}</h4>' +
         '<p v-if="article.content.heading.excerpt !== null">@{{article.content.heading.excerpt}}</p>' +
         '<p></p>'+
-        '<div class="btn btn-link btn-lg btn-block" style="padding:0px 25px 0px 0px !important;"><span style="border-radius:25px;border:1px solid #eee; padding:5px 20px;">Continue Reading  <i class="fas fa-arrow-right fa-xs"></i></span></div>' +
+        '<div class="btn btn-link btn-lg btn-block" style="padding:0px 25px 0px 0px !important;"><span style="border-radius:25px;border:1px solid #eee; padding:5px 20px;">Learn More <i class="fas fa-arrow-right fa-xs"></i></span></div>' +
         '</div>' +
         '</div>' +
         '</a>' +
@@ -90,7 +90,7 @@ if(isset($tag)) {
         '<h4 class="card-title" align="center">@{{ article.content.heading.headline }}</h4>' +
         '<p v-if="article.content.heading.excerpt !== null">@{{article.content.heading.excerpt}}</p>' +
         '<p></p>'+
-        '<div class="btn btn-link btn-lg btn-block"><span style="border-radius:25px;border:1px solid #eee; padding:5px 20px;">Continue Reading  <i class="fas fa-arrow-right fa-xs"></i></span></div>' +
+        '<div class="btn btn-link btn-lg btn-block"><span style="border-radius:25px;border:1px solid #eee; padding:5px 20px;">Learn More  <i class="fas fa-arrow-right fa-xs"></i></span></div>' +
         '</div>' +
         '</div>' +
         '</a>' +

@@ -1,5 +1,5 @@
 <div class="wrapper">
-    <div class="section" style="padding-top:25px;margin-top:-100px;background:none;">
+    <div class="section" style="padding-top:25px;margin-top:-100px;background:none;min-height:100vh;">
         <div class="container">
             <div class="row">
                 <?php $search = (app('request')->input('s')); ?>

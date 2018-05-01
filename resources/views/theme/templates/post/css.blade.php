@@ -281,9 +281,9 @@
     }
 
     #author #name {
-        background: rgba(66, 150, 255, 0.15);
-        border-radius: 25px;
+        background: none;
         padding: 5px 10px;
 
     }
 </style>
+<script src="//rawgit.com/balupton/jquery-scrollto/gh-pages/lib/jquery-scrollto.js"></script>

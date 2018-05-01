@@ -15,6 +15,10 @@
     .page-header:before {
         background-color: rgba(180, 0, 0, 0.35);
     }
+    .page-header {
+        background:none !important;
+        color:#000 !important;
+    }
     #logos img  {
         margin-left:15px;
         margin-right:15px;
@@ -73,6 +77,10 @@
         }
     }
 
+    h2, h3, h4 {
+        color:#000;
+    }
+
     .card-header {
         background:linear-gradient(#333,#111);
         color:#fff;
@@ -86,7 +94,7 @@
     }
 
     .card {
-        background:linear-gradient(180deg, #fff 50%, #deebff);
+        background:linear-gradient(180deg, #fff 50%, #deebff50);
         min-height:425px;
     }
 
@@ -94,4 +102,52 @@
         margin-bottom:30px;
         width:100%;
     }
+
+    .navbar-transparent .nav-link {
+        color:#000 !important;
+    }
+
+    .navbar-transparent .navbar-brand {
+        color:#000 !important;
+    }
+
+    .product .card:first-of-type .btn {
+        background:linear-gradient(to bottom, #ff582a, #ff4d89) !important;
+    }
+
+    .product .card:nth-of-type(2) .btn {
+            background:linear-gradient(to bottom, #ff6c31, #ff8e00) !important;
+
+    }
+
+    .product .card:nth-of-type(3) .btn  {
+        background:linear-gradient(to bottom, #0ca9ff, #00beff) !important;
+    }
+
+    .product .card:nth-of-type(4) .btn  {
+        background:linear-gradient(to bottom, #4870ff, #846dff) !important;
+
+    }
+
+    .card-header {
+        background:rgba(0,0,0,1);
+        color:#fff;
+    }
+
+    .card p, .card h1, .card h2, .card h3 {
+        color:#222 !important;
+    }
+
+    .card .btn {
+        margin-bottom:30px;
+        background: #333 !important;
+        color: #fff !important;
+        font-weight:600;
+    }
+    .card:hover .btn {
+        -ms-transform: (1.065, 1.065); /* IE 9 */
+        -webkit-transform: (1.065, 1.065); /* Safari */
+        transform: scale(1.065, 1.065);
+    }
+
 </style>

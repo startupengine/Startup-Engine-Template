@@ -7,9 +7,9 @@
 
 <div id="startup_engine_nav_container"></div>
 <div class="wrapper" style="background:#000;">
-    <?php $tagSlug = $post->tagNames()[0]; if ($tagSlug !== null) {
+    <?php if($post->tagNames()) { $tagSlug = $post->tagNames()[0]; } else { $tagSlug= null; }  if ($tagSlug !== null) {
         $tag = \App\Post::where('post_type', '=', 'tag')->where('slug', '=', strtolower($tagSlug))->first();
-    } ?>
+     ?>
     @if($tag !== null && isset($tag->content()->posts) && $tag->content()->posts->header !== null)
         <div class="page-header  page-header-small " style="
     height: 200px !important;
@@ -27,6 +27,7 @@
             </div>
         </div>
     @endif
+    <?php } ?>
 
     <div class="page-header @if(isset($post->content()->heading->header_size) && $post->content()->heading->header_size == 'small') page-header-small @endif"
          style="z-index:1 !important;">
@@ -41,7 +42,7 @@
                         <h1 id="title">{{ $post->content()->heading->headline }}</h1>
                         @if($post->content()->heading->header_size == 'large')
                             <h2 class="excerpt"
-                                style="margin-bottom:25px;">{{ $post->content()->heading->excerpt }}</h2>
+                                style="font-weight:400 !important;font-size:175%;margin-bottom:25px;">{{ $post->content()->heading->excerpt }}</h2>
                         @endif
                         @if(isset($post->content()->heading->show_date) && $post->content()->heading->show_date == "on")
                             <h6 id="date">
@@ -54,9 +55,9 @@
                             </h6>
                         @endif
                         @if($post->content()->heading->button !== null)
-                            <a class="btn btn-round btn-simple" id="engage" href="javascript:void(0)" onclick="$('#more').ScrollTo();">{{ $post->content()->heading->button }}</a>
+                            <a class="btn btn-round btn-simple" id="engage"  onclick="$('html, body').animate({scrollTop: $('#more').offset().top -60 }, 'slow');">{{ $post->content()->heading->button }}</a>
                         @elseif($post->content()->heading->header_size == 'large')
-                            <a class="btn btn-round btn-simple" id="engage" href="javascript:void(0)" onclick="$('#more').ScrollTo();" style="height: 50px !important;border-radius: 25px !important;padding:16px 20px 14px !important;"><i class="fa fa-chevron-down"></i></a>
+                            <a class="btn btn-round btn-simple" id="engage"  onclick="$('html, body').animate({scrollTop: $('#more').offset().top -60 }, 'slow');" style="height: 50px !important;border-radius: 25px !important;padding:16px 20px 14px !important;"><i class="fa fa-chevron-down"></i></a>
                         @endif
                     </div>
                 </div>
@@ -65,7 +66,7 @@
     </div>
 </div>
 
-@if($tag !== null && isset($tag->content()->posts) && $tag->content()->posts->after_header !== null)
+@if(isset($tag) && isset($tag->content()->posts) && $tag->content()->posts->after_header !== null)
     {!! $tag->content()->posts->after_header !!}
 @endif
 
@@ -137,12 +138,12 @@
                                     <?php } ?>
                                 </div>
 
-                                @if($post->primaryTag() !== null && $post->primaryTag()->content()->posts->show_author_info == "yes" && $post->user() !== null)
+                                @if($post->primaryTag() !== null && $post->primaryTag() !== null && $post->primaryTag()->content()->posts->show_author_info == "yes" && $post->user() !== null)
                                 <div class="card-footer row row-eq-height" style="background: none;border-bottom: none;border-radius:0px;border: none !important;" align="center">
                                     <div class="col-md-12">
-                                        <div id="author" class="<?php if(isset($post->content()->body->width) && $post->content()->body->width== 'full') { ?>col-md-8 filled <?php } else { ?> col-md-12 <?php } ?>" style="padding: 25px;margin-top: 25px;border-radius: 4px;border-top:2px solid rgb(235, 242, 255);">
+                                        <div id="author" class="<?php if(isset($post->content()->body->width) && $post->content()->body->width== 'full' && $post->user()->avatar !== null) { ?>col-md-8 filled <?php } else { ?> col-md-12 <?php } ?>" style="padding: 25px;margin-top: 25px;border-radius: 4px;border:none;">
                                             @if($post->user() !== null)
-                                            <img src="{{ $post->user()->avatar }}" style="width:50px;height:50px;margin:10px;float: none;border-radius:25px;box-shadow:0px 0px 15px rgba(0,0,150,0.15);" />
+                                            <img @if($post->user()->avatar == "users/default.png") src="/images/avatar.png" @else src="{{ $post->user()->avatar }}" @endif style="width:50px;height:50px;margin:10px;float: none;border-radius:25px;" />
                                             @endif
                                             <strong id="name">{{ $post->user()->name }}</strong>
                                             <?php /*<h6 style="opacity: 0.5;">Editor In Chief</h6>*/ ?>

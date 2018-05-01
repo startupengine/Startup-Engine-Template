@@ -11,7 +11,7 @@
                     '<div class="content-center">' +
                         '<h1 class="title text-center">{{ page.json.heading.headline }}</h1>' +
                         '<h3 class="description text-center" v-if="page.json.heading.intro !== null">{{ page.json.heading.intro }}</h3>' +
-                        '<a v-if="page.json.heading.button !== null" v-html="page.json.heading.button" onclick="$(\'#more\').ScrollTo();" class="btn btn-lg btn-round btn-neutral btn-lg btn-simple" id="engage"> {{ page.json.heading.button }}</a>' +
+                        '<a v-if="page.json.heading.button !== null" v-html="page.json.heading.button" onclick="$(\'html, body\').animate({scrollTop: $(\'#more\').offset().top -80 }, \'slow\');" class="btn btn-lg btn-round btn-neutral btn-lg btn-simple" id="engage"> {{ page.json.heading.button }}</a>' +
                     '</div>' +
                 '</div>' +
             '</div>' +
@@ -21,7 +21,7 @@
                     '<div class="content-center">' +
                         '<h1 class="title text-center">{{ page.json.heading.headline }}</h1>' +
                         '<h3 class="description text-center" v-if="page.json.heading.intro !== null">{{ page.json.heading.intro }}</h3>' +
-                        '<a v-if="page.json.heading.button !== null" v-html="page.json.heading.button" onclick="$(\'#more\').ScrollTo();" class="btn btn-lg btn-round btn-neutral btn-lg btn-simple" id="engage"> {{ page.json.heading.button }}</a>' +
+                        '<a v-if="page.json.heading.button !== null" v-html="page.json.heading.button" onclick="$(\'html, body\').animate({scrollTop: $(\'#more\').offset().top -80 }, \'slow\');" class="btn btn-lg btn-round btn-neutral btn-lg btn-simple" id="engage"> {{ page.json.heading.button }}</a>' +
                     '</div>' +
                 '</div>' +
             '</div>' +
