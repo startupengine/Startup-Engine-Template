@@ -49,9 +49,6 @@
                                 @if(isset($post->content()->meta->featured) && $post->content()->meta->featured == "on")
                                     <span style="opacity:0.5; margin-right:10px;">FEATURED</span>
                                 @endif
-                                @if($post->content()->heading->show_date !== "off")
-                                    Published {{ $post->published_at->diffForHumans() }}
-                                @endif
                             </h6>
                         @endif
                         @if($post->content()->heading->button !== null)
@@ -71,7 +68,7 @@
 @endif
 
 <div class="section"
-     style="padding-top:0px;margin-top:-25px; background:none;z-index:9 !important;">
+     style="padding-top:0px;padding-bottom:0px !important;margin-top:-25px; background:none;z-index:9 !important;">
     <div class="@if(isset($post->content()->body->width) && $post->content()->body->width == "full") container-fluid full-width @else container col-md-8 @endif"
          id="more">
         <div class="row">
@@ -141,11 +138,17 @@
                                 @if($post->primaryTag() !== null && $post->primaryTag() !== null && $post->primaryTag()->content()->posts->show_author_info == "yes" && $post->user() !== null)
                                 <div class="card-footer row row-eq-height" style="background: none;border-bottom: none;border-radius:0px;border: none !important;" align="center">
                                     <div class="col-md-12">
+
                                         <div id="author" class="<?php if(isset($post->content()->body->width) && $post->content()->body->width== 'full' && $post->user()->avatar !== null) { ?>col-md-8 filled <?php } else { ?> col-md-12 <?php } ?>" style="padding: 25px;margin-top: 25px;border-radius: 4px;border:none;">
                                             @if($post->user() !== null)
-                                            <img @if($post->user()->avatar == "users/default.png") src="/images/avatar.png" @else src="{{ $post->user()->avatar }}" @endif style="width:50px;height:50px;margin:10px;float: none;border-radius:25px;" />
+                                                <img @if($post->user()->avatar == "users/default.png") src="/images/avatar.png" @else src="{{ $post->user()->avatar }}" @endif style="width:50px;height:50px;margin:0px;float: none;border-radius:25px;display:inline-block;" />
                                             @endif
-                                            <strong id="name">{{ $post->user()->name }}</strong>
+                                            <span id="name" style="margin-bottom:25px;font-weight:500;">{{ $post->user()->name }}</span>
+                                                <br>
+                                                @if(isset($post->content()->heading->show_date) && $post->content()->heading->show_date !== "off")
+                                                    <span style="padding:10px 15px;background:#eee;width:auto;opacity:0.5; margin-right:10px;margin-top:25px;border-radius:5px;margin-bottom:20px;font-weight:500;display:inline-block;">Published {{ $post->published_at->diffForHumans() }}.</span>
+                                                @endif
+
                                             <?php /*<h6 style="opacity: 0.5;">Editor In Chief</h6>*/ ?>
                                             <?php /*<a href="/author/***" class="btn btn-secondary btn-round">Read more from Aaron</div> */?>
                                         </div>

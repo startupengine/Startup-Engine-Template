@@ -11,7 +11,7 @@ if(isset($tag)) {
             <div class="container">
                 <div class="content-center">
                     @if($page->content()->heading->headline)
-                        <h2 class="title text-center" style="text-transform:uppercase !important;color:rgba(0,0,0,1);margin-top:-95px;">{!! $page->markdown($page->content()->heading->headline) !!}</h2>
+                        <h2 class="title text-center" style="text-transform:capitalize !important;color:rgba(0,0,0,1);margin-top:-95px;">{!! $page->markdown($page->content()->heading->headline) !!}</h2>
                     @endif
                 </div>
             </div>

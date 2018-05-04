@@ -286,5 +286,16 @@
         padding: 5px 10px;
 
     }
+
+    .vjs-afterglow-skin .vjs-poster {
+        opacity:0.6 !important;
+    }
+
+    .vjs-afterglow-skin .vjs-poster:hover {
+        opacity:0.8 !important;
+    }
+
+
+
 </style>
 <script src="//rawgit.com/balupton/jquery-scrollto/gh-pages/lib/jquery-scrollto.js"></script>

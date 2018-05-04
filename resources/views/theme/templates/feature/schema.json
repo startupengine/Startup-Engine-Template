@@ -2,7 +2,7 @@
   "title": "Feature",
   "slug": "feature",
   "version": "0.1",
-  "description": "Articles / blog posts.",
+  "description": "Product features.",
   "image": null,
   "sections": {
     "Heading": {
@@ -29,10 +29,15 @@
           "description": "A short call to action phrase.",
           "placeholder": "Read More"
         },
+        "icon": {
+          "type": "text",
+          "description": "Url for an icon image (optional).",
+          "placeholder": "https://..."
+        },
         "background": {
           "type": "text",
           "description": "Url for a background image (optional).",
-          "placeholder": "http://www.example.com"
+          "placeholder": "https://..."
         },
         "header_size": {
           "type": "select",

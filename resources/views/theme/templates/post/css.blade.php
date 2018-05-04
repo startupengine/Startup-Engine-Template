@@ -58,9 +58,9 @@
     }
 
     .card-body img {
-        margin:0px;
+        margin:0px !important;
         border-radius:2px;
-        @if(isset($post->content()->body->width) && $post->content()->body->width == "full") max-width: 100% !important; @else max-width: 50% !important; @endif
+        @if(isset($post->content()->body->width) && $post->content()->body->width == "full") max-width: 100% !important; @else max-width: 66% !important; @endif
         border-radius: 2px;
         margin-top:25px;
         display: inline-block;
@@ -282,8 +282,21 @@
 
     #author #name {
         background: none;
+        font-weight:500 !important;
         padding: 5px 10px;
 
+    }
+
+    .content-center h1, .content-center h2 {
+        max-width:600px !important;
+    }
+
+    .vjs-afterglow-skin .vjs-poster {
+        opacity:0.6 !important;
+    }
+
+    .vjs-afterglow-skin .vjs-poster:hover {
+        opacity:0.8 !important;
     }
 </style>
 <script src="//rawgit.com/balupton/jquery-scrollto/gh-pages/lib/jquery-scrollto.js"></script>

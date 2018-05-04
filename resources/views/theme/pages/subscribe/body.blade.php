@@ -1,7 +1,7 @@
 <body class="index-page sidebar-collapse">
 <div class="wrapper" style="min-height:100vh;background-image:linear-gradient(180deg,#6087ff14,#fff) !important;background-size:cover;">
     <div class="main"  style="background:none;">
-        <div  class="section" style="min-height:100vh;background:none !important;">
+        <div  class="section" style="min-height:100vh;background:linear-gradient(180deg,#ebf2ff,#fff);background-size:cover;">
             <div class="space-50"></div>
             <div class="container text-center">
                 <div class="row justify-content-md-center"  align="center">

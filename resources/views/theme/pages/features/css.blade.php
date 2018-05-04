@@ -192,10 +192,14 @@
 
     .card .btn-block {
         position: absolute !important;
-        bottom: 0px !important;
+        bottom: 25px !important;
         display: inline-block !important;
         right: 0px !important;
         padding: 25px !important;
+    }
+
+    .card-body {
+        height:calc(100% - 25px) !important;
     }
 
     .wrapper > .section {
@@ -263,10 +267,18 @@
         min-height: 400px !important;
     }
 
+    .card-body h4 {
+        color:#333 !important;
+    }
+
+    .card:hover .card-body h4 {
+        color:#000 !important;
+    }
+
     @media(min-width:991px) {
         .col-md-6:nth-child(odd) .image-container {
             float: left;
-            width: calc(50% + 15px);
+            width: 100%;
             height: 100%;
             margin-right:30px !important;
         }
@@ -280,7 +292,7 @@
         }
         .col-md-6:nth-child(even) .image-container {
             float: right;
-            width: calc(50% + 15px);
+            width: 100%;
             height: 100%;
             margin-left:30px !important;
         }
@@ -292,6 +304,45 @@
             padding-left:35px;
             left:0px;
             top:0px;
+        }
+
+        .col-md-6:nth-child(odd) .card-body {
+            z-index:9 !important;
+            background:rgba(255,255,255,0.95) !important;
+            min-height:100% !important;
+            padding-bottom:50px;
+        }
+
+        .col-md-6:nth-child(even) .card-body {
+            z-index:9 !important;
+            background:rgba(0,0,0,0.8) !important;
+            min-height:100% !important;
+            padding-bottom:50px;
+        }
+
+        .col-md-6:nth-child(even) .card-body h4, .col-md-6:nth-child(even) .card-body p {
+            color:#fff !important;
+        }
+
+        .col-md-6 .card-body .btn-block span {
+            margin-bottom:25px;
+            box-shadow:3px 6px 25px rgba(0,0,0,0.1);
+            border:none !important;
+            background:royalblue;
+            color:#fff;
+        }
+
+        .col-md-6:hover .card-body .btn-block span {
+            background:#000;
+        }
+
+        .col-md-6:nth-child(even):hover .card-body .btn-block span {
+            background:#fff;
+            color:royalblue;
+        }
+
+        .col-md-6 .card-body .btn-block span i,.col-md-6 .card-body .btn-block span svg {
+            padding-bottom:2px;
         }
         .col-md-6 .btn span {
             background:#fff;

@@ -58,9 +58,9 @@
     }
 
     .card-body img {
-        margin:0px;
+        margin:0px !important;
         border-radius:2px;
-        @if(isset($post->content()->body->width) && $post->content()->body->width == "full") max-width: 100% !important; @else max-width: 50% !important; @endif
+        @if(isset($post->content()->body->width) && $post->content()->body->width == "full") max-width: 100% !important; @else max-width: 66% !important; @endif
         border-radius: 2px;
         margin-top:25px;
         display: inline-block;
@@ -134,8 +134,8 @@
     }
 
     .page-header-small{
-        min-height:66vh !important;
-        height:66vh !important;
+        min-height:350px !important;
+        height:350px !important;
     }
     #featuredImage{
         min-height:500px;
@@ -281,10 +281,14 @@
     }
 
     #author #name {
-        background: rgba(66, 150, 255, 0.15);
-        border-radius: 25px;
+        background: none;
+        font-weight:500 !important;
         padding: 5px 10px;
 
+    }
+
+    .content-center h1, .content-center h2 {
+        max-width:600px !important;
     }
 </style>
 <script src="//rawgit.com/balupton/jquery-scrollto/gh-pages/lib/jquery-scrollto.js"></script>

@@ -1,6 +1,6 @@
-<body class="index-page sidebar-collapse" style="background:linear-gradient(180deg,#ebf2ff,#fff);" >
+<body class="index-page sidebar-collapse" style="background-image:linear-gradient(180deg,#ebf2ff,#fff);background-size:cover !important;min-height:calc(100vh);" >
 <div id="startup_engine_nav_container"></div>
-<div class="wrapper bg-gradient-blue">
+<div class="wrapper">
     <div id="page-header" class="page-header page-header-small clear-filter" filter-color="black" style="background:none !important;">
         <div id="header-image" class="page-header-image"
              style="@if($page->content()->heading->background == null)background-color:#3a92f1;@else background-image:url({{ $page->content()->heading->background }}); @endif">

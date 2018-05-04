@@ -1,5 +1,5 @@
 <!--     Fonts and icons     -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,600,700" rel="stylesheet"/>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"/>
 <!-- CSS Files -->
 <link href="/css/bootstrap.min.css" rel="stylesheet"/>

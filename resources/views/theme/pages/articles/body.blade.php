@@ -5,26 +5,28 @@ if(isset($tag)) {
     $tagContent = null;
 } ?>
 
-<div class="wrapper" >
-    <div class="page-header page-header-small clear-filter @if($page->content()->heading->background == null) no-image @endif" filter-color="black">
+<div class="wrapper" style="background:linear-gradient(180deg,#ebf2ff,#fff);" >
+    <div class="page-header page-header-small clear-filter @if($page->content()->heading->background == null) no-image @endif" style="background:none !important;">
         @if(isset($tag))
             @if(isset($tagContent) && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info && $tagContent->content()->info->image !== null)
                 <div id="header-image" class="page-header-image" style="background-image:url('{{$tagContent->content()->info->image}}'); background-size:cover ;z-index: 0;opacity: 0.3;"></div>
-            @else
+            @elseif(isset($page->content()->heading->background))
                 <div id="header-image" class="page-header-image" style="background-image:url('{{$page->content()->heading->background}}'); background-size:cover;z-index: 0;opacity: 0.3;"></div>
             @endif
             <div class="container">
                 <div class="content-center"  style="margin-top:-20px;">
                     @if(isset($tagContent) && $tagContent->content() !== null && $tagContent->content() !== null && $tagContent->content()->info !== null && $tagContent->content()->info->full_name !== null)
-                        <h2 style="    border-bottom: 2px solid rgba(255,255,255,0.25);color:#fff;" class="title text-center">{{ $tagContent->content()->info->full_name }}</h2>
+                        <h2 style="    border-bottom: 2px solid rgba(255,255,255,0.25);color:#fff;padding-bottom:25px;" class="title text-center">{{ $tagContent->content()->info->full_name }}</h2>
                     @elseif(isset($tag) && ($tagContent == null OR $tagContent->content() == null OR $tagContent->content()->info->full_name == null))
-                        <h2 style="color:#fff;" class="title text-center">{{ ucwords($tag) }}</h2>
+                        <?php $words = explode("?", $tag, 2);
+                        $first = $words[0]; ?>
+                        <h2 style="color:#fff;" class="title text-center">{{ ucwords($first) }}</h2>
                     @endif
 
                     @if(isset($tag) && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->info !== null && $tagContent->content()->info->description !== null)
                         <h4 class="description text-center" >{{$tagContent->content()->info->description}}</h4>
                     @else
-                        <h4 class="description text-center" >A collection of @{{ items.length }} posts.</h4>
+                        <h4 class="description text-center" >A collection of @{{ items.length }} <?php if(request()->input('post_type') !== null) { echo request()->input('post_type'); } ?> posts.</h4>
                     @endif
                 </div>
             </div>
@@ -45,14 +47,14 @@ if(isset($tag)) {
 </div>
 </div>
 <div class="wrapper">
-    <div class="section" style="padding-bottom:0px;padding-top:50px;margin-top:-150px !important;background:none;min-height:100vh;">
+    <div class="section" style="padding-bottom:0px;padding-top:50px;margin-top:-150px !important;background:none;height:100vh;max-height:calc(100vh - 200px);">
         <div class="container">
             <div id="articles" >
                 <div class="row">
                     @if(isset($tag) == false && $page->content() !== null && $page->content()->code !== null && $page->content()->code->header !== null)
                         {!! $page->markdown($page->content()->code->header) !!}
                     @endif
-                    @if(isset($tag) == true && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->code !== null && $tagContent->content()->code->header !== null)
+                    @if(isset($tag) == true && $tagContent !== null && $tagContent->content() !== null && isset($tagContent->content()->code) && $tagContent->content()->code->header !== null)
                         {!! $page->markdown($tagContent->content()->code->header) !!}
                     @endif
                     <div class="@if($page->content()->about->headline !== null) col-md-8 @else col-md-12 @endif row row-eq-height" style="margin:0px;">
@@ -93,7 +95,7 @@ if(isset($tag)) {
                     @if(isset($tag) == false && $page->content()->code->footer !== null)
                         {!! $page->markdown($page->content()->code->footer) !!}
                     @endif
-                    @if(isset($tag) == true && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->code !== null && $tagContent->content()->code->footer !== null)
+                    @if(isset($tag) == true && $tagContent !== null && $tagContent->content() !== null && isset($tagContent->content()->code) && $tagContent->content()->code->footer !== null)
                         {!! $page->markdown($tagContent->content()->code->footer) !!}
                     @endif
                 </div>

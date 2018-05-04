@@ -14,6 +14,7 @@
         }
     };
 
+    var search = getUrlParameter('s');
     var pageNumber = getUrlParameter('page[number]');
     var pageSize = getUrlParameter('page[size]');
     if(typeof(pageNumber) == 'undefined') {
@@ -21,6 +22,12 @@
     }
     if(typeof(pageSize) == 'undefined') {
         pageSize = 30;
+    }
+    if(typeof(search) !== 'undefined') {
+        search = '&s=' + search;
+    }
+    else {
+        search = '';
     }
 
         <?php if(isset($tag)) { ?>
@@ -47,13 +54,13 @@
             echo "var excludeTags = '';";
         }?>
 
-    var queryPath = '/api/content/items?post_type=help&page[number]='+ pageNumber +'&page[size]='+ pageSize + tags + excludeTags;
+    var queryPath = '/api/content/items?post_type=help&page[number]='+ pageNumber +'&page[size]='+ pageSize + tags + excludeTags + search;
 
     Vue.component('help-item', {
         props: ['article'],
         template:
         '<div class="col-md-4" style="margin-top:25px;">' +
-        '<a class="card-link" v-bind:href="article.slug" onclick="window.location.href = $(this).attr(\'href\');">' +
+        '<a class="card-link" v-bind:href="\'content/help/\' + article.slug" onclick="window.location.href = $(this).attr(\'href\');">' +
         '<div class="card" style="height:100%;">' +
         '<div v-if="article.content.meta && article.content.meta.featured == \'on\' && article.content.meta.message == null" class="card-header featured" ><i class="fas fa-star" ></i>  Featured</div>' +
         '<div v-if="article.content.meta && article.content.meta.featured == \'on\' && article.content.meta.message !== null" class="card-header featured" >@{{article.content.meta.message}}</div>' +

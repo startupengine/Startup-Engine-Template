@@ -24,9 +24,9 @@
         -webkit-border-radius: 7px;
         -moz-border-radius: 7px;
         padding:20px !important;
-        background:rgba(0,0,0,0.725) !important;
+        background:rgba(255,255,255,0.85) !important;
         border:none !important;
-        color:#fff !important;
+        color:#555 !important;
         font-size:16px;
         font-weight:400 !important;
     }
@@ -36,6 +36,18 @@
         color:#777 !important;
     }
 
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #888 !important;
+        opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #888 !important;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #888 !important;
+    }
 
     .card-link:hover {
         text-decoration: none !important;
