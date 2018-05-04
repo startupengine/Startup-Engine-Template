@@ -17,55 +17,54 @@
         </div>
         <div class="container" >
             <div class="content-center" style="top: calc(50% + 30px) !important;width: 80%;padding: 0px;margin: 0px !important;max-width: 60% !important;min-width: 95%;">
-
-                <div class="col-md-6" style="float:left;margin-bottom:25px;padding-right:25px;text-align:center;" align="center">
-                        <div class="content-center" style="padding:5% 0% 5% 0%;vertical-align: middle;display:block;">
+                <div class="row equal">
+                    <div class="col-md-6 my-auto align-self-center" style="padding-right:25px;padding-top:25px;padding-bottom:25px;text-align:center;" align="center">
                         <h2 id="title" style="margin:0px 0px 15px 0px !important;display:inline;text-align:center;">
                             {{ $post->content()->heading->headline }}
-                        </h2><br>
-
-                        <h2 class="excerpt" style="text-align:center !important;font-weight:400 !important;font-size:175%;margin-bottom:35px;padding:15px;margin-top:15px;display:block !important;">
-                            {{ $post->content()->heading->excerpt }}
                         </h2>
 
-                        <a href="#" class="btn btn-neutral btn-round btn-lg" style="display:inline !important;font-weight:600;">
-                            Test <i class="fa fa-arrow-right" style="margin-left:8px;font-size:80%;"></i>
-                        </a>
-                        </div>
+                        <h2 class="excerpt" style="text-align:center !important;font-weight:400 !important;font-size:175%;margin-bottom:15px;padding:15px;margin-top:15px;display:block !important;">
+                            {{ $post->content()->heading->excerpt }}
+                        </h2>
+                        @if($post->content()->heading->button !== null && $post->content()->heading->link !== null)
+                            <a href="{{ $post->content()->heading->link }}" class="btn btn-neutral btn-round btn-lg" style="margin-top:15px;display:inline-block !important;font-weight:600;">
+                                {{ $post->content()->heading->button }}  <i class="fa fa-arrow-right" style="margin-left:8px;font-size:80%;"></i>
+                            </a>
+                        @endif
+                    </div>
+                    <div class="col-md-6 my-auto align-self-center" style="float:left;padding-right:25px;text-align:center;" align="center">
+                        <?php if($post->content() !== null && $post->content()->body->video !== null){ ?>
+                            <?php $video = $post->content()->body->video; ?>
+                            <?php $videotype = $post->videoType($video); ?>
+                            <?php
+                            if ($videotype == "youtube") {
+                                $url = $video;
+                                parse_str(parse_url($url, PHP_URL_QUERY), $array);
+                                $video = $array['v'];
+                            }
+                            if ($videotype == "vimeo") {
+                                $video = (int)substr(parse_url($video, PHP_URL_PATH), 1);
+                            } ?>
+                            <div style="padding:0px 15px 0px 15px;" ><video class="col-md-6 afterglow" style="min-height:250px;" sid="featuredvideo" width="960" height="350"
+                                   @if($video == null) src="{{ $post->content()->body->video }}" @endif
+                                   @if($video !== null) data-{{ $videotype }}-id="{{ $video }}" @endif
+                                   @if($post->content()->body->image !== null) poster="{{ $post->content()->body->image }}" @endif >
 
+                                @if($videotype !== "youtube" && $videotype !== "vimeo")
+                                    <source type="video/mp4" src="{{ $post->content()->body->video }}"/>
+                                @endif
+
+                            </video>
+                            </div>
+                        <?php } else { ?>
+                            <div class="col-md-6" style="border-radius:5px !important;float:right;background-image:url({{ $post->content()->body->image  }});background-size:cover;min-height:100%;">
+                            </div>
+                        <?php } ?>
+                    </div>
                 </div>
-
-                <?php if($post->content() !== null && $post->content()->body->video !== null){ ?>
-                <?php $video = $post->content()->body->video; ?>
-                <?php $videotype = $post->videoType($video); ?>
-                <?php
-                if ($videotype == "youtube") {
-                    $url = $video;
-                    parse_str(parse_url($url, PHP_URL_QUERY), $array);
-                    $video = $array['v'];
-                }
-                if ($videotype == "vimeo") {
-                    $video = (int)substr(parse_url($video, PHP_URL_PATH), 1);
-                } ?>
-                <div style="padding:0px 15px 0px 15px;" ><video class="col-md-6 afterglow" style="min-height:250px;" sid="featuredvideo" width="960" height="350"
-                       @if($video == null) src="{{ $post->content()->body->video }}" @endif
-                       @if($video !== null) data-{{ $videotype }}-id="{{ $video }}" @endif
-                       @if($post->content()->body->image !== null) poster="{{ $post->content()->body->image }}" @endif >
-
-                    @if($videotype !== "youtube" && $videotype !== "vimeo")
-                        <source type="video/mp4" src="{{ $post->content()->body->video }}"/>
-                    @endif
-
-                </video>
-                </div>
-                <?php } else { ?>
-                <div class="col-md-6" style="border-radius:5px !important;float:right;background-image:url({{ $post->content()->body->image  }});background-size:cover;min-height:100%;">
-                </div>
-                 <?php } ?>
             </div>
         </div>
     </div>
-</div>
 
 @if(isset($tag) && isset($tag->content()->posts) && $tag->content()->posts->after_header !== null)
     {!! $tag->content()->posts->after_header !!}

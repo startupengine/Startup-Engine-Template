@@ -287,15 +287,27 @@
 
     }
 
+    .vjs-afterglow-skin {
+        border:0px solid #000 !important;
+        background:#000 !important;
+    }
+
     .vjs-afterglow-skin .vjs-poster {
         opacity:0.6 !important;
+        background-size:250% !important;
+    }
+
+    .vjs-afterglow-skin:hover .vjs-poster {
+        background-size:225% !important;
     }
 
     .vjs-afterglow-skin .vjs-poster:hover {
         opacity:0.8 !important;
     }
 
-
+    #vjs_video_3 {
+        min-width:100% !important;
+    }
 
 </style>
 <script src="//rawgit.com/balupton/jquery-scrollto/gh-pages/lib/jquery-scrollto.js"></script>

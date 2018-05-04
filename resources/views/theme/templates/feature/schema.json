@@ -27,7 +27,12 @@
         "button": {
           "type": "text",
           "description": "A short call to action phrase.",
-          "placeholder": "Read More"
+          "placeholder": "Get Started"
+        },
+        "link": {
+          "type": "text",
+          "description": "The URL that the button links to.",
+          "placeholder": "https://..."
         },
         "icon": {
           "type": "text",

@@ -101,6 +101,9 @@
                                     <?php if($post->content()->heading->excerpt !== null && $post->content()->heading->header_size !== 'large') { ?>
                                     <h5 class="description excerpt">{{ $post->content()->heading->excerpt }}</h5>
                                     <?php } ?>
+                                    @if($post->content()->heading->background !== null)
+                                            <div style="padding:15px 15px 0px 15px;"><div style="background:url({{ $post->content()->heading->background }});background-position:center;background-size:cover;margin-top:0px !important;border-radius:5px;"><img src="{{ $post->content()->heading->background }}" style="max-height:350px;visibility:hidden;" /></div></div>
+                                    @endif
                                     <?php if($post->content() !== null && isset($post->content()->body->body)) { ?>
                                     {!!  $post->markdown($post->content()->body->body) !!}
                                     <?php } ?>

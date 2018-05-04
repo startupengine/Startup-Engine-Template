@@ -26,7 +26,7 @@ if(isset($tag)) {
                     @if(isset($tag) && $tagContent !== null && $tagContent->content() !== null && $tagContent->content()->info !== null && $tagContent->content()->info->description !== null)
                         <h4 class="description text-center" >{{$tagContent->content()->info->description}}</h4>
                     @else
-                        <h4 class="description text-center" >A collection of @{{ items.length }} <?php if(request()->input('post_type') !== null) { echo request()->input('post_type'); } ?> posts.</h4>
+                            <h4 class="description text-center" >A collection of @{{ items.length }} <?php if(request()->input('post_type') !== null) { echo request()->input('post_type'); } ?> post<span v-if="items.length > 1">s</span>.</h4>
                     @endif
                 </div>
             </div>

@@ -1,7 +1,7 @@
 <body class="index-page sidebar-collapse" >
 <div class="wrapper" align="center" >
     <div class="main bg-gradient-blue">
-        <div class="" style="min-height:150vh;z-index:0 !important;background-color: transparent !important; background-image: url({{ $page->content()->heading->background}}) !important; background-size: cover; background-position: center;">
+        <div class="" style="@if($page->content()->heading->image !== null) min-height:150vh; @else height:100vh; @endif z-index:0 !important;background-color: transparent !important; background-image: url({{ $page->content()->heading->background}}) !important; background-size: cover; background-position: center;">
             <div class="page-header clear-filter" style="">
 
                 <div class="container">
@@ -16,8 +16,10 @@
                     </div>
                 </div>
             </div>
+            @if($page->content()->heading->image !== null)
             <img src="{{ $page->content()->heading->image }}"
                  style="z-index:999999 !important;display:block !important;margin-top:-475px !important; max-height:600px; width:auto;margin-bottom:50px;"/>
+            @endif
         </div>
     </div>
 
@@ -53,11 +55,11 @@
                     <?php $count = 0; ?>
                     @foreach($testimonials as $testimonial)
                         <?php $count = $count + 1; ?>
-                        <div class="carousel-item @if($count = 1) active  @endif align-middle">
-                            <h5>{{ $testimonial->content()->body->headline }}</h5>
-                            <img src="{{ $testimonial->content()->body->image }}"
-                                 style="max-width:76px;display:inline;border-radius:38px;"/>
-                            <p style="width:70%;max-width:500px;margin:50px;">{{ $testimonial->content()->body->body }}</p>
+                        <div class="carousel-item @if($count = 1) active  @endif align-middle" style="padding:0px 40px;margin-bottom:50px;">
+                            @if($testimonial->content()->body->headline  !== null) <h5 style="opacity:0.5;font-size:200%;margin-bottom:25px;">{{ $testimonial->content()->body->headline }}</h5> @endif
+                                @if($testimonial->content()->body->image  !== null)<img src="{{ $testimonial->content()->body->image }}"
+                                 style="max-height:120px;display:inline-block;border-radius:60px;border:7px solid #fff;margin-bottom:25px !important;"/> @endif
+                            <p style="width:70%;max-width:500px;margin:25px 0px 0px 0px;">{!! $page->markdown($testimonial->content()->body->body) !!}</p>
                         </div>
                     @endforeach
                 </div>
@@ -74,7 +76,7 @@
             </div>
         </div>
     @endif
-    <section style="height:100%;min-height:80vh;max-height:80vh;z-index:999;display:block;">
+    <section style="height:100%;min-height:80vh;max-height:80vh;z-index:999;display:block;border-top:1px dotted rgba(0,0,0,0.05);">
         <div id="content-menu"
              style="width:35%;background:linear-gradient(180deg, rgba(0,100,200,0.05) 50%,#fff 100%);height:100%;float:left;display:flex !important;">
             <div style="padding:50px;width:100%;height:100%;" class="align-middle">
