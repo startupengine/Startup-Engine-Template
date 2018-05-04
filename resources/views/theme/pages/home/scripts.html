@@ -1,98 +1,6 @@
 <script>
     var slug = 'home';
 
-    Vue.component('heading', {
-        props: ['page'],
-        template:
-        '<div class="bg-gradient-blue" style="min-height:150vh;">' +
-            '<div v-if="page.json.heading.headersize == \'large\'" class="page-header clear-filter " filter-color="black" :style="{ backgroundColor: `transparent`, backgroundImage: `url(${page.json.heading.background})`, backgroundSize: `cover`, backgroundPosition: `center` }" >' +
-                '<div class="page-header-image " data-parallax="true" style="background-image: url(\'../assets/img/header.jpg\');"></div>' +
-                '<div class="container">' +
-                    '<div class="content-center">' +
-                        '<h1 class="title text-center">{{ page.json.heading.headline }}</h1>' +
-                        '<h3 class="description text-center" v-if="page.json.heading.intro !== null">{{ page.json.heading.intro }}</h3>' +
-                        '<a v-if="page.json.heading.button !== null" v-html="page.json.heading.button" onclick="$(\'html, body\').animate({scrollTop: $(\'#more\').offset().top -80 }, \'slow\');" class="btn btn-lg btn-round btn-neutral btn-lg btn-simple" id="engage"> {{ page.json.heading.button }}</a>' +
-                    '</div>' +
-                '</div>' +
-            '</div>' +
-            '<div v-else class="page-header page-header-small clear-filter" filter-color="black" :style="{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(${page.json.heading.background})`, backgroundSize: `cover`, backgroundPosition: `center` }" style="padding-top:75px;">' +
-                '<div class="page-header-image" data-parallax="true" style="background-image: url(\'../assets/img/header.jpg\');"></div>' +
-                '<div class="container">' +
-                    '<div class="content-center">' +
-                        '<h1 class="title text-center">{{ page.json.heading.headline }}</h1>' +
-                        '<h3 class="description text-center" v-if="page.json.heading.intro !== null">{{ page.json.heading.intro }}</h3>' +
-                        '<a v-if="page.json.heading.button !== null" v-html="page.json.heading.button" onclick="$(\'html, body\').animate({scrollTop: $(\'#more\').offset().top -80 }, \'slow\');" class="btn btn-lg btn-round btn-neutral btn-lg btn-simple" id="engage"> {{ page.json.heading.button }}</a>' +
-                    '</div>' +
-                '</div>' +
-            '</div>' +
-            '<div id="headingFooter" v-if="page.json.heading.footer !== null" v-html="page.json.heading.footer" class="section bg-gradient-blue" style="text-align: center;padding: 15px;">{{ page.json.heading.footer }}</div>' +
-        '</div>'
-    });
-
-    Vue.component('feature1', {
-        props: ['page'],
-        template: '<div>' +
-        '<div class="section" id="more" v-if="page.json.feature1.headline !== null">' +
-        '<div class="container text-center">' +
-        '<div class="row justify-content-md-center" id="feature1">' +
-        '<div class="row">' +
-        '<div class="col-md-6">' +
-        '<h2 >{{ page.json.feature1.headline }}</h2>' +
-        '<h5 class="description" style="text-align:left;color:#000;">{{ page.json.feature1.message }}</h5>' +
-        '<div align="center" v-if="page.json.feature1.link !== null"><a class="btn btn-lg btn-round btn-primary btn-simple" v-html="page.json.feature1.button" v-bind:href="page.json.feature1.link">{{ page.json.feature1.button }}</a></div>' +
-        '</div>' +
-        '<div class="col-md-6">' +
-        '<a href="#" v-bind:href="page.json.feature1.link"><img class=" rounded" :src="page.json.feature1.image" /></a>' +
-        '</div>' +
-        '</div>' +
-        '</div>' +
-        '</div>' +
-        '<div id="feature1Footer" v-if="page.json.feature1.footer !== null" v-html="page.json.feature1.footer" class="section bg-gradient-blue" style="text-align: center;padding: 15px;">{{ page.json.feature1.footer }}</div>' +
-        '</div>'
-    });
-    Vue.component('feature2', {
-        props: ['page'],
-        template:
-        '<div>' +
-        '<div class="section" id="more" style="background: #fff;"  v-if="page.json.feature2.headline !== null">' +
-        '<div class="container text-center">' +
-        '<div class="row justify-content-md-center" id="feature2">' +
-        '<div class="row">' +
-        '<div class="col-md-6">' +
-        '<a href="#" v-bind:href="page.json.feature2.link"><img class=" rounded" :src="page.json.feature2.image" /></a>' +
-        '</div>' +
-        '<div class="col-md-6">' +
-        '<h2>{{ page.json.feature2.headline }}</h2>' +
-        '<h5 class="description" style="text-align:left;color:#000;">{{ page.json.feature2.message }}</h5>' +
-        '<div align="center" v-if="page.json.feature2.link !== null"><a class="btn btn-lg btn-round btn-primary btn-simple" v-html="page.json.feature2.button" v-bind:href="page.json.feature2.link">{{ page.json.feature2.button }}</a></div>' +
-        '</div>' +
-        '</div>' +
-        '</div>' +
-        '</div>' +
-        '<div id="feature2Footer" v-if="page.json.feature2.footer !== null" v-html="page.json.feature2.footer" class="section bg-gradient-blue" style="text-align: center;padding: 15px;">{{ page.json.feature2.footer }}</div>' +
-        '</div>'
-    });
-    Vue.component('feature3', {
-        props: ['page'],
-        template: '<div>' +
-        '<div class="section" v-if="page.json.feature3.headline !== null">' +
-        '<div class="container text-center">' +
-        '<div class="row justify-content-md-center" id="feature3">' +
-        '<div class="row">' +
-        '<div class="col-md-6">' +
-        '<h2 >{{ page.json.feature3.headline }}</h2>' +
-        '<h5 class="description" style="text-align:left;color:#000;">{{ page.json.feature3.message }}</h5>' +
-        '<div align="center" v-if="page.json.feature3.link !== null"><a class="btn btn-lg btn-round btn-primary btn-simple" v-html="page.json.feature3.button" v-bind:href="page.json.feature3.link">{{ page.json.feature3.button }}</a></div>' +
-        '</div>' +
-        '<div class="col-md-6">' +
-        '<a href="#" v-bind:href="page.json.feature3.link"><img class=" rounded" :src="page.json.feature3.image" /></a>' +
-        '</div>' +
-        '</div>' +
-        '</div>' +
-        '</div>' +
-        '<div id="headingFooter" v-if="page.json.feature3.footer !== null" v-html="page.json.feature3.footer" class="section bg-gradient-blue" style="text-align: center;padding: 15px;">{{ page.json.feature3.footer }}</div>' +
-        '</div>'
-    });
     Vue.component('calltoaction', {
         props: ['page'],
         template:
@@ -113,7 +21,7 @@
     var page = new Vue({
         el: '.wrapper',
         data: {
-            views: ['heading', 'feature1', 'feature1', 'feature3', 'feature4', 'calltoaction'],
+            views: ['calltoaction'],
             items: null
         },
         created: function () {

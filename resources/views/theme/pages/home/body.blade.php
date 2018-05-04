@@ -1,42 +1,48 @@
-<body class="index-page sidebar-collapse">
-<div class="wrapper" align="center">
-    <div class="main">
-        <heading
-                v-for="item in items"
-                v-bind:page="item"
-                v-bind:key="item.id"
-                v-bind:href="item.slug">
-        </heading>
-        <img src="https://px6vg4ekvl21gtxs836x5jyx-wpengine.netdna-ssl.com/wp-content/uploads/2017/03/hero-home-1.png"
-             style="z-index:99999;display:block;margin-top:-650px; max-height:600px; width:auto;margin-bottom:50px;"/>
-    </div>
-    <div class="card" id="more"
-         style="max-width:90%;background:#fff;box-shadow:0px 0px 50px rgba(0,0,200,0.10);border-radius:10px;margin-bottom:50px;margin-top:-50px;">
-        <div class="card-body" style="min-height:150px;">
+<body class="index-page sidebar-collapse" >
+<div class="wrapper" align="center" >
+    <div class="main bg-gradient-blue">
+        <div class="" style="min-height:150vh;z-index:0 !important;background-color: transparent !important; background-image: url({{ $page->content()->heading->background}}) !important; background-size: cover; background-position: center;">
+            <div class="page-header clear-filter" style="">
 
-            <h5 style="padding-bottom:50px;border-bottom:1px solid rgba(0,0,0,0.1);">{{ $page->content()->heading->intro }}</h5>
-
-
-
-        <?php $features = \App\Post::where('post_type', '=', 'feature')->where('status','=','PUBLISHED')->limit(4)->get(); ?>
-                @foreach($features as $feature)
-                    <div class="card" style="box-shadow:none;">
-                        @if($feature->content()->heading->icon !== null)
-                            <img src="{{ $feature->content()->heading->icon }}"
-                                 style="max-width:50px;margin-bottom:30px;"/>
-                        @endif
-                        <h6>{{ $feature->content()->heading->headline }}</h6>
-                        <p>{{ $feature->content()->heading->excerpt }}</p>
+                <div class="container">
+                    <div class="content-center">
+                        <h1 class="title text-center">{{ $page->content()->heading->headline }}</h1>
+                        <h3 class="description text-center"
+                            >{{ $page->content()->heading->intro }}</h3>
+                        <a href="#"
+                           onclick="$('html, body').animate({scrollTop: $('#more').offset().top -80 }, 'slow');"
+                           class="btn btn-lg btn-round btn-neutral btn-lg btn-simple"
+                           id="engage">{{ $page->content()->heading->button }}</a>
                     </div>
-                @endforeach
-        </div>
-        <div style="margin:0px 50px 50px 50px;padding-top:50px;">
-            <a href="/features" class="btn btn-secondary-outline btn-simple btn-round">Explore
-                All Features
-                &nbsp;<i class="fa fa-caret-right"></i></a>
+                </div>
+            </div>
+            <img src="{{ $page->content()->heading->image }}"
+                 style="z-index:999999 !important;display:block !important;margin-top:-475px !important; max-height:600px; width:auto;margin-bottom:50px;"/>
         </div>
     </div>
 
+    <div class="card" id="more"
+         style="max-width:90%;background:#fff;box-shadow:0px 0px 50px rgba(0,0,200,0.10);border-radius:10px;margin-bottom:50px;margin-top:-100px;">
+        <div class="card-body" style="min-height:150px;">
+            <h5 style="padding-bottom:50px;border-bottom:1px solid rgba(0,0,0,0.1);">{{ $page->content()->features->headline}}</h5>
+            <?php $features = \App\Post::where('post_type', '=', 'feature')->where('status', '=', 'PUBLISHED')->limit(4)->get(); ?>
+            @foreach($features as $feature)
+                <div class="card" style="box-shadow:none;">
+                    @if($feature->content()->heading->icon !== null)
+                        <img src="{{ $feature->content()->heading->icon }}"
+                             style="max-width:50px;margin-bottom:30px;"/>
+                    @endif
+                    <h6>{{ $feature->content()->heading->headline }}</h6>
+                    <p style="text-align:center;max-width:250px;">{{ $feature->content()->heading->excerpt }}</p>
+                </div>
+            @endforeach
+        </div>
+        <div style="margin:0px 50px 50px 50px;padding-top:0px;">
+            <a href="/features" class="btn btn-secondary-outline btn-simple btn-round">
+                {!! $page->content()->features->button !!}
+            </a>
+        </div>
+    </div>
 
     <?php $testimonials = \App\Post::where('post_type', '=', 'quote')->where('status', '=', 'PUBLISHED')->orderBy('created_at')->limit(3)->get(); ?>
     @if($testimonials->isEmpty() !== true)
@@ -98,7 +104,8 @@
             <?php $articles = \App\Post::where('post_type', '=', 'post')->where('status', '=', 'PUBLISHED')->limit(5)->get(); ?>
 
             <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-                <ol class="carousel-indicators" style="z-index:999 !important;bottom:20px !important;pointer-events: none !important;">
+                <ol class="carousel-indicators"
+                    style="z-index:999 !important;bottom:20px !important;pointer-events: none !important;">
                     <?php $count = 0; ?>
                     @foreach($articles as $article)
                         <li data-target="#carouselExampleIndicators" data-slide-to="{{ $count }}"
@@ -106,24 +113,29 @@
                         <?php $count = $count + 1; ?>
                     @endforeach
                 </ol>
-                <div class="carousel-inner" style="min-height: 500px;border-radius: 5px !important;box-shadow: none;padding-bottom: 0px !important;box-shadow:none;">
+                <div class="carousel-inner"
+                     style="min-height: 500px;border-radius: 5px !important;box-shadow: none;padding-bottom: 0px !important;box-shadow:none;">
                     <?php $articles = \App\Post::where('post_type', '=', 'post')->where('status', '=', 'PUBLISHED')->get(); ?>
                     <?php $count = 0; ?>
                     @foreach($articles as $article)
                         <?php $count = $count + 1; ?>
                         <div class="carousel-item @if($count == 1) active @endif">
-                            <div class="card bg-dark text-white" style="background-color:#000 !important;overflow:hidden !important;max-height:500px !important;opacity:1;" align="center">
+                            <div class="card bg-dark text-white"
+                                 style="background-color:#000 !important;overflow:hidden !important;max-height:500px !important;opacity:1;"
+                                 align="center">
                                 <h5 class="card-title">{{ $article->content()->heading->headline }}</h5>
                                 <p class="card-text"
                                    style="margin-top:75px;max-width:500px;color:#fff !important;">{{ $article->content()->heading->excerpt }}</p>
                                 <a href="/content/{{ $article->slug }}"
-                                   class="btn btn-simple btn-neutral btn-round" style="z-index:9999 !important;margin-top:0px;width:150px;position:absolute;bottom:50px;left:calc(50% - 75px);">Read More &nbsp;<i
+                                   class="btn btn-simple btn-neutral btn-round"
+                                   style="z-index:9999 !important;margin-top:0px;width:150px;position:absolute;bottom:50px;left:calc(50% - 75px);">Read
+                                    More &nbsp;<i
                                             class="fa fa-caret-right"></i></a>
                                 <div class="card-img-overlay align-middle" style="padding:0px;z-index:0 !important;">
-                                    <div style="display:block !important;background-color:#000;opacity:0.33;background-image:url('{{ $article->content()->heading->background }}');background-size:cover;width:100%;height:100%;" ></div>
+                                    <div style="display:block !important;background-color:#000;opacity:0.33;background-image:url('{{ $article->content()->heading->background }}');background-size:cover;width:100%;height:100%;"></div>
                                 </div>
                                 <img src="{{ $article->content()->heading->background }}" class="card-img img-fluid"
-                                     style="opacity:0;height:500px !important;width:100% !important;visibility:hidden !important;" />
+                                     style="opacity:0;height:500px !important;width:100% !important;visibility:hidden !important;"/>
                             </div>
                         </div>
                     @endforeach
